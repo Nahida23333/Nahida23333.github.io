@@ -1,217 +1,35 @@
+extends includes/layout.pug
 
-<!DOCTYPE html>
-<html lang="en" class="loading">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>【组织学与胚胎学】第一章 组织学绪论 - Nahida的净善宫</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="google" content="notranslate" />
-    <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="一、组织学的内容和意义1、	组织：许多形态相似、功能相关的细胞，与细胞外基质形成的细胞群，称为组织。
-※组织一般分为四种，即上皮组织、结缔组织、肌组织和神经组织，统称为基本组织。
-2、器官：在胚胎早,"> 
-    <meta name="author" content="Nahida"> 
-    <link rel="alternative" href="atom.xml" title="Nahida的净善宫" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
-    
-    
-    
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="【组织学与胚胎学】第一章 组织学绪论 - Nahida的净善宫"/>
-    <meta name="twitter:description" content="一、组织学的内容和意义1、	组织：许多形态相似、功能相关的细胞，与细胞外基质形成的细胞群，称为组织。
-※组织一般分为四种，即上皮组织、结缔组织、肌组织和神经组织，统称为基本组织。
-2、器官：在胚胎早,"/>
-    
-    
-    
-    
-    <meta property="og:site_name" content="Nahida的净善宫"/>
-    <meta property="og:type" content="object"/>
-    <meta property="og:title" content="【组织学与胚胎学】第一章 组织学绪论 - Nahida的净善宫"/>
-    <meta property="og:description" content="一、组织学的内容和意义1、	组织：许多形态相似、功能相关的细胞，与细胞外基质形成的细胞群，称为组织。
-※组织一般分为四种，即上皮组织、结缔组织、肌组织和神经组织，统称为基本组织。
-2、器官：在胚胎早,"/>
-    
-<link rel="stylesheet" href="/css/diaspora.css">
+block content
+  #post
+    if top_img === false
+      include includes/header/post-info.pug
 
-    <script>window.searchDbPath = "/search.xml";</script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-<meta name="generator" content="Hexo 7.3.0"></head>
+    article#article-container.container.post-content
+      if theme.noticeOutdate.enable && page.noticeOutdate !== false
+        include includes/post/outdate-notice.pug
+      else
+        !=page.content
+    include includes/post/post-copyright.pug
+    .tag_share
+      if (page.tags.length > 0 && theme.post_meta.post.tags)
+        .post-meta__tag-list
+          each item, index in page.tags.data
+            a(href=url_for(item.path)).post-meta__tags #[=item.name]
+      include includes/third-party/share/index.pug
 
-<body class="loading">
-    <span id="config-title" style="display:none">Nahida的净善宫</span>
-    <div id="loader"></div>
-    <div id="single">
-    <div id="top" style="display: block;">
-    <div class="bar" style="width: 0;"></div>
-    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
-    <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">【组织学与胚胎学】第一章 组织学绪论</h3>
-    <div class="social">
-        <div>
-            <div class="share">
-                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
-            </div>
-            <div id="qr"></div>
-        </div>
-    </div>
-    <div class="scrollbar"></div>
-</div>
+    if theme.reward.enable && theme.reward.QR_code
+      !=partial('includes/post/reward', {}, {cache: true})
 
-    <div class="section">
-        <div class="article">
-    <div class='main'>
-        <h1 class="title">【组织学与胚胎学】第一章 组织学绪论</h1>
-        <div class="stuff">
-            <span>十月 03, 2024</span>
-            
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%BB%84%E7%BB%87%E5%AD%A6%E4%B8%8E%E8%83%9A%E8%83%8E%E5%AD%A6/" rel="tag">组织学与胚胎学</a></li></ul>
+    //- ad
+    if theme.ad && theme.ad.post
+      .ads-wrap!=theme.ad.post
 
+    if theme.post_pagination
+      include includes/pagination.pug
+    if theme.related_post && theme.related_post.enable
+      != related_posts(page,site.posts)
 
-        </div>
-        <div class="content markdown">
-            <h2 id="一、组织学的内容和意义"><a href="#一、组织学的内容和意义" class="headerlink" title="一、组织学的内容和意义"></a>一、组织学的内容和意义</h2><p>1、	组织：许多形态相似、功能相关的细胞，与细胞外基质形成的细胞群，称为组织。</p>
-<p>※组织一般分为四种，即上皮组织、结缔组织、肌组织和神经组织，统称为基本组织。</p>
-<p>2、器官：在胚胎早期由几种不同组织发育分化和有机结合形成，在机体内执行比组织更高一级的特定生理功能。</p>
-<p>3、系统：许多结构相似、功能相关的器官联合在一起构成系统。</p>
-<h2 id="二、常用组织学技术"><a href="#二、常用组织学技术" class="headerlink" title="二、常用组织学技术"></a>二、常用组织学技术</h2><h3 id="（一）光学显微镜技术：分辨率为0-2μm"><a href="#（一）光学显微镜技术：分辨率为0-2μm" class="headerlink" title="（一）光学显微镜技术：分辨率为0.2μm"></a>（一）光学显微镜技术：分辨率为0.2μm</h3><p>1、光镜观察的石蜡包埋组织切片通过取材、固定、石蜡包埋、切片、脱蜡、染色、透明等步骤制成。</p>
-<p>2、组织学最常用的是苏木精和伊红染色法，简称HE染色法。</p>
-<p>（1）苏木精是碱性染料，能将细胞核染成蓝紫色；伊红是酸性染料，能将细胞质染成红色。</p>
-<p>（2）嗜碱性：对碱性染料亲和力强者，称嗜碱性</p>
-<p>（3）嗜酸性：对酸性染料亲和力强者，称嗜酸性</p>
-<p>（4）中性：与酸性和碱性染料的亲和力均不强者，称中性</p>
-<p>3、利用物理吸附作用的染色法：</p>
-<p>（1）亲银性：银染法中有些组织结构可直接使硝酸银还原而显示，称此为亲银性</p>
-<p>（2）嗜银性：银染法中有些组织结构无直接还原作用，需要加入还原剂方能显色，则称为嗜银性。</p>
-<p>（3）异染性：组织细胞成分染色后呈颜色与将其染色的染料颜色不同，称为异染性。（如：结缔组织和软骨基质中的氨基聚糖，当用甲苯胺蓝等碱性染料染色后呈紫红色）</p>
-<h3 id="（二）电镜技术"><a href="#（二）电镜技术" class="headerlink" title="（二）电镜技术"></a>（二）电镜技术</h3><p>1、透射电镜术（TEM）：分辨率为0.2nm</p>
-<p>（1）需要制备超薄切片（50~80nm）</p>
-<p>（2）取材要求：尽量新鲜，以保存细胞正常的超微结构</p>
-<p>（3）组织块（1mm³以内）用戊二醛和锇酸两次固定，由醋酸铀和柠檬酸铅染色</p>
-<p>（4）高电子密度与低电子密度：</p>
-<pre><code>当电子束投射到密度大、吸附重金属多的结构（如溶酶体）时，电子被散射得多，因此，射落到荧光屏上的电子少而呈暗像，电镜照片上呈黑或深灰色，习惯称该结构为高电子密度，反之呈浅灰色，称低电子密度。
-</code></pre>
-<p>2、	扫描电镜术（SEM）：分辨率为0.2nm</p>
-<p>取样要求同透射电镜，组织块用戊二醛和锇酸固定后，经脱水、干燥，再于其表面喷镀薄层金膜。</p>
-<h3 id="（三）组织化学术"><a href="#（三）组织化学术" class="headerlink" title="（三）组织化学术"></a>（三）组织化学术</h3><p>1、一般组织化学术</p>
-<p>（1）基本原理：在切片上加某种试剂，与组织中的待检物质发生化学反应，其最终产物为有色沉淀物或重金属沉淀，以便用显微镜观察。</p>
-<p>（2）举例：过碘酸希夫反应（PAS反应）显示聚糖和糖蛋白的糖链。</p>
-<p>2、免疫组织化学术：根据抗原和抗体特异性结合的原理，检测组织中的肽和蛋白质。</p>
-<p>3、原位杂交术&#x2F;核酸分子杂交组织化学术</p>
-<p>（1）基本原理：用带有标记物的已知碱基顺序的核酸探针，与细胞内待测的核酸按碱基配对的原则，进行特异性原位结合，即杂交，然后通过对标记物的显示与检测，而获取待测核酸的有无及相对量。</p>
-<p>（2）常用标记物：地高辛、荧光素。</p>
-<h3 id="（四）图像分析术"><a href="#（四）图像分析术" class="headerlink" title="（四）图像分析术"></a>（四）图像分析术</h3><h3 id="（五）细胞培养术和组织工程"><a href="#（五）细胞培养术和组织工程" class="headerlink" title="（五）细胞培养术和组织工程"></a>（五）细胞培养术和组织工程</h3><h3 id="（六）组织芯片技术"><a href="#（六）组织芯片技术" class="headerlink" title="（六）组织芯片技术"></a>（六）组织芯片技术</h3>
-            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
-            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
-                <source type="audio/mpeg" src="">
-            </audio>
-            
-                <ul id="audio-list" style="display:none">
-                    
-                        
-                            <li title="0" data-url="https://link.hhtjim.com/163/1992141906.mp3"></li>
-                        
-                    
-                </ul>
-            
-        </div>
-        
-        
-    <div id="gitalk-container" class="comment link"
-		data-enable="false"
-        data-ae="false"
-        data-ci=""
-        data-cs=""
-        data-r=""
-        data-o=""
-        data-a=""
-        data-d="false"
-    >查看评论</div>
-
-
-    </div>
-    
-    <!-- 悬浮 -->
-    
-    
-</div>
-
-
-    </div>
-</div>
-</body>
-
-
-<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="/js/plugin.js"></script>
-<script src="/js/typed.js"></script>
-<script src="/js/diaspora.js"></script>
-
-
-<link rel="stylesheet" href="/photoswipe/photoswipe.css">
-<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
-
-
-<script src="/photoswipe/photoswipe.min.js"></script>
-<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-</html>
+    if page.comments !== false && theme.comments.use
+      - var commentsJsLoad = true
+      !=partial('includes/third-party/comments/index', {}, {cache: true})

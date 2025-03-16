@@ -1,219 +1,35 @@
+extends includes/layout.pug
 
-<!DOCTYPE html>
-<html lang="en" class="loading">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>【细胞生物学】第一章 概论 - Nahida的净善宫</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="google" content="notranslate" />
-    <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="第一节	 细胞生物学概述一、细胞生物学的概念与研究内容1、细胞生物学：细胞生物学是一科以细胞为对象，在显微、亚显微和分子水平上，结合结构与功能，以动态观点探索细胞各种生命活动的学科。
-2、细胞生物学,"> 
-    <meta name="author" content="Nahida"> 
-    <link rel="alternative" href="atom.xml" title="Nahida的净善宫" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
-    
-    
-    
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="【细胞生物学】第一章 概论 - Nahida的净善宫"/>
-    <meta name="twitter:description" content="第一节	 细胞生物学概述一、细胞生物学的概念与研究内容1、细胞生物学：细胞生物学是一科以细胞为对象，在显微、亚显微和分子水平上，结合结构与功能，以动态观点探索细胞各种生命活动的学科。
-2、细胞生物学,"/>
-    
-    
-    
-    
-    <meta property="og:site_name" content="Nahida的净善宫"/>
-    <meta property="og:type" content="object"/>
-    <meta property="og:title" content="【细胞生物学】第一章 概论 - Nahida的净善宫"/>
-    <meta property="og:description" content="第一节	 细胞生物学概述一、细胞生物学的概念与研究内容1、细胞生物学：细胞生物学是一科以细胞为对象，在显微、亚显微和分子水平上，结合结构与功能，以动态观点探索细胞各种生命活动的学科。
-2、细胞生物学,"/>
-    
-<link rel="stylesheet" href="/css/diaspora.css">
+block content
+  #post
+    if top_img === false
+      include includes/header/post-info.pug
 
-    <script>window.searchDbPath = "/search.xml";</script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-<meta name="generator" content="Hexo 7.3.0"></head>
+    article#article-container.container.post-content
+      if theme.noticeOutdate.enable && page.noticeOutdate !== false
+        include includes/post/outdate-notice.pug
+      else
+        !=page.content
+    include includes/post/post-copyright.pug
+    .tag_share
+      if (page.tags.length > 0 && theme.post_meta.post.tags)
+        .post-meta__tag-list
+          each item, index in page.tags.data
+            a(href=url_for(item.path)).post-meta__tags #[=item.name]
+      include includes/third-party/share/index.pug
 
-<body class="loading">
-    <span id="config-title" style="display:none">Nahida的净善宫</span>
-    <div id="loader"></div>
-    <div id="single">
-    <div id="top" style="display: block;">
-    <div class="bar" style="width: 0;"></div>
-    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
-    <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">【细胞生物学】第一章 概论</h3>
-    <div class="social">
-        <div>
-            <div class="share">
-                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
-            </div>
-            <div id="qr"></div>
-        </div>
-    </div>
-    <div class="scrollbar"></div>
-</div>
+    if theme.reward.enable && theme.reward.QR_code
+      !=partial('includes/post/reward', {}, {cache: true})
 
-    <div class="section">
-        <div class="article">
-    <div class='main'>
-        <h1 class="title">【细胞生物学】第一章 概论</h1>
-        <div class="stuff">
-            <span>十月 02, 2024</span>
-            
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%BB%86%E8%83%9E%E7%94%9F%E7%89%A9%E5%AD%A6/" rel="tag">细胞生物学</a></li></ul>
+    //- ad
+    if theme.ad && theme.ad.post
+      .ads-wrap!=theme.ad.post
 
+    if theme.post_pagination
+      include includes/pagination.pug
+    if theme.related_post && theme.related_post.enable
+      != related_posts(page,site.posts)
 
-        </div>
-        <div class="content markdown">
-            <h1 id="第一节-细胞生物学概述"><a href="#第一节-细胞生物学概述" class="headerlink" title="第一节	 细胞生物学概述"></a>第一节	 细胞生物学概述</h1><h2 id="一、细胞生物学的概念与研究内容"><a href="#一、细胞生物学的概念与研究内容" class="headerlink" title="一、细胞生物学的概念与研究内容"></a>一、细胞生物学的概念与研究内容</h2><p>1、细胞生物学：细胞生物学是一科以细胞为对象，在显微、亚显微和分子水平上，结合结构与功能，以动态观点探索细胞各种生命活动的学科。</p>
-<p>2、细胞生物学的特点是把结构和功能结合起来，并关注细胞间的相互关系，来了解生物体的生长、发育、分化、繁殖、运动、遗传、变异、衰老和死亡等基本生命现象的机制和规律。</p>
-<h2 id="二、细胞生物学在生命科学中的地位及与其他学科的关系"><a href="#二、细胞生物学在生命科学中的地位及与其他学科的关系" class="headerlink" title="二、细胞生物学在生命科学中的地位及与其他学科的关系"></a>二、细胞生物学在生命科学中的地位及与其他学科的关系</h2><p>1、从生命结构层次来看，细胞生物学介于分子生物学和个体生物学之间。</p>
-<p>2、细胞生物学的两种重要研究方式：</p>
-<p>（1）从细胞表型入手，探索隐藏在其身后的分子机制；</p>
-<p>（2）从基因或蛋白质等大分子入手，探索其对细胞功能和行为的影响。</p>
-<h1 id="第二节-细胞生物学的形成和发展趋势"><a href="#第二节-细胞生物学的形成和发展趋势" class="headerlink" title="第二节	 细胞生物学的形成和发展趋势"></a>第二节	 细胞生物学的形成和发展趋势</h1><h2 id="一、细胞的发现和细胞学说的创立"><a href="#一、细胞的发现和细胞学说的创立" class="headerlink" title="一、	细胞的发现和细胞学说的创立"></a>一、	细胞的发现和细胞学说的创立</h2><p>1、1665年，R. Hooke（选填“R. Hooke”，“A. Van Leeuwenhoek” ，“M. J. Schleiden”和“T. Schwann”，下同）用自制显微镜观察植物软木组织（发现细胞）。</p>
-<p>2、1673年，A. Van Leeuwenhoek首先观察到动物和人的活细胞。</p>
-<p>3、德国植物学家M. J. Schleiden（1838）和动物学家T. Schwann（1839）根据自己的研究并总结前人的工作，提出了细胞学说，肯定“一切生物，从单细胞生物到高等动物和植物均由细胞组成，细胞是生物形态结构和功能活动的基本单位”。（提示：细胞学说的内容） </p>
-<p>4、后来，德国科学家R. Virchow（1855）明确提出“一切细胞只能来自原来的细胞”的论点。他还指出，机体的一切病理现象都基于细胞的损伤。<br>5、恩格斯评价细胞学说为19世纪自然科学的三大发现之一（与物理学的能量转换定律和达尔文的进化论学说并列）。</p>
-<h2 id="二、细胞学的经典时期（时间：19世纪中叶到20世纪初期）"><a href="#二、细胞学的经典时期（时间：19世纪中叶到20世纪初期）" class="headerlink" title="二、细胞学的经典时期（时间：19世纪中叶到20世纪初期）"></a>二、细胞学的经典时期（时间：19世纪中叶到20世纪初期）</h2><p>1、细胞研究的主要内容：应用固定和染色技术，在光学显微镜下观察细胞的形态结构和细胞的分裂活动。</p>
-<p>2、在细胞形态结构上，认为动物细胞内的“肉样质”和植物细胞内的原生质（1864年由H. Von Mohl提出）具有同样意义，并提出原生质理论。</p>
-<p>3、无丝分裂的发现：1841年，R. Remak，鸡胚血细胞的直接分裂。</p>
-<p>有丝分裂的发现：1882年，W. Flemming。</p>
-<p>减数分裂的发现：19世纪80年代末，T. Boveri观察到动物体在形成配子的过程中，染色体数目减少了一半。1905年J. B. Farmer和J. E. More将其定义为减数分裂。</p>
-<p>4、该时期发现的细胞器有：中心体、线粒体、高尔基复合体。</p>
-<h2 id="三、实验细胞学时期（时间：20世纪初期到20世纪中叶）"><a href="#三、实验细胞学时期（时间：20世纪初期到20世纪中叶）" class="headerlink" title="三、实验细胞学时期（时间：20世纪初期到20世纪中叶）"></a>三、实验细胞学时期（时间：20世纪初期到20世纪中叶）</h2><p>该时期的研究成果有：染色体遗传理论、基因学说、组织培养技术、Feulgan染色法（测定细胞核内的DNA）、Unna染色法（检测细胞中的RNA）、紫外线显微分光光度法（检验细胞中DNA含量）（写出3个）。</p>
-<h2 id="四、细胞生物学的形成和发展"><a href="#四、细胞生物学的形成和发展" class="headerlink" title="四、细胞生物学的形成和发展"></a>四、细胞生物学的形成和发展</h2><p>1、电子显微镜的发明和20世纪中叶分子生物学的发展，标志着亚显微结构与分子水平相结合的细胞生物学的开端。</p>
-<p>2、该时期发现了过去在光镜下看不到的细胞器，如内质网、溶酶体、核糖体；明确了过去在光镜下看到的高尔基复合体和线粒体等细胞器及其精细结构。</p>
-<p>3、20世纪50~60年代的研究成果有：DNA双螺旋结构模型、证明DNA复制为半保留复制、“中心法则”、三联体密码假说、确定DNA中编码每一种氨基酸的“密码”（写出三个）等。</p>
-<p>4、20世纪70年代特别是80年代后的研究成果有：细胞膜结构的液态镶嵌模型、信号肽假说、线粒体基粒的ATP酶复合体通过结合变构机制合成ATP的模型（写出三个）等。</p>
-<h2 id="五、细胞生物学的发展趋势"><a href="#五、细胞生物学的发展趋势" class="headerlink" title="五、细胞生物学的发展趋势"></a>五、细胞生物学的发展趋势</h2><p>1990年（提示：时间，下同）人类基因组计划（HGP）启动，中国科学家于1993年加入，承担其中1%的序列分析任务。2003年人类基因组序列分析完成。</p>
-<h1 id="第三节-细胞生物学与医学"><a href="#第三节-细胞生物学与医学" class="headerlink" title="第三节	 细胞生物学与医学"></a>第三节	 细胞生物学与医学</h1><h2 id="一、细胞生物学与医学的关系"><a href="#一、细胞生物学与医学的关系" class="headerlink" title="一、	细胞生物学与医学的关系"></a>一、	细胞生物学与医学的关系</h2><p>1、	细胞生物学是现代医学的基础和支柱学科。</p>
-<p>2、	医学细胞生物学：医学细胞生物学以揭示人体各种细胞在生理和病理过程中的生命活动规律为目的，期望能对人体各种疾病的发病机制予以深入阐明，为疾病的诊断、治疗和预防提供理论依据和基础和策略。</p>
-<p>3、	医学细胞生物学的主要研究模式：以疾病为导向，提出与疾病相关的细胞生物学问题，然后选择模型细胞开展细胞分子水平的基础研究。</p>
-<h2 id="二、细胞生物学的主要研究领域与医学意义"><a href="#二、细胞生物学的主要研究领域与医学意义" class="headerlink" title="二、细胞生物学的主要研究领域与医学意义"></a>二、细胞生物学的主要研究领域与医学意义</h2><p>1、目前细胞的主要研究领域包括细胞结构与功能的信号基础，蛋白质的分选及运输，染色质的结构和功能，细胞结构体系的组装与去组装，细胞极性与细胞迁移，细胞增殖周期调控，细胞分化与干细胞特性，受精与增殖，细胞的衰老和死亡，细胞社会学，细胞与组织工程等。</p>
-<p>2、信号转导：细胞间的信息联系主要是通过神经递质、激素和旁分泌因子等信号分子来完成的，这些信号分子与细胞表面或细胞内部的受体结合，并引起下游胞内信号分子的级联反应，实现对细胞调节过程称为信号转导。</p>
-<p>3、细胞分化：细胞分化是指在个体发育中，由单个受精卵产生的细胞在形态结构、生化组成和功能等方面形成明显的稳定性差异的过程。</p>
-<p>4、细胞衰老：细胞衰老是指细胞的形态结构和生理功能逐渐衰退的现象。</p>
-<p>5、细胞凋亡：细胞凋亡是指细胞在特定条件下遵循自身的程序而结束自己生命的过程，它是由基因控制的主动性死亡，因此也称为程序性细胞死亡。</p>
-<p>6、基因组：基因组是指细胞或生物体的一套完整的单倍体遗传物质，是所有不同染色体上全部基因和基因间的DNA的总和。</p>
-<p>基因组学：基因组学是研究生物基因的组成，组内各基因的精确结构、相互关系及表达调控的学科。</p>
-<p>7、蛋白质组：蛋白质组是指由一个细胞、一个组织或生物的基因组所表达的全部蛋白质。</p>
-<p>蛋白质组学：细胞的蛋白质组学以细胞内全部蛋白质的存在及其活动方式为研究对象，从整体角度分析细胞内动态变化的蛋白质组成成分、表达水平与修饰状态，进而了解蛋白质之间的相互作用和联系，揭示蛋白质功能与细胞生命活动的规律。</p>
-<p>8、表观遗传学：表观遗传学是研究没有DNA序列变化并且可以遗传的基因功能变化的学科，如DNA甲基化、组蛋白密码（指组蛋白的乙酰化、甲基化、磷酸化、泛素化、糖基化和羰基化等影响转录因子与DNA结合的动态转录调控），基因组印记以及表观基因组学等。</p>
-
-            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
-            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
-                <source type="audio/mpeg" src="">
-            </audio>
-            
-                <ul id="audio-list" style="display:none">
-                    
-                        
-                            <li title="0" data-url="https://link.hhtjim.com/163/1992141906.mp3"></li>
-                        
-                    
-                </ul>
-            
-        </div>
-        
-        
-    <div id="gitalk-container" class="comment link"
-		data-enable="false"
-        data-ae="false"
-        data-ci=""
-        data-cs=""
-        data-r=""
-        data-o=""
-        data-a=""
-        data-d="false"
-    >查看评论</div>
-
-
-    </div>
-    
-    <!-- 悬浮 -->
-    
-    
-</div>
-
-
-    </div>
-</div>
-</body>
-
-
-<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="/js/plugin.js"></script>
-<script src="/js/typed.js"></script>
-<script src="/js/diaspora.js"></script>
-
-
-<link rel="stylesheet" href="/photoswipe/photoswipe.css">
-<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
-
-
-<script src="/photoswipe/photoswipe.min.js"></script>
-<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-</html>
+    if page.comments !== false && theme.comments.use
+      - var commentsJsLoad = true
+      !=partial('includes/third-party/comments/index', {}, {cache: true})
