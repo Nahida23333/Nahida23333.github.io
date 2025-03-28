@@ -2895,7 +2895,78 @@ C. 肝细胞、胃壁细胞等
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pbmc &lt;- FindVariableFeatures(pbmc, selection.method = &quot;vst&quot;, nfeatures = 2000)</span><br><span class="line">top10 &lt;- head(VariableFeatures(pbmc), 10) #确定前10个高变基因</span><br><span class="line"></span><br><span class="line">#可视化</span><br><span class="line">plot1 &lt;- VariableFeaturePlot(pbmc)</span><br><span class="line">plot2 &lt;- LabelPoints(plot = plot1, points = top10, repel = TRUE)</span><br><span class="line">plot1 + plot2 #在运行这一步之前建议将右下角的plots窗口调至最大，否则很容易报错……也可以用ggsave()函数保存后打开查看</span><br></pre></td></tr></table></figure>
 
 <p><img src="/images/PBMC3k/66818c4a-912c-4649-b4ab-6b7cde29a739.png"></p>
-<h1 id="数据标准化-1"><a href="#数据标准化-1" class="headerlink" title="数据标准化"></a>数据标准化</h1>]]></content>
+<h1 id="数据缩放（Z-score标准化）"><a href="#数据缩放（Z-score标准化）" class="headerlink" title="数据缩放（Z-score标准化）"></a>数据缩放（Z-score标准化）</h1><p>为了理解数据缩放的必要性，我们需要先对PCA具有一些了解。</p>
+<p>在测序之后，我们可以得到一组有n个基因表达水平的信息，这些基因之间相互影响，而我们需要找出这些基因之间的相互关系。如果只有2个基因，我们可以用二维坐标系来表示各个细胞的关联，x轴、y轴分别表示两个基因的表达量；如果有3个基因，那么就可以用三维的坐标系；但测序结果中往往有许许多多个基因，这时候很难以图像的形式直观反映。这时候我们需要对数据进行降维，去繁化简，将高维数据的特征反映在低维的图像上，从而为分析带来便利。</p>
+<p>PCA即是一种常用的降维方法。PCA的原理在此处不详细展开，但其核心为<strong>协方差</strong>的计算。简化版的协方差的计算公式为：$\text{Cov}(X, Y) &#x3D; \frac{1}{n-1} \sum_{i&#x3D;1}^{n} (x_i - \bar{X})(y_i - \bar{Y})$。在一个细胞中，不同基因的表达水平的数量级可能存在巨大差异，而这种数量级差异会对分析结果造成巨大影响。</p>
+<p>举例来说，假设我们现在有<code>X</code>、<code>Y</code>两个基因的表达水平信息，如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">基因<code>X</code></th>
+<th align="center">基因<code>Y</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">5</td>
+<td align="center">15</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">30</td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">45</td>
+</tr>
+</tbody></table>
+<p>不难看出，两个基因的表达量呈完全正相关关系，此时直接计算两个基因之间的协方差，结果为25。</p>
+<p>如果拿到的<code>X</code>、<code>Y</code>两个基因的表达水平信息如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">基因<code>X</code></th>
+<th align="center">基因<code>Y</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">5</td>
+<td align="center">100</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">200</td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">300</td>
+</tr>
+</tbody></table>
+<p>此时两个基因的表达水平仍然呈正相关关系，但如果直接计算两个基因之间的协方差，结果为500。</p>
+<p>由上可见，两种情况中两个基因的关联强度都是一样强的（完全正相关）。但由于第二种情况中<code>Y</code>基因表达水平的数量级远远大于第一种情况，协方差的计算结果也出现了巨大的差异。这时如果直接进行比较，反而会得到“第二种情况中两种基因的关联强度远远大于第一种情况”的错误结论。因此，为了纠正这种情况，我们需要将数据“缩放”至同一数量级，在此基础上再进行降维分析。</p>
+<p>Z-score标准化可以消除这种差异，其可以将每个变量的数据转换为均值为0、标准差为1的分布：$z&#x3D;\frac{x-μ}{σ}$，其中$μ$为变量的均值，$σ$为变量的标准差。对上述两种情况的数据进行标准化之后，其结果一致如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">基因<code>X</code>（标准化后）</th>
+<th align="center">基因<code>Y</code>（标准化后）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-1</td>
+<td align="center">-1</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody></table>
+<p>此时计算两个基因之间的协方差，结果均为1，表明它们具有相同的相关性模式。</p>
+<p>在Seurat包中，<code>ScaleData()</code>函数可以实现对数据的Z-score标准化，即①使每个基因的表达值偏倚，使得细胞间的平均表达为0；②对每个基因的表达值进行缩放，使得细胞间的方差为1。借此可以在保留协方差（即不同基因表达量之间的关系）的同时，将不同数量级表达水平的基因转化到同一水平，从而消除高表达基因的主导作用。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">all.genes &lt;- rownames(pbmc)</span><br><span class="line">pbmc &lt;- ScaleData(pbmc, features = all.genes)</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>生信分析</category>
       </categories>
