@@ -2828,7 +2828,8 @@ C. 肝细胞、胃壁细胞等
   <entry>
     <title>生信小记：Seurat的常见分析工作流程：以PBMC_3K数据集为例</title>
     <url>/2025/03/28/%E7%94%9F%E4%BF%A1%E5%B0%8F%E8%AE%B0%EF%BC%9ASeurat%E7%9A%84%E5%B8%B8%E8%A7%81%E5%88%86%E6%9E%90%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%EF%BC%9A%E4%BB%A5PBMC-3K%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%BA%E4%BE%8B/</url>
-    <content><![CDATA[<h1 id="创建Seurat对象"><a href="#创建Seurat对象" class="headerlink" title="创建Seurat对象"></a>创建Seurat对象</h1><p>我们将对10X Genomics免费提供的PBMC数据集进行分析，包括2700个由Illumina NextSeq测序平台测序的单细胞。</p>
+    <content><![CDATA[<p>在网上找了好几篇Seurat包的教程发现对新手都不太友好……遂自己写了一篇……</p>
+<h1 id="创建Seurat对象"><a href="#创建Seurat对象" class="headerlink" title="创建Seurat对象"></a>创建Seurat对象</h1><p>我们将对10X Genomics免费提供的PBMC数据集进行分析，包括2700个由Illumina NextSeq测序平台测序的单细胞。</p>
 <h2 id="数据的读取"><a href="#数据的读取" class="headerlink" title="数据的读取"></a>数据的读取</h2><p><code>Read10X()</code>函数可以从10X cellranger pipeline的输出中读取数据，并形成一个唯一的分子识别（UMI）计数矩阵。矩阵中的每个值代表所测序的每个细胞中的每个特征（如基因）。对于h5文件格式的文件，可以用<code>Read10X_h5()</code>读取。 </p>
 <blockquote>
 <p>10X Cell Ranger Pipeline 是 10X Genomics 公司开发的一套标准化生物信息分析工具，专门用于处理其单细胞测序平台（如 Chromium）生成的数据。它的核心功能是将原始的测序数据（fastq 文件）转化为可用于下游分析的基因表达矩阵。</p>
@@ -2895,9 +2896,10 @@ C. 肝细胞、胃壁细胞等
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pbmc &lt;- FindVariableFeatures(pbmc, selection.method = &quot;vst&quot;, nfeatures = 2000)</span><br><span class="line">top10 &lt;- head(VariableFeatures(pbmc), 10) #确定前10个高变基因</span><br><span class="line"></span><br><span class="line">#可视化</span><br><span class="line">plot1 &lt;- VariableFeaturePlot(pbmc)</span><br><span class="line">plot2 &lt;- LabelPoints(plot = plot1, points = top10, repel = TRUE)</span><br><span class="line">plot1 + plot2 #在运行这一步之前建议将右下角的plots窗口调至最大，否则很容易报错……也可以用ggsave()函数保存后打开查看</span><br></pre></td></tr></table></figure>
 
 <p><img src="/images/PBMC3k/66818c4a-912c-4649-b4ab-6b7cde29a739.png"></p>
-<h1 id="数据缩放（Z-score标准化）"><a href="#数据缩放（Z-score标准化）" class="headerlink" title="数据缩放（Z-score标准化）"></a>数据缩放（Z-score标准化）</h1><p>为了理解数据缩放的必要性，我们需要先对PCA具有一些了解。</p>
-<p>在测序之后，我们可以得到一组有n个基因表达水平的信息，这些基因之间相互影响，而我们需要找出这些基因之间的相互关系。如果只有2个基因，我们可以用二维坐标系来表示各个细胞的关联，x轴、y轴分别表示两个基因的表达量；如果有3个基因，那么就可以用三维的坐标系；但测序结果中往往有许许多多个基因，这时候很难以图像的形式直观反映。这时候我们需要对数据进行降维，去繁化简，将高维数据的特征反映在低维的图像上，从而为分析带来便利。</p>
-<p>PCA即是一种常用的降维方法。PCA的原理在此处不详细展开，但其核心为<strong>协方差</strong>的计算。简化版的协方差的计算公式为： $\text{Cov}(X,Y)&#x3D;\frac{1}{n-1}\sum_{i&#x3D;1}^{n}(x_i-\bar{X})(y_i-\bar{Y})$ 。在一个细胞中，不同基因的表达水平的数量级可能存在巨大差异，而这种数量级差异会对分析结果造成巨大影响。</p>
+<h1 id="数据缩放（Z-score标准化）"><a href="#数据缩放（Z-score标准化）" class="headerlink" title="数据缩放（Z-score标准化）"></a>数据缩放（Z-score标准化）</h1><p>为了理解数据缩放的必要性，首先我们需要对PCA降维算法具有一些初步了解。</p>
+<p>在测序之后，我们可以得到一组有n个基因表达水平的信息，这些基因之间相互影响，而我们需要找出这些基因之间的相互关系，确定不同细胞基因表达模式的不同。如果只有2个基因，我们会考虑使用一个二维的坐标系来表示不同的细胞，x轴、y轴分别表示两个基因的表达水平，而坐标系中的每个点则代表每一个细胞。如果两个点的距离越近，则说明这两个细胞的基因表达模式更加相近，两个细胞越有可能是同一种类的细胞（这时的图像比较直观）；如果有3个基因，那么就可以用三维的坐标系（还能用）；但测序结果中往往有许许多多个基因，这时候很难以图像的形式直观反映（许许多多维的图……怎么想都想不出来叭）。这时候我们需要对数据进行降维，去繁化简，将高维数据的特征反映在低维的图像上，从而为分析带来便利。</p>
+<p>PCA算法的作用在于将一个$n$维的数据降低至$k$维的数据（$n＞k$），使得数据更加直观化。这$k$维中的每一维，我们称为主成分（PC），其反映了最能区分不同种类细胞的最主要差异（可以理解为，最能区分不同种类细胞的基因表达模式）。举个通俗的例子来说，一个城市的经济水平可以通过GDP、人均收入、消费水平、三大产业的比例等等许多指标反映（$n$维），这时候如果我们需要比较$m$个城市的经济水平，那我们手头上就有一个$n×m$的表格，一眼望过去难以直观对比不同城市的发展情况。通过PCA降维分析，我们总结出了几个最关键的因素：整体经济规模（对应GDP、人均收入、消费水平）、产业结构差异（对应三大产业分别的占比），等等等等（$k$维）。这一些我们总结出来的“最关键因素”也就是主成分。通过这种降维操作，我们将一个$n×m$的表格简化成为一个$n×k$的表格，比较起来就相对简单多了。我们将其对应至单细胞测序分析中，“城市经济水平”即对应“细胞基因表达模式”，“GDP、人均收入、消费水平、三大产业的比例”即对应“各个基因的表达水平”，“整体经济规模”“产业结构差异”则对应不同的基因表达水平的特定组合，这一组合可以反映不同细胞的总体基因表达模式的重要特征。</p>
+<p>PCA的原理在此处不详细展开，但其核心为<strong>协方差</strong>的计算，这是我们现在需要关注的部分。协方差反映两个或多个因素之间的关联强度，简化版的协方差的计算公式为： $\text{Cov}(X,Y)&#x3D;\frac{1}{n-1}\sum_{i&#x3D;1}^{n}(x_i-\bar{X})(y_i-\bar{Y})$ 。在一个细胞中，不同基因的表达水平的数量级可能存在巨大差异，而这种数量级差异会对分析结果造成巨大影响。</p>
 <p>举例来说，假设我们现在有<code>X</code>、<code>Y</code>两个基因的表达水平信息，如下：</p>
 <table>
 <thead>
@@ -2964,7 +2966,7 @@ C. 肝细胞、胃壁细胞等
 <td align="center">1</td>
 </tr>
 </tbody></table>
-<p>此时计算两个基因之间的协方差，结果均为1，表明它们具有相同的相关性模式。</p>
+<p>此时计算两个基因之间的协方差，结果均为1，表明它们具有相同的相关性模式。（有没有发现，标准化后的协方差其实就等于原始数据的相关系数！）</p>
 <p>在Seurat包中，<code>ScaleData()</code>函数可以实现对数据的Z-score标准化，即①使每个基因的表达值偏倚，使得细胞间的平均表达为0；②对每个基因的表达值进行缩放，使得细胞间的方差为1。借此可以在保留协方差（即不同基因表达量之间的关系）的同时，将不同数量级表达水平的基因转化到同一水平，从而消除高表达基因的主导作用。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">all.genes &lt;- rownames(pbmc)</span><br><span class="line">pbmc &lt;- ScaleData(pbmc, features = all.genes)</span><br></pre></td></tr></table></figure>
 
@@ -2991,8 +2993,19 @@ C. 肝细胞、胃壁细胞等
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DimHeatmap(pbmc, dims = 1, cells = 500, balanced = TRUE)</span><br></pre></td></tr></table></figure>
 <p><img src="/images/PBMC3k/5b8b49e9-3e72-488f-8997-9d43bfd0a338.png"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DimHeatmap(pbmc, dims = 1:15, cells = 500, balanced = TRUE)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/PBMC3k/e8dd52c6-b107-482d-a672-d553cecb4f17.png.png"></p>
-<h1 id="确认数据集的维度"><a href="#确认数据集的维度" class="headerlink" title="确认数据集的维度"></a>确认数据集的维度</h1>]]></content>
+<p><img src="/images/PBMC3k/e8dd52c6-b107-482d-a672-d553cecb4f17.png"></p>
+<h1 id="确认数据集的维度"><a href="#确认数据集的维度" class="headerlink" title="确认数据集的维度"></a>确认数据集的维度</h1><p>前面我们提到，PCA算法的作用就是将一个$n$维的数据降维为一个$k$维的数据（$n＞k$）。在这一步中，我们的任务是确认$k$的值，也就是确认降维后数据的维度。在上一步中，我们通过PCA降维算法得到了若干个主成分。但每个主成分的重要程度并不一致，有些主成分的影响力显著，也有一些主成分的影响微乎其微。继续沿用上面的例子来说，我们在分析城市经济水平的时候，通过降维总结出了若干能反映城市经济水平的因素。但通过降维算法总结出的这些因素里面，除了“整体经济规模”“产业结构差异”这些影响力巨大的因素之外，还有“居民饮食结构”这些相对没有那么重要的因素。在分析的时候，显然我们需要抓主要矛盾，而搁置次要矛盾，否则的话我们永远无法找到问题的关键。</p>
+<p>如何确定哪些主成分的影响力巨大，必须重点考虑；哪些主成分的影响力偏弱，可以暂时搁置？我们可以先把不同的主成分的影响力用图像直观表示出来看看。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ElbowPlot(pbmc)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/PBMC3k/e628012a-65b9-4a83-bb9a-3f23d5647188.png"></p>
+<p>我们得到的图很像一个平放在桌面上的手臂，其中中间的几个点和手肘很类似，因此我们习惯将这种图称为“肘部图”（好像也有人叫“碎石图”，不过我还是觉得“肘部图”比较形象）。不难看出，在主成分9~10之后的主成分，其影响力比较小，因此我们可以将其暂时排除，只考虑前面的主成分。在这里，我们选择前十个主成分进行进一步分析。</p>
+<p>值得一提的是，除了肘部图之外，我们还可以利用<code>JackStrawPlot()</code>函数对主成分进行筛选。但对于较大的数据集，其计算过程往往需要很长时间，因此肘部图仍然是最效率的选择。（为了得到下面这个图，我的电脑跑了三分钟，而肘部图几乎秒出……）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pbmc &lt;- JackStraw(pbmc, num.replicate = 100)</span><br><span class="line">pbmc &lt;- ScoreJackStraw(pbmc, dims = 1:20)</span><br><span class="line">JackStrawPlot(pbmc, dims = 1:15)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/PBMC3k/fff0fb76-be33-4e56-900c-05018665cfaf.png"></p>
+<h1 id="细胞聚类"><a href="#细胞聚类" class="headerlink" title="细胞聚类"></a>细胞聚类</h1><p>在上面几步中，我们确认了不同细胞集群基因表达模式的主要变异方向，将$n×m$的表格降维到了$n×k$的表格。但是，我们还没有对降维后的数据进行分析，还没有确认“哪些细胞属于哪一类”。在这一步中，我们将会将降维后的数据划分为若干组（簇），每组代表一种潜在的细胞类型或状态，也就是细胞聚类。</p>
+<h1 id="执行非线性降维（UMAP-t-SNE）"><a href="#执行非线性降维（UMAP-t-SNE）" class="headerlink" title="执行非线性降维（UMAP&#x2F;t-SNE）"></a>执行非线性降维（UMAP&#x2F;t-SNE）</h1><p>PCA降维可以对细胞进行初步分群，但其假定不同基因间的关联是线性的，其分群相对比较粗糙；就像简单粗暴地把一个纸团拍扁，尽管保留了整体的轮廓，但有可能因为纸团在压缩过程中发生重叠，丢失了哪一边是顶部、哪一边是底部的信息。为了更好地鉴别各个细胞群，我们需要更加精细地处理这些数据。</p>
+<p>在未经处理的高维数据中，我们想象用一个点来代表一个细胞。在高维空间中，同一种类细胞所代表的点之间的距离就会更近；非同类细胞之间的距离将会更远。依此原理，我们可以通过计算两两细胞间的距离，并根据点与点之间的距离生成一个二维图像。在高维空间中距离相近的两个点，在二维图像中距离也拉近；而在高维空间中距离较远的两个点，在二维图像中距离也会拉远，这就可以更好地反映出不同细胞群的区别。这就是UMAP和t-SNE算法的核心原理。</p>
+]]></content>
       <categories>
         <category>生信分析</category>
       </categories>
