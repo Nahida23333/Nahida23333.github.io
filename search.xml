@@ -3519,7 +3519,7 @@ C. 肝细胞、胃壁细胞等
 <p><img src="/images/visualization_practice/b2255275-d454-4fd1-9a46-1bde52498b55.png"></p>
 <h2 id="热图（Heatmap）"><a href="#热图（Heatmap）" class="headerlink" title="热图（Heatmap）"></a>热图（Heatmap）</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DoHeatmap(subset(pbmc3k.final, downsample = 100), features = features, size = 3)</span><br><span class="line">#subset()函数可以从每个细胞集群中选择100个细胞进行展示，避免图象过于密集难以阅读。</span><br><span class="line">#选择细胞的数量可以通过downsample这一参数进行调整。</span><br></pre></td></tr></table></figure>
 <p><img src="/images/visualization_practice/f3c11f22-549a-4df0-a52d-b928b9d73b38.png"></p>
-<h1 id="在特征图上玩点新花样"><a href="#在特征图上玩点新花样" class="headerlink" title="在特征图上玩点新花样"></a>在特征图上玩点新花样</h1><h2 id="改变图例，使得不同表达水平的颜色差异更显著"><a href="#改变图例，使得不同表达水平的颜色差异更显著" class="headerlink" title="改变图例，使得不同表达水平的颜色差异更显著"></a>改变图例，使得不同表达水平的颜色差异更显著</h2><p>我们可以经验性地设定颜色最深或最浅所代表的基因表达水平。</p>
+<h1 id="在特征图上玩点新花样"><a href="#在特征图上玩点新花样" class="headerlink" title="在特征图上玩点新花样"></a>在特征图上玩点新花样</h1><p>我们可以经验性地设定颜色最深或最浅所代表的基因表达水平。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">FeaturePlot(pbmc3k.final, features = &quot;MS4A1&quot;) + FeaturePlot(pbmc3k.final, features = &quot;MS4A1&quot;, min.cutoff = 1, max.cutoff = 3)</span><br><span class="line">#上图为原始图象，下图为调整后的图象。</span><br></pre></td></tr></table></figure>
 <p><img src="/images/visualization_practice/f692a65d-9590-405f-87c6-55f4b02bef0e.png"></p>
 <p>也可以让软件计算第10百分位数（q10）和第90百分位数（q90），以此作为颜色显示的基准。这种方法特别适用于需要处理多个基因的数据的时候。</p>
@@ -3534,6 +3534,29 @@ C. 肝细胞、胃壁细胞等
 <p>然后我尝试了大杂烩（</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">FeaturePlot(pbmc3k.final, features = c(&quot;MS4A1&quot;, &quot;PTPRCAP&quot;), min.cutoff = &quot;q10&quot;, max.cutoff = &quot;q90&quot;, blend = TRUE, split.by = &quot;groups&quot;)</span><br></pre></td></tr></table></figure>
 <p><img src="/images/visualization_practice/39eada2a-347c-4f0b-a052-8d885d416dd6.png"></p>
+<h1 id="可视化的进阶玩法"><a href="#可视化的进阶玩法" class="headerlink" title="可视化的进阶玩法"></a>可视化的进阶玩法</h1><p>除了基因的表达水平之外，小提琴图还能显示其他变量在不同细胞簇中的分布情况。例如，通过下列代码，我们可以显示两个组中不同细胞簇的线粒体基因比例。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">VlnPlot(pbmc3k.final, features = &quot;percent.mt&quot;, split.by = &quot;groups&quot;)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/visualization_practice/6deafa51-c47a-4e7c-885e-6096dbbb072c.png"></p>
+<p>点图也能分组！</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DotPlot(pbmc3k.final, features = features, split.by = &quot;groups&quot;) + RotatedAxis()</span><br></pre></td></tr></table></figure>
+<p><img src="/images/visualization_practice/a337a8ac-3cfb-4f88-8fa2-f24252cee8b1.png"></p>
+<p><code>DimPlot()</code>函数可以用来展示UMAP、$t$-SNE和PCA降维结果，展示的优先级为UMAP＞$t$-SNE＞PCA。也就是在没有进行任何设置的情况下，该函数默认展示经UMAP降维后的图象。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DimPlot(pbmc3k.final)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/visualization_practice/07091029-3688-4fb1-9b99-4e7cd9b1d44c.png"></p>
+<p>如果需要展示PCA降维后的数据，我们需要将原始数据集进行备份，然后在备份数据集上删除UMAP分析结果。（如果还进行了$t$-SNE分析，则还需要删除$t$-SNE分析结果，否则会有限展示$t$-SNE分析结果）。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pbmc3k.final.no.umap &lt;- pbmc3k.final</span><br><span class="line">pbmc3k.final.no.umap[[&quot;umap&quot;]] &lt;- NULL</span><br><span class="line">DimPlot(pbmc3k.final.no.umap) + RotatedAxis()</span><br><span class="line">#似乎可以直接用DimPlot(pbmc3k.final, reduction = &quot;pca&quot;) + RotatedAxis()直接指定展示PCA降维结果</span><br></pre></td></tr></table></figure>
+<p><img src="/images/visualization_practice/e6970ec3-ba32-4343-90df-0dbd40581cc0.png"></p>
+<p>在热图中，默认按照细胞簇进行分群，如果需要按照其他标准分群，可以更改$group.by$的参数。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DoHeatmap(pbmc3k.final, features = VariableFeatures(pbmc3k.final)[1:100], cells = 1:500, size = 4, angle = 90) + NoLegend()</span><br><span class="line">#NoLegend()即删除图例。</span><br></pre></td></tr></table></figure>
+<p><img src="/images/visualization_practice/Rplot01.png"></p>
+<h1 id="根据实际需要对图象进行个性化设置"><a href="#根据实际需要对图象进行个性化设置" class="headerlink" title="根据实际需要对图象进行个性化设置"></a>根据实际需要对图象进行个性化设置</h1><h2 id="增加标题"><a href="#增加标题" class="headerlink" title="增加标题"></a>增加标题</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baseplot &lt;- DimPlot(pbmc3k.final, reduction = &quot;umap&quot;)</span><br><span class="line">baseplot + labs(title = &quot;Clustering of 2,700 PBMCs&quot;)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/visualization_practice/0e471aad-fce4-4ae6-bbc0-f75e236a25bd.png"></p>
+<h2 id="更改主题（此处改为PowerPoint主题）"><a href="#更改主题（此处改为PowerPoint主题）" class="headerlink" title="更改主题（此处改为PowerPoint主题）"></a>更改主题（此处改为PowerPoint主题）</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">remotes::install_github(&#x27;sjessa/ggmin&#x27;) #因为不是自带的主题……所以需要安装所需要的扩张包</span><br><span class="line">baseplot + ggmin::theme_powerpoint()</span><br></pre></td></tr></table></figure>
+<p><img src="/images/visualization_practice/7f442361-3c33-4b01-92e2-1516c17a2549.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baseplot + DarkTheme() #黑色主题是自带的，无需ggmin</span><br></pre></td></tr></table></figure>
+<p><img src="/images/visualization_practice/4e80e797-0e37-4d83-863c-907f9483487f.png"></p>
+<h2 id="使用FontSize-调整字体大小"><a href="#使用FontSize-调整字体大小" class="headerlink" title="使用FontSize()调整字体大小"></a>使用<code>FontSize()</code>调整字体大小</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baseplot + FontSize(x.title = 20, y.title = 20) + NoLegend()</span><br></pre></td></tr></table></figure>
+<p><img src="/images/visualization_practice/e42826ec-b12a-4975-a0e2-ee5fb5a292fe.png"></p>
 ]]></content>
       <categories>
         <category>生信分析</category>
