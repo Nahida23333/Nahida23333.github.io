@@ -3003,8 +3003,21 @@ C. 肝细胞、胃壁细胞等
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pbmc &lt;- JackStraw(pbmc, num.replicate = 100)</span><br><span class="line">pbmc &lt;- ScoreJackStraw(pbmc, dims = 1:20)</span><br><span class="line">JackStrawPlot(pbmc, dims = 1:15)</span><br></pre></td></tr></table></figure>
 <p><img src="/images/PBMC3k/fff0fb76-be33-4e56-900c-05018665cfaf.png"></p>
 <h1 id="细胞聚类"><a href="#细胞聚类" class="headerlink" title="细胞聚类"></a>细胞聚类</h1><p>在上面几步中，我们确认了不同细胞集群基因表达模式的主要变异方向，将$n×m$的表格降维到了$n×k$的表格。但是，我们还没有对降维后的数据进行分析，还没有确认“哪些细胞属于哪一类”。在这一步中，我们将会将降维后的数据划分为若干组（簇），每组代表一种潜在的细胞类型或状态，也就是细胞聚类。</p>
-<h1 id="执行非线性降维（UMAP-t-SNE）"><a href="#执行非线性降维（UMAP-t-SNE）" class="headerlink" title="执行非线性降维（UMAP&#x2F;t-SNE）"></a>执行非线性降维（UMAP&#x2F;t-SNE）</h1><p>PCA降维可以对细胞进行初步分群，但其假定不同基因间的关联是线性的，其分群相对比较粗糙；就像简单粗暴地把一个纸团拍扁，尽管保留了整体的轮廓，但有可能因为纸团在压缩过程中发生重叠，丢失了哪一边是顶部、哪一边是底部的信息。为了更好地鉴别各个细胞群，我们需要更加精细地处理这些数据。</p>
-<p>在未经处理的高维数据中，我们想象用一个点来代表一个细胞。在高维空间中，同一种类细胞所代表的点之间的距离就会更近；非同类细胞之间的距离将会更远。依此原理，我们可以通过计算两两细胞间的距离，并根据点与点之间的距离生成一个二维图像。在高维空间中距离相近的两个点，在二维图像中距离也拉近；而在高维空间中距离较远的两个点，在二维图像中距离也会拉远，这就可以更好地反映出不同细胞群的区别。这就是UMAP和t-SNE算法的核心原理。</p>
+<p>细胞聚类分为领域图构建和聚类两步，前者通常用KNN算法（$K$-Nearest Neighbors）进行；而聚类则有多种方法，Seurat包中默认使用Louvain算法。大致原理如下：</p>
+<ul>
+<li>KNN算法（$K$-Nearest Neighbors）：通过测量降维后数据中每个细胞间的距离，找到距离每个细胞最近的$K$个细胞（这时我们称这些细胞为“邻居”），借此可以构建一个邻域图（其实就是一个拓扑图）。</li>
+<li>Louvain算法：在通过KNN算法构建领域图的基础上，根据细胞距离的远近将所有划分为不同的“社区（community）”（即不同的细胞集群）。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pbmc &lt;- FindNeighbors(pbmc, dims = 1:10) #KNN算法</span><br><span class="line">pbmc &lt;- FindClusters(pbmc, resolution = 0.5) #Louvain算法</span><br><span class="line">head(Idents(pbmc), 5) #了解前5个细胞分别属于哪些集群</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>运行结果：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; pbmc &lt;- FindNeighbors(pbmc, dims = 1:10)</span><br><span class="line">Computing nearest neighbor graph</span><br><span class="line">Computing SNN</span><br><span class="line">&gt; pbmc &lt;- FindClusters(pbmc, resolution = 0.5)</span><br><span class="line">Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck</span><br><span class="line"></span><br><span class="line">Number of nodes: 2638	</span><br><span class="line">Number of edges: 95927	</span><br><span class="line"></span><br><span class="line">Running Louvain algorithm...</span><br><span class="line">0%   10   20   30   40   50   60   70   80   90   100%</span><br><span class="line">[----|----|----|----|----|----|----|----|----|----|</span><br><span class="line">**************************************************|</span><br><span class="line">Maximum modularity in 10 random starts: 0.8728</span><br><span class="line">Number of communities: 9</span><br><span class="line">Elapsed time: 0 seconds</span><br><span class="line">&gt; head(Idents(pbmc), 5)</span><br><span class="line">AAACATACAACCAC-1 AAACATTGAGCTAC-1 AAACATTGATCAGC-1 AAACCGTGCTTCCG-1 AAACCGTGTATGCG-1 </span><br><span class="line">               2                3                2                1                6 </span><br><span class="line">Levels: 0 1 2 3 4 5 6 7 8</span><br></pre></td></tr></table></figure>
+
+<h1 id="执行非线性降维（UMAP-t-SNE）"><a href="#执行非线性降维（UMAP-t-SNE）" class="headerlink" title="执行非线性降维（UMAP&#x2F;$t$-SNE）"></a>执行非线性降维（UMAP&#x2F;$t$-SNE）</h1><p>PCA降维可以对细胞进行初步分群，但其假定不同基因间的关联是线性的，其分群相对比较粗糙；就像简单粗暴地把一个纸团拍扁，尽管保留了整体的轮廓，但有可能因为纸团在压缩过程中发生重叠，丢失了哪一边是顶部、哪一边是底部的信息。为了更好地鉴别各个细胞群，我们需要更加精细地处理这些数据。</p>
+<p>在未经处理的高维数据中，我们想象用一个点来代表一个细胞。在高维空间中，同一种类细胞所代表的点之间的距离就会更近；非同类细胞之间的距离将会更远。依此原理，我们可以通过计算两两细胞间的距离，并根据点与点之间的距离生成一个二维图像。在高维空间中距离相近的两个点，在二维图像中距离也拉近；而在高维空间中距离较远的两个点，在二维图像中距离也会拉远，这就可以更好地反映出不同细胞群的区别。这就是UMAP和$t$-SNE算法的基本原理。</p>
+<p>UMAP算法和$t$-SNE算法的思路总体相同，但存在一些细节上的差异。$t$-SNE算法会计算所有点与点之间的距离，并将其转化为$t$分布，结果就是在高维数据中两个距离较近的点，在降维后的数据中距离将会更近；而在高维数据中两个距离较远的点，在降维后的数据中距离也将拉远，会更有利于不同细胞集群的区分；而UMAP算法则只会计算距离某个点最近的$k$个点的距离，并且也不会对计算得到的距离进行$t$分布转化，因此通过UMAP算法降维后的图中，两点间距离会更有可比性。</p>
 ]]></content>
       <categories>
         <category>生信分析</category>
