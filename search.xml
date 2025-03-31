@@ -3671,6 +3671,10 @@ C. 肝细胞、胃壁细胞等
 <li>基于<code>TCL1A</code>、<code>FCER2</code>基因的表达水平，分离出B细胞的其他亚群。</li>
 <li>基于<code>XCL1</code>、<code>FCGR3A</code>基因的表达水平，将NK细胞进一步分为CD56dim和CD56bright两个亚群。</li>
 </ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">VlnPlot(pbmc, features = c(&quot;CD8A&quot;, &quot;GZMK&quot;, &quot;CCL5&quot;, &quot;S100A4&quot;, &quot;ANXA1&quot;, &quot;CCR7&quot;, &quot;ISG15&quot;, &quot;CD3D&quot;), pt.size = 0.2, ncol = 4)</span><br><span class="line">#pt.point means the size of points</span><br></pre></td></tr></table></figure>
+<p><img src="/images/sctransform_practice/a8b0ae96-811e-4c30-a083-c81ffc0b9a96.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">FeaturePlot(pbmc, features = c(&quot;CD8A&quot;, &quot;GZMK&quot;, &quot;CCL5&quot;, &quot;S100A4&quot;, &quot;ANXA1&quot;, &quot;CCR7&quot;, &quot;CD3D&quot;, &quot;ISG15&quot;, &quot;TCL1A&quot;, &quot;FCER2&quot;, &quot;XCL1&quot;, &quot;FCGR3A&quot;), pt.size = 0.2, ncol = 3)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/sctransform_practice/Rplot.png"></p>
 ]]></content>
       <categories>
         <category>生信分析</category>
