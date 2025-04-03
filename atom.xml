@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-03-31T10:14:32.831Z</updated>
+  <updated>2025-04-03T01:34:19.875Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【医学影像学】总论</title>
+    <link href="http://example.com/2025/04/03/%E3%80%90%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E5%AD%A6%E3%80%91%E6%80%BB%E8%AE%BA/"/>
+    <id>http://example.com/2025/04/03/%E3%80%90%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E5%AD%A6%E3%80%91%E6%80%BB%E8%AE%BA/</id>
+    <published>2025-04-03T00:32:10.000Z</published>
+    <updated>2025-04-03T01:34:19.875Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="医学影像学"><a href="#医学影像学" class="headerlink" title="医学影像学"></a>医学影像学</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>利用X线、CT、MRI、超声、核素、DSA等等多种影像技术所形成的影像对临床疾病进行诊断或影像引导治疗的学科。</p><h2 id="学科划分"><a href="#学科划分" class="headerlink" title="学科划分"></a>学科划分</h2><ul><li>放射影像学：X线、CT、MRI、介入放射学</li><li>核医学：核素显像、PET-CT（PET-MRI）、SPECT、放射性核素治疗</li><li>超声医学：超声诊断、超声引导治疗、超声射频治疗</li></ul><h1 id="X线"><a href="#X线" class="headerlink" title="X线"></a>X线</h1><h2 id="X线的产生"><a href="#X线的产生" class="headerlink" title="X线的产生"></a>X线的产生</h2><p>在 X 线管内，高速行进的电子流被靶物质的原子阻挡而发生能量转换，其中约1%的能量转变为 X 线。</p><h2 id="X线的本质"><a href="#X线的本质" class="headerlink" title="X线的本质"></a>X线的本质</h2><p>波长很短的电磁波，以光速沿直线前进，波长为0.01nm<del>10nm。X线诊断用0.031nm</del>0.008nm（40~150kV）。</p><h2 id="X线的特性："><a href="#X线的特性：" class="headerlink" title="X线的特性："></a>X线的特性：</h2><ul><li>穿透性：X线能穿过可见光不能穿过的物体。管电压越高，X线波长越短，穿透力越强。X线穿过时会被衰减。穿透能力也与所穿过的物质的厚度、密度相关，这是X线的成像基础。</li><li>荧光效应（透视基础）：X线能激发荧光物质（如钨酸钙）发出可见光。</li><li>感光效应：X线使溴化银感光形成潜影：溴化银（Ag+）→ Ag（黑色），使影像板（DR板）的感光元件产生电信号，经计算机处理形成图像（摄影基础），以上特性可用于成像。</li><li>电离&#x2F;生物效应：X线通过物质时可以电离分子，从而破坏分子结构。生物学效应是辐射防护与放射治疗的基础。</li></ul><h2 id="X线成像原理"><a href="#X线成像原理" class="headerlink" title="X线成像原理"></a>X线成像原理</h2><ul><li>X线的穿透性</li><li>人体组织间密度（物质密度和原子种类）及厚度（人体组织不同的厚度）的差异。<ul><li>自然对比：不同组织对X线的吸收系数差异</li><li>人工对比：人体组织不同的厚度</li></ul></li><li>X线检测：荧光效应、感光效应。</li></ul><h2 id="X线密度："><a href="#X线密度：" class="headerlink" title="X线密度："></a>X线密度：</h2><table><thead><tr><th align="center">组织</th><th align="center">比重（水的比重为1）</th><th align="center">吸收比</th><th align="center">密度</th><th align="center">照片影像密度</th></tr></thead><tbody><tr><td align="center">骨骼</td><td align="center">1.9</td><td align="center">5.0</td><td align="center">高</td><td align="center">白</td></tr><tr><td align="center">软组织（包括体液）</td><td align="center">1.01-1.06</td><td align="center">1.01-1.10</td><td align="center">中</td><td align="center">灰白</td></tr><tr><td align="center">脂肪</td><td align="center">0.92</td><td align="center">0.5</td><td align="center">低</td><td align="center">灰黑</td></tr><tr><td align="center">气体</td><td align="center">0.0013</td><td align="center">0.001</td><td align="center">最低</td><td align="center">黑</td></tr></tbody></table><h2 id="对比剂"><a href="#对比剂" class="headerlink" title="对比剂"></a>对比剂</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>缺乏自然对比的结构或器官，将高于或低于该结构或器官的物质引入器官内或其周围间隙，使之产生对比以显影。</p><h3 id="适应症"><a href="#适应症" class="headerlink" title="适应症"></a>适应症</h3><p>空腔性器官、淋巴、血管。</p><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><h4 id="阳性对比剂"><a href="#阳性对比剂" class="headerlink" title="阳性对比剂"></a>阳性对比剂</h4><ul><li>硫酸钡：不吸收<ul><li>上消化道造影（口服吞钡造影）：食道、胃、小肠</li><li>下消化道造影（钡剂灌肠造影）：结肠</li></ul></li><li>碘化合物：<ul><li>水剂：可吸收，通过肝肾排泄<ul><li>尿路造影：肾盂、输尿管、膀胱</li><li>胆道“T”管造影，ERCP、PTC</li><li>脊髓、输卵管、血管造影</li></ul></li><li>油剂：不吸收<ul><li>瘘管造影、输卵管造影</li></ul></li></ul></li></ul><h4 id="阴性对比剂"><a href="#阴性对比剂" class="headerlink" title="阴性对比剂"></a>阴性对比剂</h4><ul><li>空气：脑室造影、气钡双重造影</li><li>$O_2$、$CO_2$</li></ul><h3 id="引入途径"><a href="#引入途径" class="headerlink" title="引入途径"></a>引入途径</h3><ul><li>直接引入：<ul><li>口服法：食管及胃肠钡餐检查</li><li>灌注法：钡剂灌肠、逆行泌尿道造影、子宫输卵管造影、瘘管造影</li></ul></li><li>穿刺引入法：经皮或经导管</li><li>间接引入：肝、胆、肾的生理排泄</li><li>口服法：胆囊造影</li><li>静脉注射法：胆囊造影、肾盂造影、尿路造影</li></ul><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul><li>重叠：X线透过人体的前后所有的组织和器官</li><li>放大效应：球管-人体-探测器间距离，点光源近距离投影具有放大效应</li><li>歪曲失真：X线入射角度</li><li>密度分辨率：不高</li></ul><h2 id="防护"><a href="#防护" class="headerlink" title="防护"></a>防护</h2><ul><li>装备<ul><li>铅玻璃、铅板、硫酸钡等进行机房屏蔽</li><li>铅的X线管套、 遮光筒、光圈等</li><li>避免射线束直射，保持射线源最大距离</li></ul></li><li>病人<ul><li>铅围裙、铅围脖等防护</li></ul></li><li>医务人员<ul><li>选择恰当的检查方法</li><li>尽量采用最小的曝光时间和剂量</li><li>铅围裙、铅围脖、铅手套、铅眼镜进行防护<blockquote><p>不滥用X线、CT检查<br>非检查部位不曝露于射线照射野内<br>孕妇妊娠头三个月避免X线照射<br>对儿童和育龄男女的性腺采取必要的防护措施<br>选用最恰当的曝光条件（mA、KV）<br>尽量采用能降低使用剂量的硬件和软件（高速屏、高效探测器、降噪软件…）</p></blockquote></li></ul></li></ul><h1 id="DR的优点"><a href="#DR的优点" class="headerlink" title="DR的优点"></a>DR的优点</h1><p>与CR、普通X线图比DR图像具有更高的分辨率、更大的曝光宽容度、更好的时间分辨率，图像可以进行多种后处理，可以数字化存储，但也需要更多的投入。</p><h1 id="DSA"><a href="#DSA" class="headerlink" title="DSA"></a>DSA</h1><h2 id="静脉注射数字减影血管造影（intravenous-DSA-IV-DSA）"><a href="#静脉注射数字减影血管造影（intravenous-DSA-IV-DSA）" class="headerlink" title="静脉注射数字减影血管造影（intravenous DSA, IV-DSA）"></a>静脉注射数字减影血管造影（intravenous DSA, IV-DSA）</h2><p>导管插入<strong>静脉</strong>，注入肝素以防止导管凝血，将导管尖插入检查静脉开口，导管尾端接压力注射器，注入对比剂，根据需要以每秒l帧或更多的帧频摄影，经操作台处理即可得IV-DSA图像，如<strong>肾上腺静脉造影</strong>。</p><h2 id="动脉法数字减影血管造影（intraarterial-DSA-IA-DSA）"><a href="#动脉法数字减影血管造影（intraarterial-DSA-IA-DSA）" class="headerlink" title="动脉法数字减影血管造影（intraarterial DSA, IA-DSA）"></a>动脉法数字减影血管造影（intraarterial DSA, IA-DSA）</h2><p>导管插入<strong>动脉</strong>，注入肝素以防止导管凝血，将导管尖插入检查动脉开口，导管尾端接压力注射器，注入对比剂，根据需要以每秒l帧或更多的帧频摄影，经操作台处理即可得IA-DSA图像，如<strong>肝动脉造影，冠脉造影</strong>。</p><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul><li>微创（经血管穿刺置入导管）</li><li>血管图像无骨性等其他干扰、图像清晰</li><li>可选择性进行细小血管成像</li><li>造影剂用量少，浓度低</li><li>图像数字化储存</li><li>可同步引导介入性治疗操作（栓塞、支架等）</li></ul><h1 id="计算机体层成像（CT）"><a href="#计算机体层成像（CT）" class="headerlink" title="计算机体层成像（CT）"></a>计算机体层成像（CT）</h1><h2 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h2><p>利用机架内与X射线管相对的探测器，探测X射线管发射的X线束穿透一定厚度人体的某一层面后的衰减值，扫描过程中X射线管与探测器绕人体做360°的旋转，从各个方向采集X线的衰减信号，经模-数转换器转变为数字信号，传输给计算机处理后，得出该层面矩阵上各点一定厚度立方体的体素平均X线吸收系数值（即CT值），再经数-模转换器转变后显示为不同灰阶的黑白点（像素），并按相应矩阵排列，重建出该层面的黑白图像。</p><h2 id="CT值"><a href="#CT值" class="headerlink" title="CT值"></a>CT值</h2><p>组织对X线的吸收系数与(骨、水、空气)三种组织之间的相对值。可以表示某一组织密度高低的程度，反映器官或组织对X线的吸收程度，以Hu（Hounsfield Unit）表示。</p><table><thead><tr><th align="center">组织</th><th align="center">CT值</th></tr></thead><tbody><tr><td align="center">骨皮质</td><td align="center">+1000HU</td></tr><tr><td align="center">软组织</td><td align="center">+20—+50HU</td></tr><tr><td align="center">水</td><td align="center">0</td></tr><tr><td align="center">脂肪组织</td><td align="center">-70—-90HU</td></tr><tr><td align="center">空气</td><td align="center">-1000HU</td></tr></tbody></table><h2 id="窗宽与窗位"><a href="#窗宽与窗位" class="headerlink" title="窗宽与窗位"></a>窗宽与窗位</h2><h3 id="窗宽"><a href="#窗宽" class="headerlink" title="窗宽"></a>窗宽</h3><p>每16个灰阶所包括的CT值的范围</p><h3 id="窗位"><a href="#窗位" class="headerlink" title="窗位"></a>窗位</h3><p>窗中心的CT值</p><table><thead><tr><th align="center">器官</th><th align="center">窗宽</th><th align="center">窗位</th></tr></thead><tbody><tr><td align="center">脑</td><td align="center">100</td><td align="center">50</td></tr><tr><td align="center">肝</td><td align="center">120—150</td><td align="center">35—45</td></tr><tr><td align="center">肺</td><td align="center">1200—1500</td><td align="center">-300—-700</td></tr><tr><td align="center">骨</td><td align="center">1000—2000</td><td align="center">200—400</td></tr><tr><td align="center">软组织</td><td align="center">250—300</td><td align="center">35—45</td></tr></tbody></table><h2 id="部分容积效应"><a href="#部分容积效应" class="headerlink" title="部分容积效应"></a>部分容积效应</h2><p>CT图像上各个像素的数值代表相应单位组织全体的平均CT值，它不能如实反映该单位内各种组织本身的CT值。小于层厚的病变，其CT值受层厚内其它组织的影响，所测出的CT值不能代表病变的真正的CT值；反之，在低密度组织中的较小的高密度病灶，其CT值偏低，这种现象称为部分容积效应。</p><h2 id="CT伪影"><a href="#CT伪影" class="headerlink" title="CT伪影"></a>CT伪影</h2><p>由于测量数据的不完美或多种物理因素导致的投影数据判读错误，重建图像上出现与实际解剖结构不相符的密度异常变化。</p><h2 id="CT检查技术"><a href="#CT检查技术" class="headerlink" title="CT检查技术"></a>CT检查技术</h2><ul><li>平扫</li><li>增强扫描：常规增强扫描、多期（动态）增强扫描、灌注扫描、延迟扫描</li><li>CT造影：CT血管造影、CT椎管造影、CT关节造影（基本淘汰）</li></ul><h1 id="碘对比剂的不良反应及其处理原则"><a href="#碘对比剂的不良反应及其处理原则" class="headerlink" title="碘对比剂的不良反应及其处理原则"></a>碘对比剂的不良反应及其处理原则</h1><table><thead><tr><th align="center">程度</th><th align="center">主要临床表现</th><th align="center">处理</th></tr></thead><tbody><tr><td align="center">一般</td><td align="center">潮红，头痛，恶心，呕吐，荨麻疹等</td><td align="center">一般不需要处理，可自行恢复</td></tr><tr><td align="center">轻度</td><td align="center">喷嚏，流泪，结膜充血，面部水肿</td><td align="center">卧床休息，吸氧，观察生命体征，肌注或静注地塞米松或异丙嗪，一般无生命危险</td></tr><tr><td align="center">中度</td><td align="center">反复重度呕吐，眩晕，轻度喉头水肿，轻度支气管痉挛，轻度和暂时性血压下降</td><td align="center">卧床休息，吸氧，密切观察生命体征，及时对症处理</td></tr><tr><td align="center">重度</td><td align="center">呼吸困难，意识不清，休克，惊厥，心律失常，心搏骤停</td><td align="center">有生命危险，应立即采取气管切开，心肺复苏等急救措施</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;医学影像学&quot;&gt;&lt;a href=&quot;#医学影像学&quot; class=&quot;headerlink&quot; title=&quot;医学影像学&quot;&gt;&lt;/a&gt;医学影像学&lt;/h1&gt;&lt;h2 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot; title=&quot;基本概念&quot;</summary>
+      
+    
+    
+    
+    <category term="医学影像学" scheme="http://example.com/categories/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E5%AD%A6/"/>
+    
+    
+    <category term="医学影像学" scheme="http://example.com/tags/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E5%AD%A6/"/>
+    
+    <category term="知识点整理" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生信小记：使用Seurat包处理多模态数据</title>
+    <link href="http://example.com/2025/03/31/%E7%94%9F%E4%BF%A1%E5%B0%8F%E8%AE%B0%EF%BC%9A%E4%BD%BF%E7%94%A8Seurat%E5%8C%85%E5%A4%84%E7%90%86%E5%A4%9A%E6%A8%A1%E6%80%81%E6%95%B0%E6%8D%AE/"/>
+    <id>http://example.com/2025/03/31/%E7%94%9F%E4%BF%A1%E5%B0%8F%E8%AE%B0%EF%BC%9A%E4%BD%BF%E7%94%A8Seurat%E5%8C%85%E5%A4%84%E7%90%86%E5%A4%9A%E6%A8%A1%E6%80%81%E6%95%B0%E6%8D%AE/</id>
+    <published>2025-03-31T15:25:21.000Z</published>
+    <updated>2025-04-02T10:09:37.433Z</updated>
+    
+    <content type="html"><![CDATA[<p>在一次实验中，我们可以对同一个细胞测量不同分子层面的数据（如基因表达、蛋白质表达、表观遗传修饰、空间分布等等），所测得的数据我们称之为多模态数据（multimodal data）。例如，CITE-seq可以同时检测单细胞的转录组RNA和表面蛋白表达水平；10X Multiome可以同时测量单细胞的转录组RNA和ATAC（染色质可及性）。本篇文章将以一个包括8617个脐带血单个核细胞（CBMC）的CITE-seq结果（包含转录组RNA测序和表面蛋白丰度估计值）的数据集，介绍如何使用Seurat包对多模态数据进行分析。</p><h1 id="导入数据，创建Seurat对象，并加入RNA和表面蛋白数据"><a href="#导入数据，创建Seurat对象，并加入RNA和表面蛋白数据" class="headerlink" title="导入数据，创建Seurat对象，并加入RNA和表面蛋白数据"></a>导入数据，创建Seurat对象，并加入RNA和表面蛋白数据</h1><p><a href="">官方教程</a>中介绍的方法如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">library(Seurat)</span><br><span class="line">library(ggplot2)</span><br><span class="line">library(patchwork)</span><br><span class="line"></span><br><span class="line"># Load in the RNA UMI matrix</span><br><span class="line"></span><br><span class="line"># Note that this dataset also contains ~5% of mouse cells, which we can use as negative</span><br><span class="line"># controls for the protein measurements. For this reason, the gene expression matrix has</span><br><span class="line"># HUMAN_ or MOUSE_ appended to the beginning of each gene.</span><br><span class="line"></span><br><span class="line">#导入RNA数据</span><br><span class="line">cbmc.rna &lt;- as.sparse(read.csv(file = &quot;/brahms/shared/vignette-data/GSE100866_CBMC_8K_13AB_10X-RNA_umi.csv.gz&quot;,</span><br><span class="line">    sep = &quot;,&quot;, header = TRUE, row.names = 1))</span><br><span class="line"></span><br><span class="line"># 在本例中，我们将删除除了100个表达水平最高的小鼠基因之外的所有小鼠基因，并且移除人源基因前面的HUMAN_标记。</span><br><span class="line">cbmc.rna &lt;- CollapseSpeciesExpressionMatrix(cbmc.rna)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 载入表面蛋白丰度数据</span><br><span class="line">cbmc.adt &lt;- as.sparse(read.csv(file = &quot;/brahms/shared/vignette-data/GSE100866_CBMC_8K_13AB_10X-ADT_umi.csv.gz&quot;,</span><br><span class="line">    sep = &quot;,&quot;, header = TRUE, row.names = 1))</span><br><span class="line"></span><br><span class="line"># 在多模态数据中，不同类型的数据往往相互对应；更直白的讲，一个细胞中的RNA和表面蛋白丰度应该相互匹配，不能出现一个细胞只有RNA数据，而表面蛋白丰度缺失；或反之的情况。</span><br><span class="line"># all.equal()函数即可以对数据进行检查，具体来说，通过对比两列细胞的barcodes是否一致进行检查</span><br><span class="line"># 若返回true，说明数据没问题，如果返回false，则说明数据可能出错了</span><br><span class="line">all.equal(colnames(cbmc.rna), colnames(cbmc.adt))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cbmc &lt;- CreateSeuratObject(counts = cbmc.rna) #基于转录组RNA数据，创建Seurat对象</span><br><span class="line"># create a new assay to store ADT information</span><br><span class="line">adt_assay &lt;- CreateAssay5Object(counts = cbmc.adt) #新建一个assay，用于存储表面蛋白丰度数据</span><br><span class="line">cbmc[[&quot;ADT&quot;]] &lt;- adt_assay #将新建的assay加入到Seurat对象中</span><br></pre></td></tr></table></figure><p>然而，由于官方所给的下载链接为<code>ftp</code>协议（需要进行一系列复杂的设置才能正常下载……然鹅我到现在也没有下载成），本文章改用下述方法直接下载并加载Seurat数据集。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">library(Seurat)</span><br><span class="line">library(patchwork)</span><br><span class="line">library(ggplot2)</span><br><span class="line">library(SeuratData)</span><br><span class="line">InstallData(&quot;cbmc&quot;)</span><br><span class="line">data(&quot;cbmc&quot;)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在一次实验中，我们可以对同一个细胞测量不同分子层面的数据（如基因表达、蛋白质表达、表观遗传修饰、空间分布等等），所测得的数据我们称之为多模态数据（multimodal data）。例如，CITE-seq可以同时检测单细胞的转录组RNA和表面蛋白表达水平；10X Multio</summary>
+      
+    
+    
+    
+    <category term="生信分析" scheme="http://example.com/categories/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="生信分析" scheme="http://example.com/tags/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/"/>
+    
+    <category term="R语言" scheme="http://example.com/tags/R%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="Seurat" scheme="http://example.com/tags/Seurat/"/>
+    
+  </entry>
   
   <entry>
     <title>生信小记：使用SCTransform进行标准化</title>
@@ -487,54 +541,6 @@
     
     
     <category term="口腔医学" scheme="http://example.com/tags/%E5%8F%A3%E8%85%94%E5%8C%BB%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>咖香茶香同飘撒，乡村振兴方可达——由电影《一点就到家》引发的思考</title>
-    <link href="http://example.com/2024/10/04/%E5%92%96%E9%A6%99%E8%8C%B6%E9%A6%99%E5%90%8C%E9%A3%98%E6%92%92%EF%BC%8C%E4%B9%A1%E6%9D%91%E6%8C%AF%E5%85%B4%E6%96%B9%E5%8F%AF%E8%BE%BE%E2%80%94%E2%80%94%E7%94%B1%E7%94%B5%E5%BD%B1%E3%80%8A%E4%B8%80%E7%82%B9%E5%B0%B1%E5%88%B0%E5%AE%B6%E3%80%8B%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://example.com/2024/10/04/%E5%92%96%E9%A6%99%E8%8C%B6%E9%A6%99%E5%90%8C%E9%A3%98%E6%92%92%EF%BC%8C%E4%B9%A1%E6%9D%91%E6%8C%AF%E5%85%B4%E6%96%B9%E5%8F%AF%E8%BE%BE%E2%80%94%E2%80%94%E7%94%B1%E7%94%B5%E5%BD%B1%E3%80%8A%E4%B8%80%E7%82%B9%E5%B0%B1%E5%88%B0%E5%AE%B6%E3%80%8B%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/</id>
-    <published>2024-10-04T04:24:12.000Z</published>
-    <updated>2024-10-04T04:44:53.430Z</updated>
-    
-    <content type="html"><![CDATA[<p>在2020年，一部以云南省普洱市咖啡产业的发展为原型的电影《一点就到家》上线，引发了社会的热烈反响。该电影的英文名“coffee or tea”，亦照应着电影情节中的一个关键冲突——当地传统茶产业和外部引进咖啡产业的矛盾。在全面脱贫和乡村振兴的过程中，这种矛盾几乎不可避免。抛弃“非黑即白”的极端化思维，以辩证、理性的角度看待此问题，方能找到矛盾的破局之路。</p><p>不可否认，普洱传统茶产业有深厚的文化传承积淀，在全中国乃至全世界的茶叶市场中具有较强的竞争力。云南地区有着千余年的茶叶种植史，几经兴衰，如今仍是年产值千亿级别的支柱型产业，极大地带动了当地经济的发展。除此之外，茶产业的兴盛也孕育了此处许多少数民族的特色文化（如纳西族“龙虎斗”等），积淀了色彩斑斓的文化内涵。如此兴盛的传统产业，弃之可惜。</p><p>然而，咖啡产业在当地的蓬勃发展亦不可忽视。云南省地理位置优越，是培育咖啡的理想培育地。尽管只有百余年的种植史、三十余年的规模化史，当地的咖啡产业却取得了意外亮眼的成绩，成为我国种植面积最大、产量最高、品质最优的咖啡主产区之一。与此同时，咖啡文化悄然生长，一大批咖啡产业相关科研机构相继落地，咖啡产业前景一片大好。</p><p>或许有人认为咖啡的引入会动摇支柱茶产业的根基，反对咖啡的引入和发展；亦有人认为传统的茶产业将跟不上时代的发展而被淘汰，寄希望于全面“咖啡化”。我私以为二者皆不然也。</p><p>首先，咖啡产业的引入和发展会极大地丰富当地的经济结构，对当地经济利大于弊。不同消费者的需求不同，单一的茶产业并不能满足他们的需要。而引入咖啡相关产业则有利于丰富供给，满足更多消费者的需要，从而促进消费增长、推动当地经济的发展。</p><p>其次，传统产业和落后产业不能划等号，坚持发展茶产业绝非死路一条。无论是茶产业抑或是咖啡产业，时代的发展并不会抹除消费者对于产品的需求；相反，消费者对于相应产品的质量要求会愈来愈高。我国乃至全世界的茶市场规模巨大，而茶产业又是普洱市的优势产业；将茶产业当落后产业的行为无异于自废武功，推动茶产业向着更加规模化、更加产业化、更加智能化的方向发展方为上策。</p><p>茶和咖啡并驾齐驱、新旧产业共天一色，是普洱市巩固脱贫成果、推进乡村振兴的正确举措。一方面，继续巩固茶产业优势、加强茶产品的市场竞争力，为普洱经济稳定发展、乡村振兴提供有力保障。另一方面，推动咖啡产业生根发芽、增强当地经济结构的丰富性，可很大程度上增强当地经济的抗风险能力，有能力面对更多的不确定性。除此之外，新旧产业彼此交融，旧的产品推陈出新、新的产品也借旧益新，可成一道奇丽之景。</p><p>2024年“中央一号文件”在提及乡村产业帮扶中指出：“巩固一批。支持市场前景广、链条较完备的帮扶产业，研发新技术新产品，推进产销精准衔接，创响区域公用品牌，促进融合发展。升级一批。支持资源有支撑、发展有基础的帮扶产业，加快补上农业基础设施短板，升级田头保鲜、冷链物流等设施，促进加工增值。”[1]云南省普洱市的做法，是在完成全面脱贫之后，巩固既有成果、向着乡村振兴的全新目标前进的正确举措。不可否认，在这个过程中会遇到更多、更细的问题，但路尽管再远，只要方向正确，总会到达。我们期待普洱市茶产业和咖啡产业的进一步发展，让当地百姓更加衣食无忧；更期待全国乡村一起努力，向着现代化乡村的美好前景不断前进。</p><h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><p>[1]中华人民共和国国务院农业农村部. 农业农村部关于落实中共中央国务院关于学习运用“千村示范、万村整治”工程经验有力有效推进乡村全面振兴工作部署的实施意见[Z].2024-1-10</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;在2020年，一部以云南省普洱市咖啡产业的发展为原型的电影《一点就到家》上线，引发了社会的热烈反响。该电影的英文名“coffee or tea”，亦照应着电影情节中的一个关键冲突——当地传统茶产业和外部引进咖啡产业的矛盾。在全面脱贫和乡村振兴的过程中，这种矛盾几乎不可避免。</summary>
-      
-    
-    
-    
-    <category term="一些小论文" scheme="http://example.com/categories/%E4%B8%80%E4%BA%9B%E5%B0%8F%E8%AE%BA%E6%96%87/"/>
-    
-    
-    <category term="思政类" scheme="http://example.com/tags/%E6%80%9D%E6%94%BF%E7%B1%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>甲午战争与抗日战争——结果截然不同的两场中日战争</title>
-    <link href="http://example.com/2024/10/04/%E7%94%B2%E5%8D%88%E6%88%98%E4%BA%89%E4%B8%8E%E6%8A%97%E6%97%A5%E6%88%98%E4%BA%89%E2%80%94%E2%80%94%E7%BB%93%E6%9E%9C%E6%88%AA%E7%84%B6%E4%B8%8D%E5%90%8C%E7%9A%84%E4%B8%A4%E5%9C%BA%E4%B8%AD%E6%97%A5%E6%88%98%E4%BA%89/"/>
-    <id>http://example.com/2024/10/04/%E7%94%B2%E5%8D%88%E6%88%98%E4%BA%89%E4%B8%8E%E6%8A%97%E6%97%A5%E6%88%98%E4%BA%89%E2%80%94%E2%80%94%E7%BB%93%E6%9E%9C%E6%88%AA%E7%84%B6%E4%B8%8D%E5%90%8C%E7%9A%84%E4%B8%A4%E5%9C%BA%E4%B8%AD%E6%97%A5%E6%88%98%E4%BA%89/</id>
-    <published>2024-10-04T04:19:22.000Z</published>
-    <updated>2024-10-04T04:20:03.428Z</updated>
-    
-    <content type="html"><![CDATA[<p>在中国的近代史上，中国与日本曾发生过两次主要的战争——甲午中日战争和抗日民族战争。这两次战争中，交战双方都是中国和日本，敌我差距同样悬殊，但最终却取得了截然不同的结果——甲午中日战争中，中国战败，清廷被迫与日本签订《马关条约》，大大加深了中国半殖民地程度；而抗日民族战争中，日本最终宣布无条件投降，中国第一次在反帝国主义斗争中取得了完全胜利。为何中日两次战争的胜负截然相反？我认为，总体上可以从国内因素和国外因素两个角度分析。</p><h2 id="一、国内因素"><a href="#一、国内因素" class="headerlink" title="一、国内因素"></a>一、国内因素</h2><h3 id="（一）抗日战争时期的制度比甲午中日战争更加团结、更加坚强"><a href="#（一）抗日战争时期的制度比甲午中日战争更加团结、更加坚强" class="headerlink" title="（一）抗日战争时期的制度比甲午中日战争更加团结、更加坚强"></a>（一）抗日战争时期的制度比甲午中日战争更加团结、更加坚强</h3><p>甲午中日战争中国战败的最主要原因应归于清朝腐朽的封建制度，尤其是领导阶层之间的内耗。甲午中日战争前后，光绪帝和慈禧太后的权力斗争矛盾尤其尖锐。在甲午战争中，以光绪帝为首的帝派主张积极反抗，以树立起光绪帝的政治威望，但慈禧太后却无心应战，只想着她的六十大寿，并留有“今日令吾不欢者，吾亦将令彼终身不欢”之辞。在帝党和后党关于是战是和绵绵不绝的争斗中，清军未能抓住战斗机遇，丧失了战场上的主动地位，最终为日军所败。</p><p>反观抗日民族战争，在日本发动七七事变之后，当时中国的两大政治势力——中国共产党和中国国民党的精英都十分清晰地认识到，中华民族与日本侵略者的民族矛盾已经超越资产阶级和无产阶级之间的阶级矛盾，成为当时中国的主要矛盾。于是，国共合作宣言发表，国共第二次合作逐渐形成。国民党军队负责正面战场，抵御日军进攻；共产党军队负责敌后战场，破坏敌人据点。国共两党团结合作，共同取得了抗日民族战争的胜利。</p><p>显而易见，抗日战争时期国内的斗争力量比甲午中日战争时期更加团结、更加坚强。充满内耗的领导阶层犹如一盘散沙，无法在敌人大发入侵的时候凝聚力量，从而被打得落花流水；而团结、坚强的领导阶层则如一股洪流，力往一处使，众志成城，可挽狂澜于既倒，可化腐朽为新生。</p><h3 id="（二）人民群众民族意识的觉醒是成功反抗入侵的关键"><a href="#（二）人民群众民族意识的觉醒是成功反抗入侵的关键" class="headerlink" title="（二）人民群众民族意识的觉醒是成功反抗入侵的关键"></a>（二）人民群众民族意识的觉醒是成功反抗入侵的关键</h3><p>在甲午中日战争之前，中国已经经历过两次鸦片战争的惨败。令人遗憾的是，尽管部分有识之士由此认识到中华民族摇摇欲坠的危机，大部分中国老百姓仍对“民族”这一概念尚缺乏深入的了解，更不论清晰认识中华民族当前危险处境。绝大多数的中国老百姓和当时的统治阶级一样，仍然沉浸在“天朝上国”的美梦之中，将近代中国与帝国主义列强的不平等外交简单粗暴地理解为“夷夏之辩”。民族意识没有成为当时社会的主要思潮，使得甲午中日战争时期，老百姓对国家正在经历的危机漠然视之，未能深度参与到反抗侵略的斗争中来，从而给抵抗带来了巨大困难。</p><p>而抗战时期，中华民族的老百姓的民族意识与抗战热情空前高涨，为中华民族取得抗日战争胜利奠定了最广泛、最深厚的民众基础。例如，中国东北地区的满族、朝鲜族等少数民族组成抗日义勇军，主动反抗日军的侵略行径；人口不足500万的新疆地区，在极其艰苦的条件下投入50万人力，全力保障国际援华物资运输路线的畅通；沦陷区的人民自发反抗，既有武装斗争，也有非武力形式的抵抗；国外的华侨纷纷捐款捐物，甚至回国参战……在抗日民族统一战线的旗帜下，觉醒的中国人民形成了一股不可战胜的力量，最终将日本侵略军拒于国门外。</p><p>费孝通说：“中华民族作为一个自觉的民族实体，是在近百年来中国和西方列强的对抗中出现的。”随着民族危机的步步加深，中华人民的民族意识逐渐觉醒。而觉醒后的爱国力量凝聚起来，成为击退外侮的重要法宝、不可战胜的伟大力量，使中华民族得以由衰转盛、涅槃重生。</p><h2 id="二、国际因素"><a href="#二、国际因素" class="headerlink" title="二、国际因素"></a>二、国际因素</h2><p>在甲午中日战争期间，国际上的其他国家不愿意插手中日之间的矛盾。甲午中日爆发之后，西方的大多数国家，如英、德、意、美等，选择了绥靖主义道路，宣布局外中立。而法国、奥地利尽管没有公开宣布局外中立，但也在外交通会上表明了相似立场，使得日本有恃无恐，一路攻城拔寨。</p><p>但在抗日战争中，由于法西斯力量已经严重威胁各国的利益，这些国家纷纷伸出援手，支持中国的抗日战争。例如苏联在全面抗战爆发后不久就率先支援中国，并向中国运输军火物资。美国、英国、法国等国也曾给中国提供军事或经济援助。尽管有些国家提供援助并不单纯，但这些援助事实上增强了中国的反法西斯力量，为战胜日本帝国主义侵略贡献了力量。<br><br>除了上述所提及的领导力量、人民群众民族意识的觉醒与否、国外援助等因素，仍有许多因素未在上文提及，诸如作战时的军事思路等。但领导力量团结与否、民族意识的觉醒与否、国际舆论的风向，无疑是抗战成败的决定性因素。中国的政党、人民群众和世界其他的反法西斯力量一起合作，相互配合，共同击退了日军的侵略。</p><p>尽管如今的中国已经不复百年前的贫弱，抗日战争对当下的中国仍有重要意义。首先，必须坚持中国共产党执政、其他政党参政议政的政治协商制度，各主要党派共商国是，以对话协商的方式解决分歧，从而保持领导力量的强大。另外，必须持续推进爱国主义教育，不断增强老百姓的民族意识、激发老百姓的爱国热情，激励每一位中华儿女为祖国发展繁荣而不懈奋斗。最后，必须推进人类命运共同体的建设。当各个国家面临着共同的挑战时，将力量聚积起来，可以让我们在应对挑战时更加游刃有余。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;在中国的近代史上，中国与日本曾发生过两次主要的战争——甲午中日战争和抗日民族战争。这两次战争中，交战双方都是中国和日本，敌我差距同样悬殊，但最终却取得了截然不同的结果——甲午中日战争中，中国战败，清廷被迫与日本签订《马关条约》，大大加深了中国半殖民地程度；而抗日民族战争中，</summary>
-      
-    
-    
-    
-    <category term="一些小论文" scheme="http://example.com/categories/%E4%B8%80%E4%BA%9B%E5%B0%8F%E8%AE%BA%E6%96%87/"/>
-    
-    
-    <category term="历史类" scheme="http://example.com/tags/%E5%8E%86%E5%8F%B2%E7%B1%BB/"/>
     
   </entry>
   

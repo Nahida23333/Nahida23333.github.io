@@ -3686,4 +3686,289 @@ C. 肝细胞、胃壁细胞等
         <tag>SCTransform</tag>
       </tags>
   </entry>
+  <entry>
+    <title>生信小记：使用Seurat包处理多模态数据</title>
+    <url>/2025/03/31/%E7%94%9F%E4%BF%A1%E5%B0%8F%E8%AE%B0%EF%BC%9A%E4%BD%BF%E7%94%A8Seurat%E5%8C%85%E5%A4%84%E7%90%86%E5%A4%9A%E6%A8%A1%E6%80%81%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<p>在一次实验中，我们可以对同一个细胞测量不同分子层面的数据（如基因表达、蛋白质表达、表观遗传修饰、空间分布等等），所测得的数据我们称之为多模态数据（multimodal data）。例如，CITE-seq可以同时检测单细胞的转录组RNA和表面蛋白表达水平；10X Multiome可以同时测量单细胞的转录组RNA和ATAC（染色质可及性）。本篇文章将以一个包括8617个脐带血单个核细胞（CBMC）的CITE-seq结果（包含转录组RNA测序和表面蛋白丰度估计值）的数据集，介绍如何使用Seurat包对多模态数据进行分析。</p>
+<h1 id="导入数据，创建Seurat对象，并加入RNA和表面蛋白数据"><a href="#导入数据，创建Seurat对象，并加入RNA和表面蛋白数据" class="headerlink" title="导入数据，创建Seurat对象，并加入RNA和表面蛋白数据"></a>导入数据，创建Seurat对象，并加入RNA和表面蛋白数据</h1><p><a href="">官方教程</a>中介绍的方法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">library(Seurat)</span><br><span class="line">library(ggplot2)</span><br><span class="line">library(patchwork)</span><br><span class="line"></span><br><span class="line"># Load in the RNA UMI matrix</span><br><span class="line"></span><br><span class="line"># Note that this dataset also contains ~5% of mouse cells, which we can use as negative</span><br><span class="line"># controls for the protein measurements. For this reason, the gene expression matrix has</span><br><span class="line"># HUMAN_ or MOUSE_ appended to the beginning of each gene.</span><br><span class="line"></span><br><span class="line">#导入RNA数据</span><br><span class="line">cbmc.rna &lt;- as.sparse(read.csv(file = &quot;/brahms/shared/vignette-data/GSE100866_CBMC_8K_13AB_10X-RNA_umi.csv.gz&quot;,</span><br><span class="line">    sep = &quot;,&quot;, header = TRUE, row.names = 1))</span><br><span class="line"></span><br><span class="line"># 在本例中，我们将删除除了100个表达水平最高的小鼠基因之外的所有小鼠基因，并且移除人源基因前面的HUMAN_标记。</span><br><span class="line">cbmc.rna &lt;- CollapseSpeciesExpressionMatrix(cbmc.rna)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 载入表面蛋白丰度数据</span><br><span class="line">cbmc.adt &lt;- as.sparse(read.csv(file = &quot;/brahms/shared/vignette-data/GSE100866_CBMC_8K_13AB_10X-ADT_umi.csv.gz&quot;,</span><br><span class="line">    sep = &quot;,&quot;, header = TRUE, row.names = 1))</span><br><span class="line"></span><br><span class="line"># 在多模态数据中，不同类型的数据往往相互对应；更直白的讲，一个细胞中的RNA和表面蛋白丰度应该相互匹配，不能出现一个细胞只有RNA数据，而表面蛋白丰度缺失；或反之的情况。</span><br><span class="line"># all.equal()函数即可以对数据进行检查，具体来说，通过对比两列细胞的barcodes是否一致进行检查</span><br><span class="line"># 若返回true，说明数据没问题，如果返回false，则说明数据可能出错了</span><br><span class="line">all.equal(colnames(cbmc.rna), colnames(cbmc.adt))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cbmc &lt;- CreateSeuratObject(counts = cbmc.rna) #基于转录组RNA数据，创建Seurat对象</span><br><span class="line"># create a new assay to store ADT information</span><br><span class="line">adt_assay &lt;- CreateAssay5Object(counts = cbmc.adt) #新建一个assay，用于存储表面蛋白丰度数据</span><br><span class="line">cbmc[[&quot;ADT&quot;]] &lt;- adt_assay #将新建的assay加入到Seurat对象中</span><br></pre></td></tr></table></figure>
+
+<p>然而，由于官方所给的下载链接为<code>ftp</code>协议（需要进行一系列复杂的设置才能正常下载……然鹅我到现在也没有下载成），本文章改用下述方法直接下载并加载Seurat数据集。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">library(Seurat)</span><br><span class="line">library(patchwork)</span><br><span class="line">library(ggplot2)</span><br><span class="line">library(SeuratData)</span><br><span class="line">InstallData(&quot;cbmc&quot;)</span><br><span class="line">data(&quot;cbmc&quot;)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>生信分析</category>
+      </categories>
+      <tags>
+        <tag>生信分析</tag>
+        <tag>R语言</tag>
+        <tag>Seurat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【医学影像学】总论</title>
+    <url>/2025/04/03/%E3%80%90%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E5%AD%A6%E3%80%91%E6%80%BB%E8%AE%BA/</url>
+    <content><![CDATA[<h1 id="医学影像学"><a href="#医学影像学" class="headerlink" title="医学影像学"></a>医学影像学</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>利用X线、CT、MRI、超声、核素、DSA等等多种影像技术所形成的影像对临床疾病进行诊断或影像引导治疗的学科。</p>
+<h2 id="学科划分"><a href="#学科划分" class="headerlink" title="学科划分"></a>学科划分</h2><ul>
+<li>放射影像学：X线、CT、MRI、介入放射学</li>
+<li>核医学：核素显像、PET-CT（PET-MRI）、SPECT、放射性核素治疗</li>
+<li>超声医学：超声诊断、超声引导治疗、超声射频治疗</li>
+</ul>
+<h1 id="X线"><a href="#X线" class="headerlink" title="X线"></a>X线</h1><h2 id="X线的产生"><a href="#X线的产生" class="headerlink" title="X线的产生"></a>X线的产生</h2><p>在 X 线管内，高速行进的电子流被靶物质的原子阻挡而发生能量转换，其中约1%的能量转变为 X 线。</p>
+<h2 id="X线的本质"><a href="#X线的本质" class="headerlink" title="X线的本质"></a>X线的本质</h2><p>波长很短的电磁波，以光速沿直线前进，波长为0.01nm<del>10nm。X线诊断用0.031nm</del>0.008nm（40~150kV）。</p>
+<h2 id="X线的特性："><a href="#X线的特性：" class="headerlink" title="X线的特性："></a>X线的特性：</h2><ul>
+<li>穿透性：X线能穿过可见光不能穿过的物体。管电压越高，X线波长越短，穿透力越强。X线穿过时会被衰减。穿透能力也与所穿过的物质的厚度、密度相关，这是X线的成像基础。</li>
+<li>荧光效应（透视基础）：X线能激发荧光物质（如钨酸钙）发出可见光。</li>
+<li>感光效应：X线使溴化银感光形成潜影：溴化银（Ag+）→ Ag（黑色），使影像板（DR板）的感光元件产生电信号，经计算机处理形成图像（摄影基础），以上特性可用于成像。</li>
+<li>电离&#x2F;生物效应：X线通过物质时可以电离分子，从而破坏分子结构。生物学效应是辐射防护与放射治疗的基础。</li>
+</ul>
+<h2 id="X线成像原理"><a href="#X线成像原理" class="headerlink" title="X线成像原理"></a>X线成像原理</h2><ul>
+<li>X线的穿透性</li>
+<li>人体组织间密度（物质密度和原子种类）及厚度（人体组织不同的厚度）的差异。<ul>
+<li>自然对比：不同组织对X线的吸收系数差异</li>
+<li>人工对比：人体组织不同的厚度</li>
+</ul>
+</li>
+<li>X线检测：荧光效应、感光效应。</li>
+</ul>
+<h2 id="X线密度："><a href="#X线密度：" class="headerlink" title="X线密度："></a>X线密度：</h2><table>
+<thead>
+<tr>
+<th align="center">组织</th>
+<th align="center">比重（水的比重为1）</th>
+<th align="center">吸收比</th>
+<th align="center">密度</th>
+<th align="center">照片影像密度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">骨骼</td>
+<td align="center">1.9</td>
+<td align="center">5.0</td>
+<td align="center">高</td>
+<td align="center">白</td>
+</tr>
+<tr>
+<td align="center">软组织（包括体液）</td>
+<td align="center">1.01-1.06</td>
+<td align="center">1.01-1.10</td>
+<td align="center">中</td>
+<td align="center">灰白</td>
+</tr>
+<tr>
+<td align="center">脂肪</td>
+<td align="center">0.92</td>
+<td align="center">0.5</td>
+<td align="center">低</td>
+<td align="center">灰黑</td>
+</tr>
+<tr>
+<td align="center">气体</td>
+<td align="center">0.0013</td>
+<td align="center">0.001</td>
+<td align="center">最低</td>
+<td align="center">黑</td>
+</tr>
+</tbody></table>
+<h2 id="对比剂"><a href="#对比剂" class="headerlink" title="对比剂"></a>对比剂</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>缺乏自然对比的结构或器官，将高于或低于该结构或器官的物质引入器官内或其周围间隙，使之产生对比以显影。</p>
+<h3 id="适应症"><a href="#适应症" class="headerlink" title="适应症"></a>适应症</h3><p>空腔性器官、淋巴、血管。</p>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><h4 id="阳性对比剂"><a href="#阳性对比剂" class="headerlink" title="阳性对比剂"></a>阳性对比剂</h4><ul>
+<li>硫酸钡：不吸收<ul>
+<li>上消化道造影（口服吞钡造影）：食道、胃、小肠</li>
+<li>下消化道造影（钡剂灌肠造影）：结肠</li>
+</ul>
+</li>
+<li>碘化合物：<ul>
+<li>水剂：可吸收，通过肝肾排泄<ul>
+<li>尿路造影：肾盂、输尿管、膀胱</li>
+<li>胆道“T”管造影，ERCP、PTC</li>
+<li>脊髓、输卵管、血管造影</li>
+</ul>
+</li>
+<li>油剂：不吸收<ul>
+<li>瘘管造影、输卵管造影</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="阴性对比剂"><a href="#阴性对比剂" class="headerlink" title="阴性对比剂"></a>阴性对比剂</h4><ul>
+<li>空气：脑室造影、气钡双重造影</li>
+<li>$O_2$、$CO_2$</li>
+</ul>
+<h3 id="引入途径"><a href="#引入途径" class="headerlink" title="引入途径"></a>引入途径</h3><ul>
+<li>直接引入：<ul>
+<li>口服法：食管及胃肠钡餐检查</li>
+<li>灌注法：钡剂灌肠、逆行泌尿道造影、子宫输卵管造影、瘘管造影</li>
+</ul>
+</li>
+<li>穿刺引入法：经皮或经导管</li>
+<li>间接引入：肝、胆、肾的生理排泄</li>
+<li>口服法：胆囊造影</li>
+<li>静脉注射法：胆囊造影、肾盂造影、尿路造影</li>
+</ul>
+<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul>
+<li>重叠：X线透过人体的前后所有的组织和器官</li>
+<li>放大效应：球管-人体-探测器间距离，点光源近距离投影具有放大效应</li>
+<li>歪曲失真：X线入射角度</li>
+<li>密度分辨率：不高</li>
+</ul>
+<h2 id="防护"><a href="#防护" class="headerlink" title="防护"></a>防护</h2><ul>
+<li>装备<ul>
+<li>铅玻璃、铅板、硫酸钡等进行机房屏蔽</li>
+<li>铅的X线管套、 遮光筒、光圈等</li>
+<li>避免射线束直射，保持射线源最大距离</li>
+</ul>
+</li>
+<li>病人<ul>
+<li>铅围裙、铅围脖等防护</li>
+</ul>
+</li>
+<li>医务人员<ul>
+<li>选择恰当的检查方法</li>
+<li>尽量采用最小的曝光时间和剂量</li>
+<li>铅围裙、铅围脖、铅手套、铅眼镜进行防护<blockquote>
+<p>不滥用X线、CT检查<br>非检查部位不曝露于射线照射野内<br>孕妇妊娠头三个月避免X线照射<br>对儿童和育龄男女的性腺采取必要的防护措施<br>选用最恰当的曝光条件（mA、KV）<br>尽量采用能降低使用剂量的硬件和软件（高速屏、高效探测器、降噪软件…）</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="DR的优点"><a href="#DR的优点" class="headerlink" title="DR的优点"></a>DR的优点</h1><p>与CR、普通X线图比DR图像具有更高的分辨率、更大的曝光宽容度、更好的时间分辨率，图像可以进行多种后处理，可以数字化存储，但也需要更多的投入。</p>
+<h1 id="DSA"><a href="#DSA" class="headerlink" title="DSA"></a>DSA</h1><h2 id="静脉注射数字减影血管造影（intravenous-DSA-IV-DSA）"><a href="#静脉注射数字减影血管造影（intravenous-DSA-IV-DSA）" class="headerlink" title="静脉注射数字减影血管造影（intravenous DSA, IV-DSA）"></a>静脉注射数字减影血管造影（intravenous DSA, IV-DSA）</h2><p>导管插入<strong>静脉</strong>，注入肝素以防止导管凝血，将导管尖插入检查静脉开口，导管尾端接压力注射器，注入对比剂，根据需要以每秒l帧或更多的帧频摄影，经操作台处理即可得IV-DSA图像，如<strong>肾上腺静脉造影</strong>。</p>
+<h2 id="动脉法数字减影血管造影（intraarterial-DSA-IA-DSA）"><a href="#动脉法数字减影血管造影（intraarterial-DSA-IA-DSA）" class="headerlink" title="动脉法数字减影血管造影（intraarterial DSA, IA-DSA）"></a>动脉法数字减影血管造影（intraarterial DSA, IA-DSA）</h2><p>导管插入<strong>动脉</strong>，注入肝素以防止导管凝血，将导管尖插入检查动脉开口，导管尾端接压力注射器，注入对比剂，根据需要以每秒l帧或更多的帧频摄影，经操作台处理即可得IA-DSA图像，如<strong>肝动脉造影，冠脉造影</strong>。</p>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
+<li>微创（经血管穿刺置入导管）</li>
+<li>血管图像无骨性等其他干扰、图像清晰</li>
+<li>可选择性进行细小血管成像</li>
+<li>造影剂用量少，浓度低</li>
+<li>图像数字化储存</li>
+<li>可同步引导介入性治疗操作（栓塞、支架等）</li>
+</ul>
+<h1 id="计算机体层成像（CT）"><a href="#计算机体层成像（CT）" class="headerlink" title="计算机体层成像（CT）"></a>计算机体层成像（CT）</h1><h2 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h2><p>利用机架内与X射线管相对的探测器，探测X射线管发射的X线束穿透一定厚度人体的某一层面后的衰减值，扫描过程中X射线管与探测器绕人体做360°的旋转，从各个方向采集X线的衰减信号，经模-数转换器转变为数字信号，传输给计算机处理后，得出该层面矩阵上各点一定厚度立方体的体素平均X线吸收系数值（即CT值），再经数-模转换器转变后显示为不同灰阶的黑白点（像素），并按相应矩阵排列，重建出该层面的黑白图像。</p>
+<h2 id="CT值"><a href="#CT值" class="headerlink" title="CT值"></a>CT值</h2><p>组织对X线的吸收系数与(骨、水、空气)三种组织之间的相对值。可以表示某一组织密度高低的程度，反映器官或组织对X线的吸收程度，以Hu（Hounsfield Unit）表示。</p>
+<table>
+<thead>
+<tr>
+<th align="center">组织</th>
+<th align="center">CT值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">骨皮质</td>
+<td align="center">+1000HU</td>
+</tr>
+<tr>
+<td align="center">软组织</td>
+<td align="center">+20—+50HU</td>
+</tr>
+<tr>
+<td align="center">水</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">脂肪组织</td>
+<td align="center">-70—-90HU</td>
+</tr>
+<tr>
+<td align="center">空气</td>
+<td align="center">-1000HU</td>
+</tr>
+</tbody></table>
+<h2 id="窗宽与窗位"><a href="#窗宽与窗位" class="headerlink" title="窗宽与窗位"></a>窗宽与窗位</h2><h3 id="窗宽"><a href="#窗宽" class="headerlink" title="窗宽"></a>窗宽</h3><p>每16个灰阶所包括的CT值的范围</p>
+<h3 id="窗位"><a href="#窗位" class="headerlink" title="窗位"></a>窗位</h3><p>窗中心的CT值</p>
+<table>
+<thead>
+<tr>
+<th align="center">器官</th>
+<th align="center">窗宽</th>
+<th align="center">窗位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">脑</td>
+<td align="center">100</td>
+<td align="center">50</td>
+</tr>
+<tr>
+<td align="center">肝</td>
+<td align="center">120—150</td>
+<td align="center">35—45</td>
+</tr>
+<tr>
+<td align="center">肺</td>
+<td align="center">1200—1500</td>
+<td align="center">-300—-700</td>
+</tr>
+<tr>
+<td align="center">骨</td>
+<td align="center">1000—2000</td>
+<td align="center">200—400</td>
+</tr>
+<tr>
+<td align="center">软组织</td>
+<td align="center">250—300</td>
+<td align="center">35—45</td>
+</tr>
+</tbody></table>
+<h2 id="部分容积效应"><a href="#部分容积效应" class="headerlink" title="部分容积效应"></a>部分容积效应</h2><p>CT图像上各个像素的数值代表相应单位组织全体的平均CT值，它不能如实反映该单位内各种组织本身的CT值。小于层厚的病变，其CT值受层厚内其它组织的影响，所测出的CT值不能代表病变的真正的CT值；反之，在低密度组织中的较小的高密度病灶，其CT值偏低，这种现象称为部分容积效应。</p>
+<h2 id="CT伪影"><a href="#CT伪影" class="headerlink" title="CT伪影"></a>CT伪影</h2><p>由于测量数据的不完美或多种物理因素导致的投影数据判读错误，重建图像上出现与实际解剖结构不相符的密度异常变化。</p>
+<h2 id="CT检查技术"><a href="#CT检查技术" class="headerlink" title="CT检查技术"></a>CT检查技术</h2><ul>
+<li>平扫</li>
+<li>增强扫描：常规增强扫描、多期（动态）增强扫描、灌注扫描、延迟扫描</li>
+<li>CT造影：CT血管造影、CT椎管造影、CT关节造影（基本淘汰）</li>
+</ul>
+<h1 id="碘对比剂的不良反应及其处理原则"><a href="#碘对比剂的不良反应及其处理原则" class="headerlink" title="碘对比剂的不良反应及其处理原则"></a>碘对比剂的不良反应及其处理原则</h1><table>
+<thead>
+<tr>
+<th align="center">程度</th>
+<th align="center">主要临床表现</th>
+<th align="center">处理</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">一般</td>
+<td align="center">潮红，头痛，恶心，呕吐，荨麻疹等</td>
+<td align="center">一般不需要处理，可自行恢复</td>
+</tr>
+<tr>
+<td align="center">轻度</td>
+<td align="center">喷嚏，流泪，结膜充血，面部水肿</td>
+<td align="center">卧床休息，吸氧，观察生命体征，肌注或静注地塞米松或异丙嗪，一般无生命危险</td>
+</tr>
+<tr>
+<td align="center">中度</td>
+<td align="center">反复重度呕吐，眩晕，轻度喉头水肿，轻度支气管痉挛，轻度和暂时性血压下降</td>
+<td align="center">卧床休息，吸氧，密切观察生命体征，及时对症处理</td>
+</tr>
+<tr>
+<td align="center">重度</td>
+<td align="center">呼吸困难，意识不清，休克，惊厥，心律失常，心搏骤停</td>
+<td align="center">有生命危险，应立即采取气管切开，心肺复苏等急救措施</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>医学影像学</category>
+      </categories>
+      <tags>
+        <tag>医学影像学</tag>
+        <tag>知识点整理</tag>
+      </tags>
+  </entry>
 </search>
