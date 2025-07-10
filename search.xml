@@ -1,6 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【乐理】一些补充内容</title>
+    <url>/2025/07/10/%E3%80%90%E4%B9%90%E7%90%86%E3%80%91%E4%B8%80%E4%BA%9B%E8%A1%A5%E5%85%85%E5%86%85%E5%AE%B9/</url>
+    <content><![CDATA[<p>是根据<a href="https://space.bilibili.com/7762500?spm_id_from=333.337.0.0">@三分钟音乐社</a>的基础乐理课程所做的笔记！</p>
+<h1 id="律制"><a href="#律制" class="headerlink" title="律制"></a>律制</h1><p><strong>律制</strong> 是指为了使音乐规范化，人们有意选择的一组不同音高的音符所组成的体系，以及这些音符之间的相互关系。律制的核心在于研究不同音音高的大小。常见的律制主要有十二平均律、五度相生律和纯律，除此之外还有中庸全音律、威克麦斯特律、基恩伯格律、尤格律等。</p>
+<p>音分距离指的是两个音高之间的差异程度。 通常可通过将两个音高的频率比值转换为以2为底的对数，然后取绝对值得到，即$音分距离&#x3D;\frac{1200}{lg 2}×lg(\frac{高音频率}{低音频率})$。</p>
+<h2 id="十二平均律"><a href="#十二平均律" class="headerlink" title="十二平均律"></a>十二平均律</h2><p>将一个纯八度分为十二等份的半音，使得每两个相邻的半音之间的频率之比相等，此即 <strong>十二平均律</strong> 。但由于人工生硬均分，导致半音之间的频率比过于复杂（$\sqrt[12]{2}$）。不符合人体听觉美感，因此听感上并不如下述五度相生律和纯律谐和。但由于十二平均律存在等音，因此其在转调上具有一定的优势。</p>
+<h2 id="五度相生律"><a href="#五度相生律" class="headerlink" title="五度相生律"></a>五度相生律</h2><p>五度相生律是根据复合音的纯五度关系（频率比为$2:3$），即由某一音开始推一纯五度，产生次一律，再由次一律推一纯五度，产生再次一律，如此继续相生所定出的音律叫做 <strong>五度相生律</strong> 。由于频率比简单，五度相生律听感上较十二平均律更为谐和。</p>
+<p>但据此规律生成的音列，原本在十二平均律中的等音在五度相生律并不等同。举个例，我们指定低音组的$C$的音分为0，则$C-C$及$C-B♯$在十二平均律中音分距离均为1200。然而，在五度相生律中，$C-C$的音分距离仍为1200，但$C-B♯$的音分距离反而变成了1224。这种内部的不等距导致作曲的时候不适合转调。</p>
+<h2 id="纯律"><a href="#纯律" class="headerlink" title="纯律"></a>纯律</h2><p>纯律是指在五度相生律的基础上，引入$4:5$、$5:6$这两个频率比来对Ⅰ、Ⅳ、Ⅴ级音上方的大三度音和小三度音进行修正，使得大小调音乐在和声上更加纯粹、谐和。</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">十二平均律</th>
+<th align="center">五度相生律</th>
+<th align="center">纯律</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">优点</td>
+<td align="center">转调</td>
+<td align="center">旋律谐和</td>
+<td align="center">和声谐和</td>
+</tr>
+<tr>
+<td align="center">缺点</td>
+<td align="center">旋律与和声并不是真正的谐和</td>
+<td align="center">不适合转调、和声不如纯律谐和</td>
+<td align="center">不适合转调，旋律不如五度相生律谐和</td>
+</tr>
+</tbody></table>
+<h1 id="基音、泛音与泛音列"><a href="#基音、泛音与泛音列" class="headerlink" title="基音、泛音与泛音列"></a>基音、泛音与泛音列</h1><p>物体整体震动的过程中，其局部也在振动，但整体振动和局部振动的频率并不相同，其中整体振动发音的频率称为 <strong>基音</strong> （经人脑处理后表现为音高），局部振动发音的频率为 <strong>泛音</strong> 。其中，将物体两等分为两个“局部”所形成的泛音为第一泛音（频率为整体的2倍），三等分所形成的泛音为第二泛音，以此类推。</p>
+<p><img src="/images/%E9%9F%B3%E4%B9%90/%E5%9F%BA%E7%A1%80%E4%B9%90%E7%90%86/%E5%92%8C%E5%BC%A6/20250710132538.png"></p>
+<table>
+<thead>
+<tr>
+<th align="center">泛音列</th>
+<th align="center">分音列&#x2F;谐音列</th>
+<th align="center">频率</th>
+<th align="center">与前一音的关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">基音</td>
+<td align="center">第一分音&#x2F;谐音</td>
+<td align="center">$n$</td>
+<td align="center">—</td>
+</tr>
+<tr>
+<td align="center">第一泛音</td>
+<td align="center">第二分音&#x2F;谐音</td>
+<td align="center">$2n$</td>
+<td align="center">纯八度</td>
+</tr>
+<tr>
+<td align="center">第二泛音</td>
+<td align="center">第三分音&#x2F;谐音</td>
+<td align="center">$3n$</td>
+<td align="center">纯五度</td>
+</tr>
+<tr>
+<td align="center">第三泛音</td>
+<td align="center">第四分音&#x2F;谐音</td>
+<td align="center">$4n$</td>
+<td align="center">纯四度</td>
+</tr>
+<tr>
+<td align="center">第四泛音</td>
+<td align="center">第五分音&#x2F;谐音</td>
+<td align="center">$5n$</td>
+<td align="center">大三度</td>
+</tr>
+<tr>
+<td align="center">第五泛音</td>
+<td align="center">第六分音&#x2F;谐音</td>
+<td align="center">$6n$</td>
+<td align="center">小三度</td>
+</tr>
+<tr>
+<td align="center">第六泛音</td>
+<td align="center">第七分音&#x2F;谐音</td>
+<td align="center">$7n$</td>
+<td align="center">小三度</td>
+</tr>
+<tr>
+<td align="center">第七泛音</td>
+<td align="center">第八分音&#x2F;谐音</td>
+<td align="center">$8n$</td>
+<td align="center">大二度</td>
+</tr>
+<tr>
+<td align="center">第八泛音</td>
+<td align="center">第九分音&#x2F;谐音</td>
+<td align="center">$9n$</td>
+<td align="center">大二度</td>
+</tr>
+<tr>
+<td align="center">第九泛音</td>
+<td align="center">第十分音&#x2F;谐音</td>
+<td align="center">$10n$</td>
+<td align="center">大二度</td>
+</tr>
+<tr>
+<td align="center">第十泛音</td>
+<td align="center">第十一分音&#x2F;谐音</td>
+<td align="center">$11n$</td>
+<td align="center">大二度</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center">……</td>
+<td align="center">……</td>
+<td align="center">……</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>注：由于五线谱基于十二平均律诞生，上图所示泛音频率与实际的频率存在细微差别，故此说明。</p>
+</blockquote>
+<p>乐器与人声在常规演奏下发出的声音均包含基音和泛音。由于物体的结构、材质等不同，振动发出的声音也具有与众不同的特点，这种特点称为 <strong>音色</strong> 。不同物体（包括不同种类的物体、同一种类的不同物体、同一物体不同演奏方式等）振动形成的泛音振幅不同，这些泛音经过大脑处理过后即表现为不同的音色。</p>
+<p><strong>泛音列</strong> 、 <strong>分音列</strong> 和 <strong>谐音列</strong> 均指代由物体振动发出不同频率的音（包括基因和泛音）所形成的集合。三者在记法上稍有区别，泛音列通常记为“基音、第一泛音、第二泛音、第三泛音……”，分音列通常记为“第一分音、第二分音、第三分音、第四分音……”，而谐音列通常记为“第一谐音、第二谐音、第三谐音、第四谐音……”。</p>
+<h1 id="五度圈"><a href="#五度圈" class="headerlink" title="五度圈"></a>五度圈</h1><p><img src="https://ts1.tc.mm.bing.net/th/id/R-C.3071bb42dd2f0bbd62aa50fc41ef780b?rik=Ylqw4AVBKoZzXQ&riu=http://x0.ifengimg.com/res/2019/4594EE20C5A856D8F323CC98056FE4FB60436CAE_size90_w786_h742.jpeg&ehk=pIuOSr8G2BFDA9F89V24w1OTZYlwDfRjW8TMYLowbqk=&risl=&pid=ImgRaw&r=0"></p>
+<p>五度圈（部分人称四度圈）可以说是各种乐理知识的集成表，可以理解为不同的含义，发挥许多不同的作用。例如，五度圈在判断调号、近关系调（同音列各调和调号只相差一个升号或降号的调）、调内和弦有一定的作用，不同音形成的和弦在五度圈内也可形成特定的图形（如增三和弦与正三角形，大七和弦与等腰梯形，正七和弦与正方形）。</p>
+<p>除此之外，五度圈中，每个音（和弦）的逆时针方向即其下属音（和弦）；顺时针方向即其属音（和弦）。由此衍生出变格进行和连续变格进行、正格进行和连续正格进行的概念。变格进行是指由下属和弦进行到主和弦的过程，而正格进行则是由属和弦进行到主和弦的过程，而连续变格进行或连续正格进行即指重复进行变格进行或正格进行的过程。</p>
+<p>五度圈还可用来指导离调的写作（如251进行）、三全音替代（该音正对面的音即为三全音，如降二代五）。五度圈也可提示五度相生律的声音关系。中国古代的三分损益法所找到的五音也可通过五度圈体现。将某一音作为五声性调式中的宫音，顺时针的4个音即依次为徵音、商音、羽音、角音。另外，五度圈也可体现提琴的基本定弦音。</p>
+<p>除此之外还有其他的作用……</p>
+<h1 id="移调乐器"><a href="#移调乐器" class="headerlink" title="移调乐器"></a>移调乐器</h1><p><strong>移调乐器</strong> 是指记谱音高与实际音高不一致的乐器，可分为 <strong>八度移调乐器</strong> 、 <strong>非八度移调乐器</strong> 。</p>
+<p>八度移调乐器是指因自身音域很低或很高，为方便而约定俗成地高八度或低八度记谱的乐器。低八度移调乐器包括低音提琴、低音长笛、低音大管、吉他和绝大多数男声；高八度移调乐器包括短笛、木琴、钢片琴等；也有高两个八度的移调乐器如钟琴、古䥽等。</p>
+<table>
+<thead>
+<tr>
+<th align="center">本调</th>
+<th align="center">代表乐器</th>
+<th align="center">实际音高与记谱音高的关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">C</td>
+<td align="center">钟琴、古䥽</td>
+<td align="center">高纯十五度</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="center">短笛、木琴、钢片琴</td>
+<td align="center">高纯八度</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="center">低音提琴、低音长笛、次中音双簧管（低音双簧管）、海克尔管、低音大管、C调低音小号、吉他、绝大多数男声</td>
+<td align="center">低纯八度</td>
+</tr>
+</tbody></table>
+<p>非八度移调乐器是指由于历史原因，记谱音高和实际音高相差非八度的乐器，主要是各种管乐器。乐谱中的某一个音即代表某一个特定的指法，因此不同本调的乐器据此奏出的音不同。如长笛的本调为$C$调，演奏五线谱中的$C$调时，实际演奏的即为$C$调；但中音长笛的本调为$G$调，演奏五线谱中的$C$调时，实际演奏的却为$G$调。</p>
+<table>
+<thead>
+<tr>
+<th align="center">本调</th>
+<th align="center">代表乐器</th>
+<th align="center">实际音高与记谱音高的关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">B♭</td>
+<td align="center">B♭调高音小号</td>
+<td align="center">高小七度</td>
+</tr>
+<tr>
+<td align="center">E♭</td>
+<td align="center">E♭调单簧管、E♭调最高音萨克斯管、E♭调小号</td>
+<td align="center">高小三度</td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td align="center">D调单簧管、D调小号</td>
+<td align="center">高大二度</td>
+</tr>
+<tr>
+<td align="center">B♭</td>
+<td align="center">B♭调单簧管、B♭调高音萨克斯管、B♭调小号、短号、夫吕号</td>
+<td align="center">低大二度</td>
+</tr>
+<tr>
+<td align="center">A</td>
+<td align="center">抒情双簧管、A调单簧管</td>
+<td align="center">低小三度</td>
+</tr>
+<tr>
+<td align="center">G</td>
+<td align="center">中音长笛</td>
+<td align="center">低纯四度</td>
+</tr>
+<tr>
+<td align="center">F</td>
+<td align="center">英国管、巴塞管、F调活塞圆号</td>
+<td align="center">低纯五度</td>
+</tr>
+<tr>
+<td align="center">E♭</td>
+<td align="center">E♭调中音单簧管、E♭调中音萨克斯管、E♭调低音小号</td>
+<td align="center">低小六度</td>
+</tr>
+<tr>
+<td align="center">B♭</td>
+<td align="center">B♭调低音单簧管、B♭调次中音萨克斯管、B♭调低音小号</td>
+<td align="center">低大九度</td>
+</tr>
+<tr>
+<td align="center">E♭</td>
+<td align="center">E♭调倍低音单簧管、E♭调上低音萨克斯管</td>
+<td align="center">低大十三度</td>
+</tr>
+<tr>
+<td align="center">B♭</td>
+<td align="center">B♭调倍低音单簧管、B♭调低音萨克斯管</td>
+<td align="center">低大十六度</td>
+</tr>
+</tbody></table>
+<h1 id="其他词汇定义"><a href="#其他词汇定义" class="headerlink" title="其他词汇定义"></a>其他词汇定义</h1><ol>
+<li>音的四要素：指音的高低（振动频率）、长短（时值）、强弱（振幅）、音色（泛音）四个特性。</li>
+<li>纯音：是指只有基音、没有泛音的音。</li>
+<li>复合音：同时存在基音和泛音的音，是由多个音组成的音。</li>
+<li>稳定音级与不稳定音级：在大小调中，我们称Ⅰ、Ⅲ、Ⅴ级音为稳定音级，其余音（Ⅱ、Ⅳ、Ⅵ、Ⅶ级音）为不稳定音级。在旋律与和声中，不稳定音级会倾向于向稳定音级进行。一般来说Ⅱ级、Ⅳ级、Ⅵ级、Ⅶ级分别倾向于进行至Ⅰ级、Ⅲ级、Ⅴ级、Ⅰ级。</li>
+<li>正音级与副音级：在大小调中，我们称Ⅰ、Ⅳ、Ⅴ级音为正音级，其余音（Ⅱ、Ⅲ、Ⅵ、Ⅶ级音）为副音级。</li>
+<li>正三和弦与副三和弦：在大小调中，我们称Ⅰ、Ⅳ、Ⅴ级音的三和弦为正音级，其余音（Ⅱ、Ⅲ、Ⅵ、Ⅶ级音）的三和弦为副音级。</li>
+<li>半音阶和全音阶：半音阶是指连续的半音进行所形成的音阶；全音音阶是由六个音级构成的特殊音阶体系，其核心特征为相邻音级之间的音程均为全音。</li>
+<li>音程（和弦）的解决：是指音程（和弦）由不谐和、不稳定向谐和、稳定进行的过程。</li>
+<li>近关系调与远关系调</li>
+<li>调式中的音程、调式中的和弦</li>
+</ol>
+]]></content>
+      <categories>
+        <category>音乐 - 基础乐理</category>
+      </categories>
+      <tags>
+        <tag>基础乐理</tag>
+        <tag>和弦</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生信小记：Seurat_v5中的整合分析</title>
     <url>/2025/07/09/%E7%94%9F%E4%BF%A1%E5%B0%8F%E8%AE%B0%EF%BC%9ASeurat-v5%E4%B8%AD%E7%9A%84%E6%95%B4%E5%90%88%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>单细胞测序数据的整合通常是scRNA-seq测序的重要步骤之一。通过跨实验批次、供体和受体条件的数据的整合，不同数据集之间的共享细胞类型和状态得以匹配，因而大大提高了统计效力……等等，我R包好像下载不了……等我调试完再继续写。</p>
