@@ -1,3 +1,5 @@
+http://example.com/2025/07/14/%E3%80%90%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95%E3%80%91%E5%B0%8F%E5%9E%8B%E4%B9%90%E9%98%9F%E7%9A%84%E7%BC%96%E9%85%8D/
+http://example.com/2025/07/14/%E3%80%90%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95%E3%80%91%E9%93%9C%E7%AE%A1%E7%BB%84/
 http://example.com/2025/07/13/%E3%80%90%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95%E3%80%91%E6%9C%A8%E7%AE%A1%E7%BB%84/
 http://example.com/2025/07/10/%E7%94%9F%E4%BF%A1%E5%B0%8F%E8%AE%B0%EF%BC%9A%E5%85%B3%E4%BA%8EAzimuth%E5%8C%85%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E4%B8%8B%E8%BD%BD%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/
 http://example.com/2025/07/11/%E3%80%90%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95%E3%80%91%E5%BC%A6%E4%B9%90%E7%BB%84/
@@ -130,6 +132,7 @@ http://example.com/tags/Azimuth/
 http://example.com/tags/SeuratWrappers/
 http://example.com/tags/%E5%BC%A6%E4%B9%90%E7%BB%84/
 http://example.com/tags/%E6%9C%A8%E7%AE%A1%E7%BB%84/
+http://example.com/tags/%E9%93%9C%E7%AE%A1%E7%BB%84/
 http://example.com/categories/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E5%AD%A6/
 http://example.com/categories/%E5%8C%BB%E5%AD%A6%E5%BF%83%E7%90%86%E5%AD%A6/
 http://example.com/categories/%E5%AF%84%E7%94%9F%E8%99%AB%E5%AD%A6/
