@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-07-14T15:56:20.805Z</updated>
+  <updated>2025-07-15T03:04:02.030Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【斯波索宾和声学】正三和弦的功能体系</title>
+    <link href="http://example.com/2025/07/15/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E6%AD%A3%E4%B8%89%E5%92%8C%E5%BC%A6%E7%9A%84%E5%8A%9F%E8%83%BD%E4%BD%93%E7%B3%BB/"/>
+    <id>http://example.com/2025/07/15/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E6%AD%A3%E4%B8%89%E5%92%8C%E5%BC%A6%E7%9A%84%E5%8A%9F%E8%83%BD%E4%BD%93%E7%B3%BB/</id>
+    <published>2025-07-15T02:15:48.000Z</published>
+    <updated>2025-07-15T03:04:02.030Z</updated>
+    
+    <content type="html"><![CDATA[<p>是根据<a href="https://space.bilibili.com/7762500?spm_id_from=333.337.0.0">@三分钟音乐社</a>的和声课程所做的笔记！</p><p>在调性和声体系中，​正三和弦的功能体系是构建音乐张力和结构的最核心框架。它基于主、下属、属三大功能的辩证关系（稳定—预备不稳定—强烈不稳定），驱动音乐的运动、终止以及调性的确立。这三个和弦由音阶的 ​I、IV、V 级构成，包含调内所有自然音级。</p><p>斯波索宾那本和声理论认为，和声中最主要的三个功能为 <strong>主功能</strong> （tonica，T）、 <strong>属功能</strong> （dominant，D）和 <strong>下属功能</strong> （subdominant，S）。需要注意以下几点：</p><ul><li>在大调中的主功能和弦均为大三和弦，故应用大写的“T”表示；小调中的主功能和弦均为小三和弦，因此应用小写的“t”表示。</li><li>在大调中的属功能和弦也为小三和弦，故应用大写的“D”表示。但自然小调的导音（即三音所在位置）与主音为大二度关系而非小二度关系，导致小调中的小三属和弦在听感上并不能体现出紧张的效果；因此我们通常将三音升高一个半度，使该和弦变为大三和弦，方可体现出其强烈主音倾向的紧张感。此时的大三属和弦也用大写的“D”表示。将导音升高半度后的小调式即为和声小调。</li><li>在大调中的下属功能和弦均为大三和弦，故应用大写的“S”表示；小调中的下属功能和弦均为小三和弦，因此应用小写的“s”表示。</li></ul><table><thead><tr><th align="center">功能</th><th align="center">和弦级数</th><th align="center">特性</th><th align="center">标记（以$C$大调为例）</th><th align="center">组成音（以$C$大调为例）</th></tr></thead><tbody><tr><td align="center">主功能（T或t）</td><td align="center">Ⅰ级</td><td align="center">稳定、归宿，即“确立调性起点、收束终点，音乐中的“家”。”</td><td align="center">$C$或$CMaj$</td><td align="center">$C, E, G$</td></tr><tr><td align="center">属功能（D）</td><td align="center">Ⅴ级</td><td align="center">尖锐冲突（高度不稳定）与解决需求（强烈倾向主音），其与T的连接是最有效、最常用的连接方式之一，推动音乐进行，建立和巩固音乐调性</td><td align="center">$G$或$GMaj$</td><td align="center">$G, B, D$</td></tr><tr><td align="center">下属功能（S）</td><td align="center">Ⅳ级</td><td align="center">中度不稳定，兼具主功能色彩和属功能倾向，类似于“出门玩，但还没玩尽兴”的感觉。</td><td align="center">$F$或$FMaj$</td><td align="center">$F, A, C$</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;是根据&lt;a href=&quot;https://space.bilibili.com/7762500?spm_id_from=333.337.0.0&quot;&gt;@三分钟音乐社&lt;/a&gt;的和声课程所做的笔记！&lt;/p&gt;
+&lt;p&gt;在调性和声体系中，​正三和弦的功能体系是构建音乐张力和结构的最核心框架</summary>
+      
+    
+    
+    
+    <category term="音乐 - 和声学" scheme="http://example.com/categories/%E9%9F%B3%E4%B9%90-%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    
+    <category term="和声学" scheme="http://example.com/tags/%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    <category term="斯波索宾和声学" scheme="http://example.com/tags/%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    <category term="四部和弦" scheme="http://example.com/tags/%E5%9B%9B%E9%83%A8%E5%92%8C%E5%BC%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【斯波索宾和声学】四部和声及其相关概念</title>
     <link href="http://example.com/2025/07/14/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E5%9B%9B%E9%83%A8%E5%92%8C%E5%A3%B0%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/"/>
     <id>http://example.com/2025/07/14/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E5%9B%9B%E9%83%A8%E5%92%8C%E5%A3%B0%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/</id>
     <published>2025-07-14T15:09:21.000Z</published>
-    <updated>2025-07-14T15:56:20.805Z</updated>
+    <updated>2025-07-15T03:03:41.334Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>四部和声</strong> 是西方音乐理论中传统和声写作的基础框架，其核心概念是将音乐的纵向结构（和弦）通过四个独立的声部来呈现，模拟混声合唱团（女高音、女低音、男高音、男低音）的音色组合。与二声部、三声部相比，四部和声更具饱满；与五声部、六声部相比，四部和声更加简洁。</p><p>绝大部分的音乐最经常使用三和弦、七和弦及其变体，而九和弦、十一和弦并不常见，因此四部和声可以很好胜任表现这些和弦的效果。当遇到九和弦、十一和弦这些组成音更高的和弦，可以临时转为更多声部演奏（即乐器法与配器法课程中所提及的“分部演奏”），或者省略个别组成音，如九和弦可省略五音而保留根音、三音、七音和九音。</p><h1 id="四部和声的四个声部"><a href="#四部和声的四个声部" class="headerlink" title="四部和声的四个声部"></a>四部和声的四个声部</h1><p>四部和声的四个声部由高到低依次为高声部、中声部、次中声部和低声部，也可称为（第）一声部、（第）二声部、（第）三声部、和（第）四声部。由于四部和声为模拟混声合唱团的音色组合，故这四个声部也称为女高声部、女低声部、男高声部、男低声部。</p><p>由于高声部音域最高，是人耳最敏感的声部，因此也称为旋律声部。 <strong>外声部</strong>​​ 是指高声部与低声部的组合，是音响结构中最突出、最容易被听觉感知的部分，对音乐的整体效果至关重要。 而 <strong>内声部</strong> 则是指中声部和次中声部的组合，主要起充实和声的作用。</p><h1 id="四部和声的记谱"><a href="#四部和声的记谱" class="headerlink" title="四部和声的记谱"></a>四部和声的记谱</h1><p>我们通常使用高音谱号来记录高声部和中声部，而使用低音谱号来记录次中声部和低声部。注意：高声部和次中声部符干应朝向上方，中声部和低声部的符干应朝向下方，以更直观地展示各个声部的进行状况。</p>]]></content>
+    <content type="html"><![CDATA[<p>是根据<a href="https://space.bilibili.com/7762500?spm_id_from=333.337.0.0">@三分钟音乐社</a>的和声课程所做的笔记！</p><p><strong>四部和声</strong> 是西方音乐理论中传统和声写作的基础框架，其核心概念是将音乐的纵向结构（和弦）通过四个独立的声部来呈现，模拟混声合唱团（女高音、女低音、男高音、男低音）的音色组合。与二声部、三声部相比，四部和声更具饱满；与五声部、六声部相比，四部和声更加简洁。</p><p>绝大部分的音乐最经常使用三和弦、七和弦及其变体，而九和弦、十一和弦并不常见，因此四部和声可以很好胜任表现这些和弦的效果。当遇到九和弦、十一和弦这些组成音更高的和弦，可以临时转为更多声部演奏（即乐器法与配器法课程中所提及的“分部演奏”），或者省略个别组成音，如九和弦可省略五音而保留根音、三音、七音和九音。</p><h1 id="四部和声的四个声部"><a href="#四部和声的四个声部" class="headerlink" title="四部和声的四个声部"></a>四部和声的四个声部</h1><p>四部和声的四个声部由高到低依次为高声部、中声部、次中声部和低声部，也可称为（第）一声部、（第）二声部、（第）三声部、和（第）四声部。由于四部和声为模拟混声合唱团的音色组合，故这四个声部也称为女高声部、女低声部、男高声部、男低声部。</p><p>由于高声部音域最高，是人耳最敏感的声部，因此也称为旋律声部。 <strong>外声部</strong>​​ 是指高声部与低声部的组合，是音响结构中最突出、最容易被听觉感知的部分，对音乐的整体效果至关重要。 而 <strong>内声部</strong> 则是指中声部和次中声部的组合，主要起充实和声的作用。</p><h1 id="四部和声的记谱"><a href="#四部和声的记谱" class="headerlink" title="四部和声的记谱"></a>四部和声的记谱</h1><p>我们通常使用高音谱号来记录高声部和中声部，而使用低音谱号来记录次中声部和低声部。注意：高声部和次中声部符干应朝向上方，中声部和低声部的符干应朝向下方，以更直观地展示各个声部的进行状况。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;strong&gt;四部和声&lt;/strong&gt; 是西方音乐理论中传统和声写作的基础框架，其核心概念是将音乐的纵向结构（和弦）通过四个独立的声部来呈现，模拟混声合唱团（女高音、女低音、男高音、男低音）的音色组合。与二声部、三声部相比，四部和声更具饱满；与五声部、六声部相比，四部和</summary>
+    <summary type="html">&lt;p&gt;是根据&lt;a href=&quot;https://space.bilibili.com/7762500?spm_id_from=333.337.0.0&quot;&gt;@三分钟音乐社&lt;/a&gt;的和声课程所做的笔记！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;四部和声&lt;/strong&gt; 是西方音乐理论中传统和声写</summary>
       
     
     
@@ -549,34 +579,6 @@
     <category term="知识点整理" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/"/>
     
     <category term="流行病学" scheme="http://example.com/tags/%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【医学影像学】脑肿瘤的影像学诊断</title>
-    <link href="http://example.com/2025/05/26/%E3%80%90%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E5%AD%A6%E3%80%91%E8%84%91%E8%82%BF%E7%98%A4%E7%9A%84%E5%BD%B1%E5%83%8F%E5%AD%A6%E8%AF%8A%E6%96%AD/"/>
-    <id>http://example.com/2025/05/26/%E3%80%90%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E5%AD%A6%E3%80%91%E8%84%91%E8%82%BF%E7%98%A4%E7%9A%84%E5%BD%B1%E5%83%8F%E5%AD%A6%E8%AF%8A%E6%96%AD/</id>
-    <published>2025-05-26T08:29:55.000Z</published>
-    <updated>2025-05-28T11:45:51.886Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="颅脑组织的肿瘤"><a href="#颅脑组织的肿瘤" class="headerlink" title="颅脑组织的肿瘤"></a>颅脑组织的肿瘤</h1><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ol><li>原发性：来源于颅骨、脑膜、脑组织、血管、垂体、颅神经和先天性胚胎残余组织；</li><li>继发性：转移瘤、邻近器官侵犯</li></ol><h2 id="诊断原则"><a href="#诊断原则" class="headerlink" title="诊断原则"></a>诊断原则</h2><ol><li>有无肿瘤：肿瘤vs.创伤、血管源性病变、炎症、感染、脱髓鞘病变、中毒、代谢、退行性变、发育异常</li><li>肿瘤定位：脑内 vs. 脑外</li><li>肿瘤的性质：病理亚型</li></ol><h2 id="诊断征象"><a href="#诊断征象" class="headerlink" title="诊断征象"></a>诊断征象</h2><h3 id="直接征象"><a href="#直接征象" class="headerlink" title="直接征象"></a>直接征象</h3><ol><li>肿块或占位性病变</li><li>异常的密度或信号强度改变</li><li>增强后扫描肿瘤有程度不一的强化</li></ol><h3 id="间接征象"><a href="#间接征象" class="headerlink" title="间接征象"></a>间接征象</h3><ol><li>周围组织结构的移位，严重者可有脑疝形成</li><li>肿瘤周围的脑组织间质性脑水肿</li><li>肿瘤出血</li><li>肿瘤钙化</li><li>骨质改变</li></ol><h2 id="（重点）脑内外肿瘤的鉴别"><a href="#（重点）脑内外肿瘤的鉴别" class="headerlink" title="（重点）脑内外肿瘤的鉴别"></a>（重点）脑内外肿瘤的鉴别</h2><table><thead><tr><th align="center">鉴别点</th><th align="center">脑内肿瘤</th><th align="center">脑外肿瘤</th></tr></thead><tbody><tr><td align="center">部位</td><td align="center">主要位于脑实质内</td><td align="center">表浅部位，压迫邻近脑实质</td></tr><tr><td align="center">与硬脑膜关系</td><td align="center">都无关，皮质及皮质下肿瘤可累及</td><td align="center">宽基底与硬脑膜相连</td></tr><tr><td align="center">边界</td><td align="center">边界不清，与脑实质分界不清</td><td align="center">边缘光滑，边界清晰，可见“假包膜”</td></tr><tr><td align="center">占位效应</td><td align="center">脑回肿胀，无白质挤压塌陷</td><td align="center">脑回移位，脑白质挤压塌陷</td></tr><tr><td align="center">邻近骨质</td><td align="center">常无改变</td><td align="center">增生或破坏</td></tr><tr><td align="center">增强</td><td align="center">变化多样</td><td align="center">多为均匀显著强化，“脑膜尾征”</td></tr><tr><td align="center">静脉窦阻塞</td><td align="center">常无</td><td align="center">常可使邻近静脉窦阻塞</td></tr><tr><td align="center">MRS</td><td align="center">NAA下降、Cho峰升高</td><td align="center">无NAA峰</td></tr></tbody></table><h2 id="脑外肿瘤"><a href="#脑外肿瘤" class="headerlink" title="脑外肿瘤"></a>脑外肿瘤</h2><ul><li>宽基底紧贴颅骨内板，呈D型</li><li>邻近蛛网膜下腔&#x2F;脑池增宽</li><li>病变脑室缘有裂隙状脑脊液信号</li><li>白质塌陷征：皮质内侧白质受压塌陷</li><li>皮质内移征：邻近脑皮质受压变平并移向脑室</li><li>假包膜征和邻近颅骨异常</li></ul><h2 id="星形细胞瘤"><a href="#星形细胞瘤" class="headerlink" title="星形细胞瘤"></a>星形细胞瘤</h2><h3 id="低级别星形细胞瘤"><a href="#低级别星形细胞瘤" class="headerlink" title="低级别星形细胞瘤"></a>低级别星形细胞瘤</h3><p>生物学行为偏向良性，异形细胞&lt;50%，占位效应不明显，水肿较轻，增强无明显强化。成人好发于大脑半球，实质性肿块为主；儿童较少见，多发生于小脑半球，囊性肿块为主。</p><h4 id="影像学表现"><a href="#影像学表现" class="headerlink" title="影像学表现"></a>影像学表现</h4><p><strong>CT：</strong> 平扫呈低密度，占位效应无或轻，增强扫描多无强化。</p><p><strong>MRI：</strong> T1WI呈等或稍低信号，T2WI呈高信号，边界欠清，占位效应无或轻，增强无或轻度强化</p><h4 id="影像学图解"><a href="#影像学图解" class="headerlink" title="影像学图解"></a>影像学图解</h4><p>1、低级别星形细胞瘤<br><img src="/images/yx_shenjing/%E4%BD%8E%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A41.png"><br>2、男，56岁，头痛4月余。<br><img src="/images/yx_shenjing/%E4%BD%8E%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A42.png"><br>3、男，48岁，头晕、头痛3月余<br><img src="/images/yx_shenjing/%E4%BD%8E%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A43.png"><br>4、儿童幕下低级别星形细胞瘤<br><img src="/images/yx_shenjing/%E4%BD%8E%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A44.png"><br>5、女，41岁，头晕伴幻听1月<br><img src="/images/yx_shenjing/%E4%BD%8E%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A45.png"></p><h3 id="高级别星形细胞瘤"><a href="#高级别星形细胞瘤" class="headerlink" title="高级别星形细胞瘤"></a>高级别星形细胞瘤</h3><p>肿瘤细胞分化不良，生长快，恶性程度高，可发生于任何年龄组。</p><h4 id="影像学表现-1"><a href="#影像学表现-1" class="headerlink" title="影像学表现"></a>影像学表现</h4><ol><li>肿块的占位效应明显，边缘呈浸润性生长，边界模糊不清，可越过中线向对侧蔓延</li><li>肿瘤内坏死囊变多见，有时可见出血，肿块周围有明显较大范围的指状脑白质水肿</li><li>CT平扫呈混杂密度，MRI T1WI、T2WI均呈混杂信号</li><li>CT、MRI增强后边缘呈不规则的环状明显强化</li></ol><h4 id="影像学图解-1"><a href="#影像学图解-1" class="headerlink" title="影像学图解"></a>影像学图解</h4><p>1、左颞叶高级别星形细胞瘤<br><img src="/images/yx_shenjing/%E9%AB%98%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A41.png"><br><img src="/images/yx_shenjing/%E9%AB%98%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A41_2.png"><br>2、右颞叶高级别星形细胞瘤<br><img src="/images/yx_shenjing/%E9%AB%98%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A42.png"><br><img src="/images/yx_shenjing/%E9%AB%98%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A42_2.png"><br>3、高级别星形细胞瘤<br><img src="/images/yx_shenjing/%E9%AB%98%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A43.png"><br>4、左额叶高级别星形细胞瘤：M，70yo，左侧肢体乏力数日,17年前行胶质瘤手术，具体手术情况不详<br><img src="/images/yx_shenjing/%E9%AB%98%E7%BA%A7%E5%88%AB%E6%98%9F%E5%BD%A2%E7%BB%86%E8%83%9E%E7%98%A44.png"></p><h2 id="脑转移瘤"><a href="#脑转移瘤" class="headerlink" title="脑转移瘤"></a>脑转移瘤</h2><p>中老年多见，可单发或多发，好发于灰白质交界区。</p><p>CT、MR表现具有多样性，但以结节型多见。密度或信号不均，中央坏死区呈低密度；增强扫描多呈环形强化，也可呈均匀强化；瘤周水肿多较明显（小结节大水肿）。</p><h3 id="影像学图解-2"><a href="#影像学图解-2" class="headerlink" title="影像学图解"></a>影像学图解</h3><p>1、71岁，肺癌病史，左侧顶枕叶多发转移瘤，多发结节并指压样水肿，结节呈环形强化<br><img src="/images/yx_shenjing/%E8%84%91%E8%BD%AC%E7%A7%BB%E7%98%A41.png"><br>2、男，14岁，发现左肾上腺神经母细胞瘤2月<br><img src="/images/yx_shenjing/%E8%84%91%E8%BD%AC%E7%A7%BB%E7%98%A42.png"><br>3、乳腺癌脑转移瘤—颅内单发病灶，小病灶大水肿<br><img src="/images/yx_shenjing/%E8%84%91%E8%BD%AC%E7%A7%BB%E7%98%A43.png"><br>4、肺癌多发转移：男，67yo，言语不清1天，CT检查提示可疑恶性占位<br><img src="/images/yx_shenjing/%E8%84%91%E8%BD%AC%E7%A7%BB%E7%98%A44.png"><br><img src="/images/yx_shenjing/%E8%84%91%E8%BD%AC%E7%A7%BB%E7%98%A45.png"></p><p> 单发颅内转移瘤需与胶质瘤鉴别！</p><h2 id="脑膜癌"><a href="#脑膜癌" class="headerlink" title="脑膜癌"></a>脑膜癌</h2><p>源于蛛网膜内皮细胞或脑膜上皮细胞，好发于40-70岁的成年人。</p><p>表现为紧贴硬膜的脑实质外肿块，约90%是发生在小脑幕上部位，少数脑膜瘤可发生在脑室内。</p><h3 id="影像学表现（CT、MRI）"><a href="#影像学表现（CT、MRI）" class="headerlink" title="影像学表现（CT、MRI）"></a>影像学表现（CT、MRI）</h3><ol><li>球形或半球形实质性肿块，边界清楚，常见于大脑镰、矢状窦旁和大脑凸面</li><li>等、稍高密度&#x2F;信号，增强扫描肿块明显均匀强化，少部分可见囊变或钙化</li><li>与脑膜、颅骨或大脑镰宽基底相贴，常见“脑膜尾”征，即瘤周脑膜增厚并强化</li><li>“脑回挤压”征，周围脑组织水肿可不明显或明显</li><li>局部颅骨可有侵蚀破坏变薄，或明显增厚，甚至有颅骨外的肿块形成</li></ol><h3 id="影像学图解-3"><a href="#影像学图解-3" class="headerlink" title="影像学图解"></a>影像学图解</h3><p>1、脑膜瘤的CT表现<br><img src="/images/yx_shenjing/%E8%84%91%E8%86%9C%E7%99%8C1.png"><br>2、脑膜瘤的CT、MRI表现<br><img src="/images/yx_shenjing/%E8%84%91%E8%86%9C%E7%98%A42.png"><br>3、女, 48岁<br><img src="/images/yx_shenjing/%E8%84%91%E8%86%9C%E7%99%8C3.png"><br>4、男，65岁<br><img src="/images/yx_shenjing/%E8%84%91%E8%86%9C%E7%99%8C4.png"><br>5、脑膜瘤合并钙化：CT呈高密度；T1WI及T2WI呈等信号<br><img src="/images/yx_shenjing/%E8%84%91%E8%86%9C%E7%99%8C5.png"><br>6、累及颅骨的大脑镰旁间变性脑膜瘤<br><img src="/images/yx_shenjing/%E8%84%91%E8%86%9C%E7%99%8C6.png"></p><h2 id="听神经瘤"><a href="#听神经瘤" class="headerlink" title="听神经瘤"></a>听神经瘤</h2><p>成年人多见，第二常见颅内脑外肿瘤。临床表现为耳鸣，感觉神经性听力下降，面部感觉异常，生长缓慢。多位于桥小脑角区，圆形或卵圆形，有完整包膜，常发生囊变。</p><h3 id="影像学表现-2"><a href="#影像学表现-2" class="headerlink" title="影像学表现"></a>影像学表现</h3><p>CT：等或稍低密度，内听道扩大。</p><p>MRI：T1WI呈等信号，T2WI高信号，发生出血、坏死或囊变时为混杂信号，增强扫描2&#x2F;3病例呈均匀强化，1&#x2F;3呈不均匀强化</p><h3 id="影像学图解-4"><a href="#影像学图解-4" class="headerlink" title="影像学图解"></a>影像学图解</h3><p>1、F, 64y，右侧桥小脑角区占位<br><img src="/images/yx_shenjing/%E5%90%AC%E7%A5%9E%E7%BB%8F%E7%98%A41.png"><br>2、男，70岁<br><img src="/images/yx_shenjing/%E5%90%AC%E7%A5%9E%E7%BB%8F%E7%98%A42.png"><br>3、男, 43岁，右侧面瘫10年，右耳听力下降4年<br><img src="/images/yx_shenjing/%E5%90%AC%E7%A5%9E%E7%BB%8F%E7%98%A43.png"><br>4、右侧听神经瘤并梗阻性脑积水<br><img src="/images/yx_shenjing/%E5%90%AC%E7%A5%9E%E7%BB%8F%E7%98%A44.png"></p><h2 id="垂体瘤"><a href="#垂体瘤" class="headerlink" title="垂体瘤"></a>垂体瘤</h2><p>成年人鞍区最常见的肿瘤，脑外肿瘤，10~15%。</p><p>肿瘤发生出血（卒中）出血剧烈的头痛、呕吐。</p><p>不同激素类型的肿瘤引起相应及激素紊乱。</p><h3 id="影像学表现-3"><a href="#影像学表现-3" class="headerlink" title="影像学表现"></a>影像学表现</h3><p>CT：等密度，较少发生囊变，蝶鞍骨质可受侵蚀。</p><p>MRI：T1WI呈等或低信号，T2WI呈稍高信号，增强扫描略低于正常垂体。</p><p>肿瘤较大可压迫视神经、侵犯海绵窦和蝶窦，包绕双侧颈内动脉。</p><ul><li>垂体微腺瘤<ul><li>直径&lt;10mm，多伴内分泌异常</li><li>MR表现： <ul><li>垂体上缘隆起或局部上凸，垂体柄偏移，或垂体形态无明显改变</li><li>在薄层MR扫描中T1W呈局灶性低信号影，动态Gd-DTPA增强后早期呈低强化灶，延时后可呈低强化或等强化改变</li><li>约1&#x2F;4的垂体微腺瘤合并部分“空泡”蝶鞍改变</li></ul></li></ul></li></ul><blockquote><p>正常垂体MRI表现：<img src="/images/yx_shenjing/%E6%AD%A3%E5%B8%B8%E5%9E%82%E4%BD%93.png"><br>不同年龄垂体形态，自左向右依次为1岁、10岁、26岁、66岁：<img src="/images/yx_shenjing/%E4%B8%8D%E5%90%8C%E5%B9%B4%E9%BE%84%E5%9E%82%E4%BD%93%E5%BD%A2%E6%80%81.png"><br>垂体动态增强特点，富血供，自上而下充填式强化；强化方式为垂体柄—垂体表面—腺垂体两侧叶：<img src="/images/yx_shenjing/%E5%9E%82%E4%BD%93%E5%8A%A8%E6%80%81%E5%A2%9E%E5%BC%BA.png"></p></blockquote><h3 id="影像学图解-5"><a href="#影像学图解-5" class="headerlink" title="影像学图解"></a>影像学图解</h3><p>1、垂体大腺瘤<br><img src="/images/yx_shenjing/%E5%9E%82%E4%BD%93%E7%98%A41.png"><br>2、垂体大腺瘤，侵犯海绵窦，包绕颈内动脉<br><img src="/images/yx_shenjing/%E5%9E%82%E4%BD%93%E7%98%A42.png"><br>3、垂体瘤合并囊变，并见液液分层<br><img src="/images/yx_shenjing/%E5%9E%82%E4%BD%93%E7%98%A43.png"><br>4、垂体大腺瘤合并卒中<br><img src="/images/yx_shenjing/%E5%9E%82%E4%BD%93%E7%98%A44.png"><br>5、垂体微腺瘤<br><img src="/images/yx_shenjing/%E5%9E%82%E4%BD%93%E7%98%A45.png"></p><h3 id="鉴别诊断"><a href="#鉴别诊断" class="headerlink" title="鉴别诊断"></a>鉴别诊断</h3><p>颅咽管瘤：鞍上最常见肿瘤之一，多呈囊性或囊实性，伴有钙化。<br><img src="/images/yx_shenjing/%E9%A2%85%E5%92%BD%E7%AE%A1%E7%98%A41.png"><br><img src="/images/yx_shenjing/%E9%A2%85%E5%92%BD%E7%AE%A1%E7%98%A42.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;颅脑组织的肿瘤&quot;&gt;&lt;a href=&quot;#颅脑组织的肿瘤&quot; class=&quot;headerlink&quot; title=&quot;颅脑组织的肿瘤&quot;&gt;&lt;/a&gt;颅脑组织的肿瘤&lt;/h1&gt;&lt;h2 id=&quot;分类&quot;&gt;&lt;a href=&quot;#分类&quot; class=&quot;headerlink&quot; title=&quot;分</summary>
-      
-    
-    
-    
-    <category term="医学影像学" scheme="http://example.com/categories/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E5%AD%A6/"/>
-    
-    
-    <category term="医学影像学" scheme="http://example.com/tags/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E5%AD%A6/"/>
-    
-    <category term="知识点整理" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/"/>
-    
-    <category term="神经系统" scheme="http://example.com/tags/%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
