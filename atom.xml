@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-07-15T03:04:02.030Z</updated>
+  <updated>2025-07-15T06:33:56.398Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,13 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【斯波索宾和声学】正三和弦的排列法与连接法</title>
+    <link href="http://example.com/2025/07/15/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E6%AD%A3%E4%B8%89%E5%92%8C%E5%BC%A6%E7%9A%84%E6%8E%92%E5%88%97%E6%B3%95%E4%B8%8E%E8%BF%9E%E6%8E%A5%E6%B3%95/"/>
+    <id>http://example.com/2025/07/15/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E6%AD%A3%E4%B8%89%E5%92%8C%E5%BC%A6%E7%9A%84%E6%8E%92%E5%88%97%E6%B3%95%E4%B8%8E%E8%BF%9E%E6%8E%A5%E6%B3%95/</id>
+    <published>2025-07-15T05:26:25.000Z</published>
+    <updated>2025-07-15T06:33:56.398Z</updated>
+    
+    <content type="html"><![CDATA[<p>是根据<a href="https://space.bilibili.com/7762500?spm_id_from=333.337.0.0">@三分钟音乐社</a>的和声课程所做的笔记！</p><h1 id="排列法"><a href="#排列法" class="headerlink" title="排列法"></a>排列法</h1><p><strong>排列法</strong> 即和弦各组成音（包括根音、三音、五音及重复音）的纵向分布方式。 <strong>在三和弦的四部和声中，重度音往往是根音的重复音。</strong></p><p>由于五线谱上的音阶频率为指数级增长（n, 2n, 4n, …），而泛音列各音的频率为线性增长（n, 2n, 3n, ……），将泛音列在五线谱上表示时可呈现出“上密下疏”的特性。由于自然界中非人工合成的乐器大多存在泛音列，因此 <strong>在纵向排列和弦时也应遵循“上密下疏”的规则</strong> ，这样才能使得整体声效符合人耳的听觉习惯，否则会有拖泥带水、模糊不清、沉重感。具体来说，高声部、中声部、次中声部一般不能超过纯八度，而次中声部和低声部可超过或不超过纯八度。后者是考虑到乐器音域及低音本身的旋律性的因素。</p><p><strong>在排列和弦时需要兼顾各音区</strong> ，使其更加饱满。各音区覆盖的范围大致如下图所示（图源三分钟音乐社）。</p><p><img src="/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/20250715135025.jpg"></p><p>四部和声中的排列法可分为 <strong>密集排列</strong> 、 <strong>开放排列</strong> 和 <strong>混合排列</strong> 。密集排列是指高声部、中声部和次中声部中，相邻声部的间距不超过四度的排列方式，此时相邻声部之间不存在和弦的其他组成音。开放排列则是指高声部、中声部和次中声部中，至少一对相邻声部的间距大于四度但小于八度的排列方式，此时这对声部之间存在和弦的其他组成音。</p><blockquote><p>根据旋律声部补充的和弦的组成音，可将旋律声部分为根音旋律位置、三音旋律位置和五音旋律位置。</p></blockquote><h1 id="连接法"><a href="#连接法" class="headerlink" title="连接法"></a>连接法</h1><p><strong>连接法</strong> 即和弦各组成音的和弦横向运动的分布方式，可分为 <strong>旋律连接法</strong> 和 <strong>和声连接法</strong> 两大类型。旋律连接法是指无共同音保持，所有声部的音都改变的连接方式；和声连接法是指至少有一个声部的音没有改变，即存在共同音的连接方式。</p><p>前景声部往往演奏主旋律、主题等，是音乐表达的主角，其清晰、锐利，往往占据焦点；而背景声部往往演奏次要的和声和织体，是音响环境的基石​，其模糊、柔和，退居“幕后”，对前景声部起支撑和衬托的作用。在大部分情况下，高声部为前景声部，其他声部（尤其是中声部和次中声部）为背景声部；而在少数作品中也存在由非高声部来担任前景声部的情况。低声部通常游离于前景声部和背景声部之间，通常会通过某些手法吸引听众的注意力。另外，低音有时决定和弦的类型，因此也很难保持平稳。</p><p>在连接时应尽可能保持背景声部的平稳，否则背景声部会与前景声部相互挤兑，使作品非常混乱。在和声学的标准中，平稳指“三度及三度以内”。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;是根据&lt;a href=&quot;https://space.bilibili.com/7762500?spm_id_from=333.337.0.0&quot;&gt;@三分钟音乐社&lt;/a&gt;的和声课程所做的笔记！&lt;/p&gt;
+&lt;h1 id=&quot;排列法&quot;&gt;&lt;a href=&quot;#排列法&quot; class=&quot;hea</summary>
+      
+    
+    
+    
+    <category term="音乐 - 和声学" scheme="http://example.com/categories/%E9%9F%B3%E4%B9%90-%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    
+    <category term="和声学" scheme="http://example.com/tags/%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    <category term="斯波索宾和声学" scheme="http://example.com/tags/%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    <category term="四部和弦" scheme="http://example.com/tags/%E5%9B%9B%E9%83%A8%E5%92%8C%E5%BC%A6/"/>
+    
+    <category term="音乐" scheme="http://example.com/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【斯波索宾和声学】正三和弦的功能体系</title>
     <link href="http://example.com/2025/07/15/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E6%AD%A3%E4%B8%89%E5%92%8C%E5%BC%A6%E7%9A%84%E5%8A%9F%E8%83%BD%E4%BD%93%E7%B3%BB/"/>
     <id>http://example.com/2025/07/15/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E6%AD%A3%E4%B8%89%E5%92%8C%E5%BC%A6%E7%9A%84%E5%8A%9F%E8%83%BD%E4%BD%93%E7%B3%BB/</id>
     <published>2025-07-15T02:15:48.000Z</published>
-    <updated>2025-07-15T03:04:02.030Z</updated>
+    <updated>2025-07-15T05:25:49.655Z</updated>
     
-    <content type="html"><![CDATA[<p>是根据<a href="https://space.bilibili.com/7762500?spm_id_from=333.337.0.0">@三分钟音乐社</a>的和声课程所做的笔记！</p><p>在调性和声体系中，​正三和弦的功能体系是构建音乐张力和结构的最核心框架。它基于主、下属、属三大功能的辩证关系（稳定—预备不稳定—强烈不稳定），驱动音乐的运动、终止以及调性的确立。这三个和弦由音阶的 ​I、IV、V 级构成，包含调内所有自然音级。</p><p>斯波索宾那本和声理论认为，和声中最主要的三个功能为 <strong>主功能</strong> （tonica，T）、 <strong>属功能</strong> （dominant，D）和 <strong>下属功能</strong> （subdominant，S）。需要注意以下几点：</p><ul><li>在大调中的主功能和弦均为大三和弦，故应用大写的“T”表示；小调中的主功能和弦均为小三和弦，因此应用小写的“t”表示。</li><li>在大调中的属功能和弦也为小三和弦，故应用大写的“D”表示。但自然小调的导音（即三音所在位置）与主音为大二度关系而非小二度关系，导致小调中的小三属和弦在听感上并不能体现出紧张的效果；因此我们通常将三音升高一个半度，使该和弦变为大三和弦，方可体现出其强烈主音倾向的紧张感。此时的大三属和弦也用大写的“D”表示。将导音升高半度后的小调式即为和声小调。</li><li>在大调中的下属功能和弦均为大三和弦，故应用大写的“S”表示；小调中的下属功能和弦均为小三和弦，因此应用小写的“s”表示。</li></ul><table><thead><tr><th align="center">功能</th><th align="center">和弦级数</th><th align="center">特性</th><th align="center">标记（以$C$大调为例）</th><th align="center">组成音（以$C$大调为例）</th></tr></thead><tbody><tr><td align="center">主功能（T或t）</td><td align="center">Ⅰ级</td><td align="center">稳定、归宿，即“确立调性起点、收束终点，音乐中的“家”。”</td><td align="center">$C$或$CMaj$</td><td align="center">$C, E, G$</td></tr><tr><td align="center">属功能（D）</td><td align="center">Ⅴ级</td><td align="center">尖锐冲突（高度不稳定）与解决需求（强烈倾向主音），其与T的连接是最有效、最常用的连接方式之一，推动音乐进行，建立和巩固音乐调性</td><td align="center">$G$或$GMaj$</td><td align="center">$G, B, D$</td></tr><tr><td align="center">下属功能（S）</td><td align="center">Ⅳ级</td><td align="center">中度不稳定，兼具主功能色彩和属功能倾向，类似于“出门玩，但还没玩尽兴”的感觉。</td><td align="center">$F$或$FMaj$</td><td align="center">$F, A, C$</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>是根据<a href="https://space.bilibili.com/7762500?spm_id_from=333.337.0.0">@三分钟音乐社</a>的和声课程所做的笔记！</p><p>在调性和声体系中，​正三和弦的功能体系是构建音乐张力和结构的最核心框架。它基于主、下属、属三大功能的辩证关系（稳定—预备不稳定—强烈不稳定），驱动音乐的运动、终止以及调性的确立。这三个和弦由音阶的 ​I、IV、V 级构成，包含调内所有自然音级。</p><p>斯波索宾那本和声理论认为，和声中最主要的三个功能为 <strong>主功能</strong> （tonica，T）、 <strong>属功能</strong> （dominant，D）和 <strong>下属功能</strong> （subdominant，S）。需要注意以下几点：</p><ul><li>在大调中的主功能和弦均为大三和弦，故应用大写的“T”表示；小调中的主功能和弦均为小三和弦，因此应用小写的“t”表示。</li><li>在大调中的属功能和弦也为小三和弦，故应用大写的“D”表示。但自然小调的导音（即三音所在位置）与主音为大二度关系而非小二度关系，导致小调中的小三属和弦在听感上并不能体现出紧张的效果；因此我们通常将三音升高一个半度，使该和弦变为大三和弦，方可体现出其强烈主音倾向的紧张感。此时的大三属和弦也用大写的“D”表示。将导音升高半度后的小调式即为和声小调。</li><li>在大调中的下属功能和弦均为大三和弦，故应用大写的“S”表示；小调中的下属功能和弦均为小三和弦，因此应用小写的“s”表示。</li></ul><table><thead><tr><th align="center">功能</th><th align="center">和弦级数</th><th align="center">特性</th><th align="center">标记（以$C$大调为例）</th><th align="center">组成音（以$C$大调为例）</th></tr></thead><tbody><tr><td align="center">主功能（T或t）</td><td align="center">Ⅰ级</td><td align="center">稳定、归宿，即“确立调性起点、收束终点，音乐中的“家”。</td><td align="center">$C$或$CMaj$</td><td align="center">$C, E, G$</td></tr><tr><td align="center">属功能（D）</td><td align="center">Ⅴ级</td><td align="center">尖锐冲突（高度不稳定）与解决需求（强烈倾向主音），其与T的连接是最有效、最常用的连接方式之一，推动音乐进行，建立和巩固音乐调性</td><td align="center">$G$或$GMaj$</td><td align="center">$G, B, D$</td></tr><tr><td align="center">下属功能（S或s）</td><td align="center">Ⅳ级</td><td align="center">中度不稳定，兼具主功能色彩和属功能倾向，类似于“出门玩，但还没玩尽兴”的感觉。</td><td align="center">$F$或$FMaj$</td><td align="center">$F, A, C$</td></tr></tbody></table><p>上述三个功能的和弦统称为 <strong>正三和弦</strong> 。相应地，除上述和弦之外的Ⅱ、Ⅲ、Ⅵ、Ⅶ级和弦则统称为 <strong>副三和弦</strong> 。</p><p>在正三和弦的连接方面，通常有以下几种连接方式：</p><ul><li><strong>正格进行</strong> ：即T&#x2F;t与D之间的交替。也有部分教材将T&#x2F;t→D称为半正格进行，将D→T&#x2F;t称为正格进行。若D→T&#x2F;t处于终止位置，也可将其称为正格终止。</li><li><strong>变格进行</strong> ：T&#x2F;t与S&#x2F;s之间的交替。也有部分教材将T&#x2F;t→S&#x2F;s称为半变格进行，将S&#x2F;s→T&#x2F;t称为变格进行。若S&#x2F;s→T&#x2F;t处于终止位置，也可将其称为变格终止；若在变格终止之前还发生过正格终止，则可称此情况下的变格终止为补充终止或变格补充终止。需要注意的是，大量运用变格进行会导致调性模糊，因缺少“D→T&#x2F;t”建立和巩固调性的进行。</li><li><strong>完全进行</strong> ：T&#x2F;t→S&#x2F;s→D→T&#x2F;t之间的循环，可类比为“家→出门→想家→回家”的循环，即稳定→逐渐紧张→最紧张→稳定的感觉。</li><li><strong>反功能进行</strong> ：即D→S&#x2F;s的进行，有倒退、转折的听感。练习初期不建议使用。</li></ul><p>完全进行在情绪推进的完善度优于正格进行和变格进行，因此在各种音乐中应用最常见。值得一提的是，完全进行使用了调式中的所有音，因此功能也最为强大。</p>]]></content>
     
     
       
@@ -43,6 +74,8 @@
     
     <category term="四部和弦" scheme="http://example.com/tags/%E5%9B%9B%E9%83%A8%E5%92%8C%E5%BC%A6/"/>
     
+    <category term="音乐" scheme="http://example.com/tags/%E9%9F%B3%E4%B9%90/"/>
+    
   </entry>
   
   <entry>
@@ -50,7 +83,7 @@
     <link href="http://example.com/2025/07/14/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E5%9B%9B%E9%83%A8%E5%92%8C%E5%A3%B0%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/"/>
     <id>http://example.com/2025/07/14/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E5%9B%9B%E9%83%A8%E5%92%8C%E5%A3%B0%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/</id>
     <published>2025-07-14T15:09:21.000Z</published>
-    <updated>2025-07-15T03:03:41.334Z</updated>
+    <updated>2025-07-15T05:19:51.070Z</updated>
     
     <content type="html"><![CDATA[<p>是根据<a href="https://space.bilibili.com/7762500?spm_id_from=333.337.0.0">@三分钟音乐社</a>的和声课程所做的笔记！</p><p><strong>四部和声</strong> 是西方音乐理论中传统和声写作的基础框架，其核心概念是将音乐的纵向结构（和弦）通过四个独立的声部来呈现，模拟混声合唱团（女高音、女低音、男高音、男低音）的音色组合。与二声部、三声部相比，四部和声更具饱满；与五声部、六声部相比，四部和声更加简洁。</p><p>绝大部分的音乐最经常使用三和弦、七和弦及其变体，而九和弦、十一和弦并不常见，因此四部和声可以很好胜任表现这些和弦的效果。当遇到九和弦、十一和弦这些组成音更高的和弦，可以临时转为更多声部演奏（即乐器法与配器法课程中所提及的“分部演奏”），或者省略个别组成音，如九和弦可省略五音而保留根音、三音、七音和九音。</p><h1 id="四部和声的四个声部"><a href="#四部和声的四个声部" class="headerlink" title="四部和声的四个声部"></a>四部和声的四个声部</h1><p>四部和声的四个声部由高到低依次为高声部、中声部、次中声部和低声部，也可称为（第）一声部、（第）二声部、（第）三声部、和（第）四声部。由于四部和声为模拟混声合唱团的音色组合，故这四个声部也称为女高声部、女低声部、男高声部、男低声部。</p><p>由于高声部音域最高，是人耳最敏感的声部，因此也称为旋律声部。 <strong>外声部</strong>​​ 是指高声部与低声部的组合，是音响结构中最突出、最容易被听觉感知的部分，对音乐的整体效果至关重要。 而 <strong>内声部</strong> 则是指中声部和次中声部的组合，主要起充实和声的作用。</p><h1 id="四部和声的记谱"><a href="#四部和声的记谱" class="headerlink" title="四部和声的记谱"></a>四部和声的记谱</h1><p>我们通常使用高音谱号来记录高声部和中声部，而使用低音谱号来记录次中声部和低声部。注意：高声部和次中声部符干应朝向上方，中声部和低声部的符干应朝向下方，以更直观地展示各个声部的进行状况。</p>]]></content>
     
@@ -72,6 +105,8 @@
     
     <category term="四部和弦" scheme="http://example.com/tags/%E5%9B%9B%E9%83%A8%E5%92%8C%E5%BC%A6/"/>
     
+    <category term="音乐" scheme="http://example.com/tags/%E9%9F%B3%E4%B9%90/"/>
+    
   </entry>
   
   <entry>
@@ -79,7 +114,7 @@
     <link href="http://example.com/2025/07/14/%E3%80%90%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95%E3%80%91%E5%B0%8F%E5%9E%8B%E4%B9%90%E9%98%9F%E7%9A%84%E7%BC%96%E9%85%8D/"/>
     <id>http://example.com/2025/07/14/%E3%80%90%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95%E3%80%91%E5%B0%8F%E5%9E%8B%E4%B9%90%E9%98%9F%E7%9A%84%E7%BC%96%E9%85%8D/</id>
     <published>2025-07-14T05:33:04.000Z</published>
-    <updated>2025-07-14T08:01:21.965Z</updated>
+    <updated>2025-07-15T05:20:13.206Z</updated>
     
     <content type="html"><![CDATA[<p><strong>小型交响乐队</strong> 指以弦乐、木管、圆号为基础，加或不加打击乐和竖琴的交响乐队。小型乐队的编配需要注意以下事项，在实际演奏时，各种技巧可结合应用。</p><h1 id="木管与圆号的和声安排"><a href="#木管与圆号的和声安排" class="headerlink" title="木管与圆号的和声安排"></a>木管与圆号的和声安排</h1><h2 id="音程的叠加"><a href="#音程的叠加" class="headerlink" title="音程的叠加"></a>音程的叠加</h2><p>在双管乐队中，每一种木管乐器所包含的两支乐器通常以音程叠加的方式体现。叠加的方式主要有三种：上置法（Octave Doubling）、交置法（Crossing）和包置法（Enclosure）。</p><ul><li><p>上置法：是按乐器正常声部顺序，分配各和弦音，即高声部乐器奏和弦高声部，低声部乐器奏和弦低声部，这种配置法整体音效协调均衡，音色层次明显，常用于乐队弹奏和弦中。</p></li><li><p>交置法：将相邻的乐器声部进行交错，是下方声部的高音超越上方声部的低音，形成乐器声部之间的交叉，这种配置法音色相互交替，音响效果协调融合，整个和弦音色融为一体。</p></li><li><p>包置法：用一种乐器的音色包围另一种乐器的音色，这种方法的两个包围声部音响较为突出，而被包围声部则稍含蓄。</p></li></ul><p><img src="/images/%E9%9F%B3%E4%B9%90/%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95/20250714134415.jpg"></p><p>八声部和弦所占用的音区较宽，高音部分用长笛进行演奏，低音部分用大管演奏，通常是较为合理的选择。</p><h2 id="圆号的加入"><a href="#圆号的加入" class="headerlink" title="圆号的加入"></a>圆号的加入</h2><p>用四支圆号演奏七和弦或用三支圆号演奏三和弦时通常较容易平衡。当与木管结合时，圆号通常置于单簧管和双簧管的下方，且可与大管形成交置法的排列。</p><p><img src="/images/%E9%9F%B3%E4%B9%90/%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95/20250714140330.jpg"></p><h2 id="注意声部平衡"><a href="#注意声部平衡" class="headerlink" title="注意声部平衡"></a>注意声部平衡</h2><ul><li>创作时尽可能避免使用乐器的极限音区，避免演奏难度过大而音色不好的双输局面。</li><li>同一乐器音程不能避免相距太远，这是因为管乐器不同音区的音色不同。</li><li>尽可能使声部成对出现，形成音程的八度重复。</li></ul><h1 id="区分乐队的层次"><a href="#区分乐队的层次" class="headerlink" title="区分乐队的层次"></a>区分乐队的层次</h1><ul><li>单独的木管或圆号演奏主旋律，伴奏以弦乐为主，如《柴可夫斯基第五交响乐》的开头。</li><li>某一部弦乐演奏主旋律，其他声部演奏主旋律。如《柴可夫斯基第六交响乐》第二乐章的开头。</li></ul><h1 id="音色或声部的叠加"><a href="#音色或声部的叠加" class="headerlink" title="音色或声部的叠加"></a>音色或声部的叠加</h1><p>同样的旋律同度或八度叠加，称为音色或声部的 <strong>叠加</strong> ；其中不同乐器同度演奏时可形成 <strong>混合音色</strong> 。运用音色叠加可以使得乐队演奏的效果更加浓厚。</p><h1 id="乐器组的交替"><a href="#乐器组的交替" class="headerlink" title="乐器组的交替"></a>乐器组的交替</h1><p>运用乐器组的交替可以使得音乐色彩变化展现出不同的层次。</p>]]></content>
     
@@ -103,6 +138,8 @@
     
     <category term="铜管组" scheme="http://example.com/tags/%E9%93%9C%E7%AE%A1%E7%BB%84/"/>
     
+    <category term="音乐" scheme="http://example.com/tags/%E9%9F%B3%E4%B9%90/"/>
+    
   </entry>
   
   <entry>
@@ -110,7 +147,7 @@
     <link href="http://example.com/2025/07/14/%E3%80%90%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95%E3%80%91%E9%93%9C%E7%AE%A1%E7%BB%84/"/>
     <id>http://example.com/2025/07/14/%E3%80%90%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95%E3%80%91%E9%93%9C%E7%AE%A1%E7%BB%84/</id>
     <published>2025-07-14T03:40:06.000Z</published>
-    <updated>2025-07-14T05:32:37.092Z</updated>
+    <updated>2025-07-15T05:20:26.191Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://www.bilibili.com/video/BV13341147KF?vd_source=eb65e5412f9ff22751b2cc4ccab9d716">四川音乐学院的《交响乐队乐器法与编配基础》课程</a>以圆号为代表介绍铜管组的大致特点，故本篇文章也仅整理圆号的相关内容。（大概以后会补充吧）</p><h1 id="构造"><a href="#构造" class="headerlink" title="构造"></a>构造</h1><p>圆号由号嘴、号身和号口组成，管长约三米。<br><img src="https://img.yueqixuexi.com/uploadimg/image/20190722/20190722090857_49341.jpg"></p><h1 id="音域与音区"><a href="#音域与音区" class="headerlink" title="音域与音区"></a>音域与音区</h1><p>圆号的实际发音音域为$B_1♭—f^2$，记谱音高为$F—c^3$。但在乐队演奏中，圆号的常用音域为$F—c^2$（实际音高）。</p><p>圆号在记谱时既可以用低音谱号，也可以使用高音谱号。圆号（多为F调）是典型的移调乐器，使用高音谱号进行记谱时，其实际音高与记谱音高相比低纯五度（即七个半音）；使用低音谱号记谱时，其实际音高与记谱音高相比高纯四度（即5个半音）。</p><p>四支圆号是现代交响乐队中最常见的编制。在交响乐队中，一般一圆号位于最外侧，其号口正对二圆号；二圆号位于一圆号的旁边，其号口正对三圆号或四圆号。也有一二、三四圆号分前后两排的情况。另外，一、三圆号通常演奏高音，二、四圆号通常演奏中低音，这是由于不同演奏家擅长演奏不同的音区的原因。</p><p>在写作时需要注意以下几点：①圆号的实际音高与记谱音高的差距；<br>②四支圆号不同音区的分工情况；③通常将一圆号和二圆号、三圆号和四圆号分别用一行乐谱写谱，在每一行乐谱上需标注演奏高音的圆号。</p><h1 id="演奏法"><a href="#演奏法" class="headerlink" title="演奏法"></a>演奏法</h1><p>在没有循环换气的情况下，圆号一口气可持续演奏的时长也取决于所演奏的音区和力度：高音区和低音区较短，中音区较长；强音较短，弱音较长。</p><p>铜管乐器在力度变化的表现很有优势。</p><p>圆号的演奏法通常有吐音（即断奏）和连奏两种。吐音即利用舌与气息的冲击力形成爆破音。</p><p>圆号还有几种通过外加装置改变音色的方法，包括弱音器和阻塞音。阻塞音的演奏技法为将右手伸入圆号的号口进行吹奏，会有一种金属质感的声效。</p><blockquote><p>使用弱音器的标记是$con$ $sord.$，取掉弱音器的标记为$senza$ $sord.$。<br>阻塞音的标记为音符上加“+”，取消阻塞音的标记为音符上加“。”，部分乐谱不表“+”号即自动取消。</p></blockquote>]]></content>
     
@@ -128,6 +165,8 @@
     <category term="乐器法与配器法" scheme="http://example.com/tags/%E4%B9%90%E5%99%A8%E6%B3%95%E4%B8%8E%E9%85%8D%E5%99%A8%E6%B3%95/"/>
     
     <category term="铜管组" scheme="http://example.com/tags/%E9%93%9C%E7%AE%A1%E7%BB%84/"/>
+    
+    <category term="音乐" scheme="http://example.com/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
@@ -274,7 +313,7 @@
     <link href="http://example.com/2025/07/10/%E3%80%90%E4%B9%90%E7%90%86%E3%80%91%E4%B8%80%E4%BA%9B%E8%A1%A5%E5%85%85%E5%86%85%E5%AE%B9/"/>
     <id>http://example.com/2025/07/10/%E3%80%90%E4%B9%90%E7%90%86%E3%80%91%E4%B8%80%E4%BA%9B%E8%A1%A5%E5%85%85%E5%86%85%E5%AE%B9/</id>
     <published>2025-07-10T03:47:32.000Z</published>
-    <updated>2025-07-10T08:43:28.110Z</updated>
+    <updated>2025-07-15T05:20:02.590Z</updated>
     
     <content type="html"><![CDATA[<p>是根据<a href="https://space.bilibili.com/7762500?spm_id_from=333.337.0.0">@三分钟音乐社</a>的基础乐理课程所做的笔记！</p><h1 id="律制"><a href="#律制" class="headerlink" title="律制"></a>律制</h1><p><strong>律制</strong> 是指为了使音乐规范化，人们有意选择的一组不同音高的音符所组成的体系，以及这些音符之间的相互关系。律制的核心在于研究不同音音高的大小。常见的律制主要有十二平均律、五度相生律和纯律，除此之外还有中庸全音律、威克麦斯特律、基恩伯格律、尤格律等。</p><p>音分距离指的是两个音高之间的差异程度。 通常可通过将两个音高的频率比值转换为以2为底的对数，然后取绝对值得到，即$音分距离&#x3D;\frac{1200}{lg 2}×lg(\frac{高音频率}{低音频率})$。</p><h2 id="十二平均律"><a href="#十二平均律" class="headerlink" title="十二平均律"></a>十二平均律</h2><p>将一个纯八度分为十二等份的半音，使得每两个相邻的半音之间的频率之比相等，此即 <strong>十二平均律</strong> 。但由于人工生硬均分，导致半音之间的频率比过于复杂（$\sqrt[12]{2}$）。不符合人体听觉美感，因此听感上并不如下述五度相生律和纯律谐和。但由于十二平均律存在等音，因此其在转调上具有一定的优势。</p><h2 id="五度相生律"><a href="#五度相生律" class="headerlink" title="五度相生律"></a>五度相生律</h2><p>五度相生律是根据复合音的纯五度关系（频率比为$2:3$），即由某一音开始推一纯五度，产生次一律，再由次一律推一纯五度，产生再次一律，如此继续相生所定出的音律叫做 <strong>五度相生律</strong> 。由于频率比简单，五度相生律听感上较十二平均律更为谐和。</p><p>但据此规律生成的音列，原本在十二平均律中的等音在五度相生律并不等同。举个例，我们指定低音组的$C$的音分为0，则$C-C$及$C-B♯$在十二平均律中音分距离均为1200。然而，在五度相生律中，$C-C$的音分距离仍为1200，但$C-B♯$的音分距离反而变成了1224。这种内部的不等距导致作曲的时候不适合转调。</p><h2 id="纯律"><a href="#纯律" class="headerlink" title="纯律"></a>纯律</h2><p>纯律是指在五度相生律的基础上，引入$4:5$、$5:6$这两个频率比来对Ⅰ、Ⅳ、Ⅴ级音上方的大三度音和小三度音进行修正，使得大小调音乐在和声上更加纯粹、谐和。</p><table><thead><tr><th align="center"></th><th align="center">十二平均律</th><th align="center">五度相生律</th><th align="center">纯律</th></tr></thead><tbody><tr><td align="center">优点</td><td align="center">转调</td><td align="center">旋律谐和</td><td align="center">和声谐和</td></tr><tr><td align="center">缺点</td><td align="center">旋律与和声并不是真正的谐和</td><td align="center">不适合转调、和声不如纯律谐和</td><td align="center">不适合转调，旋律不如五度相生律谐和</td></tr></tbody></table><h1 id="基音、泛音与泛音列"><a href="#基音、泛音与泛音列" class="headerlink" title="基音、泛音与泛音列"></a>基音、泛音与泛音列</h1><p>物体整体震动的过程中，其局部也在振动，但整体振动和局部振动的频率并不相同，其中整体振动发音的频率称为 <strong>基音</strong> （经人脑处理后表现为音高），局部振动发音的频率为 <strong>泛音</strong> 。其中，将物体两等分为两个“局部”所形成的泛音为第一泛音（频率为整体的2倍），三等分所形成的泛音为第二泛音，以此类推。</p><p><img src="/images/%E9%9F%B3%E4%B9%90/%E5%9F%BA%E7%A1%80%E4%B9%90%E7%90%86/%E5%92%8C%E5%BC%A6/20250710132538.png"></p><table><thead><tr><th align="center">泛音列</th><th align="center">分音列&#x2F;谐音列</th><th align="center">频率</th><th align="center">与前一音的关系</th></tr></thead><tbody><tr><td align="center">基音</td><td align="center">第一分音&#x2F;谐音</td><td align="center">$n$</td><td align="center">—</td></tr><tr><td align="center">第一泛音</td><td align="center">第二分音&#x2F;谐音</td><td align="center">$2n$</td><td align="center">纯八度</td></tr><tr><td align="center">第二泛音</td><td align="center">第三分音&#x2F;谐音</td><td align="center">$3n$</td><td align="center">纯五度</td></tr><tr><td align="center">第三泛音</td><td align="center">第四分音&#x2F;谐音</td><td align="center">$4n$</td><td align="center">纯四度</td></tr><tr><td align="center">第四泛音</td><td align="center">第五分音&#x2F;谐音</td><td align="center">$5n$</td><td align="center">大三度</td></tr><tr><td align="center">第五泛音</td><td align="center">第六分音&#x2F;谐音</td><td align="center">$6n$</td><td align="center">小三度</td></tr><tr><td align="center">第六泛音</td><td align="center">第七分音&#x2F;谐音</td><td align="center">$7n$</td><td align="center">小三度</td></tr><tr><td align="center">第七泛音</td><td align="center">第八分音&#x2F;谐音</td><td align="center">$8n$</td><td align="center">大二度</td></tr><tr><td align="center">第八泛音</td><td align="center">第九分音&#x2F;谐音</td><td align="center">$9n$</td><td align="center">大二度</td></tr><tr><td align="center">第九泛音</td><td align="center">第十分音&#x2F;谐音</td><td align="center">$10n$</td><td align="center">大二度</td></tr><tr><td align="center">第十泛音</td><td align="center">第十一分音&#x2F;谐音</td><td align="center">$11n$</td><td align="center">大二度</td></tr><tr><td align="center">……</td><td align="center">……</td><td align="center">……</td><td align="center">……</td></tr></tbody></table><blockquote><p>注：由于五线谱基于十二平均律诞生，上图所示泛音频率与实际的频率存在细微差别，故此说明。</p></blockquote><p>乐器与人声在常规演奏下发出的声音均包含基音和泛音。由于物体的结构、材质等不同，振动发出的声音也具有与众不同的特点，这种特点称为 <strong>音色</strong> 。不同物体（包括不同种类的物体、同一种类的不同物体、同一物体不同演奏方式等）振动形成的泛音振幅不同，这些泛音经过大脑处理过后即表现为不同的音色。</p><p><strong>泛音列</strong> 、 <strong>分音列</strong> 和 <strong>谐音列</strong> 均指代由物体振动发出不同频率的音（包括基因和泛音）所形成的集合。三者在记法上稍有区别，泛音列通常记为“基音、第一泛音、第二泛音、第三泛音……”，分音列通常记为“第一分音、第二分音、第三分音、第四分音……”，而谐音列通常记为“第一谐音、第二谐音、第三谐音、第四谐音……”。</p><h1 id="五度圈"><a href="#五度圈" class="headerlink" title="五度圈"></a>五度圈</h1><p><img src="https://ts1.tc.mm.bing.net/th/id/R-C.3071bb42dd2f0bbd62aa50fc41ef780b?rik=Ylqw4AVBKoZzXQ&riu=http://x0.ifengimg.com/res/2019/4594EE20C5A856D8F323CC98056FE4FB60436CAE_size90_w786_h742.jpeg&ehk=pIuOSr8G2BFDA9F89V24w1OTZYlwDfRjW8TMYLowbqk=&risl=&pid=ImgRaw&r=0"></p><p>五度圈（部分人称四度圈）可以说是各种乐理知识的集成表，可以理解为不同的含义，发挥许多不同的作用。例如，五度圈在判断调号、近关系调（同音列各调和调号只相差一个升号或降号的调）、调内和弦有一定的作用，不同音形成的和弦在五度圈内也可形成特定的图形（如增三和弦与正三角形，大七和弦与等腰梯形，正七和弦与正方形）。</p><p>除此之外，五度圈中，每个音（和弦）的逆时针方向即其下属音（和弦）；顺时针方向即其属音（和弦）。由此衍生出变格进行和连续变格进行、正格进行和连续正格进行的概念。变格进行是指由下属和弦进行到主和弦的过程，而正格进行则是由属和弦进行到主和弦的过程，而连续变格进行或连续正格进行即指重复进行变格进行或正格进行的过程。</p><p>五度圈还可用来指导离调的写作（如251进行）、三全音替代（该音正对面的音即为三全音，如降二代五）。五度圈也可提示五度相生律的声音关系。中国古代的三分损益法所找到的五音也可通过五度圈体现。将某一音作为五声性调式中的宫音，顺时针的4个音即依次为徵音、商音、羽音、角音。另外，五度圈也可体现提琴的基本定弦音。</p><p>除此之外还有其他的作用……</p><h1 id="移调乐器"><a href="#移调乐器" class="headerlink" title="移调乐器"></a>移调乐器</h1><p><strong>移调乐器</strong> 是指记谱音高与实际音高不一致的乐器，可分为 <strong>八度移调乐器</strong> 、 <strong>非八度移调乐器</strong> 。</p><p>八度移调乐器是指因自身音域很低或很高，为方便而约定俗成地高八度或低八度记谱的乐器。低八度移调乐器包括低音提琴、低音长笛、低音大管、吉他和绝大多数男声；高八度移调乐器包括短笛、木琴、钢片琴等；也有高两个八度的移调乐器如钟琴、古䥽等。</p><table><thead><tr><th align="center">本调</th><th align="center">代表乐器</th><th align="center">实际音高与记谱音高的关系</th></tr></thead><tbody><tr><td align="center">C</td><td align="center">钟琴、古䥽</td><td align="center">高纯十五度</td></tr><tr><td align="center">C</td><td align="center">短笛、木琴、钢片琴</td><td align="center">高纯八度</td></tr><tr><td align="center">C</td><td align="center">低音提琴、低音长笛、次中音双簧管（低音双簧管）、海克尔管、低音大管、C调低音小号、吉他、绝大多数男声</td><td align="center">低纯八度</td></tr></tbody></table><p>非八度移调乐器是指由于历史原因，记谱音高和实际音高相差非八度的乐器，主要是各种管乐器。乐谱中的某一个音即代表某一个特定的指法，因此不同本调的乐器据此奏出的音不同。如长笛的本调为$C$调，演奏五线谱中的$C$调时，实际演奏的即为$C$调；但中音长笛的本调为$G$调，演奏五线谱中的$C$调时，实际演奏的却为$G$调。</p><table><thead><tr><th align="center">本调</th><th align="center">代表乐器</th><th align="center">实际音高与记谱音高的关系</th></tr></thead><tbody><tr><td align="center">B♭</td><td align="center">B♭调高音小号</td><td align="center">高小七度</td></tr><tr><td align="center">E♭</td><td align="center">E♭调单簧管、E♭调最高音萨克斯管、E♭调小号</td><td align="center">高小三度</td></tr><tr><td align="center">D</td><td align="center">D调单簧管、D调小号</td><td align="center">高大二度</td></tr><tr><td align="center">B♭</td><td align="center">B♭调单簧管、B♭调高音萨克斯管、B♭调小号、短号、夫吕号</td><td align="center">低大二度</td></tr><tr><td align="center">A</td><td align="center">抒情双簧管、A调单簧管</td><td align="center">低小三度</td></tr><tr><td align="center">G</td><td align="center">中音长笛</td><td align="center">低纯四度</td></tr><tr><td align="center">F</td><td align="center">英国管、巴塞管、F调活塞圆号</td><td align="center">低纯五度</td></tr><tr><td align="center">E♭</td><td align="center">E♭调中音单簧管、E♭调中音萨克斯管、E♭调低音小号</td><td align="center">低小六度</td></tr><tr><td align="center">B♭</td><td align="center">B♭调低音单簧管、B♭调次中音萨克斯管、B♭调低音小号</td><td align="center">低大九度</td></tr><tr><td align="center">E♭</td><td align="center">E♭调倍低音单簧管、E♭调上低音萨克斯管</td><td align="center">低大十三度</td></tr><tr><td align="center">B♭</td><td align="center">B♭调倍低音单簧管、B♭调低音萨克斯管</td><td align="center">低大十六度</td></tr></tbody></table><h1 id="其他词汇定义"><a href="#其他词汇定义" class="headerlink" title="其他词汇定义"></a>其他词汇定义</h1><ol><li>音的四要素：指音的高低（振动频率）、长短（时值）、强弱（振幅）、音色（泛音）四个特性。</li><li>纯音：是指只有基音、没有泛音的音。</li><li>复合音：同时存在基音和泛音的音，是由多个音组成的音。</li><li>稳定音级与不稳定音级：在大小调中，我们称Ⅰ、Ⅲ、Ⅴ级音为稳定音级，其余音（Ⅱ、Ⅳ、Ⅵ、Ⅶ级音）为不稳定音级。在旋律与和声中，不稳定音级会倾向于向稳定音级进行。一般来说Ⅱ级、Ⅳ级、Ⅵ级、Ⅶ级分别倾向于进行至Ⅰ级、Ⅲ级、Ⅴ级、Ⅰ级。</li><li>正音级与副音级：在大小调中，我们称Ⅰ、Ⅳ、Ⅴ级音为正音级，其余音（Ⅱ、Ⅲ、Ⅵ、Ⅶ级音）为副音级。</li><li>正三和弦与副三和弦：在大小调中，我们称Ⅰ、Ⅳ、Ⅴ级音的三和弦为正音级，其余音（Ⅱ、Ⅲ、Ⅵ、Ⅶ级音）的三和弦为副音级。</li><li>半音阶和全音阶：半音阶是指连续的半音进行所形成的音阶；全音音阶是由六个音级构成的特殊音阶体系，其核心特征为相邻音级之间的音程均为全音。</li><li>音程（和弦）的解决：是指音程（和弦）由不谐和、不稳定向谐和、稳定进行的过程。</li><li>近关系调与远关系调</li><li>调式中的音程、调式中的和弦</li></ol>]]></content>
     
@@ -291,6 +330,8 @@
     
     
     <category term="基础乐理" scheme="http://example.com/tags/%E5%9F%BA%E7%A1%80%E4%B9%90%E7%90%86/"/>
+    
+    <category term="音乐" scheme="http://example.com/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
@@ -542,33 +583,6 @@
     <summary type="html">&lt;p&gt;病因：病因是指那些能使人群发病概率增加的因素，当其中的一个或多个因素不存在时，人群中发生该种疾病的概率就下降。&lt;/p&gt;
 &lt;p&gt;必要病因：是指引起某种疾病发生所必须具备的条件，一旦该因素缺乏，疾病就不会发生；但又该因素的存在，却不一定会导致疾病的发生。&lt;/p&gt;
 &lt;p&gt;充分病因</summary>
-      
-    
-    
-    
-    <category term="流行病学" scheme="http://example.com/categories/%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6/"/>
-    
-    
-    <category term="知识点整理" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/"/>
-    
-    <category term="流行病学" scheme="http://example.com/tags/%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【流行病学】筛检与诊断试验的评价</title>
-    <link href="http://example.com/2025/05/26/%E3%80%90%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6%E3%80%91%E7%AD%9B%E6%A3%80%E4%B8%8E%E8%AF%8A%E6%96%AD%E8%AF%95%E9%AA%8C%E7%9A%84%E8%AF%84%E4%BB%B7/"/>
-    <id>http://example.com/2025/05/26/%E3%80%90%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6%E3%80%91%E7%AD%9B%E6%A3%80%E4%B8%8E%E8%AF%8A%E6%96%AD%E8%AF%95%E9%AA%8C%E7%9A%84%E8%AF%84%E4%BB%B7/</id>
-    <published>2025-05-26T15:13:01.000Z</published>
-    <updated>2025-05-27T15:10:40.972Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>筛检：</strong> 运用快速、简便的检验、检查或其他措施在健康人群中将那些可能有病或有缺陷但表面健康的人同那些真正无病或无缺陷的人区别开来。</p><p><strong>诊断：</strong> 医务人员通过详尽的检查及调查等方法收集信息，经过整理加工后对病人的病情进行基本认识和判断，诊断是把病人与可疑有病但实际无病者区分开来。</p><p><img src="/images/%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6/%E5%9B%BE%E7%89%872.png"></p><table><thead><tr><th align="center">特征</th><th align="center">筛检</th><th align="center">诊断</th></tr></thead><tbody><tr><td align="center">目的</td><td align="center">区别无症状的早期病人、病人及健康人</td><td align="center">区别病人与可疑有病但实际无病的人</td></tr><tr><td align="center">对象</td><td align="center">健康或表面健康的人</td><td align="center">患者或可疑患者</td></tr><tr><td align="center">要求</td><td align="center">快速、简便、灵敏度高</td><td align="center">科学、准确</td></tr><tr><td align="center">费用</td><td align="center">一般应使用简便、低廉的方法</td><td align="center">一般在医院进行，费用较高</td></tr><tr><td align="center">结果处理</td><td align="center">阳性者须作进一步的诊断或干预</td><td align="center">阳性者应予以治疗</td></tr></tbody></table><ul><li>筛检的分类<ul><li>根据筛检对象的范围：人群筛检（一般人群）、目标筛检&#x2F;选择性筛检&#x2F;高危人群筛检（暴露人群或高危人群）</li><li>根据筛检方法的数量多少：单项筛检、多项筛检</li><li>根据筛检的组织方式：治疗性筛检、预防性筛检、主动性筛检、机会性筛检</li></ul></li><li>筛检的实施原则<ul><li>筛检项目应该是公认确实需要的</li><li>筛检之初一定要明确筛检目的</li><li>筛检的目标人群应该明确</li><li>有筛检项目有效的科学依据</li><li>筛检项目应该与教育、检测、临床服务及项目管理结合</li><li>筛检项目应该有质量保证机制，使筛检的潜在风险降低至最小</li><li>筛检项目应做到知情同意，保护隐私，并尊重筛检对象的自主选择权利</li><li>筛检应该保障整个筛检目标人群的公平性和可及性</li><li>项目伊始就应该规划项目的评价</li><li>筛检的总体益处应该大于害处</li></ul></li><li>筛检的目的与意义<ul><li>早期发现可疑病人，做到早诊断、找治疗，提高治愈率，实现疾病的二级预防</li><li>发现高危人群，以便实施相应的干预，降低人群的发病率，实现疾病的一级预防</li><li>了解疾病的自然史，也起到疾病监测的作用 </li><li>指导卫生资源的合理分配</li></ul></li></ul><h1 id="设计和实施"><a href="#设计和实施" class="headerlink" title="设计和实施"></a>设计和实施</h1><h2 id="确定“金标准”"><a href="#确定“金标准”" class="headerlink" title="确定“金标准”"></a>确定“金标准”</h2><p>“金标准”&#x2F;标准诊断&#x2F;标准试验：目前医学界公认的诊断某种疾病最准确的方法。</p><h2 id="研究对象的选择"><a href="#研究对象的选择" class="headerlink" title="研究对象的选择"></a>研究对象的选择</h2><p>总体原则：研究对象严格能够代表诊断试验可能应用的目标人群。</p><ol><li>病人的选择：按金标准确诊为“阳性”的病例；包含典型&#x2F;不典型、早&#x2F;中&#x2F;晚期、轻&#x2F;中&#x2F;重型病例，有&#x2F;无并发症的患者</li><li>对照组：按金标准证实没有目标疾病，需要与所研究疾病鉴别的其他病人（一般不选择正常人作为对照组）</li></ol><h2 id="样本量"><a href="#样本量" class="headerlink" title="样本量"></a>样本量</h2><p>$n&#x3D;{(\frac{\mu_\alpha}{\delta})}^2p(1-p)$</p><p>简化： $n&#x3D;[57.3\mu_\alpha&#x2F;sin^{-1}(\delta&#x2F;\sqrt{p(1-p)})]^2$</p><p>$n$ – 所需样本量</p><p>$𝛿$ – 容许误差，一般设置0.05或0.1</p><p>$p$ – 待评价灵敏度或特异度估计值</p><p>$𝜶$ – 第一类错误概率，一般取0.05</p><p>$𝜇$ – 标准正态分布中下侧累计概率等于 $𝜶&#x2F;2$ 时的界值</p><h1 id="确定诊断试验的界值"><a href="#确定诊断试验的界值" class="headerlink" title="确定诊断试验的界值"></a>确定诊断试验的界值</h1><h2 id="确定界值的原则"><a href="#确定界值的原则" class="headerlink" title="确定界值的原则"></a>确定界值的原则</h2><ol><li>将诊断界值定在高灵敏度水平： <strong>预后差、漏诊后果严重</strong> ，但有可以利用的有效治疗方法，而且早期诊断可以获得较好的治疗效果，病人从伦理和经济的角度可以接受。</li><li>将诊断界值定在高特异度水平：对于治疗效果不理想的疾病，或疾病预后不严重但 <strong>误诊有严重后果</strong> ，对病人的心理、生理和经济上造成严重的影响。</li><li>灵敏度和特异度同样重要（约登指数最大处）：把诊断标准定在病人和非病人分布的交界处或定在正确诊断指数最大处。</li></ol><h2 id="确定诊断试验界值的方法"><a href="#确定诊断试验界值的方法" class="headerlink" title="确定诊断试验界值的方法"></a>确定诊断试验界值的方法</h2><ol><li>统计学方法：正态分布法、百分位数法、ROC曲线法&#x2F;受试者工作特征曲线。</li></ol><ul><li>ROC曲线常用来决定最佳临界点，通常在最接近左上角那一点，可定为最佳临界点。</li></ul><ol start="2"><li>依据临床需要确定界值</li></ol><h1 id="筛检与诊断试验的评价"><a href="#筛检与诊断试验的评价" class="headerlink" title="筛检与诊断试验的评价"></a>筛检与诊断试验的评价</h1><h2 id="真实性评价"><a href="#真实性评价" class="headerlink" title="真实性评价"></a>真实性评价</h2><p>真实性&#x2F;有效性&#x2F;效度&#x2F;准确性：是指诊断试验所获得的测量值与实际值的符合程度。</p><table border="1">    <tr>        <th rowspan="2"><center>试验</center></th>        <th colspan="2"><center>金标准</center></th>        <th rowspan="2"><center>合计</center></th>    </tr>    <tr>        <th><center>患者</center></th>        <th><center>非患者</center></th>    </tr>    <tr>        <th><center>阳性</center></th>        <th><center>$a$</center></th>        <th><center>$b$</center></th>        <th><center>$a+b$</center></th>    </tr>    <tr>        <th><center>阴性</center></th>        <th><center>$c$</center></th>        <th><center>$d$</center></th>        <th><center>$c+d$</center></th>    </tr>    <tr>        <th><center>合计</center></th>        <th><center>$a+c$</center></th>        <th><center>$b+d$</center></th>        <th><center>$T$</center></th>    </tr></table><h3 id="灵敏度-敏感度-真阳性率"><a href="#灵敏度-敏感度-真阳性率" class="headerlink" title="灵敏度&#x2F;敏感度&#x2F;真阳性率"></a>灵敏度&#x2F;敏感度&#x2F;真阳性率</h3><ol><li>灵敏度( $Se$ )：是指评价诊断试验发现病人的能力。 $Se&#x3D;[a&#x2F;(a+c)]×100%$</li><li>假阴性率( $FNR$ )&#x2F;漏诊率&#x2F;第二类错误：实际有病但依据该诊断试验被确定为非病人的概率。 $FNR&#x3D;[c&#x2F;(a+c)]×100%$</li></ol><h3 id="特异度-真阴性率"><a href="#特异度-真阴性率" class="headerlink" title="特异度&#x2F;真阴性率"></a>特异度&#x2F;真阴性率</h3><ol><li>特异度（ $Sp$ ）&#x2F;真阴性率：实际无病且被正确的判为无病的概率。 $Sp&#x3D;\frac{d}{b+d}$</li><li>假阳性率( $FPR$ )&#x2F;误诊率&#x2F;第一类错误：实际无病但该诊断试验判定为有病的概率。 $FPR&#x3D;\frac{b}{b+d}$</li></ol><h3 id="似然比"><a href="#似然比" class="headerlink" title="似然比"></a>似然比</h3><ol><li>阳性似然比：真阳性率与假阳性率的比值，说明“金标准”阳性组中出现的阳性结果的机会是“金标准”阴性组中出现阳性结果的机会的多少倍。该值越大，则“金标准”的诊断价值越高。</li><li>阴性似然比：假阴性率与真阴形率的比值，说明“金标准”阳性组中出现阴性结果的机会是“金标准”阴性组的多少倍。该值越小，则“金标准”的诊断价值越高。</li></ol><p>$LR+&#x3D;Se&#x2F;FPR&#x3D;\frac{a&#x2F;(a+c)}{b&#x2F;(b+d)}&#x3D;Se(1-Sp)$<br>$LR-&#x3D;FNR&#x2F;Sp&#x3D;\frac{c&#x2F;(a+c)}{b&#x2F;(b+d)}&#x3D;Sp(1-Se)$</p><h3 id="约登指数-YI-正确诊断指数"><a href="#约登指数-YI-正确诊断指数" class="headerlink" title="约登指数( $YI$ )&#x2F;正确诊断指数"></a>约登指数( $YI$ )&#x2F;正确诊断指数</h3><p>为灵敏度加特异度减1。该指数能表示诊断试验能正确区分病人和非病人的能力。范围在0—1之间，可用于两个或多个诊断试验之间的比较。</p><p>$YI&#x3D;Se+Sp-1$</p><h3 id="其他指标"><a href="#其他指标" class="headerlink" title="其他指标"></a>其他指标</h3><p>ROC曲线、一致性和kappa分析等。</p><h2 id="可靠性评价"><a href="#可靠性评价" class="headerlink" title="可靠性评价"></a>可靠性评价</h2><p>可靠性&#x2F;精确度&#x2F;信度&#x2F;稳定性&#x2F;可重复性&#x2F;重现性：在相同条件下，诊断试验对同一研究对象重复结果的稳定程度。</p><h3 id="评价指标"><a href="#评价指标" class="headerlink" title="评价指标"></a>评价指标</h3><p>包括定性指标和定量指标。定量指标有：</p><ol><li>符合率&#x2F;一致率&#x2F;准确度：在诊断试验中，真阳性和真阴性者占受试者总数的百分率。真阳性和真阴性越大，则符合率越接近于1。</li><li>一致性检验（Kappa检验）：kappa值范围介于-1到1之间，两个诊断完全一致时为1。观测一致率大于期望一致率时，Kappa值为正数，值越大，一致性越好。观测一致率小于期望一致率时，Kappa值为负数，这种情况比较少见。</li></ol><h3 id="影响可靠性的因素"><a href="#影响可靠性的因素" class="headerlink" title="影响可靠性的因素"></a>影响可靠性的因素</h3><ol><li>研究对象的生物学变异</li><li>试验因素所致的差异</li><li>观察者的变异</li></ol><h2 id="收益"><a href="#收益" class="headerlink" title="收益"></a>收益</h2><h3 id="预测值（PV）"><a href="#预测值（PV）" class="headerlink" title="预测值（PV）"></a>预测值（PV）</h3><ol><li>预测值：是应用试验结果来估计受检者患病与否及其可能性大小的指标。</li><li>阳性预测值（PPV）：是诊断试验为阳性结果中真正是“病人”（“金标准”阳性）的概率。</li><li>阴性预测值（NPV）：是诊断试验为阴性结果中真正无病（“金标准”阴性）的概率。</li></ol><p>$PPV&#x3D;a&#x2F;(a+b)×100%$<br>$NPV&#x3D;d&#x2F;(c+d)×100%$</p><h4 id="预测值与灵敏度、特异度、患病率之间的关系"><a href="#预测值与灵敏度、特异度、患病率之间的关系" class="headerlink" title="预测值与灵敏度、特异度、患病率之间的关系"></a>预测值与灵敏度、特异度、患病率之间的关系</h4><p>$PPV&#x3D;\frac{Se×P}{Se×P+(1-Sq)(1-P)}$；<br>$NPV&#x3D;\frac{Sp×(1-P)}{Sp×(1-P)+(1-Se)P}$。</p><p>患病率一定时：灵敏度越高，阴性预测值越高；特异度越高，阳性预测值越高。</p><p>灵敏度、特异度一定时：阳性预测值随患病率的上升而上升，阴性预测值随患病率的上升而下降，且阳性预测值的上升速度快于阴性预测值的下降速度，说明患病率对阳性预测值的影响更明显</p><h3 id="生物学效果"><a href="#生物学效果" class="headerlink" title="生物学效果"></a>生物学效果</h3><h3 id="卫生经济学效果"><a href="#卫生经济学效果" class="headerlink" title="卫生经济学效果"></a>卫生经济学效果</h3><p>成本效益分析、成本效果分析、成本效用分析。</p><h1 id="提高筛检与诊断试验效率的方法"><a href="#提高筛检与诊断试验效率的方法" class="headerlink" title="提高筛检与诊断试验效率的方法"></a>提高筛检与诊断试验效率的方法</h1><ol><li>选择患病率高的人群</li><li>采用联合实验</li></ol><ul><li>并联实验&#x2F;平行试验：同时应用多个诊断试验进行诊断，只要有任何亦想实验结果为阳性即可定位阳性，只有全部试验结果均为阴性才将最终结果判断为阴性。</li><li>串联试验&#x2F;系列试验：依次应用多项诊断试验进行诊断，全部试验结果均为阳性才将最终结果判断为阳性，任何一项实验结果为阴性即可定为最终结果阴性。</li></ul><h1 id="常见偏倚"><a href="#常见偏倚" class="headerlink" title="常见偏倚"></a>常见偏倚</h1><ol><li>领先时间偏倚：由于筛检时间和临床诊断时间之间存在时间间隔，将该间隔解释为因为筛检而延长的生存时间，则会高估筛查效果，这实际是筛检导致诊断时间提前所致的偏倚。</li><li>病程长短偏倚：疾病被检出的可能性与其病程进展相关。如果筛查组中疾病进展缓慢的病人较多，可观察到筛查组比未筛查组生存概率更高或生存时间更长，此时筛查效果被高估，即产生病程长短偏倚。</li><li>过度诊断偏倚：因为筛检，这些惰性病例被发现、确诊患病、并被计入患者总体之中，导致经筛检发现的患者有较多的生存者或较长的平均生存期，而造成筛查的效果被高估，称为过度诊断偏倚。</li></ol><blockquote><p>过度诊断：筛查出的病变处于良性阶段(可转为正常)或病程进展缓慢或病程停滞，而筛检发现过多的此类早期病例会增加诊断治疗的负担。</p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;strong&gt;筛检：&lt;/strong&gt; 运用快速、简便的检验、检查或其他措施在健康人群中将那些可能有病或有缺陷但表面健康的人同那些真正无病或无缺陷的人区别开来。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;诊断：&lt;/strong&gt; 医务人员通过详尽的检查及调查等方法收集信息，经过整理加</summary>
       
     
     
