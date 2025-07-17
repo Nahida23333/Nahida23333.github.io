@@ -11,7 +11,7 @@
 <h1 id="判断调式"><a href="#判断调式" class="headerlink" title="判断调式"></a>判断调式</h1><p>准确判断调式需要具备扎实的和声理论基础及丰富的视唱练耳经验。对于初学者而言，可以通过以下三个方面来初步判断调式是大调式还是小调式（初学者通常也不经常接触其他调式）。但注意，通过这个方式判断并不能做到完全准确。</p>
 <ul>
 <li>调号：可通过调号判断大调式，小调式可由大调式推导得到，详见<a href="https://nahida23333.github.io/2025/07/09/%E3%80%90%E4%B9%90%E7%90%86%E3%80%91%E8%B0%83%E5%BC%8F/#%E5%A4%A7%E8%B0%83%E5%BC%8F">【乐理】调式</a>相应部分。</li>
-<li>起始音和结束音：大多数旋律的起始音和结束音通常为所使用调式的主音。</li>
+<li>起始音和结束音：大多数旋律的起始音和结束音通常为所使用调式主和弦的组成音。</li>
 <li>小调通常会升高Ⅶ级音，以和声小调的形式出现。</li>
 </ul>
 <p>通过上述方法可以大致确定，本例中所使用的调式为$C$大调。</p>
@@ -41,6 +41,56 @@
 <p>本例中的最后三个音为$G, B, C$，依次可以配T或D功能、D功能、T或S功能和弦。据前述，终止音通常使用T功能和弦（归家）。而倒数第三个音配成T功能和弦或D功能和弦都没有问题。此处以配D功能和弦最终配得的结果如下：<br><img src="/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/20250716173148.png"><br><img src="/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/20250716181233.png"></p>
 <p>这是另一例：<br><img src="/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/20250716180717.png"></p>
 <p><img src="/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/20250716180451.png"></p>
+<h1 id="一些常见的误区"><a href="#一些常见的误区" class="headerlink" title="一些常见的误区"></a>一些常见的误区</h1><table>
+<thead>
+<tr>
+<th align="center">高声部旋律音</th>
+<th align="center">常见错误</th>
+<th align="center">错误原因</th>
+<th align="center">改正</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Ⅰ—Ⅳ（Ⅳ—Ⅰ）</td>
+<td align="center">T&#x2F;t—S&#x2F;s（S&#x2F;s—T&#x2F;t）</td>
+<td align="center">高声部和低声部出现平行八度或反向八度</td>
+<td align="center">S&#x2F;s—S&#x2F;s</td>
+</tr>
+<tr>
+<td align="center">Ⅰ—Ⅴ（Ⅴ—Ⅰ）</td>
+<td align="center">T&#x2F;t—D（D—T&#x2F;t）</td>
+<td align="center">高声部和低声部出现平行八度或反向八度</td>
+<td align="center">T&#x2F;t—T&#x2F;t</td>
+</tr>
+<tr>
+<td align="center">Ⅳ—Ⅴ（Ⅴ—Ⅳ）</td>
+<td align="center">S&#x2F;s—D（D—S&#x2F;s）</td>
+<td align="center">高声部和低声部出现平行八度或反向八度</td>
+<td align="center">S&#x2F;s—T&#x2F;t（T&#x2F;t—S&#x2F;s）</td>
+</tr>
+<tr>
+<td align="center">Ⅰ—Ⅴ（Ⅴ—Ⅰ）</td>
+<td align="center">S&#x2F;s—T&#x2F;t（T&#x2F;t—S&#x2F;s）</td>
+<td align="center">高声部和低声部出现平行八度或反向五度</td>
+<td align="center">T&#x2F;t—T&#x2F;t</td>
+</tr>
+<tr>
+<td align="center">Ⅱ—Ⅳ（Ⅳ—Ⅱ）</td>
+<td align="center">D—T&#x2F;t（T&#x2F;t—D）</td>
+<td align="center">高声部和低声部出现平行八度或反向五度</td>
+<td align="center">D—D</td>
+</tr>
+<tr>
+<td align="center">Ⅰ—Ⅱ（Ⅱ—Ⅰ）</td>
+<td align="center">S&#x2F;s—D（D—S&#x2F;s）</td>
+<td align="center">高声部和低声部出现平行八度或反向五度</td>
+<td align="center">T&#x2F;t—D（D—T&#x2F;t）</td>
+</tr>
+</tbody></table>
+<p>总结：不同功能和弦连接时，旋律声部不能出现根音到根音、五音到五音的进行，否则外声部必然出现平行或反向五八度。</p>
+<blockquote>
+<p>终止处的T功能和弦可以省略五音，配为“3个根音+1个三音的形式”，如倒数第二个音出现导音，有解决到主音上的强烈需求。</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>音乐 - 和声学</category>
