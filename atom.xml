@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-11-08T06:09:33.579Z</updated>
+  <updated>2026-01-07T14:34:45.918Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【生理学】绪论</title>
+    <link href="http://example.com/2026/01/04/%E3%80%90%E7%94%9F%E7%90%86%E5%AD%A6%E3%80%91%E7%BB%AA%E8%AE%BA/"/>
+    <id>http://example.com/2026/01/04/%E3%80%90%E7%94%9F%E7%90%86%E5%AD%A6%E3%80%91%E7%BB%AA%E8%AE%BA/</id>
+    <published>2026-01-04T12:53:23.000Z</published>
+    <updated>2026-01-07T14:34:45.918Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="体液"><a href="#体液" class="headerlink" title="体液"></a>体液</h1><h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><p>人体内的血液总称为体液，约占体重的60%，分为细胞内液和细胞外液</p><h2 id="体液的组成"><a href="#体液的组成" class="headerlink" title="体液的组成"></a>体液的组成</h2><ol><li>细胞内液：约2&#x2F;3的体液分布于细胞内。</li><li>细胞外液：其余1&#x2F;3分布于细胞外，包括血浆、组织液、淋巴液和脑脊液。</li></ol><h2 id="体液的分隔和相互沟通"><a href="#体液的分隔和相互沟通" class="headerlink" title="体液的分隔和相互沟通"></a>体液的分隔和相互沟通</h2><ol><li>细胞外液含有各种无机盐和细胞必需的营养物质，还含有氧、二氧化碳及细胞代谢产物。</li><li>正常细胞通过细胞膜进行细胞内液和细胞外液的物质交换，以维持细胞生命活动的进行。</li></ol><h1 id="机体的内环境和稳态"><a href="#机体的内环境和稳态" class="headerlink" title="机体的内环境和稳态"></a>机体的内环境和稳态</h1><h2 id="外环境与内环境"><a href="#外环境与内环境" class="headerlink" title="外环境与内环境"></a>外环境与内环境</h2><ol><li>外环境：机体生存的外界环境，包括自然环境和社会环境。</li><li>内环境：体内各种组织细胞直接接触并赖以生存的环境。</li></ol><blockquote><p>由于体内细胞直接接触的环境就是细胞外液，通常把细胞外液称为内环境。<br>胃内、肠道内、汗腺管内、膀胱内液体与外环境相连通，不属于内环境的范畴。</p></blockquote><h2 id="稳态"><a href="#稳态" class="headerlink" title="稳态"></a>稳态</h2><h3 id="名词解释-1"><a href="#名词解释-1" class="headerlink" title="名词解释"></a>名词解释</h3><p>内环境的稳态是指内环境的理化性质（如温度、酸碱度、渗透压和各种液体成分）的相对稳定状态。它不是静止不变的固定状态，而是各种理化因素在各种生理活动的调节下达到动态平衡的一种相对恒定的状态。</p><h3 id="生理意义"><a href="#生理意义" class="headerlink" title="生理意义"></a>生理意义</h3><p>维持稳态时保证机体正常生命活动的必要条件。</p><ol><li>细胞的各种代谢活动都是酶促生化反应，所以细胞外界中需要有足够的营养物质、氧气和水分，以及适宜的温度、离子浓度、酸碱度和渗透压等。</li><li>细胞膜两侧不同的离子浓度分布也是可兴奋细胞哦保持其正常兴奋性和产生生物电的基本保证。</li></ol><h1 id="机体生理功能的调节"><a href="#机体生理功能的调节" class="headerlink" title="机体生理功能的调节"></a>机体生理功能的调节</h1><h2 id="神经调节"><a href="#神经调节" class="headerlink" title="神经调节"></a>神经调节</h2><p>机体内许多生理功能是由神经系统的活动调节完成的，称为 <strong>神经调节</strong> 。反射是神经调节的基本形式。</p><p>神经反射的特点是： <strong>反应迅速、起作用快、调节精确</strong> 。</p><h3 id="反射弧"><a href="#反射弧" class="headerlink" title="反射弧"></a>反射弧</h3><p>反射活动的结构基础为 <strong>反射弧</strong> ，由5个基本成分组成：感受器、传入神经、中枢、传出神经、效应器。</p><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ol><li><strong>非条件反射：</strong> 是与生俱来的反射，其反射中枢基本上位于大脑皮层以下较低部位，反射弧相对固定，是生物体进化的产物。</li><li><strong>条件反射：</strong> 是通过后天学习获得的反射，是建立在非条件反射的基础上，由条件刺激因此的反射。</li></ol><h2 id="体液调节"><a href="#体液调节" class="headerlink" title="体液调节"></a>体液调节</h2><p><strong>体液调节</strong> 是指机体的某些组织细胞所分泌的特殊的化学物质，通过体液途径到达并作用于靶细胞上的相应受体，影响靶细胞生理活动的一种调节方式。</p><p>体液调节的特点： <strong>作用缓慢而持久，作用面较广泛，调节方式相对恒定</strong> 。</p><ol><li><strong>远距分泌调节：</strong> 内分泌细胞或内分泌腺分泌的激素、某些组织细胞产生的特殊化学物质、组织细胞代谢过程中产生的某些代谢产物通过血液循环作用于全身各处的靶细胞，发挥相应的调节作用。</li><li><strong>旁分泌调节：</strong> 有一些化学物质不通过血液循环而直接进入周围的组织液，经扩散作用到达邻近的细胞后发挥特定的生理作用。</li><li><strong>自分泌调节：</strong> 有些细胞分泌的激素或化学物质在局部扩散，又反馈作用于产生该激素或化学物质的细胞本身。</li><li><strong>神经内分泌调节：</strong> 下丘脑内有一些神经细胞能合成激素，激素随神经轴突的轴浆流至末梢，由末梢释放入血。</li></ol><h2 id="自身调节"><a href="#自身调节" class="headerlink" title="自身调节"></a>自身调节</h2><p><strong>自身调节</strong> 是指某些细胞或组织器官凭借本身内在特性，而不依赖神经调节和体液调节，对内环境变化产生特定适应性反应的过程。</p><p>自身调节的特点： <strong>调节强度较弱，影响范围小，且灵敏度较低，调节长局限于某种器官或组织细胞内，饭对于该器官或组织细胞生理活动的功能调节仍然具有一定的意义。</strong></p><h1 id="体内的控制系统"><a href="#体内的控制系统" class="headerlink" title="体内的控制系统"></a>体内的控制系统</h1><h2 id="反馈控制系统"><a href="#反馈控制系统" class="headerlink" title="反馈控制系统"></a>反馈控制系统</h2><p><strong>反馈控制系统</strong> 是由比较器、控制部分和受控部分组成的一个闭环系统。反馈信号对控制部分的活动可发生不同的影响，据此可将反馈分为负反馈和正反馈。</p><h3 id="负反馈控制系统"><a href="#负反馈控制系统" class="headerlink" title="负反馈控制系统"></a>负反馈控制系统</h3><p><strong>负反馈：</strong> 来自受控部分的输出信息反馈调整控制部分的活动，最终使受控部分的活动向与其原先活动的相反方向改变，称为负反馈。</p><blockquote><p>在正常生理情况下，体内的控制系统绝大多数属于负反馈控制系统，它们在维持机体内环境稳态中起中澳作用。</p></blockquote><h3 id="正反馈控制系统"><a href="#正反馈控制系统" class="headerlink" title="正反馈控制系统"></a>正反馈控制系统</h3><p><strong>正反馈：</strong> 来自受控部分的输出信息反馈调整控制部分的活动，最终使受控部分向与其原先活动的相同方向改变，这种反馈活动称为正反馈。</p><blockquote><p>体内的正反馈控制系统远较负反馈控制系统少，但在排泄、分娩等生理活动中，正反馈调节具有重要的生理意义。</p></blockquote><h2 id="前馈控制系统"><a href="#前馈控制系统" class="headerlink" title="前馈控制系统"></a>前馈控制系统</h2><p>在自动控制理论中，前馈控制系统是利用输入或扰动信号（前馈信号）的直接控制作用构成的开环控制系统。当控制部分发出信号，旨令受控部分进行某一活动时，受控部分不发出反馈信号，而是由某一监测装置在受到刺激后发出前馈信号，作用于控制部分，使其及早做出适应性反应，及时地调控受控部分的活动。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;体液&quot;&gt;&lt;a href=&quot;#体液&quot; class=&quot;headerlink&quot; title=&quot;体液&quot;&gt;&lt;/a&gt;体液&lt;/h1&gt;&lt;h2 id=&quot;名词解释&quot;&gt;&lt;a href=&quot;#名词解释&quot; class=&quot;headerlink&quot; title=&quot;名词解释&quot;&gt;&lt;/a&gt;名词解释&lt;/h</summary>
+      
+    
+    
+    
+    <category term="生理学" scheme="http://example.com/categories/%E7%94%9F%E7%90%86%E5%AD%A6/"/>
+    
+    
+    <category term="生理学" scheme="http://example.com/tags/%E7%94%9F%E7%90%86%E5%AD%A6/"/>
+    
+    <category term="绪论" scheme="http://example.com/tags/%E7%BB%AA%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【精神病学】精神分裂症及其他原发性精神病性疾病</title>
+    <link href="http://example.com/2025/11/19/%E3%80%90%E7%B2%BE%E7%A5%9E%E7%97%85%E5%AD%A6%E3%80%91%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E5%8F%8A%E5%85%B6%E4%BB%96%E5%8E%9F%E5%8F%91%E6%80%A7%E7%B2%BE%E7%A5%9E%E7%97%85%E6%80%A7%E7%96%BE%E7%97%85/"/>
+    <id>http://example.com/2025/11/19/%E3%80%90%E7%B2%BE%E7%A5%9E%E7%97%85%E5%AD%A6%E3%80%91%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87%E5%8F%8A%E5%85%B6%E4%BB%96%E5%8E%9F%E5%8F%91%E6%80%A7%E7%B2%BE%E7%A5%9E%E7%97%85%E6%80%A7%E7%96%BE%E7%97%85/</id>
+    <published>2025-11-19T05:03:26.000Z</published>
+    <updated>2025-11-19T06:13:40.268Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="精神分裂症"><a href="#精神分裂症" class="headerlink" title="精神分裂症"></a>精神分裂症</h1><h2 id="病因与发病机制"><a href="#病因与发病机制" class="headerlink" title="病因与发病机制"></a>病因与发病机制</h2><ol><li>遗传</li><li>神经发育：新皮质形成时期神经细胞从大脑深部向皮质迁移过程中出现了紊乱；</li><li>神经影像：额叶功能亢进、额叶功能低下、内侧额叶皮质失活失败；</li><li>神经生化：多巴胺、谷氨酸、5—羟色胺、γ—氨基丁酸（GABA）；</li><li>心理社会因素。</li></ol><h2 id="临床表现"><a href="#临床表现" class="headerlink" title="临床表现"></a>临床表现</h2><h3 id="前驱期症状"><a href="#前驱期症状" class="headerlink" title="前驱期症状"></a>前驱期症状</h3><ol><li>情绪改变：抑郁、焦虑、情绪波动、易激惹等；</li><li>认知改变：出现一些古怪或异常的观念和想法等；</li><li>对自身和外界的感知改变；</li><li>行为改变：社交退缩或丧失兴趣、多疑敏感、职业功能水平下降；</li><li>躯体改变：睡眠和食欲改变、虚弱感、头痛、背痛、消化道症状；</li><li>少数青少年以突然出现的强迫症状为首发症状。</li></ol><h3 id="显症期症状"><a href="#显症期症状" class="headerlink" title="显症期症状"></a>显症期症状</h3><h4 id="阳性症状"><a href="#阳性症状" class="headerlink" title="阳性症状"></a>阳性症状</h4><ol><li>幻觉：幻听、幻视、幻嗅、幻味、幻触均可出现，但以幻听最常见。</li><li>妄想：在意识清醒的基础上持续出现某些离奇古怪或令人难以置信的妄想，常提示精神分裂症的可能。</li><li>瓦解症状群：思维形式障碍、思维过程障碍、奇异行为和紧张症行为、不适当的情感。</li></ol><h4 id="阴性症状"><a href="#阴性症状" class="headerlink" title="阴性症状"></a>阴性症状</h4><ol><li>意志减退：患者从事有目的性活动的意愿和动机减退或丧失；</li><li>快感缺失：持续存在的不能从日常活动中发现和获得愉快感，尤其是对即将参与的活动缺乏期待快感；</li><li>情感迟钝：不能理解和识别别人的情感表露 和&#x2F;或 不能正确表达自己的情感；</li><li>社交退缩：对社会关系的冷淡和对社交兴趣的减退或缺乏；</li><li>言语缺乏：言语的产生减少或缺乏。</li></ol><h4 id="焦虑、抑郁症状"><a href="#焦虑、抑郁症状" class="headerlink" title="焦虑、抑郁症状"></a>焦虑、抑郁症状</h4><h4 id="激越症状"><a href="#激越症状" class="headerlink" title="激越症状"></a>激越症状</h4><ol><li>攻击暴力：激越、冲动控制能力减退、社交敏感度降低；</li><li>自杀：最可能原因（抑郁症状），促发因素（虚无妄想、命令性幻听、逃避精神痛苦、物质使用）</li></ol><h4 id="定向、记忆和智能"><a href="#定向、记忆和智能" class="headerlink" title="定向、记忆和智能"></a>定向、记忆和智能</h4><p>对时间、空间和人物一般能正确定向，意识通常清晰，一般记忆和智能无明显障碍。</p><h4 id="自知力"><a href="#自知力" class="headerlink" title="自知力"></a>自知力</h4><p>常缺乏。</p><h2 id="诊断要点"><a href="#诊断要点" class="headerlink" title="诊断要点"></a>诊断要点</h2><h3 id="症状特点"><a href="#症状特点" class="headerlink" title="症状特点"></a>症状特点</h3><p>一般来说，患者在意识清晰的基础上持续较长时间符合下述症状应想到精神分裂症可能：</p><ol><li>持续妄想：夸大&#x2F;关系&#x2F;被害妄想；</li><li>持续幻觉：最常见的是幻听；</li><li>思维紊乱：如词不达意及思维松弛、语言不连贯、语词新作；</li><li>被动体验、被影响或被控制体验；</li><li>阴性症状：如情感平淡、思维缺乏或言语缺乏、意志缺乏、社交缺乏或兴趣丧失；</li><li>明显的行为紊乱：可以出现在任何有目的的活动中；</li><li>精神运动性症状：紧张症性不安或激越、作态、蜡样屈曲、违拗、缄默或木僵。</li></ol><h3 id="病程特点"><a href="#病程特点" class="headerlink" title="病程特点"></a>病程特点</h3><p>多为持续性病程。</p><p>首次发作者通常要求在一个月及以上的大部分时间内，持续存在上述1—7中至少2项，且其中至少符合1—4中的一项。</p><h3 id="其他特点"><a href="#其他特点" class="headerlink" title="其他特点"></a>其他特点</h3><p>家族史、排除诊断等。</p><h2 id="鉴别诊断"><a href="#鉴别诊断" class="headerlink" title="鉴别诊断"></a>鉴别诊断</h2><p>继发性精神病性障碍、其他精神病性障碍、心境障碍、焦虑症与强迫症、人格障碍。</p><h3 id="继发性精神病性障碍"><a href="#继发性精神病性障碍" class="headerlink" title="继发性精神病性障碍"></a>继发性精神病性障碍</h3><ol><li>躯体疾病与精神症状的出现在时间上密切相关，病情的消长常与原发疾病相平行；</li><li>精神症状多在意识障碍的背景上出现，幻觉以幻视为主，较少有精神分裂症的“特征性”症状；</li><li>体格检查可有阳性发现；</li><li>实验室检查常可找到相关的证据。</li></ol><h3 id="其他精神病性障碍"><a href="#其他精神病性障碍" class="headerlink" title="其他精神病性障碍"></a>其他精神病性障碍</h3><ol><li>分裂样精神障碍：病程不足一个月；</li><li>急性短暂性精神病性障碍：没有前驱症状的情况下突然起病，精神病性症状在2w内达峰。症状和性质波动大，通常在数天内完全缓解；</li><li>分裂情感障碍：一次疾病发作过程中，精神病性障碍和心境障碍（躁狂或抑郁）均很明显且差不多同时出现或消退；</li><li>妄想性障碍：妄想结构严密系统，内容有事实基础，思维有条理和逻辑，行为和情感与妄想内容一致，无智能和人格衰退，一般无幻觉或不为主要表现。</li></ol><h3 id="心境障碍"><a href="#心境障碍" class="headerlink" title="心境障碍"></a>心境障碍</h3><p>精神病性症状在心境症状改善时通常较快消失，不是疾病的主要临床相。</p><h3 id="焦虑与强迫症"><a href="#焦虑与强迫症" class="headerlink" title="焦虑与强迫症"></a>焦虑与强迫症</h3><ol><li>焦虑与强迫症多数由良好的自知力，了解自己的病情变化和处境，求治心切，情感反应强烈；<br>精神分裂症早期虽可有自知力，但不迫切求治，情感反应亦不强烈。</li><li>仔细的病史询问及精神检查：可发现其他精神分裂症的症状；</li><li>一时难以诊断者：一定时间的随访观察，切忌轻易诊断。</li></ol><h3 id="人格障碍"><a href="#人格障碍" class="headerlink" title="人格障碍"></a>人格障碍</h3><ol><li>人格障碍是一个固定的情绪、行为模式，一般无明显、持续的精神病性症状；症状表现是一个量的变化，无确切发病点；</li><li>精神分裂症病前病后有明显转折，情感与行为有质的异常，且具有某些中性精神病性症状。</li></ol><h2 id="病程与预后"><a href="#病程与预后" class="headerlink" title="病程与预后"></a>病程与预后</h2><h3 id="病程"><a href="#病程" class="headerlink" title="病程"></a>病程</h3><p>青少年起病，存在前驱期，呈恶化与缓解交替病程。</p><h3 id="预后"><a href="#预后" class="headerlink" title="预后"></a>预后</h3><ol><li>异质性大；</li><li>近半数随访期间明显改善；</li><li>病程变化为疾病前5年最大，随后进入相对稳定的平台期；</li><li>总体预后差于分裂情感障碍和心境障碍；</li><li>病程和结局差异与选用的临床标准有关。</li></ol><h2 id="治疗"><a href="#治疗" class="headerlink" title="治疗"></a>治疗</h2><h3 id="药物治疗（首选）"><a href="#药物治疗（首选）" class="headerlink" title="药物治疗（首选）"></a>药物治疗（首选）</h3><ol><li>药物选择原则：根据依从性、疗效、耐受性、既往治疗体验、长期治疗计划、年龄、性别及经济状况综合考虑后选择；</li><li>药物使用原则：早期、适量、足疗程、单一用药、个体化用药；</li><li>药物治疗程序：<ul><li>急性治疗期：尽快控制症状，防止继发性伤害；</li><li>巩固治疗期：防治疾病复燃，协助患者恢复病前社会功能；</li><li>维持治疗期：防止疾病复发，进一步改善社会功能的整合和提高生活质量；</li></ul></li><li>合并用药原则<ul><li>患者持续出现焦虑、抑郁和敌意等症状→相应药物对症处理；</li><li>经合适的抗精神病药物治疗，但仍表现持续的阳性精神病性症状→辅助药物、电抽搐治疗（ECT）、经颅磁刺激治疗、联合应用不同种类的抗精神病药物、单独应用ECT。</li></ul></li><li>安全监测与不良反应的处理。</li></ol><h3 id="物理治疗"><a href="#物理治疗" class="headerlink" title="物理治疗"></a>物理治疗</h3><p>电抽搐治疗（ECT）与改良电抽搐治疗（MECT）。</p><h3 id="心理与社会干预"><a href="#心理与社会干预" class="headerlink" title="心理与社会干预"></a>心理与社会干预</h3><ol><li>社会技能训练；</li><li>家庭干预：心理教育、家庭危机干预、以家庭为基础的行为治疗；</li><li>认知行为疗法（CBT）；</li><li>社区服务；</li><li>其他。</li></ol><h1 id="分裂情感障碍（SAD）"><a href="#分裂情感障碍（SAD）" class="headerlink" title="分裂情感障碍（SAD）"></a>分裂情感障碍（SAD）</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>在同一次疾病发作期间同时满足精神分裂症和心境障碍诊断要求的发作性疾病，精神分裂症症状和心境障碍症状可同时出现或相隔几天出现。</p><h2 id="诊断要点-1"><a href="#诊断要点-1" class="headerlink" title="诊断要点"></a>诊断要点</h2><ol><li>在疾病的同一次发作中，精神病性症状和情感性症状同时出现或只差几天出现；</li><li>该发作符合精神分裂症全部诊断要求的同时存在情感症状，且情感症状需满足以下心境发作（中重度抑郁发作、躁狂发作或混合发作）之一的诊断要求。<blockquote><p>要注意的是，抑郁发作的症状必须包括情绪低落，不能只依据兴趣减退或愉悦感降低。</p></blockquote></li><li>精神病性症状和情感性症状共同存在至少一个月。</li><li>这种症状或行为不是其他躯体疾病所致，也不是物质或药物作用于中枢神经系统的效应所致。</li></ol><h2 id="预后-1"><a href="#预后-1" class="headerlink" title="预后"></a>预后</h2><p>好于精神分裂症、差于精神分裂症。</p><h1 id="分裂型障碍"><a href="#分裂型障碍" class="headerlink" title="分裂型障碍"></a>分裂型障碍</h1><p>以持久的（通常至少几年）表现为外表、语言和行为古怪而反常的模式，伴有感知和认知障碍、不寻常的信念，以及对人际关系感到不适病导致人际关系不良为特征。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;精神分裂症&quot;&gt;&lt;a href=&quot;#精神分裂症&quot; class=&quot;headerlink&quot; title=&quot;精神分裂症&quot;&gt;&lt;/a&gt;精神分裂症&lt;/h1&gt;&lt;h2 id=&quot;病因与发病机制&quot;&gt;&lt;a href=&quot;#病因与发病机制&quot; class=&quot;headerlink&quot; title=</summary>
+      
+    
+    
+    
+    <category term="精神病学" scheme="http://example.com/categories/%E7%B2%BE%E7%A5%9E%E7%97%85%E5%AD%A6/"/>
+    
+    
+    <category term="知识点整理" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/"/>
+    
+    <category term="精神病学" scheme="http://example.com/tags/%E7%B2%BE%E7%A5%9E%E7%97%85%E5%AD%A6/"/>
+    
+    <category term="精神分裂症" scheme="http://example.com/tags/%E7%B2%BE%E7%A5%9E%E5%88%86%E8%A3%82%E7%97%87/"/>
+    
+  </entry>
   
   <entry>
     <title>【神经病学】了解性章节</title>
@@ -627,69 +681,6 @@
     <category term="眼科学" scheme="http://example.com/tags/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
     
     <category term="结膜" scheme="http://example.com/tags/%E7%BB%93%E8%86%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【眼科学】斜视与弱视</title>
-    <link href="http://example.com/2025/10/21/%E3%80%90%E7%9C%BC%E7%A7%91%E5%AD%A6%E3%80%91%E6%96%9C%E8%A7%86%E4%B8%8E%E5%BC%B1%E8%A7%86/"/>
-    <id>http://example.com/2025/10/21/%E3%80%90%E7%9C%BC%E7%A7%91%E5%AD%A6%E3%80%91%E6%96%9C%E8%A7%86%E4%B8%8E%E5%BC%B1%E8%A7%86/</id>
-    <published>2025-10-21T03:05:57.000Z</published>
-    <updated>2025-10-21T03:51:14.914Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="眼外肌与眼球运动"><a href="#眼外肌与眼球运动" class="headerlink" title="眼外肌与眼球运动"></a>眼外肌与眼球运动</h2><table><thead><tr><th align="center">眼外肌</th><th align="center">主要作用</th><th align="center">次要作用</th></tr></thead><tbody><tr><td align="center">外直肌</td><td align="center">外转</td><td align="center">无</td></tr><tr><td align="center">内直肌</td><td align="center">内转</td><td align="center">无</td></tr><tr><td align="center">上直肌</td><td align="center">上转</td><td align="center">内转、内旋</td></tr><tr><td align="center">下直肌</td><td align="center">下转</td><td align="center">内转、外旋</td></tr><tr><td align="center">上斜肌</td><td align="center">内旋</td><td align="center">下转、外转</td></tr><tr><td align="center">下斜肌</td><td align="center">外旋</td><td align="center">上转、外转</td></tr></tbody></table><h2 id="双眼视觉及斜视后的异常改变"><a href="#双眼视觉及斜视后的异常改变" class="headerlink" title="双眼视觉及斜视后的异常改变"></a>双眼视觉及斜视后的异常改变</h2><h3 id="视网膜对应"><a href="#视网膜对应" class="headerlink" title="视网膜对应"></a>视网膜对应</h3><p>双眼视网膜具有共同视觉的点或区域称为视网膜对应。</p><p>双眼黄斑中心凹具有共同的视觉方向时为正常视网膜对应。</p><h3 id="产生双眼视觉的基本条件"><a href="#产生双眼视觉的基本条件" class="headerlink" title="产生双眼视觉的基本条件"></a>产生双眼视觉的基本条件</h3><ul><li>双眼视觉重合</li><li>双眼所见物象相似或完全一致</li><li>正常视网膜对应</li><li>健全的融合功能</li><li>协调的眼球运动</li></ul><h2 id="危害"><a href="#危害" class="headerlink" title="危害"></a>危害</h2><p>破坏双眼单视、单眼弱视、影响外观、影响心理。</p><h1 id="斜视"><a href="#斜视" class="headerlink" title="斜视"></a>斜视</h1><p><strong>斜视：</strong> 任何一眼视轴偏离的临床现象，可因双眼单视异常、控制眼球运动的神经肌肉异常或各类机械性限制引起。</p><ul><li>共同性斜视：眼球运动没有限制。向不同方向注视或更换注视眼时，偏斜度均想等。眼外肌及其支配神经均无明显器质性病变。</li><li>非共同性斜视：眼球运动在某个方向或某些方向有限制。向不同方向注视或更换注视眼时，偏斜度不等。存在眼外肌及其支配神经的器质性病变。</li></ul><h2 id="共同性斜视"><a href="#共同性斜视" class="headerlink" title="共同性斜视"></a>共同性斜视</h2><ul><li>光学治疗：框架、三棱镜</li><li>药物治疗：散瞳剂、缩瞳剂</li><li>视力矫正训练</li><li>弱视治疗</li><li>手术治疗</li></ul><h2 id="非共同性斜视"><a href="#非共同性斜视" class="headerlink" title="非共同性斜视"></a>非共同性斜视</h2><h3 id="病因"><a href="#病因" class="headerlink" title="病因"></a>病因</h3><ul><li>先天性</li><li>后天性：外伤、炎症、心血管疾病、肿瘤、内分泌疾病等。</li></ul><h3 id="临床表现"><a href="#临床表现" class="headerlink" title="临床表现"></a>临床表现</h3><ol><li>眼球运动受限</li><li>不同方向注视时，斜视角不等；</li><li>复视；</li><li>代偿头位。</li></ol><h3 id="治疗"><a href="#治疗" class="headerlink" title="治疗"></a>治疗</h3><ol><li>病因治疗</li><li>对症治疗：光学矫正、药物治疗、手术治疗。</li></ol><h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><table><thead><tr><th align="center">非共同性斜视</th><th align="center">共同性斜视</th></tr></thead><tbody><tr><td align="center">突然发病</td><td align="center">逐渐进展</td></tr><tr><td align="center">眼球运动受限</td><td align="center">眼球运动无受限</td></tr><tr><td align="center">第二斜视角＞第一斜视角</td><td align="center">交替注视眼时，斜视角相等</td></tr><tr><td align="center">有复视</td><td align="center">无复视</td></tr><tr><td align="center">有代偿头位</td><td align="center">无代偿头位</td></tr></tbody></table><h1 id="弱视"><a href="#弱视" class="headerlink" title="弱视"></a>弱视</h1><p>弱视时视觉发育期由于异常视觉经验（单眼斜视、屈光参差、高度屈光不正以及形觉剥夺）引起的单眼（少见双眼）的最佳矫正视力低于对应年龄的正常值，通常眼部检查无器质性病变。</p><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ol><li>斜视性弱视：单眼性斜视；</li><li>屈光不正性弱视：远视≥4.00DS，散光≥2.00DC，近视≥5.00DS；</li><li>屈光参差性弱视：两眼球镜相差1.50DS，柱镜相差1.00DC。</li><li>形觉剥夺性弱视：先天性白内障、角膜浑浊、完全性上睑下垂等。</li></ol><h2 id="治疗-1"><a href="#治疗-1" class="headerlink" title="治疗"></a>治疗</h2><ul><li>消除病因</li><li>屈光矫正</li><li>屈光矫正</li><li>光学药物疗法（压抑疗法）</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;h2 id=&quot;眼外肌与眼球运动&quot;&gt;&lt;a href=&quot;#眼外肌与眼球运动&quot; class=&quot;headerlink&quot; title=&quot;眼外肌与眼球运动&quot;</summary>
-      
-    
-    
-    
-    <category term="眼科学" scheme="http://example.com/categories/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
-    
-    
-    <category term="眼科学" scheme="http://example.com/tags/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
-    
-    <category term="斜视" scheme="http://example.com/tags/%E6%96%9C%E8%A7%86/"/>
-    
-    <category term="弱视" scheme="http://example.com/tags/%E5%BC%B1%E8%A7%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【眼科学】屈光不正与老视</title>
-    <link href="http://example.com/2025/10/21/%E3%80%90%E7%9C%BC%E7%A7%91%E5%AD%A6%E3%80%91%E5%B1%88%E5%85%89%E4%B8%8D%E6%AD%A3%E4%B8%8E%E8%80%81%E8%A7%86/"/>
-    <id>http://example.com/2025/10/21/%E3%80%90%E7%9C%BC%E7%A7%91%E5%AD%A6%E3%80%91%E5%B1%88%E5%85%89%E4%B8%8D%E6%AD%A3%E4%B8%8E%E8%80%81%E8%A7%86/</id>
-    <published>2025-10-21T02:04:19.000Z</published>
-    <updated>2025-11-09T05:50:55.105Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="眼球光学"><a href="#眼球光学" class="headerlink" title="眼球光学"></a>眼球光学</h1><p>眼球屈光介质由外向内依次为： <strong>角膜、房水、晶状体和玻璃体</strong> 。</p><p><strong>屈光：</strong> 光从一种介质进入另一种不同折射率的介质时，光线将在界面发生偏折现象，该现象称为屈光。</p><p><strong>屈光力：</strong> 光线通过介质时的偏折程度可用屈光力的概念来表达，屈光力的单位是屈光度（D）。屈光力在数值上等于焦距（以m为单位）的倒数。</p><blockquote><p><strong>角膜</strong> 占眼球总屈光力的2&#x2F;3以上。</p></blockquote><p><strong>正视眼：</strong> 在眼调节放松状态下，若外界的平行光线经眼的屈光系统折射后恰好聚焦在视网膜上，这种屈光状态称为正视眼。</p><p><strong>非正视&#x2F;屈光不正：</strong> 在眼调节放松状态下，若外界的平行光线经眼的屈光系统折射后没有准确聚焦在视网膜上，则称为非正视或屈光不正。</p><ul><li><strong>近视：</strong> 在眼调节放松状态下，若外界的平行光线经眼的屈光系统折射后聚焦在视网膜之前，不能在视网膜上形成清晰的光学像，这种屈光状态称为近视。</li><li><strong>远视：</strong> 在眼调节放松状态下，若外界的平行光线经眼的屈光系统折射后聚焦在视网膜之后，不能在视网膜上形成清晰的光学像，这种屈光状态称为远视。</li><li><strong>散光：</strong> 当眼球在不同子午线上的屈光力不相等，平行光线经过该眼球折射后则无法会聚成一个焦点，这种屈光状态被称为散光。</li></ul><p>晶状体屈光力改变，适应看清眼前近物。看近时，睫状体收缩、悬韧带松弛，晶状体变凸，屈光力增大。</p><h1 id="近视"><a href="#近视" class="headerlink" title="近视"></a>近视</h1><p><strong>近视：</strong> 在眼调节放松状态下，若外界的平行光线经眼的屈光系统折射后聚焦在视网膜之前，不能在视网膜上形成清晰的光学像，这种屈光状态称为近视。</p><h2 id="病因与发病机制"><a href="#病因与发病机制" class="headerlink" title="病因与发病机制"></a>病因与发病机制</h2><ol><li>遗传因素：AR、AD或XL遗传。</li><li>环境因素：户外活动和光照、视近负荷、视网膜周边屈光与成像质量、营养。</li></ol><h2 id="分类："><a href="#分类：" class="headerlink" title="分类："></a>分类：</h2><h3 id="近视程度"><a href="#近视程度" class="headerlink" title="近视程度"></a>近视程度</h3><ol><li>轻度近视：—0.50D≤球镜度＜—3.00D；</li><li>中度近视：—3.00D≤球镜度＜—6.00D；</li><li>高度近视：球镜度≥-6.00D。</li></ol><h3 id="屈光成分"><a href="#屈光成分" class="headerlink" title="屈光成分"></a>屈光成分</h3><ol><li>屈光性近视</li><li>轴性近视</li></ol><h3 id="病程进展和病理特点"><a href="#病程进展和病理特点" class="headerlink" title="病程进展和病理特点"></a>病程进展和病理特点</h3><ol><li>单纯性近视（在—6.00D内）视远模糊、视近清楚；易引起外斜视；成年后稳定</li><li>病理性近视（超过—6.00D且持续增长）：眼轴过度伸长，并伴有导致视力损害的眼底病变。</li></ol><h2 id="治疗"><a href="#治疗" class="headerlink" title="治疗"></a>治疗</h2><h3 id="框架眼镜"><a href="#框架眼镜" class="headerlink" title="框架眼镜"></a>框架眼镜</h3><h3 id="接触镜"><a href="#接触镜" class="headerlink" title="接触镜"></a>接触镜</h3><ol><li>以含水的高分子化合物制成，柔软，舒适度好。</li><li>硬性接触镜：透氧性强、蛋白沉积少，光学成像质量佳，适合矫正角膜光。验配技术要求高，佩戴需要适应期，护理要求严格。</li></ol><h3 id="屈光手术"><a href="#屈光手术" class="headerlink" title="屈光手术"></a>屈光手术</h3><ul><li>角膜屈光手术：飞秒激光辅助制瓣的准分子激光原位角膜摩擦术（femto-LASIK，“半飞秒”）、飞秒激光小切口角膜基质透镜取出术（SMILE，“全飞秒”）。</li><li>眼内屈光手术</li><li>巩膜屈光手术</li></ul><h3 id="药物"><a href="#药物" class="headerlink" title="药物"></a>药物</h3><p>低浓度阿托品，主要用于近视预防。</p><h1 id="远视"><a href="#远视" class="headerlink" title="远视"></a>远视</h1><p><strong>远视：</strong> 当受到各种生理性和病理性的因素影响，眼球前后径（眼轴）变短或屈光力下降，平行光线进入眼内，经过眼球屈光系统折射后在视网膜后方形成焦点，外界物体在视网膜上无法成清晰像，则形成远视。</p><h2 id="临床症状"><a href="#临床症状" class="headerlink" title="临床症状"></a>临床症状</h2><p>视近、视远均模糊，易视疲劳；可出现调节性眼内斜视。</p><h1 id="散光"><a href="#散光" class="headerlink" title="散光"></a>散光</h1><p>当眼球在不同子午线上的屈光力不相等，平行光线经过该眼球折射后则无法会聚成一个焦点，这种屈光状态被称为散光。</p><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><h3 id="按照散光的规则程度"><a href="#按照散光的规则程度" class="headerlink" title="按照散光的规则程度"></a>按照散光的规则程度</h3><ol><li>规则散光：屈光力最大和最小的两条子午线相互垂直，同一条子午线上各点的屈光力一致；</li><li>不规则散光：屈光力最大和最小的两条子午线不相互垂直或同一子午线曲率变化无规律者；</li></ol><h3 id="按照屈光力最大的子午线的方向"><a href="#按照屈光力最大的子午线的方向" class="headerlink" title="按照屈光力最大的子午线的方向"></a>按照屈光力最大的子午线的方向</h3><ol><li>顺规散光：屈光力最大的主子午线位于垂直位。</li><li>逆规散光：屈光力最大的主子午线位于水平位。</li></ol><h3 id="按照平行光线通过两主子午线会聚成像相对于视网膜的位置"><a href="#按照平行光线通过两主子午线会聚成像相对于视网膜的位置" class="headerlink" title="按照平行光线通过两主子午线会聚成像相对于视网膜的位置"></a>按照平行光线通过两主子午线会聚成像相对于视网膜的位置</h3><ol><li>单纯近视散光：一主子午线成像刚好位于视网膜上。另一主子午线成像位于视网膜前；</li><li>单纯远视散光：一主子午线成像刚好位于视网膜上。另一主子午线成像位于视网膜后；</li><li>复合近视散光：两子午线像均位于视网膜之前。</li><li>复合远视散光：两子午线像均位于视网膜之后。</li><li>混合散光：一主子午线成像位于视网膜前，另一主子午线成像位于视网膜后。</li></ol><h2 id="临床表现"><a href="#临床表现" class="headerlink" title="临床表现"></a>临床表现</h2><p>视近、视远均模糊；头位异常；（长时间调节睫状肌疲劳）易视疲劳；固定性眯眼。</p><h2 id="治疗-1"><a href="#治疗-1" class="headerlink" title="治疗"></a>治疗</h2><p>柱镜矫正，合并远视或近视可采用球柱镜矫正。</p><h1 id="屈光参差"><a href="#屈光参差" class="headerlink" title="屈光参差"></a>屈光参差</h1><p>屈光参差是指两眼屈光不正的程度或者性质有一定差别。</p><h2 id="临床表现-1"><a href="#临床表现-1" class="headerlink" title="临床表现"></a>临床表现</h2><ul><li>双眼视物大小不等像。</li><li>双眼球镜相差≥1.50D，柱镜相差≥1.00D</li><li>斜视、弱视</li></ul><h2 id="矫正方法"><a href="#矫正方法" class="headerlink" title="矫正方法"></a>矫正方法</h2><ul><li>角膜接触镜</li><li>屈光手术</li></ul><h1 id="老视"><a href="#老视" class="headerlink" title="老视"></a>老视</h1><p>随着年龄增长，眼的调节幅度逐渐下降，从而出现近距离工作困难等症状，这种由于年龄增长所致的生理性调节能力降低称为老视。</p><h2 id="临床表现-2"><a href="#临床表现-2" class="headerlink" title="临床表现"></a>临床表现</h2><h3 id="老视症状"><a href="#老视症状" class="headerlink" title="老视症状"></a>老视症状</h3><p>视近困难，视近难以持久，需要更强的照明；</p><h3 id="影响因素"><a href="#影响因素" class="headerlink" title="影响因素"></a>影响因素</h3><ol><li>屈光状态和矫正方式：正视眼早于近视眼；</li><li>用眼方式；</li><li>身体素质；</li><li>地理位置；</li><li>药物：胰岛素、抗焦虑药、抗精神病药、抗组胺药、抗痉挛药、利尿药。</li></ol><h2 id="治疗-2"><a href="#治疗-2" class="headerlink" title="治疗"></a>治疗</h2><ul><li>框架眼镜：单光镜、双光镜、渐进多焦点镜。</li><li>角膜接触镜</li><li>屈光手术：角膜屈光手术、巩膜扩张术、人工晶状体手术。</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;眼球光学&quot;&gt;&lt;a href=&quot;#眼球光学&quot; class=&quot;headerlink&quot; title=&quot;眼球光学&quot;&gt;&lt;/a&gt;眼球光学&lt;/h1&gt;&lt;p&gt;眼球屈光介质由外向内依次为： &lt;strong&gt;角膜、房水、晶状体和玻璃体&lt;/strong&gt; 。&lt;/p&gt;
-&lt;p&gt;&lt;strong</summary>
-      
-    
-    
-    
-    <category term="眼科学" scheme="http://example.com/categories/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
-    
-    
-    <category term="眼科学" scheme="http://example.com/tags/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
-    
-    <category term="屈光不正" scheme="http://example.com/tags/%E5%B1%88%E5%85%89%E4%B8%8D%E6%AD%A3/"/>
-    
-    <category term="近视" scheme="http://example.com/tags/%E8%BF%91%E8%A7%86/"/>
-    
-    <category term="远视" scheme="http://example.com/tags/%E8%BF%9C%E8%A7%86/"/>
-    
-    <category term="散光" scheme="http://example.com/tags/%E6%95%A3%E5%85%89/"/>
-    
-    <category term="老视" scheme="http://example.com/tags/%E8%80%81%E8%A7%86/"/>
     
   </entry>
   
