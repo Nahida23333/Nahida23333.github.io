@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-01-07T14:34:45.918Z</updated>
+  <updated>2026-01-18T07:45:12.604Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,73 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【斯波索宾和声学】和弦外音与终止四六和弦</title>
+    <link href="http://example.com/2026/01/17/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E5%92%8C%E5%BC%A6%E5%A4%96%E9%9F%B3%E4%B8%8E%E7%BB%88%E6%AD%A2%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6/"/>
+    <id>http://example.com/2026/01/17/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E5%92%8C%E5%BC%A6%E5%A4%96%E9%9F%B3%E4%B8%8E%E7%BB%88%E6%AD%A2%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6/</id>
+    <published>2026-01-17T15:39:16.000Z</published>
+    <updated>2026-01-18T07:45:12.604Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="和弦外音"><a href="#和弦外音" class="headerlink" title="和弦外音"></a>和弦外音</h1><p><strong>和弦外音</strong> 是指出现在某一和弦中，却不属于该和弦“构成音”的音。例如，$C$、$E$、$G$是$C$大调主和弦的构成音（和弦内音），那么这三个音之外的音则属于该和弦的“和弦外音”。</p><blockquote><p>值得一提的是，所谓和弦的构成音在不同时期、不同风格的作品，乃至不同人的观点中，标准不一定一致；因此需要根据实际情况具体判断。例如，由$C$、$D$、$E$、$G$所构成的和弦，如果按照<a href="https://nahida23333.github.io/2025/07/06/%E3%80%90%E4%B9%90%E7%90%86%E3%80%91%E5%92%8C%E5%BC%A6/#%E5%8A%A0%E9%9F%B3%EF%BC%88add%EF%BC%89%E5%92%8C%E5%BC%A6">和弦固定标记法</a> 标记为 $Cadd9$，此时$D$被认为属于$Cadd9$的构成音，而不是该和弦的和弦外音。在本篇文章中，如无特殊说明默认从三和弦体系出发，即将根音、三音、五音之外的音视为和弦外音。</p></blockquote><p>和弦外音主要有以下几种形式。其中，经过音、辅助音和先现音合称为 <strong>弱外音</strong> ，延留音和倚音合称为 <strong>强外音</strong> 。值得一提的是，这五种形式和和弦外音并不是包含和被包含的关系，它们可以不是和弦外音（如下图所示，属于和弦内音“保持共同音”的情况）。<br><img src="/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/304ad556efb0c67fc510002d64ce3360.jpg"></p><h2 id="经过音和辅助音"><a href="#经过音和辅助音" class="headerlink" title="经过音和辅助音"></a>经过音和辅助音</h2><p>经过音是指在两个不同高的和弦内音之间，充当“阶梯”的音；而辅助音由和弦内音向上或向下级进，随后立即回到原来的和弦内音。经过音和辅助音不应强于两侧的音。在配和弦方面，可以为经过音和辅助音单独配上和弦，也可以继续延续原和弦的结构。</p><h2 id="先现音"><a href="#先现音" class="headerlink" title="先现音"></a>先现音</h2><p>先现音是指后一个和弦的某个声部，提前在当前和弦中的相同声部出现的音，可以起到预示后续旋律、丰富声部节奏的作用。同样地，先现音不应强于后续的“正式音”，就好似预告片不能比电影正片还要精彩。</p><h2 id="延留音"><a href="#延留音" class="headerlink" title="延留音"></a>延留音</h2><p>延留音是指前一个和弦的某个声部，在当前和弦中没有发生改变的音。延留音可与和弦内音之间形成不协和音程，给予听者以紧张感；并且有强烈的解决紧张感的倾向。因此，延留音应位于“强拍强位”，以进一步突出这种感觉。</p><p>延留音解决的基本原则是，在不触犯基础规则（交叉超越、五八度等）的基础上，就近前往稳定性更高的和弦内音。由根音、二音（延留音）、三音、五音构成的和弦，二音到根音和三音的距离相等，但根音在稳定性方面优于三音，因此二音更倾向于解决到根音。同理，四音更倾向于解决到三音，六音更倾向于解决到五音。综上所述， <strong>延留音通常通过向下级进解决</strong> 。但特殊地，根音、三音、五音、七音所构成的和弦中，由于七音与根音的距离更近，因此 <strong>七音延留音通过向上级进解决</strong> 也是常见的情况。</p><blockquote><p>注意：此处所述是在三和弦框架内，同一个和弦中和弦外音向和弦内音的解决，并非和弦之间的解决，因此不要与后续的“属七和弦通过七音向下级进到主和弦的三音，实现属七和弦到主和弦的解决”相混淆。</p></blockquote><h2 id="倚音"><a href="#倚音" class="headerlink" title="倚音"></a>倚音</h2><p>倚音是指一种没有预备的、直接出现在强拍上的和弦外音。与延留音类似，倚音通常也通过向下级进解决，形成“延迟解决”的效果。</p><h1 id="终止四六和弦"><a href="#终止四六和弦" class="headerlink" title="终止四六和弦"></a>终止四六和弦</h1><p><img src="/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/ScreenShot_2026-01-18_144729_626.png"><br>终止四六和弦记为$K_4^6$，是指位于半终止或全终止处的，涉及四度音和六度音这两个强和弦外音的属功能和弦，从外观上与主和弦的第二转位相似，但其功能为强属功能，具备较强的终止倾向和收束感。需要注意：</p><ul><li>终止四六和弦必需位于半终止或全终止处。</li><li>终止四六和弦属功能内部和弦外音具有向和弦内音解决的倾向性，一般通过四音向下级进至三音、六音向下级进至五音，以解决至原位属功能和弦，即$K_4^6→D$。</li><li>终止四六和弦所处位置应不弱于解决后的和弦内音。</li></ul><p>在<a href="https://nahida23333.github.io/2025/07/27/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E4%B9%90%E5%8F%A5%E3%80%81%E4%B9%90%E6%AE%B5%E4%B8%8E%E7%BB%88%E6%AD%A2%E5%BC%8F/#%E7%BB%88%E6%AD%A2%E5%BC%8F">初次介绍终止式</a>时，我们提到：半终止使用属功能和弦为多，而全终止一般情况下优先选择$S→D→T$的完全终止，次之选择$D→T$的正格全终止。而在引入终止四六和弦之后，由于“$K_4^6→D$”较“$D$”具有更强的属功能，因此对于上述规则我们可以进一步细化补充。</p><ul><li>对于半终止，宜优先选用$K_4^6→D$的正格半终止，$D$的正格半终止次之。</li><li>对于全终止，宜优先使用$S→K_4^6→D→T$的完全终止，$S→D→T$的完全终止和$K_4^6→D→T$的正格全终止次之。</li></ul><p>在实际使用终止四六和弦配和弦时，需要注意以下几点。</p><ol><li>使用终止四六和弦时，$K_4^6$前的和弦不应使用$D$和弦。这会显著削弱$K_4^6$所带来的紧张感。</li><li>$K_4^6$的节拍强度应不弱于、时值长度应不短于后方的$D$和弦。</li><li>$K_4^6$内部亦可做同和弦转换。</li><li>全终止处的$K_4^6→D$处可以做旋律的跳进，使$D$和弦的不稳定感更强，从而增强$D→T$的解决感（如下图所示）。在无可避免时，允许发生声部超越和四部同向。半终止处的$K_4^6→D$处则不允许旋律跳进，否则不能良好地引导下半乐句。</li></ol><p><img src="/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/ScreenShot_2026-01-18_153810_096.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;和弦外音&quot;&gt;&lt;a href=&quot;#和弦外音&quot; class=&quot;headerlink&quot; title=&quot;和弦外音&quot;&gt;&lt;/a&gt;和弦外音&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;和弦外音&lt;/strong&gt; 是指出现在某一和弦中，却不属于该和弦“构成音”的音。例如，$C$、$E$、$G$</summary>
+      
+    
+    
+    
+    <category term="音乐 - 和声学" scheme="http://example.com/categories/%E9%9F%B3%E4%B9%90-%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    
+    <category term="音乐" scheme="http://example.com/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+    <category term="和声学" scheme="http://example.com/tags/%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    <category term="斯波索宾和声学" scheme="http://example.com/tags/%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    <category term="四部和声" scheme="http://example.com/tags/%E5%9B%9B%E9%83%A8%E5%92%8C%E5%A3%B0/"/>
+    
+    <category term="和弦外音" scheme="http://example.com/tags/%E5%92%8C%E5%BC%A6%E5%A4%96%E9%9F%B3/"/>
+    
+    <category term="终止四六和弦" scheme="http://example.com/tags/%E7%BB%88%E6%AD%A2%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【生理学】细胞的基本功能</title>
+    <link href="http://example.com/2026/01/07/%E3%80%90%E7%94%9F%E7%90%86%E5%AD%A6%E3%80%91%E7%BB%86%E8%83%9E%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/"/>
+    <id>http://example.com/2026/01/07/%E3%80%90%E7%94%9F%E7%90%86%E5%AD%A6%E3%80%91%E7%BB%86%E8%83%9E%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/</id>
+    <published>2026-01-07T14:36:32.000Z</published>
+    <updated>2026-01-14T14:20:52.647Z</updated>
+    
+    <content type="html"><![CDATA[<p>细胞的基本功能有：</p><ol><li>细胞膜的物质转运功能；</li><li>细胞的信号转导功能；</li><li>细胞的电活动；</li><li>肌细胞的收缩。</li></ol><h1 id="跨细胞膜的物质转运"><a href="#跨细胞膜的物质转运" class="headerlink" title="跨细胞膜的物质转运"></a>跨细胞膜的物质转运</h1><h2 id="单纯扩散"><a href="#单纯扩散" class="headerlink" title="单纯扩散"></a>单纯扩散</h2><p><strong>单纯扩散（简单扩散）</strong> 是指物质从质膜的高浓度一侧通过脂质分子间隙向低浓度一侧进行的跨膜扩散，是一种物理现象，没有生物学转运机制参与，无需代谢耗能，属于被动转运。</p><p>物质：脂溶性（非极性）物质或少数不带电荷的极性小分子，如$O_2$、$CO_2$、$N_2$、类固醇激素、乙醇、尿素、甘油、水等。</p><p>物质经单纯扩散转运速率主要取决于：①被转运物在膜两侧的浓度差；②膜对该物质的通透性；③其他：物质所在溶液温度、膜有效面积。</p><h2 id="易化扩散"><a href="#易化扩散" class="headerlink" title="易化扩散"></a>易化扩散</h2><p><strong>易化扩散</strong> 是指非脂溶性的小分子物质或带电离子在跨膜蛋白帮助下，顺浓度梯度和（或）电位梯度进行的跨膜转运，属于被动转运，无需消耗ATP。</p><h3 id="经通道的易化扩散"><a href="#经通道的易化扩散" class="headerlink" title="经通道的易化扩散"></a>经通道的易化扩散</h3><p>各种带电离子在通道蛋白的介导下，顺浓度梯度和（或）电位梯度的跨膜转运称为 <strong>经通道的易化扩散</strong> 。</p><h4 id="离子通道"><a href="#离子通道" class="headerlink" title="离子通道"></a>离子通道</h4><p>经通道转运的溶质几乎都是离子，因而这类通道蛋白也称 <strong>离子通道</strong> 。离子通道蛋白贯穿脂质双层，中央有亲水性孔道；具有两个重要的基本特征：</p><ul><li><strong>离子选择性：</strong> 每种通道只对一种或几种离子有较高的通透能力，而对其他离子的通透性很小或不通透。<ul><li>通道对离子的选择性取决于孔道的口径和带电状况，还与通道的形状、内壁的化学结构及离子键分布有关。</li></ul></li><li><strong>门控特性：</strong> 大部分通道蛋白分子内部有一些可移动的结构或化学基团，在通道开口处起“闸门”作用。许多因素可引起闸门运动，导致通道的开放或关闭，这一过程称为门控。在静息状态下，大多数通道的闸门都处于关闭状态，只有受到刺激时才发生分子构象变化，引起闸门开放。<ul><li><strong>电压门控通道：</strong> 受膜电位调控。当膜两侧电位差发生改变，通常时在膜发生去极化时，通道蛋白分子内的一些带电化学基团（电位感受区）发生移动，进而引起分子构象变化和闸门开放。电压门控通道的开放是神经或肌肉发生动作电位的基本机制。</li><li><strong>化学门控通道&#x2F;配体门控通道：</strong> 受膜外或膜内某些化学物质的通道，是一类兼有通道和受体功能的蛋白分子，与配体结合后可使通道的构象发生改变，引起闸门开放。</li><li><strong>机械门控通道：</strong> 受机械刺激调控，通常是质膜感受牵张刺激后引起其中的通道开放或关闭。</li></ul></li></ul><blockquote><p>也有少数通道始终是开放的，这类通道称为非门控通道。</p></blockquote><h4 id="水通道"><a href="#水通道" class="headerlink" title="水通道"></a>水通道</h4><p>某些细胞（如红细胞，肾小管、集合管、呼吸道以及肺泡等处的上皮细胞）对水的转运速率可达到惊人的程度，在这些细胞的质膜中，存在着大量对水高度通透且总是开放的水通道。组成水通道的蛋白称为 <strong>水通道蛋白（AQP）</strong> ，其水相孔道只允许水分子以单列形式扩散通过，但速率可达到每秒 $2×10^9$个。</p><h3 id="经载体的易化扩散"><a href="#经载体的易化扩散" class="headerlink" title="经载体的易化扩散"></a>经载体的易化扩散</h3><p>经载体的易化扩散是指水溶性小分子物质在载体蛋白介导下顺浓度梯度进行的跨膜转运，属于载体介导的被动转运。</p><p>物质经载体转运的速率较慢，但体内许多重要的物质如葡萄糖、氨基酸等的跨膜转运就是经载体易化扩散实现的，如葡萄糖转运体（GLUT）可将胞外的葡萄糖顺浓度梯度转运到细胞内。</p><p>载体介导的易化扩散具有以下特点：</p><ul><li>结构特异性：各种载体只能识别和结合具有特定化学结构的底物。</li><li>饱和现象：由于细胞膜中载体的数量和转运速率有限，当被转运的底物浓度增加到一定程度时，底物的扩散速度便达到最大值($V_{max}$)，不再随底物浓度的增加而增大，这种现象称为载体转运的饱和现象。</li><li>竞争性抑制：如果有两种结构相似的物质都能与同一载体结合，两底物之间将发生竞争性抑制。其中浓度较低或$K_m$较大的溶质更容易受到抑制。</li></ul><blockquote><p>米氏常数（$K_m$）：最大扩散速度$V_{max}$能反映载体蛋白构象转换的最大速率，扩散速度达$V_{max}$一半时的底物浓度称为米氏常数，可反应载体蛋白对底物分子的亲和力和转运效率。</p></blockquote><h2 id="主动转运"><a href="#主动转运" class="headerlink" title="主动转运"></a>主动转运</h2><p><strong>主动转运</strong> 是指某些物质在膜蛋白的帮助下，由细胞代谢提供能量而进行的逆浓度梯度和（或）电位梯度跨膜转运。</p><h3 id="原发性主动转运"><a href="#原发性主动转运" class="headerlink" title="原发性主动转运"></a>原发性主动转运</h3><p><strong>原发性主动转运：</strong> 细胞直接利用代谢产生的能量将物质逆浓度梯度和（或）电位梯度转运的过程。</p><p><strong>离子泵：</strong> 原发性主动转运的底物通常为带电离子，因此介导这一过程的膜蛋白或载体被称为离子泵。其本质为ATP酶，可将细胞内的ATP水解为ADP，自身被磷酸化而发生构象改变，从而完成离子逆浓度梯度和（或）电位梯度的跨膜转运。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;细胞的基本功能有：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;细胞膜的物质转运功能；&lt;/li&gt;
+&lt;li&gt;细胞的信号转导功能；&lt;/li&gt;
+&lt;li&gt;细胞的电活动；&lt;/li&gt;
+&lt;li&gt;肌细胞的收缩。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;跨细胞膜的物质转运&quot;&gt;&lt;a href=&quot;#跨细胞膜的物质转</summary>
+      
+    
+    
+    
+    <category term="生理学" scheme="http://example.com/categories/%E7%94%9F%E7%90%86%E5%AD%A6/"/>
+    
+    
+    <category term="生理学" scheme="http://example.com/tags/%E7%94%9F%E7%90%86%E5%AD%A6/"/>
+    
+    <category term="绪论" scheme="http://example.com/tags/%E7%BB%AA%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>【生理学】绪论</title>
@@ -623,64 +690,6 @@
     <category term="视网膜母细胞瘤" scheme="http://example.com/tags/%E8%A7%86%E7%BD%91%E8%86%9C%E6%AF%8D%E7%BB%86%E8%83%9E%E7%98%A4/"/>
     
     <category term="葡萄膜黑色素瘤" scheme="http://example.com/tags/%E8%91%A1%E8%90%84%E8%86%9C%E9%BB%91%E8%89%B2%E7%B4%A0%E7%98%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【眼科学】眼眶疾病</title>
-    <link href="http://example.com/2025/11/04/%E3%80%90%E7%9C%BC%E7%A7%91%E5%AD%A6%E3%80%91%E7%9C%BC%E7%9C%B6%E7%96%BE%E7%97%85/"/>
-    <id>http://example.com/2025/11/04/%E3%80%90%E7%9C%BC%E7%A7%91%E5%AD%A6%E3%80%91%E7%9C%BC%E7%9C%B6%E7%96%BE%E7%97%85/</id>
-    <published>2025-11-04T02:11:54.000Z</published>
-    <updated>2025-11-04T03:59:17.838Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="眼眶炎症"><a href="#眼眶炎症" class="headerlink" title="眼眶炎症"></a>眼眶炎症</h1><h2 id="眼眶特异性炎症"><a href="#眼眶特异性炎症" class="headerlink" title="眼眶特异性炎症"></a>眼眶特异性炎症</h2><p><strong>特异性炎症：</strong> 是指由于明确的病原微生物引起的感染性炎症，如细菌、真菌引起的眼眶蜂窝织炎。</p><p><strong>眼眶蜂窝织炎：</strong> 病原微生物感染引起的眶内软组织急性炎症，属于眼眶特异性炎症，发病急剧，严重者可因波及海绵窦而危及生命。</p><h3 id="病因"><a href="#病因" class="headerlink" title="病因"></a>病因</h3><ol><li>多见于儿童。</li><li>病原体多为金黄色葡萄球菌、溶血性链球菌，儿童以流感嗜血杆菌多见。</li></ol><h3 id="临床表现"><a href="#临床表现" class="headerlink" title="临床表现"></a>临床表现</h3><h4 id="眶隔前蜂窝织炎"><a href="#眶隔前蜂窝织炎" class="headerlink" title="眶隔前蜂窝织炎"></a>眶隔前蜂窝织炎</h4><p>局限于眼睑，主要表现为眼睑充血水肿，疼痛不明显、瞳孔及视力多不受影响、眼球运动多不受限。</p><h4 id="眶深部蜂窝织炎"><a href="#眶深部蜂窝织炎" class="headerlink" title="眶深部蜂窝织炎"></a>眶深部蜂窝织炎</h4><ol><li>眼睑高度肿胀。</li><li>结膜充血水肿</li><li>眼球运动障碍</li><li>视力严重下降</li><li>全身中毒症状，严重者可因波及海绵窦而危及生命。</li></ol><h3 id="治疗"><a href="#治疗" class="headerlink" title="治疗"></a>治疗</h3><ol><li>立即给予全身足量抗生素控制炎症（经验用药→敏感抗生素）</li><li>细菌培养及药敏试验</li><li>寻找感染源</li><li>脓肿形成后切开引流</li><li>注意海绵窦炎等并发症</li></ol><h2 id="眼眶特发性炎症（IOI）"><a href="#眼眶特发性炎症（IOI）" class="headerlink" title="眼眶特发性炎症（IOI）"></a>眼眶特发性炎症（IOI）</h2><h3 id="临床表现-1"><a href="#临床表现-1" class="headerlink" title="临床表现"></a>临床表现</h3><ol><li>肌炎</li><li>泪腺炎</li><li>巩膜周围炎和视神经周围炎</li><li>弥漫性炎症</li><li>眼眶炎性肿块</li></ol><h3 id="治疗-1"><a href="#治疗-1" class="headerlink" title="治疗"></a>治疗</h3><p>糖皮质激素、免疫抑制剂。</p><h2 id="甲状腺眼病（TED）"><a href="#甲状腺眼病（TED）" class="headerlink" title="甲状腺眼病（TED）"></a>甲状腺眼病（TED）</h2><p>一种由自身免疫反应引起的慢性多系统损害的疾病，与甲状腺疾病密切相关，也成为Graves眼病。</p><h3 id="临床表现-2"><a href="#临床表现-2" class="headerlink" title="临床表现"></a>临床表现</h3><ol><li>眼睑征</li><li>眼睑及结膜充血水肿；</li><li>眼球突出</li><li>眼球运动障碍、复视和斜视；</li><li>角膜和眼表改变；</li><li>视神经病变；</li><li>眼压升高。</li></ol><h3 id="影像学表现"><a href="#影像学表现" class="headerlink" title="影像学表现"></a>影像学表现</h3><p>眼外肌梭形增粗。</p><h3 id="诊断"><a href="#诊断" class="headerlink" title="诊断"></a>诊断</h3><ol><li>典型的眼部表现及症状；</li><li>甲状腺功能或甲状腺相关抗体异常；</li><li>影像学表现</li></ol><h3 id="治疗-2"><a href="#治疗-2" class="headerlink" title="治疗"></a>治疗</h3><ol><li>激素治疗</li><li>眼眶放射治疗</li><li>手术治疗</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;眼眶炎症&quot;&gt;&lt;a href=&quot;#眼眶炎症&quot; class=&quot;headerlink&quot; title=&quot;眼眶炎症&quot;&gt;&lt;/a&gt;眼眶炎症&lt;/h1&gt;&lt;h2 id=&quot;眼眶特异性炎症&quot;&gt;&lt;a href=&quot;#眼眶特异性炎症&quot; class=&quot;headerlink&quot; title=&quot;眼眶特</summary>
-      
-    
-    
-    
-    <category term="眼科学" scheme="http://example.com/categories/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
-    
-    
-    <category term="眼科学" scheme="http://example.com/tags/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
-    
-    <category term="眼眶疾病" scheme="http://example.com/tags/%E7%9C%BC%E7%9C%B6%E7%96%BE%E7%97%85/"/>
-    
-    <category term="眼眶炎症" scheme="http://example.com/tags/%E7%9C%BC%E7%9C%B6%E7%82%8E%E7%97%87/"/>
-    
-    <category term="眼眶血管畸形" scheme="http://example.com/tags/%E7%9C%BC%E7%9C%B6%E8%A1%80%E7%AE%A1%E7%95%B8%E5%BD%A2/"/>
-    
-    <category term="眼眶皮样囊肿" scheme="http://example.com/tags/%E7%9C%BC%E7%9C%B6%E7%9A%AE%E6%A0%B7%E5%9B%8A%E8%82%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【眼科学】眼外伤</title>
-    <link href="http://example.com/2025/10/28/%E3%80%90%E7%9C%BC%E7%A7%91%E5%AD%A6%E3%80%91%E7%9C%BC%E5%A4%96%E4%BC%A4/"/>
-    <id>http://example.com/2025/10/28/%E3%80%90%E7%9C%BC%E7%A7%91%E5%AD%A6%E3%80%91%E7%9C%BC%E5%A4%96%E4%BC%A4/</id>
-    <published>2025-10-28T02:11:56.000Z</published>
-    <updated>2025-10-28T03:44:26.856Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><h3 id="机械性眼外伤"><a href="#机械性眼外伤" class="headerlink" title="机械性眼外伤"></a>机械性眼外伤</h3><p>按标准化分类可分为：</p><ul><li>闭合伤：眼球钝挫伤、板层裂伤、表浅异物</li><li>开放性：裂伤（穿通、贯通伤、眼内异物）、眼球破裂<br>按临床通用分类：眼球钝挫伤、眼球穿通伤、眼异物伤</li></ul><h3 id="非机械性眼外伤"><a href="#非机械性眼外伤" class="headerlink" title="非机械性眼外伤"></a>非机械性眼外伤</h3><p>化学伤、热烧伤、辐射伤</p><h2 id="诊断和治疗"><a href="#诊断和治疗" class="headerlink" title="诊断和治疗"></a>诊断和治疗</h2><p>原则：救命→救眼→提高视力→改善外观</p><p>评估：</p><ol><li>首先排除合并重要脏器损伤；</li><li>详细了解受伤发生过程；</li><li>全面评估眼部个组织情况；</li><li>院外评估及指导自救。</li></ol><p>处理：</p><ol><li>去除治病因素；</li><li>闭合伤口；</li><li>预防继发感染；</li><li>处理其他伤情；</li><li>判断预后。</li></ol><h1 id="眼球钝挫伤"><a href="#眼球钝挫伤" class="headerlink" title="眼球钝挫伤"></a>眼球钝挫伤</h1><h2 id="常见原因"><a href="#常见原因" class="headerlink" title="常见原因"></a>常见原因</h2><p>机械性钝力，如砖石、拳头、球类、跌撞、车祸、爆炸的冲击波。</p><h2 id="角膜挫伤"><a href="#角膜挫伤" class="headerlink" title="角膜挫伤"></a>角膜挫伤</h2><h2 id="虹膜睫状体挫伤"><a href="#虹膜睫状体挫伤" class="headerlink" title="虹膜睫状体挫伤"></a>虹膜睫状体挫伤</h2><h3 id="虹膜与瞳孔异常"><a href="#虹膜与瞳孔异常" class="headerlink" title="虹膜与瞳孔异常"></a>虹膜与瞳孔异常</h3><ul><li>虹膜瞳孔缘撕裂及瞳孔括约肌断裂；</li><li>虹膜根部离断——半月形缺损，瞳孔“D”字形；</li><li>外伤性瞳孔扩大；</li><li>睫状肌或支配神经受损。</li></ul><h3 id="前房积血"><a href="#前房积血" class="headerlink" title="前房积血"></a>前房积血</h3><ul><li>红魔血管破裂导致</li><li>根据积血占前房的容量分为三级：少于1&#x2F;3为Ⅰ级；介于1&#x2F;3—2&#x2F;3为Ⅱ级；大于2&#x2F;3为Ⅲ级。</li><li>可导致继发性青光眼和角膜血染。</li></ul><h3 id="外伤性青光眼"><a href="#外伤性青光眼" class="headerlink" title="外伤性青光眼"></a>外伤性青光眼</h3><h2 id="晶状体挫伤"><a href="#晶状体挫伤" class="headerlink" title="晶状体挫伤"></a>晶状体挫伤</h2><h3 id="晶状体脱位或半脱位"><a href="#晶状体脱位或半脱位" class="headerlink" title="晶状体脱位或半脱位"></a>晶状体脱位或半脱位</h3><ul><li>悬韧带全部或部分断裂</li><li>视力下降</li><li>可继发继发性青光眼</li></ul><h2 id="玻璃体积血"><a href="#玻璃体积血" class="headerlink" title="玻璃体积血"></a>玻璃体积血</h2><p>睫状体、视网膜或脉络膜的血管损伤引起。</p><h2 id="脉络膜和视网膜损伤"><a href="#脉络膜和视网膜损伤" class="headerlink" title="脉络膜和视网膜损伤"></a>脉络膜和视网膜损伤</h2><h3 id="脉络膜破裂"><a href="#脉络膜破裂" class="headerlink" title="脉络膜破裂"></a>脉络膜破裂</h3><h3 id="视网膜震荡和损伤"><a href="#视网膜震荡和损伤" class="headerlink" title="视网膜震荡和损伤"></a>视网膜震荡和损伤</h3><ul><li>视网膜震荡</li><li>视网膜挫伤</li></ul><h3 id="外伤性黄斑裂孔"><a href="#外伤性黄斑裂孔" class="headerlink" title="外伤性黄斑裂孔"></a>外伤性黄斑裂孔</h3><h2 id="视神经挫伤"><a href="#视神经挫伤" class="headerlink" title="视神经挫伤"></a>视神经挫伤</h2><ul><li>可瞬间致不可逆盲</li><li>晚期视神经萎缩，预后差</li></ul><h2 id="隐匿性眼球破裂"><a href="#隐匿性眼球破裂" class="headerlink" title="隐匿性眼球破裂"></a>隐匿性眼球破裂</h2><ul><li>视力严重下降</li><li>低眼压</li><li>结膜下血肿</li><li>结膜透见色素</li><li>前房加深</li><li>瞳孔移位</li><li>大量眼内出血</li></ul><h2 id="急救"><a href="#急救" class="headerlink" title="急救"></a>急救</h2><ul><li>遵循眼外伤急救原则</li><li>排除眼球破裂</li><li>防治远期并发症</li></ul><h1 id="眼球穿通伤"><a href="#眼球穿通伤" class="headerlink" title="眼球穿通伤"></a>眼球穿通伤</h1><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>锐器的刺入、切割。创口规则，眼内组织损伤、嵌顿或脱出。</p><h2 id="临床表现"><a href="#临床表现" class="headerlink" title="临床表现"></a>临床表现</h2><h3 id="角膜穿通伤"><a href="#角膜穿通伤" class="headerlink" title="角膜穿通伤"></a>角膜穿通伤</h3><ul><li>单纯性：角膜伤口较小且规则，常自行愈合，无虹膜嵌顿。</li><li>复杂性：伤口大，不规则，常有虹膜脱出集嵌顿，前房变浅。</li></ul><h3 id="角巩膜穿通伤"><a href="#角巩膜穿通伤" class="headerlink" title="角巩膜穿通伤"></a>角巩膜穿通伤</h3><h3 id="巩膜穿通伤"><a href="#巩膜穿通伤" class="headerlink" title="巩膜穿通伤"></a>巩膜穿通伤</h3><h3 id="并发症"><a href="#并发症" class="headerlink" title="并发症"></a>并发症</h3><ul><li>感染性眼内炎：细菌和真菌的感染；（注意：抗菌药物不同，且真菌感染禁用糖皮质激素治疗）<ul><li>革兰阳性菌＞革兰阴性菌＞真菌（少见）</li><li>充分散瞳、局部和全身应用大剂量抗生素和糖皮质激素</li></ul></li><li>外伤性增殖性玻璃体视网膜病变：过度的修复反应，纤维组织牵拉引起视网膜脱离</li><li>交感性眼炎：外伤造成言捏抗原暴露并激发自身免疫应答所致。</li></ul><h3 id="急诊处理"><a href="#急诊处理" class="headerlink" title="急诊处理"></a>急诊处理</h3><ul><li>排除危及生命的重要脏器损伤</li><li>急诊缝合伤口</li><li>排除眼内异物</li><li>预防感染</li></ul><h1 id="眼内异物"><a href="#眼内异物" class="headerlink" title="眼内异物"></a>眼内异物</h1><ul><li>眼穿通伤病史</li><li>临床表现：异物的入口、通道、穿通伤的表现</li><li>影像学检查：X线、CT、B超、MRI（非磁性！）</li></ul><h1 id="眼烧伤"><a href="#眼烧伤" class="headerlink" title="眼烧伤"></a>眼烧伤</h1><h2 id="酸碱化学伤"><a href="#酸碱化学伤" class="headerlink" title="酸碱化学伤"></a>酸碱化学伤</h2><h3 id="发病机制"><a href="#发病机制" class="headerlink" title="发病机制"></a>发病机制</h3><h4 id="酸烧伤"><a href="#酸烧伤" class="headerlink" title="酸烧伤"></a>酸烧伤</h4><ol><li>强酸使蛋白凝固坏死；</li><li>蛋白凝固组织酸向深层渗透。</li></ol><h4 id="碱烧伤"><a href="#碱烧伤" class="headerlink" title="碱烧伤"></a>碱烧伤</h4><ol><li>碱溶解脂肪和蛋白质；</li><li>迅速渗透到组织深层和眼内。</li></ol><h3 id="临床表现-1"><a href="#临床表现-1" class="headerlink" title="临床表现"></a>临床表现</h3><h4 id="轻度"><a href="#轻度" class="headerlink" title="轻度"></a>轻度</h4><ol><li>眼睑与结膜轻度充血水肿；</li><li>不留疤痕，无明显并发症，视力多不受影响。</li></ol><h4 id="中度"><a href="#中度" class="headerlink" title="中度"></a>中度</h4><ol><li>眼睑皮肤水疱或糜烂；</li><li>结膜水肿，出现小片缺血坏死；</li><li>角膜明显充血水肿，上皮层完全脱落或形成白色凝固层；</li><li>治愈后遗留角膜斑翳，影响视力。</li></ol><h4 id="重度"><a href="#重度" class="headerlink" title="重度"></a>重度</h4><ol><li>结膜广泛缺血坏死，呈灰白色浑浊；角膜全层灰白或者呈瓷白色；</li><li>角膜溃疡或穿孔；</li><li>葡萄膜炎、继发性青光眼、白内障；</li><li>角膜白斑，前粘性角膜白斑、角膜葡萄肿或眼球萎缩。</li></ol><h3 id="急救和治疗"><a href="#急救和治疗" class="headerlink" title="急救和治疗"></a>急救和治疗</h3><ol><li>急救</li><li>后续治疗：早期治疗（抗生素、糖皮质激素）、晚期治疗</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;h2 id=&quot;分类&quot;&gt;&lt;a href=&quot;#分类&quot; class=&quot;headerlink&quot; title=&quot;分类&quot;&gt;&lt;/a&gt;分类&lt;/h2&gt;&lt;h3 id</summary>
-      
-    
-    
-    
-    <category term="眼科学" scheme="http://example.com/categories/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
-    
-    
-    <category term="眼科学" scheme="http://example.com/tags/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
-    
-    <category term="结膜" scheme="http://example.com/tags/%E7%BB%93%E8%86%9C/"/>
     
   </entry>
   
