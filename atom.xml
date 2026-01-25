@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-01-25T06:04:37.470Z</updated>
+  <updated>2026-01-25T06:43:18.670Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://example.com/2026/01/25/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E4%B8%BA%E4%BD%8E%E9%9F%B3%E9%85%8D%E5%92%8C%E5%A3%B0/"/>
     <id>http://example.com/2026/01/25/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E4%B8%BA%E4%BD%8E%E9%9F%B3%E9%85%8D%E5%92%8C%E5%A3%B0/</id>
     <published>2026-01-25T05:37:59.000Z</published>
-    <updated>2026-01-25T06:04:37.470Z</updated>
+    <updated>2026-01-25T06:43:18.670Z</updated>
     
-    <content type="html"><![CDATA[<p>在音乐创作中，我们有时会为已有的高声部旋律配置和弦，有时则需依据已有的和弦来创作旋律。本文将重点介绍另一种常见情形——如何为已有的低声部编配和弦。</p><p>以$C$大调为例，我们知道其不同功能和弦的根音如下所示。不难看出，除$D$和$K_4^6$的根音相同外，其余和弦都与相应根音一一匹配。而$D$和$K_4^6$又可通过音所处的位置（是否位于半终止和全终止处）加以判断，因此，我们可以通过低音判断出旋律各音所应该编配的和弦，继而编配出其他声部。</p><table><thead><tr><th align="center">和弦</th><th align="center">根音</th></tr></thead><tbody><tr><td align="center">主功能原位和弦（$T$）</td><td align="center">$C$</td></tr><tr><td align="center">主功能六和弦（$T_6$）</td><td align="center">$E$</td></tr><tr><td align="center">属功能原位和弦（$D$）</td><td align="center">$G$</td></tr><tr><td align="center">属功能六和弦（$D_6$）</td><td align="center">$B$</td></tr><tr><td align="center">终止四六和弦（$K_4^6$）</td><td align="center">$G$</td></tr><tr><td align="center">下属功能原位和弦（$S$）</td><td align="center">$F$</td></tr><tr><td align="center">下属功能六和弦（$S_6$）</td><td align="center">$A$</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>是根据<a href="https://space.bilibili.com/7762500?spm_id_from=333.337.0.0">@三分钟音乐社</a>的和声课程所做的笔记！</p><p>在音乐创作中，我们有时会为已有的高声部旋律配置和弦，有时则需依据已有的和弦来创作旋律。本文将重点介绍另一种常见情形——如何为已有的低声部编配和弦。</p><h1 id="判断调性"><a href="#判断调性" class="headerlink" title="判断调性"></a>判断调性</h1><p>调性的判断与前述相同，在此处没有补充。</p><h1 id="标记和弦"><a href="#标记和弦" class="headerlink" title="标记和弦"></a>标记和弦</h1><p>以$C$大调为例，我们知道其不同功能和弦的根音如下所示。不难看出，除$D$和$K_4^6$的根音相同外，其余和弦都与相应根音一一匹配。而$D$和$K_4^6$又可通过音所处的位置（是否位于半终止和全终止处）加以判断，因此，我们可以通过低音判断出旋律各音所应该编配的和弦，继而编配出其他声部。</p><table><thead><tr><th align="center">和弦</th><th align="center">根音</th></tr></thead><tbody><tr><td align="center">主功能原位和弦（$T$）</td><td align="center">$C$</td></tr><tr><td align="center">主功能六和弦（$T_6$）</td><td align="center">$E$</td></tr><tr><td align="center">属功能原位和弦（$D$）</td><td align="center">$G$</td></tr><tr><td align="center">属功能六和弦（$D_6$）</td><td align="center">$B$</td></tr><tr><td align="center">终止四六和弦（$K_4^6$）</td><td align="center">$G$</td></tr><tr><td align="center">下属功能原位和弦（$S$）</td><td align="center">$F$</td></tr><tr><td align="center">下属功能六和弦（$S_6$）</td><td align="center">$A$</td></tr></tbody></table><h1 id="编配高声部（即旋律）"><a href="#编配高声部（即旋律）" class="headerlink" title="编配高声部（即旋律）"></a>编配高声部（即旋律）</h1><p>确定各音节根据和弦的构成音后，我们可以开始着手编配和弦的高声部。在编配时，我们需要注意以下几点。但以下所述并非强制规则，在实际编配中可以灵活安排。</p><ol><li><strong>时刻注意音域。</strong> 旋律音过低或过高都会影响和弦的听感。各音区最佳范围大致如下图所示。<br><img src="https://nahida23333.github.io/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/20250715135025.jpg"></li><li><strong>尽可能将最高音编配在后半部分。</strong> 就如高质的小说、电影等作品，高潮部分往往位于作品的后半部分，其精彩往往通过前半部分扎实的铺垫而呈现。因此，在写前半部分的旋律时，我们可以适当控制旋律部的音高，使得整个旋律的最高音位于作品的后半部，使旋律更具有表现力。</li><li><strong>尽量与低音反向进行，</strong> 规避隐伏五八度的风险。 </li><li><strong>以平稳进行为主，加以少量大于三度的跳进。</strong> 如果整段旋律一直平稳进行而缺乏跳进，那么它听起来就会显得过于平淡、食之无味，因此我们需要加入一些跳进来打破平静的湖面，增加旋律的表现力。而跳进的张力是通过平稳进行衬托出来的，如果整段旋律一直都在跳进，那么每一次跳进的吸引力也会大打折扣。因此，我们推荐在大约每三次平稳进行后，做一次大于三度的跳进。但在实际创作中无需过于严格遵守，根据低声部灵活安排即可。</li><li><strong>跳进后尽量反向，</strong> 听感更佳。</li></ol>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;在音乐创作中，我们有时会为已有的高声部旋律配置和弦，有时则需依据已有的和弦来创作旋律。本文将重点介绍另一种常见情形——如何为已有的低声部编配和弦。&lt;/p&gt;
-&lt;p&gt;以$C$大调为例，我们知道其不同功能和弦的根音如下所示。不难看出，除$D$和$K_4^6$的根音相同外，其余和弦</summary>
+    <summary type="html">&lt;p&gt;是根据&lt;a href=&quot;https://space.bilibili.com/7762500?spm_id_from=333.337.0.0&quot;&gt;@三分钟音乐社&lt;/a&gt;的和声课程所做的笔记！&lt;/p&gt;
+&lt;p&gt;在音乐创作中，我们有时会为已有的高声部旋律配置和弦，有时则需依据已有的</summary>
       
     
     
