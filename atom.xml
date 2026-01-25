@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-01-18T07:45:12.604Z</updated>
+  <updated>2026-01-25T06:04:37.470Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【斯波索宾和声学】为低音配和声</title>
+    <link href="http://example.com/2026/01/25/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E4%B8%BA%E4%BD%8E%E9%9F%B3%E9%85%8D%E5%92%8C%E5%A3%B0/"/>
+    <id>http://example.com/2026/01/25/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E4%B8%BA%E4%BD%8E%E9%9F%B3%E9%85%8D%E5%92%8C%E5%A3%B0/</id>
+    <published>2026-01-25T05:37:59.000Z</published>
+    <updated>2026-01-25T06:04:37.470Z</updated>
+    
+    <content type="html"><![CDATA[<p>在音乐创作中，我们有时会为已有的高声部旋律配置和弦，有时则需依据已有的和弦来创作旋律。本文将重点介绍另一种常见情形——如何为已有的低声部编配和弦。</p><p>以$C$大调为例，我们知道其不同功能和弦的根音如下所示。不难看出，除$D$和$K_4^6$的根音相同外，其余和弦都与相应根音一一匹配。而$D$和$K_4^6$又可通过音所处的位置（是否位于半终止和全终止处）加以判断，因此，我们可以通过低音判断出旋律各音所应该编配的和弦，继而编配出其他声部。</p><table><thead><tr><th align="center">和弦</th><th align="center">根音</th></tr></thead><tbody><tr><td align="center">主功能原位和弦（$T$）</td><td align="center">$C$</td></tr><tr><td align="center">主功能六和弦（$T_6$）</td><td align="center">$E$</td></tr><tr><td align="center">属功能原位和弦（$D$）</td><td align="center">$G$</td></tr><tr><td align="center">属功能六和弦（$D_6$）</td><td align="center">$B$</td></tr><tr><td align="center">终止四六和弦（$K_4^6$）</td><td align="center">$G$</td></tr><tr><td align="center">下属功能原位和弦（$S$）</td><td align="center">$F$</td></tr><tr><td align="center">下属功能六和弦（$S_6$）</td><td align="center">$A$</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在音乐创作中，我们有时会为已有的高声部旋律配置和弦，有时则需依据已有的和弦来创作旋律。本文将重点介绍另一种常见情形——如何为已有的低声部编配和弦。&lt;/p&gt;
+&lt;p&gt;以$C$大调为例，我们知道其不同功能和弦的根音如下所示。不难看出，除$D$和$K_4^6$的根音相同外，其余和弦</summary>
+      
+    
+    
+    
+    <category term="音乐 - 和声学" scheme="http://example.com/categories/%E9%9F%B3%E4%B9%90-%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    
+    <category term="音乐" scheme="http://example.com/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+    <category term="和声学" scheme="http://example.com/tags/%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    <category term="斯波索宾和声学" scheme="http://example.com/tags/%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    <category term="四部和声" scheme="http://example.com/tags/%E5%9B%9B%E9%83%A8%E5%92%8C%E5%A3%B0/"/>
+    
+    <category term="低声部" scheme="http://example.com/tags/%E4%BD%8E%E5%A3%B0%E9%83%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>【斯波索宾和声学】和弦外音与终止四六和弦</title>
@@ -47,39 +80,6 @@
     <category term="和弦外音" scheme="http://example.com/tags/%E5%92%8C%E5%BC%A6%E5%A4%96%E9%9F%B3/"/>
     
     <category term="终止四六和弦" scheme="http://example.com/tags/%E7%BB%88%E6%AD%A2%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【生理学】细胞的基本功能</title>
-    <link href="http://example.com/2026/01/07/%E3%80%90%E7%94%9F%E7%90%86%E5%AD%A6%E3%80%91%E7%BB%86%E8%83%9E%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/"/>
-    <id>http://example.com/2026/01/07/%E3%80%90%E7%94%9F%E7%90%86%E5%AD%A6%E3%80%91%E7%BB%86%E8%83%9E%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/</id>
-    <published>2026-01-07T14:36:32.000Z</published>
-    <updated>2026-01-14T14:20:52.647Z</updated>
-    
-    <content type="html"><![CDATA[<p>细胞的基本功能有：</p><ol><li>细胞膜的物质转运功能；</li><li>细胞的信号转导功能；</li><li>细胞的电活动；</li><li>肌细胞的收缩。</li></ol><h1 id="跨细胞膜的物质转运"><a href="#跨细胞膜的物质转运" class="headerlink" title="跨细胞膜的物质转运"></a>跨细胞膜的物质转运</h1><h2 id="单纯扩散"><a href="#单纯扩散" class="headerlink" title="单纯扩散"></a>单纯扩散</h2><p><strong>单纯扩散（简单扩散）</strong> 是指物质从质膜的高浓度一侧通过脂质分子间隙向低浓度一侧进行的跨膜扩散，是一种物理现象，没有生物学转运机制参与，无需代谢耗能，属于被动转运。</p><p>物质：脂溶性（非极性）物质或少数不带电荷的极性小分子，如$O_2$、$CO_2$、$N_2$、类固醇激素、乙醇、尿素、甘油、水等。</p><p>物质经单纯扩散转运速率主要取决于：①被转运物在膜两侧的浓度差；②膜对该物质的通透性；③其他：物质所在溶液温度、膜有效面积。</p><h2 id="易化扩散"><a href="#易化扩散" class="headerlink" title="易化扩散"></a>易化扩散</h2><p><strong>易化扩散</strong> 是指非脂溶性的小分子物质或带电离子在跨膜蛋白帮助下，顺浓度梯度和（或）电位梯度进行的跨膜转运，属于被动转运，无需消耗ATP。</p><h3 id="经通道的易化扩散"><a href="#经通道的易化扩散" class="headerlink" title="经通道的易化扩散"></a>经通道的易化扩散</h3><p>各种带电离子在通道蛋白的介导下，顺浓度梯度和（或）电位梯度的跨膜转运称为 <strong>经通道的易化扩散</strong> 。</p><h4 id="离子通道"><a href="#离子通道" class="headerlink" title="离子通道"></a>离子通道</h4><p>经通道转运的溶质几乎都是离子，因而这类通道蛋白也称 <strong>离子通道</strong> 。离子通道蛋白贯穿脂质双层，中央有亲水性孔道；具有两个重要的基本特征：</p><ul><li><strong>离子选择性：</strong> 每种通道只对一种或几种离子有较高的通透能力，而对其他离子的通透性很小或不通透。<ul><li>通道对离子的选择性取决于孔道的口径和带电状况，还与通道的形状、内壁的化学结构及离子键分布有关。</li></ul></li><li><strong>门控特性：</strong> 大部分通道蛋白分子内部有一些可移动的结构或化学基团，在通道开口处起“闸门”作用。许多因素可引起闸门运动，导致通道的开放或关闭，这一过程称为门控。在静息状态下，大多数通道的闸门都处于关闭状态，只有受到刺激时才发生分子构象变化，引起闸门开放。<ul><li><strong>电压门控通道：</strong> 受膜电位调控。当膜两侧电位差发生改变，通常时在膜发生去极化时，通道蛋白分子内的一些带电化学基团（电位感受区）发生移动，进而引起分子构象变化和闸门开放。电压门控通道的开放是神经或肌肉发生动作电位的基本机制。</li><li><strong>化学门控通道&#x2F;配体门控通道：</strong> 受膜外或膜内某些化学物质的通道，是一类兼有通道和受体功能的蛋白分子，与配体结合后可使通道的构象发生改变，引起闸门开放。</li><li><strong>机械门控通道：</strong> 受机械刺激调控，通常是质膜感受牵张刺激后引起其中的通道开放或关闭。</li></ul></li></ul><blockquote><p>也有少数通道始终是开放的，这类通道称为非门控通道。</p></blockquote><h4 id="水通道"><a href="#水通道" class="headerlink" title="水通道"></a>水通道</h4><p>某些细胞（如红细胞，肾小管、集合管、呼吸道以及肺泡等处的上皮细胞）对水的转运速率可达到惊人的程度，在这些细胞的质膜中，存在着大量对水高度通透且总是开放的水通道。组成水通道的蛋白称为 <strong>水通道蛋白（AQP）</strong> ，其水相孔道只允许水分子以单列形式扩散通过，但速率可达到每秒 $2×10^9$个。</p><h3 id="经载体的易化扩散"><a href="#经载体的易化扩散" class="headerlink" title="经载体的易化扩散"></a>经载体的易化扩散</h3><p>经载体的易化扩散是指水溶性小分子物质在载体蛋白介导下顺浓度梯度进行的跨膜转运，属于载体介导的被动转运。</p><p>物质经载体转运的速率较慢，但体内许多重要的物质如葡萄糖、氨基酸等的跨膜转运就是经载体易化扩散实现的，如葡萄糖转运体（GLUT）可将胞外的葡萄糖顺浓度梯度转运到细胞内。</p><p>载体介导的易化扩散具有以下特点：</p><ul><li>结构特异性：各种载体只能识别和结合具有特定化学结构的底物。</li><li>饱和现象：由于细胞膜中载体的数量和转运速率有限，当被转运的底物浓度增加到一定程度时，底物的扩散速度便达到最大值($V_{max}$)，不再随底物浓度的增加而增大，这种现象称为载体转运的饱和现象。</li><li>竞争性抑制：如果有两种结构相似的物质都能与同一载体结合，两底物之间将发生竞争性抑制。其中浓度较低或$K_m$较大的溶质更容易受到抑制。</li></ul><blockquote><p>米氏常数（$K_m$）：最大扩散速度$V_{max}$能反映载体蛋白构象转换的最大速率，扩散速度达$V_{max}$一半时的底物浓度称为米氏常数，可反应载体蛋白对底物分子的亲和力和转运效率。</p></blockquote><h2 id="主动转运"><a href="#主动转运" class="headerlink" title="主动转运"></a>主动转运</h2><p><strong>主动转运</strong> 是指某些物质在膜蛋白的帮助下，由细胞代谢提供能量而进行的逆浓度梯度和（或）电位梯度跨膜转运。</p><h3 id="原发性主动转运"><a href="#原发性主动转运" class="headerlink" title="原发性主动转运"></a>原发性主动转运</h3><p><strong>原发性主动转运：</strong> 细胞直接利用代谢产生的能量将物质逆浓度梯度和（或）电位梯度转运的过程。</p><p><strong>离子泵：</strong> 原发性主动转运的底物通常为带电离子，因此介导这一过程的膜蛋白或载体被称为离子泵。其本质为ATP酶，可将细胞内的ATP水解为ADP，自身被磷酸化而发生构象改变，从而完成离子逆浓度梯度和（或）电位梯度的跨膜转运。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;细胞的基本功能有：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;细胞膜的物质转运功能；&lt;/li&gt;
-&lt;li&gt;细胞的信号转导功能；&lt;/li&gt;
-&lt;li&gt;细胞的电活动；&lt;/li&gt;
-&lt;li&gt;肌细胞的收缩。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;跨细胞膜的物质转运&quot;&gt;&lt;a href=&quot;#跨细胞膜的物质转</summary>
-      
-    
-    
-    
-    <category term="生理学" scheme="http://example.com/categories/%E7%94%9F%E7%90%86%E5%AD%A6/"/>
-    
-    
-    <category term="生理学" scheme="http://example.com/tags/%E7%94%9F%E7%90%86%E5%AD%A6/"/>
-    
-    <category term="绪论" scheme="http://example.com/tags/%E7%BB%AA%E8%AE%BA/"/>
     
   </entry>
   
