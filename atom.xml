@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-02-16T05:33:44.270Z</updated>
+  <updated>2026-03-28T09:05:35.973Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【考研手记】生理：绪论</title>
+    <link href="http://example.com/2026/03/28/%E3%80%90%E8%80%83%E7%A0%94%E6%89%8B%E8%AE%B0%E3%80%91%E7%94%9F%E7%90%86%EF%BC%9A%E7%BB%AA%E8%AE%BA/"/>
+    <id>http://example.com/2026/03/28/%E3%80%90%E8%80%83%E7%A0%94%E6%89%8B%E8%AE%B0%E3%80%91%E7%94%9F%E7%90%86%EF%BC%9A%E7%BB%AA%E8%AE%BA/</id>
+    <published>2026-03-28T09:05:35.000Z</published>
+    <updated>2026-03-28T09:05:35.973Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>【斯波索宾和声学】为低音配和声</title>
@@ -659,37 +672,6 @@
     <category term="血液病" scheme="http://example.com/tags/%E8%A1%80%E6%B6%B2%E7%97%85/"/>
     
     <category term="颅脑外伤" scheme="http://example.com/tags/%E9%A2%85%E8%84%91%E5%A4%96%E4%BC%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【眼科学】眼肿瘤</title>
-    <link href="http://example.com/2025/11/04/%E3%80%90%E7%9C%BC%E7%A7%91%E5%AD%A6%E3%80%91%E7%9C%BC%E8%82%BF%E7%98%A4/"/>
-    <id>http://example.com/2025/11/04/%E3%80%90%E7%9C%BC%E7%A7%91%E5%AD%A6%E3%80%91%E7%9C%BC%E8%82%BF%E7%98%A4/</id>
-    <published>2025-11-04T02:12:16.000Z</published>
-    <updated>2025-11-04T03:57:32.497Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="视网膜母细胞瘤（RB）"><a href="#视网膜母细胞瘤（RB）" class="headerlink" title="视网膜母细胞瘤（RB）"></a>视网膜母细胞瘤（RB）</h1><p>婴幼儿最常见的眼内恶性肿瘤。</p><h2 id="三大特点"><a href="#三大特点" class="headerlink" title="三大特点"></a>三大特点</h2><ol><li>遗传性强：常染色体显性</li><li>并发其他恶性肿瘤的概率高</li><li>小部分可自行消退。</li></ol><h2 id="临床表现"><a href="#临床表现" class="headerlink" title="临床表现"></a>临床表现</h2><ol><li>白瞳症</li><li>疾病进展可表现为继发性青光眼、眶蜂窝织炎、肿瘤转移侵犯眼神经或眼眶。<blockquote><p>肿瘤可致盲，并因蔓延到毗邻组织或播散转移而危及生命。</p></blockquote></li></ol><h2 id="影像学表现"><a href="#影像学表现" class="headerlink" title="影像学表现"></a>影像学表现</h2><ol><li>B超：玻璃体内强弱不等回声光团，多数患儿伴有高反射声影（钙化）；</li><li>CT检查：钙化斑。</li><li>MRI检查：评估RB是否向眼球外蔓延最灵敏的检查技术。</li></ol><h2 id="鉴别诊断"><a href="#鉴别诊断" class="headerlink" title="鉴别诊断"></a>鉴别诊断</h2><p>引起白瞳症的其他眼病：</p><ol><li>晶状体病变：先天性白内障</li><li>玻璃体病变：眼内炎、原始玻璃体持续增生症</li><li>视网膜病变：外层渗出性视网膜病变、早产儿视网膜病变（ROP）</li></ol><h2 id="治疗"><a href="#治疗" class="headerlink" title="治疗"></a>治疗</h2><h1 id="葡萄膜黑色素瘤（UM）"><a href="#葡萄膜黑色素瘤（UM）" class="headerlink" title="葡萄膜黑色素瘤（UM）"></a>葡萄膜黑色素瘤（UM）</h1><p>成人最常见的原发性眼内恶性肿瘤。<br>50%患者最终发生远处转移，主要在肝脏。远处转移患者预后差。</p><h2 id="影像学表现-1"><a href="#影像学表现-1" class="headerlink" title="影像学表现"></a>影像学表现</h2><h3 id="B超"><a href="#B超" class="headerlink" title="B超"></a>B超</h3><p>圆顶形或蕈伞型隆起病灶，内呈中低回声，可伴有视网膜下液、脉络膜“挖空征”，合并脉络膜凹陷。</p><h3 id="眼前节及眼底照相"><a href="#眼前节及眼底照相" class="headerlink" title="眼前节及眼底照相"></a>眼前节及眼底照相</h3><h3 id="FFA和ICGA"><a href="#FFA和ICGA" class="headerlink" title="FFA和ICGA"></a>FFA和ICGA</h3><p>FFA：早期斑片状高荧光，晚期因肿瘤血管持续渗漏，可出现弥漫性荧光渗漏。<br>ICGA：瘤体突破Bruch膜可见肿瘤处的视网膜大血管管径不同且走行紊乱，同时伴有各种异常形态的肿瘤内部血管。</p><h3 id="OCT"><a href="#OCT" class="headerlink" title="OCT"></a>OCT</h3><h3 id="MRI"><a href="#MRI" class="headerlink" title="MRI"></a>MRI</h3><p>瘤体$T_1WI$高信号，$T_2WI$低信号，增强扫描呈明显增强。</p><h3 id="PET-CT"><a href="#PET-CT" class="headerlink" title="PET-CT"></a>PET-CT</h3><h2 id="鉴别诊断-1"><a href="#鉴别诊断-1" class="headerlink" title="鉴别诊断"></a>鉴别诊断</h2><p>脉络膜血管瘤、脉络膜转移癌、黑色素细胞瘤</p><h2 id="治疗-1"><a href="#治疗-1" class="headerlink" title="治疗"></a>治疗</h2><p>中小型UM：敷贴放射治疗、经瞳孔温热疗法、粒子放射治疗、局部切除术。<br>大型UM：粒子放射治疗、立体定向放射治疗、眼球摘除术。<br>发生眼眶侵犯：框内容摘除术。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;视网膜母细胞瘤（RB）&quot;&gt;&lt;a href=&quot;#视网膜母细胞瘤（RB）&quot; class=&quot;headerlink&quot; title=&quot;视网膜母细胞瘤（RB）&quot;&gt;&lt;/a&gt;视网膜母细胞瘤（RB）&lt;/h1&gt;&lt;p&gt;婴幼儿最常见的眼内恶性肿瘤。&lt;/p&gt;
-&lt;h2 id=&quot;三大特点&quot;&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="眼科学" scheme="http://example.com/categories/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
-    
-    
-    <category term="眼科学" scheme="http://example.com/tags/%E7%9C%BC%E7%A7%91%E5%AD%A6/"/>
-    
-    <category term="眼肿瘤" scheme="http://example.com/tags/%E7%9C%BC%E8%82%BF%E7%98%A4/"/>
-    
-    <category term="视网膜母细胞瘤" scheme="http://example.com/tags/%E8%A7%86%E7%BD%91%E8%86%9C%E6%AF%8D%E7%BB%86%E8%83%9E%E7%98%A4/"/>
-    
-    <category term="葡萄膜黑色素瘤" scheme="http://example.com/tags/%E8%91%A1%E8%90%84%E8%86%9C%E9%BB%91%E8%89%B2%E7%B4%A0%E7%98%A4/"/>
     
   </entry>
   
