@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-05-01T12:38:55.209Z</updated>
+  <updated>2026-05-02T08:26:29.189Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fiji小记：批量进行多张免疫荧光图象的共表达分析</title>
+    <link href="http://example.com/2026/05/02/Fiji%E5%B0%8F%E8%AE%B0%EF%BC%9A%E6%89%B9%E9%87%8F%E8%BF%9B%E8%A1%8C%E5%A4%9A%E5%BC%A0%E5%85%8D%E7%96%AB%E8%8D%A7%E5%85%89%E5%9B%BE%E8%B1%A1%E7%9A%84%E5%85%B1%E8%A1%A8%E8%BE%BE%E5%88%86%E6%9E%90/"/>
+    <id>http://example.com/2026/05/02/Fiji%E5%B0%8F%E8%AE%B0%EF%BC%9A%E6%89%B9%E9%87%8F%E8%BF%9B%E8%A1%8C%E5%A4%9A%E5%BC%A0%E5%85%8D%E7%96%AB%E8%8D%A7%E5%85%89%E5%9B%BE%E8%B1%A1%E7%9A%84%E5%85%B1%E8%A1%A8%E8%BE%BE%E5%88%86%E6%9E%90/</id>
+    <published>2026-05-02T08:02:44.000Z</published>
+    <updated>2026-05-02T08:26:29.189Z</updated>
+    
+    <content type="html"><![CDATA[<p>宏（Macro）指将一系列命令或操作组织在一起，作为一个独立的命令来执行特定任务。对多张免疫荧光染色图象进行共定位分析时，使用Macro功能可以极大提高处理效率。本文章将演示如何使用Macro测量不同通道表达区域及共表达区域的面积。</p><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>对单张图片进行测量时，我们的步骤大致如下：</p><ol><li>打开图片，分离通道；</li><li>对需要进行共定位分析的通道分别进行：①调整threshold至合适区间，点击Apply；②点击<code>Edit-Section-Create Section</code>选中表达区域；③<code>Ctrl+M</code>测量表达区域面积；</li><li>点击Process-Image Calculator，Image1和Image2分别选择两张通道的图片，Operation选择“AND”，然后点击OK，生成两张照片的叠加图。</li><li>选中叠加后的图片，点击<code>Edit-Section-Create Section</code>选中共表达区域;</li><li><code>Ctrl+M</code>测量共表达区域的面积。</li></ol><p>使用宏可以自动进行上述操作进行分析，借此可以实现对多张图象的快速处理。</p><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="建立文件夹"><a href="#建立文件夹" class="headerlink" title="建立文件夹"></a>建立文件夹</h2><p>在所需要的地方分别建立输入及输出文件夹，本文章中将输入文件夹命名为<code>input</code>，将输出文件夹命名为<code>output_coexpression</code>。</p><h2 id="确定合适的Threshold模式"><a href="#确定合适的Threshold模式" class="headerlink" title="确定合适的Threshold模式"></a>确定合适的Threshold模式</h2><p>点击<code>Image-Adjust-Auto Threshold</code>，软件会生成多张按照不同Threshold模式调整后的预览图。每张预览图的正中下方边缘写有该图片所选择的Threshold模式；选择自己觉得最合适的预览图，并记下这张图所使用的模式。</p><p>本篇文章将使用<code>RenyiEntropy</code>模式进行调整。</p><h1 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h1><p>点击<code>Plugins-Macros-Record</code>，在弹出窗口内输入以下代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 批量处理免疫荧光图像</span></span><br><span class="line">inputDir = <span class="string">&quot;E:/医学/免疫荧光/20260430-A2-A4/input/&quot;</span>;  <span class="comment">// 存放.oir文件的文件夹</span></span><br><span class="line">outputDir = <span class="string">&quot;E:/医学/免疫荧光/20260430-A2-A4/output_coexpression/&quot;</span>; <span class="comment">// 输出结果的文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取文件夹内所有文件列表</span></span><br><span class="line">fileList = getFileList(inputDir);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置测量参数</span></span><br><span class="line">run(<span class="string">&quot;Set Measurements...&quot;</span>, <span class="string">&quot;area mean min integrated area_fraction limit redirect=None decimal=3&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 开启循环，逐个处理文件</span></span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; fileList.length; i++) &#123;</span><br><span class="line">    fileName = fileList[i];</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 只处理.oir文件</span></span><br><span class="line">    <span class="keyword">if</span> (endsWith(fileName, <span class="string">&quot;.oir&quot;</span>)) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 获取基本名称（去掉.oir扩展名）</span></span><br><span class="line">        baseName = substring(fileName, <span class="number">0</span>, lastIndexOf(fileName, <span class="string">&quot;.&quot;</span>));</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 打开文件并分离通道</span></span><br><span class="line">        open(fileName);</span><br><span class="line">        run(<span class="string">&quot;Split Channels&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        selectImage(<span class="string">&quot;C2-&quot;</span> + baseName + <span class="string">&quot;.oir&quot;</span>);</span><br><span class="line">        setMinAndMax(<span class="number">1347</span>, <span class="number">2018</span>);</span><br><span class="line">        setAutoThreshold(<span class="string">&quot;RenyiEntropy dark no-reset&quot;</span>); <span class="comment">//调整Threshold模式至RenyiEntropy</span></span><br><span class="line">        run(<span class="string">&quot;Convert to Mask&quot;</span>); <span class="comment">//点击Apply</span></span><br><span class="line">        run(<span class="string">&quot;Create Selection&quot;</span>); <span class="comment">//Edit-Selection-Create Selection</span></span><br><span class="line">        run(<span class="string">&quot;Measure&quot;</span>); <span class="comment">//Ctrl+M</span></span><br><span class="line">                </span><br><span class="line">        <span class="comment">// 通道3</span></span><br><span class="line">        selectImage(<span class="string">&quot;C3-&quot;</span> + baseName + <span class="string">&quot;.oir&quot;</span>);</span><br><span class="line">        setMinAndMax(<span class="number">1007</span>, <span class="number">1267</span>);</span><br><span class="line">        setAutoThreshold(<span class="string">&quot;RenyiEntropy dark no-reset&quot;</span>);</span><br><span class="line">        run(<span class="string">&quot;Convert to Mask&quot;</span>);</span><br><span class="line">        run(<span class="string">&quot;Create Selection&quot;</span>);</span><br><span class="line">        run(<span class="string">&quot;Measure&quot;</span>);</span><br><span class="line">                </span><br><span class="line">        print(<span class="string">&quot;已应用记录的参数到文件: &quot;</span> + fileName);</span><br><span class="line">        </span><br><span class="line">        imageCalculator(<span class="string">&quot;AND create&quot;</span>, <span class="string">&quot;C2-&quot;</span> + baseName + <span class="string">&quot;.oir&quot;</span>,<span class="string">&quot;C3-&quot;</span> + baseName + <span class="string">&quot;.oir&quot;</span>); <span class="comment">//Process-Image Calculator</span></span><br><span class="line">        selectImage(<span class="string">&quot;Result of &quot;</span> + <span class="string">&quot;C2-&quot;</span> + baseName + <span class="string">&quot;.oir&quot;</span>);</span><br><span class="line">        run(<span class="string">&quot;Create Selection&quot;</span>);</span><br><span class="line">        run(<span class="string">&quot;Measure&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 保存测量结果</span></span><br><span class="line">        saveAs(<span class="string">&quot;Results&quot;</span>, outputDir + baseName + <span class="string">&quot;_Results.csv&quot;</span>);<span class="comment">//</span></span><br><span class="line">        run(<span class="string">&quot;Clear Results&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 关闭所有窗口，准备处理下一张</span></span><br><span class="line">        run(<span class="string">&quot;Close All&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        print(<span class="string">&quot;已处理: &quot;</span> + fileName + <span class="string">&quot; (&quot;</span> + (i+<span class="number">1</span>) + <span class="string">&quot;/&quot;</span> + fileList.length + <span class="string">&quot;)&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 提示完成</span></span><br><span class="line">print(<span class="string">&quot;批量处理完成！共处理了 &quot;</span> + fileList.length + <span class="string">&quot; 个文件。&quot;</span>);</span><br><span class="line">showMessage(<span class="string">&quot;处理完成&quot;</span>, <span class="string">&quot;共处理了 &quot;</span> + fileList.length + <span class="string">&quot; 个文件。&quot;</span>);</span><br></pre></td></tr></table></figure><p><code>Ctrl+A</code>全选，然后点击<code>Run</code>即可。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;宏（Macro）指将一系列命令或操作组织在一起，作为一个独立的命令来执行特定任务。对多张免疫荧光染色图象进行共定位分析时，使用Macro功能可以极大提高处理效率。本文章将演示如何使用Macro测量不同通道表达区域及共表达区域的面积。&lt;/p&gt;
+&lt;h1 id=&quot;原理&quot;&gt;&lt;a h</summary>
+      
+    
+    
+    
+    <category term="生信分析" scheme="http://example.com/categories/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="生信分析" scheme="http://example.com/tags/%E7%94%9F%E4%BF%A1%E5%88%86%E6%9E%90/"/>
+    
+    <category term="免疫荧光染色" scheme="http://example.com/tags/%E5%85%8D%E7%96%AB%E8%8D%A7%E5%85%89%E6%9F%93%E8%89%B2/"/>
+    
+    <category term="Fiji" scheme="http://example.com/tags/Fiji/"/>
+    
+    <category term="宏（Macro）" scheme="http://example.com/tags/%E5%AE%8F%EF%BC%88Macro%EF%BC%89/"/>
+    
+    <category term="ImageJ" scheme="http://example.com/tags/ImageJ/"/>
+    
+  </entry>
   
   <entry>
     <title>Fiji小记：使用宏对多张免疫荧光染色图象进行批量处理</title>
@@ -48,19 +81,6 @@
     <category term="宏（Macro）" scheme="http://example.com/tags/%E5%AE%8F%EF%BC%88Macro%EF%BC%89/"/>
     
     <category term="ImageJ" scheme="http://example.com/tags/ImageJ/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【考研手记】生理：绪论</title>
-    <link href="http://example.com/2026/03/28/%E3%80%90%E8%80%83%E7%A0%94%E6%89%8B%E8%AE%B0%E3%80%91%E7%94%9F%E7%90%86%EF%BC%9A%E7%BB%AA%E8%AE%BA/"/>
-    <id>http://example.com/2026/03/28/%E3%80%90%E8%80%83%E7%A0%94%E6%89%8B%E8%AE%B0%E3%80%91%E7%94%9F%E7%90%86%EF%BC%9A%E7%BB%AA%E8%AE%BA/</id>
-    <published>2026-03-28T09:05:35.000Z</published>
-    <updated>2026-03-28T09:05:35.973Z</updated>
-    
-    
-    
-    
     
   </entry>
   
