@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【斯波索宾和声学】经过的四六和弦</title>
+    <url>/2026/05/31/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E7%BB%8F%E8%BF%87%E7%9A%84%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6/</url>
+    <content><![CDATA[<p>经过的四六和弦必须具有经过音的特点，即：</p>
+<ol>
+<li>经过的四六和弦不得强于两侧的和弦；</li>
+<li>左右连接的是不同的和弦，且低音和左右和弦的低音都是级进关系。</li>
+</ol>
+<p>经过的四六和弦重复音为五音。</p>
+]]></content>
+      <categories>
+        <category>音乐 - 和声学</category>
+      </categories>
+      <tags>
+        <tag>音乐</tag>
+        <tag>和声学</tag>
+        <tag>斯波索宾和声学</tag>
+        <tag>四部和声</tag>
+        <tag>经过的四六和弦</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Fiji小记：批量进行多张免疫荧光图象的共表达分析</title>
     <url>/2026/05/02/Fiji%E5%B0%8F%E8%AE%B0%EF%BC%9A%E6%89%B9%E9%87%8F%E8%BF%9B%E8%A1%8C%E5%A4%9A%E5%BC%A0%E5%85%8D%E7%96%AB%E8%8D%A7%E5%85%89%E5%9B%BE%E8%B1%A1%E7%9A%84%E5%85%B1%E8%A1%A8%E8%BE%BE%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<p>宏（Macro）指将一系列命令或操作组织在一起，作为一个独立的命令来执行特定任务。对多张免疫荧光染色图象进行共定位分析时，使用Macro功能可以极大提高处理效率。本文章将演示如何使用Macro测量不同通道表达区域及共表达区域的面积。</p>
