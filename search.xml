@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>文献小记：糖酵解酶PFKFB3通过促进组蛋白乳酸化介导的NF-κB家族激活来驱动肾纤维化</title>
+    <url>/2026/08/11/%E6%96%87%E7%8C%AE%E5%B0%8F%E8%AE%B0%EF%BC%9A%E7%B3%96%E9%85%B5%E8%A7%A3%E9%85%B6PFKFB3%E9%80%9A%E8%BF%87%E4%BF%83%E8%BF%9B%E7%BB%84%E8%9B%8B%E7%99%BD%E4%B9%B3%E9%85%B8%E5%8C%96%E4%BB%8B%E5%AF%BC%E7%9A%84NF-%CE%BAB%E5%AE%B6%E6%97%8F%E6%BF%80%E6%B4%BB%E6%9D%A5%E9%A9%B1%E5%8A%A8%E8%82%BE%E7%BA%A4%E7%BB%B4%E5%8C%96/</url>
+    <content><![CDATA[<p>文献标题：</p>
+<p>原文链接：<a href="https://www.kidney-international.org/article/S0085-2538(24)00335-1/fulltext">Link</a></p>
+<h1 id="研究结论"><a href="#研究结论" class="headerlink" title="研究结论"></a>研究结论</h1><ul>
+<li>肾近端小管PFKFB₃→肾小管糖酵解重编程，乳酸增多→组蛋白乳酸化，特别是H₄K₁₂la→H₄K₁₂la在NF-κB启动子区域富集并激活转录→促进炎症反应及纤维化。</li>
+<li>靶向肾小管细胞中的PFKFB₃介导的NF-κB通路可能是CKD治疗的新策略。</li>
+</ul>
+<h1 id="研究发现"><a href="#研究发现" class="headerlink" title="研究发现"></a>研究发现</h1><h2 id="PFKFB₃表达上调与肾脏纤维化、肾功能障碍相关"><a href="#PFKFB₃表达上调与肾脏纤维化、肾功能障碍相关" class="headerlink" title="PFKFB₃表达上调与肾脏纤维化、肾功能障碍相关"></a>PFKFB₃表达上调与肾脏纤维化、肾功能障碍相关</h2><p>IRI小鼠模型肾组织：</p>
+<ul>
+<li>RNA层面，qRT-PCR和Western Blotting发现IRI小鼠肾组织<code>Pfkfb₃</code>基因表达上调，且RNA原位杂交提示该基因表达上调富集于近端肾小管。</li>
+<li>蛋白质层面，免疫荧光染色提示PFKFB₃主要定位于近端肾小管细胞（PTCs），且和α-SMA存在共定位关系，标明PFKFB₃的表达和肾脏纤维化之间可能存在关联。</li>
+</ul>
+<p>CKD患者肾组织：</p>
+<ul>
+<li>CKD患者中PFKFB₃的表达和亚细胞定位情况与前述相似，免疫荧光染色同样提示PFKFB₃在PTCs富集。</li>
+<li>肾小管PFKFB₃水平与蛋白尿程度、肾小管损伤评分和肾脏Kim₁水平呈正相关，提示PFKFB₃表达上调和肾小管损伤存在潜在联系。</li>
+<li>PFKFB₃表达随肾纤维化加重及CKD的进展而呈上调趋势，其水平与肾小管间质纤维化严重程度、血清肌酐水平和血尿素氮水平显著正相关，但与eGFR呈负相关关系。</li>
+</ul>
+<p><img src="https://www.kidney-international.org/cms/10.1016/j.kint.2024.04.016/asset/290bca64-bac9-47c6-931e-6146de421c29/main.assets/gr1_lrg.jpg"></p>
+<h2 id="Pfkfb₃杂合子可缓解IRI小鼠的肾纤维化"><a href="#Pfkfb₃杂合子可缓解IRI小鼠的肾纤维化" class="headerlink" title="Pfkfb₃杂合子可缓解IRI小鼠的肾纤维化"></a><code>Pfkfb₃</code>杂合子可缓解IRI小鼠的肾纤维化</h2><p>前述研究结果只能说明PFKFB₃的上调和肾脏纤维化、肾功能下降存在关联，却不能说明二者中谁是因、谁是果。因此团队培育了<code>Pfkfb₃</code>杂合子IRI模型小鼠，发现 <strong>杂合子和野生型小鼠在生理指标差距不大，但杂合子的肾纤维化程度明显减轻</strong> ，进而证明肾纤维化是果、<code>Pfkfb₃</code>表达上调方为因。</p>
+<p>这个结果同样提示：靶向PFKFB₃蛋白可能有助于缓解肾脏纤维化。</p>
+<h2 id="近端肾小管细胞特异性敲除Pfkfb₃基因可保护小鼠免受肾脏纤维化"><a href="#近端肾小管细胞特异性敲除Pfkfb₃基因可保护小鼠免受肾脏纤维化" class="headerlink" title="近端肾小管细胞特异性敲除Pfkfb₃基因可保护小鼠免受肾脏纤维化"></a>近端肾小管细胞特异性敲除<code>Pfkfb₃</code>基因可保护小鼠免受肾脏纤维化</h2><p>通过杂交$Pfkfb_3^{flox&#x2F;flox}$和$PEPCK-Cre$小鼠，得到$Pfkfb_3^{ΔPTC}$小鼠。</p>
+<blockquote>
+<p>flox指flanked by loxP sites，也就是在目标基因的重要区域两侧插入两个loxP位点。PEPCK-Cre小鼠则是主要在近端肾小管细胞特异性表达Cre重组酶的小鼠（其中Cre重组酶由PEPCK启动子驱动表达）。将二者杂交后，Cre重组酶可识别<code>Pfkfb₃</code>基因两侧的loxP位点并切除其间的DNA，从而得到近端小管细胞特异性<code>Pfkfb₃</code>基因缺失的小鼠，即$Pfkfb_3^{ΔPTC}$（Δ即deletion，缺失）。</p>
+</blockquote>
+<p>在IRI模型和叶酸肾病模型中均观测到，$Pfkfb_3^{ΔPTC}$小鼠较野生型小鼠：</p>
+<ul>
+<li>肾脏胶原沉积和细胞外基质的累积显著减少；</li>
+<li>显著抑制纤连蛋白（fibronectin，FN）和α-SMA的上调并改善了肾功能（Scr、BUN）。</li>
+</ul>
+<p><img src="https://www.kidney-international.org/cms/10.1016/j.kint.2024.04.016/asset/fdbd18d9-f387-440d-92ea-d26ac3cd311b/main.assets/gr2gl.jpg"></p>
+<p>分离初代小鼠的肾小管上皮细胞（Tubular epithelial cells，TECs）进行体外实验，发现：</p>
+<ul>
+<li>经缺氧&#x2F;复氧（H&#x2F;R）处理的细胞中<code>Pfkfb₃</code>mRNA表达水平显著上调。</li>
+<li>使用siRNA沉默<code>Pfkfb₃</code>mRNA，可有效抑制H&#x2F;R诱导的<code>Fn</code>（FN编码基因）、<code>Acta_2</code>（α-SMA编码基因）以及<code>Ctgf</code>基因（结缔组织生长因子）的表达。</li>
+</ul>
+<p>根据以上结果可以推测，敲除<code>Pfkfb₃</code>基因的确有助于减轻肾脏的纤维化。借此我们进一步提出问题：该现象背后的机制是什么样的？鉴于PFKFB₃是糖酵解中的关键酶之一，我们提出两种假设：</p>
+<ol>
+<li>PFKFB₃表达水平的下降，使得细胞供能减少，进而导致细胞活力下降或细胞凋亡，从而使得炎症和纤维化程度性下降；</li>
+<li>PFKFB₃表达水平的下降，纠正了异常增强的糖酵解和代谢重编程，从而减轻了肾脏的纤维化程度。</li>
+</ol>
+<p>针对第一种假设，团队进一步检测了不同组细胞（对照-随机siRNA组、对照-敲低<code>Pfkfb₃</code>组、H&#x2F;R-随机siRNA组、H&#x2F;R-敲低<code>Pfkfb₃</code>组）的细胞活力、ATP水平及细胞凋亡数量，发现：   </p>
+<ul>
+<li>细胞活力和ATP水平：<ul>
+<li>与对照组相比，H&#x2F;R组中的确观测到了细胞活力和ATP水平的降低；</li>
+<li>无论在对照还是在H&#x2F;R条件下，与随机siRNA组相比，敲低<code>Pfkfb₃</code>组对细胞活力和ATP水平无显著影响；</li>
+</ul>
+</li>
+<li>细胞凋亡数量：<ul>
+<li>与对照组相比，H&#x2F;R组中也的确观测到了细胞凋亡的增加；</li>
+<li>和前面一样，无论在对照还是在H&#x2F;R条件下，与随机siRNA组相比，敲低<code>Pfkfb₃</code>组对细胞凋亡数量无显著影响；</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>文献阅读</category>
+      </categories>
+      <tags>
+        <tag>Kidney International</tag>
+        <tag>histone lactylation</tag>
+        <tag>NF-κB signaling</tag>
+        <tag>PFKFB₃</tag>
+        <tag>renal fibrosis</tag>
+        <tag>组蛋白磷酸化</tag>
+        <tag>NF-κB信号通路</tag>
+        <tag>肾脏纤维化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【斯波索宾和声学】经过的四六和弦</title>
     <url>/2026/05/31/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E7%BB%8F%E8%BF%87%E7%9A%84%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6/</url>
     <content><![CDATA[<p>经过的四六和弦必须具有经过音的特点，即：</p>
