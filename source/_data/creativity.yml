@@ -1,0 +1,56 @@
+- class_name: 开启创造力
+  creativity_list:
+    - name: Java
+      color: "#fff"
+      icon: https://img.june-pj.cn/img/2024/05/java-logo.webp
+    - name: MySQL
+      color: "#3e6e93"
+      icon: https://img.june-pj.cn/img/2024/05/mysql.webp
+    - name: MyBatis
+      color: "#808B96"
+      icon: https://img.june-pj.cn/img/2024/01/16/mybatis-removebg-preview.png
+    - name: Spring
+      color: "#186A3B"
+      icon: https://img.june-pj.cn/img/2024/01/16/spring.png
+    - name: Node
+      color: "#333"
+      icon: https://img.june-pj.cn/img/2025/06/node-logo.svg
+    - name: SpringBoot
+      color: "#fff"
+      icon: https://spring.io/img/projects/spring-boot.svg
+    - name: Git
+      color: "#f05133"
+      icon: https://img.june-pj.cn/img/2024/05/git.webp
+    - name: Docker
+      color: "#57b6e6"
+      icon: https://img.june-pj.cn/img/2024/05/docker.webp
+    - name: Nacos
+      color: "#2E3034"
+      icon: https://img.june-pj.cn/img/2024/05/Nacos%20logo.webp
+    - name: Linux
+      color: "#4c83bb"
+      icon: https://img.june-pj.cn/img/2024/01/16/Ubuntu_logo.png
+    - name: Vue
+      color: "#fff"
+      icon: https://img.june-pj.cn/img/2024/05/vue.webp
+    - name: Redis
+      color: "#333"
+      icon: https://img.june-pj.cn/img/2024/01/16/redis_logo.png
+    - name: SpringCloud
+      color: "#fff"
+      icon: https://spring.io/img/projects/spring-cloud.svg
+    - name: ES
+      color: "#CCD1D1"
+      icon: https://img.june-pj.cn/img/2024/01/16/elasticsearch.png
+    - name: React
+      color: "#222"
+      icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K
+    - name: CSS3
+      color: "#2c51db"
+      icon: https://img.june-pj.cn/img/2024/05/css3.webp
+    - name: JS
+      color: "#f7cb4f"
+      icon: https://img.june-pj.cn/img/2024/05/js.webp
+    - name: HTML
+      color: "#e9572b"
+      icon: https://img.june-pj.cn/img/2024/05/html5.webp

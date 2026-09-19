@@ -1,0 +1,51 @@
+- class_name: 友情链接
+  class_desc: 是敲~好的朋友！
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、簡單且強大的網誌框架
+
+- class_name: 一些自用小网站
+  class_desc: 
+  link_list:
+    - name: 中山大学
+      link: https://jwxt.sysu.edu.cn/jwxt/#/student
+      avatar: https://www.sysu.edu.cn/__local/C/8E/79/6236A91AEAFBB9F7F2C23A9F836_97F1F3B5_178FF.png?e=.png
+      descr: 教务系统
+    - name: 中山大学
+      link: https://mportal.sysu.edu.cn/newClient/#/login
+      avatar: https://www.sysu.edu.cn/__local/C/8E/79/6236A91AEAFBB9F7F2C23A9F836_97F1F3B5_178FF.png?e=.png
+      descr: 统一门户
+    - name: 中山大学
+      link: https://netpay.sysu.edu.cn/netpay/index.jsp
+      avatar: https://www.sysu.edu.cn/__local/C/8E/79/6236A91AEAFBB9F7F2C23A9F836_97F1F3B5_178FF.png?e=.png
+      descr: 网费在线医统
+    - name: 中山大学
+      link: https://dcxt.sysu.edu.cn/System/Home/Index
+      avatar: https://www.sysu.edu.cn/__local/C/8E/79/6236A91AEAFBB9F7F2C23A9F836_97F1F3B5_178FF.png?e=.png
+      descr: 大学生创新训练计划管理系统
+    - name: 中山大学
+      link: https://sycl.sysu.edu.cn/index.html?comeFromCASLogin=1#main
+      avatar: https://www.sysu.edu.cn/__local/C/8E/79/6236A91AEAFBB9F7F2C23A9F836_97F1F3B5_178FF.png?e=.png
+      descr: 实验采购平台
+    - name: 中山大学
+      link: https://lms.sysu.edu.cn/
+      avatar: https://www.sysu.edu.cn/__local/C/8E/79/6236A91AEAFBB9F7F2C23A9F836_97F1F3B5_178FF.png?e=.png
+      descr: 在线教学平台
+    - name: Pubmed
+      link: https://pubmed.ncbi.nlm.nih.gov/
+      avatar: https://ts4.tc.mm.bing.net/th?id=ODLS.6b778f11-9288-460e-af94-607c0ec1d92e&w=32&h=32&qlt=98&pcl=fffffc&o=6&pid=1.2
+      descr: 
+    - name: Deepseek
+      link: https://chat.deepseek.com/
+      avatar: https://ts4.tc.mm.bing.net/th?id=ODLS.6eebc7a8-ce6e-4851-af10-74e4612dd938&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2
+      descr: 最爱的AGI
+    - name: Bandlab
+      link: https://www.bandlab.com/studio
+      avatar: https://ts1.tc.mm.bing.net/th/id/ODLS.2aafaacc-539d-4514-8e43-309b716a67e8?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2
+      descr: 最爱的AGI
+    - name: 云·崩坏星穹铁道
+      link: https://sr.mihoyo.com/cloud/?from_channel=ad17173#/
+      avatar: https://ts3.tc.mm.bing.net/th/id/OIP-C.eNf9y-eBRZKiNVBfaiO-xQHaHa?w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2
+      descr: 愿此行，终抵群星！

@@ -1,0 +1,21 @@
+# 赞赏名单数据文件 —— about.pug 中 site.data.reward 读取的就是本文件
+# 结构说明：顶层是一个列表，每个条目必须包含 reward_list 数组；
+# 每个赞赏条目的字段：
+#   name      赞赏人名称
+#   avatar    头像图片链接
+#   datatime  赞赏日期（注意就是这个拼写，模板里就这么写的）
+#   amount    金额
+#   method    支付方式：wechat 或 alipay（决定显示微信/支付宝图标）
+#   isFriend  可选，true 时显示"友链"标签
+#   link      可选，填写后该条目会变成可点击的链接
+- reward_list:
+    - name: 示例小伙伴
+      avatar: https://cravatar.cn/avatar/d41d8cd98f00b204e9800998ecf8427e?s=80
+      datatime: 2026-01-01
+      amount: 10
+      method: wechat
+    - name: 又一个示例
+      avatar: https://cravatar.cn/avatar/d41d8cd98f00b204e9800998ecf8427e?s=80
+      datatime: 2026-02-15
+      amount: 20
+      method: alipay

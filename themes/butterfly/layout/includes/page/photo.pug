@@ -1,0 +1,19 @@
+if page.bar
+    .icat-status-bar
+        .status-bar-tips= page.bar.tips || '类别'
+        .status-bar
+            #bar-box
+                each item in page.bar.list
+                    - const content = item.split(' || ')
+                    .status-bar-item
+                        a(onclick="photos('" + content[0] + "')") #{content[1]}
+        #status-bar-button(onclick="statusbar()")
+            i.iconfont.icat-chevron-too
+        if page.bar.more
+            - const contents = page.bar.more.split(' || ')
+            if contents[0].startsWith('/')
+                a.status-bar-more(href="javascript:void(0)" onclick="pjax.loadUrl('" + contents[0] + "')") #{contents[1]}
+            else
+                a.status-bar-more(href=contents[0]) #{contents[1]}
+div.gallery-photos.page
+    img(src="https://img.meuicat.com/blog/loading.svg" style="margin:auto")
