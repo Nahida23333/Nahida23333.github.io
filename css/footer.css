@@ -1,0 +1,367 @@
+/*https://codepen.io/poojanahelia/pen/Exabvdy*/
+
+#footer {
+    background-color: rgba(0, 0, 0, 0); /* 修改透明色 */
+    color: #fff;
+    padding: 0;
+}
+
+#footer .footer-other {
+    padding: 0;
+}
+
+/* 修复页脚左右两侧露出背景、没有铺满全宽的问题 */
+#footer-wrap {
+    padding: 0;
+}
+
+.footer-copyright{
+    padding: 0;
+}
+
+.my-footer-logo {
+    color: white;
+}
+
+.my-footer-wave-svg {
+    height: 50px;
+    width: 100%;
+    transform: scale(-1, -1) translateY(-10px); /*;*/
+}
+
+.my-footer-wave-path {
+    fill: #607830;
+}
+
+.my-footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 450px;
+    position: relative;
+}
+
+.my-footer-content-column {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    color: #fff;
+}
+
+.my-footer-content-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.my-footer-logo-link {
+    display: inline-block;
+}
+
+.my-footer-menu {
+    margin-top: 15px;
+}
+
+.my-footer-menu-name {
+    color: #fffff2;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.my-footer-menu-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.my-footer-menu-list li {
+    margin-top: 5px;
+}
+
+.my-footer-call-to-action-description {
+    color: #fffff2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.my-footer-call-to-action-button:hover {
+    background-color: #fffff2;
+    color: #00bef0;
+}
+
+.button:last-of-type {
+    margin-right: 0;
+}
+
+.my-footer-call-to-action-button {
+    background-color: #03708c;
+    border-radius: 21px;
+    color: #fffff2;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    padding: 12px 30px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .2s;
+    cursor: pointer;
+    position: relative;
+}
+
+.my-footer-call-to-action {
+    margin-top: 17px;
+}
+
+.my-footer-call-to-action-title {
+    color: #fffff2;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.my-footer-call-to-action-link-wrapper {
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.my-footer-call-to-action-link-wrapper a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.my-footer-social-links {
+    bottom: -1px;
+    height: 54px;
+    position: absolute;
+    right: 0;
+    width: 236px;
+}
+
+.my-footer-social-amoeba-svg {
+    height: 54px;
+    left: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 236px;
+}
+
+.my-footer-social-amoeba-path {
+    fill: #304818;
+}
+
+.my-footer-social-link.email {
+    height: 41px;
+    left: 5px;
+    top: 14px;
+    width: 41px;
+}
+
+.my-footer-social-link {
+    display: block;
+    padding: 10px;
+    position: absolute;
+}
+
+.hidden-link-text {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+    top: 50%;
+}
+
+.my-footer-social-icon-svg {
+    display: block;
+}
+
+.my-footer-social-icon-path {
+    fill: #fffff2;
+    transition: fill .2s;
+}
+
+.my-footer-social-link.follow {
+    height: 42px;
+    left: 124px;
+    top: 13px;
+    width: 42px;
+}
+
+.my-footer-social-link.rss {
+    height: 43px;
+    left: 178px;
+    top: 10px;
+    width: 43px;
+}
+
+.my-footer-social-link.github {
+    height: 62px;
+    left: 54px;
+    top: -4px;
+    width: 62px;
+}
+
+.my-footer-copyright {
+    background-color: #304818;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.my-footer-copyright-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.my-footer-copyright-text {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.my-footer-copyright-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.my-footer-content-div {
+    background: #607830
+}
+
+.my-footer-svg-div {
+    width: 100%;
+    max-height: 200px;
+}
+
+/* Media Query For different screens */
+@media (min-width: 320px) and (max-width: 479px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .my-footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 649px;
+        position: relative;
+    }
+
+    /* 不展示logo */
+    .my-footer-logo {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+    /* smartphones, Android phones, landscape iPhone */
+    .my-footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 738px;
+        position: relative;
+    }
+
+    .my-footer-logo {
+        padding-left: 177px; /* Qlogo 稍微偏移一点 */
+        padding-right: 170px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .my-footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 758px;
+        position: relative;
+    }
+
+
+}
+
+@media (min-width: 801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+}
+
+@media (min-width: 1025px) {
+    /* big landscape tablets, laptops, and desktops */
+
+}
+
+@media (min-width: 1281px) {
+    /* hi-res laptops and desktops */
+
+}
+
+
+@media (min-width: 760px) {
+    .my-footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 10px 15px 237px;
+        position: relative;
+    }
+
+
+    .my-footer-content-column {
+        /*五列的话 19.99 %*/
+        width: 24.99%;
+    }
+}
+
+@media (min-width: 568px) {
+
+}
+
+@media (min-width: 600px) and (max-width: 760px) {
+    /* 在这里编写适用于小屏幕的样式 */
+    .my-footer-logo {
+        padding-left: 212px; /* Qlogo 稍微偏移一点 */
+        padding-right: 204px;
+    }
+}
+
+/* 页脚波浪的颜色 */
+[data-theme='dark'] .my-footer-wave-path {
+    fill: #2a3a14;
+}
+[data-theme='dark'] .my-footer-content-div {
+    background-color: #2a3a14;
+}
+
+/* 页脚海底的颜色 */
+[data-theme='dark'] .my-footer-copyright {
+    background-color: #1c2910;
+}
+[data-theme='dark'] .my-footer-social-amoeba-path {
+    fill: #1c2910;
+}
