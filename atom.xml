@@ -6,7 +6,7 @@
   <link href="https://nahida23333.github.io/atom.xml" rel="self"/>
   
   <link href="https://nahida23333.github.io/"/>
-  <updated>2026-09-21T16:57:46.437Z</updated>
+  <updated>2026-09-22T12:57:21.779Z</updated>
   <id>https://nahida23333.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PCR、qPCR、RT-PCR及RT-qPCR的实验原理和实验步骤的设计分析</title>
+    <link href="https://nahida23333.github.io/2026/09/22/PCR%E3%80%81qPCR%E3%80%81RT-PCR%E5%8F%8ART-qPCR%E7%9A%84%E5%AE%9E%E9%AA%8C%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E9%AA%8C%E6%AD%A5%E9%AA%A4%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%88%86%E6%9E%90/"/>
+    <id>https://nahida23333.github.io/2026/09/22/PCR%E3%80%81qPCR%E3%80%81RT-PCR%E5%8F%8ART-qPCR%E7%9A%84%E5%AE%9E%E9%AA%8C%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E9%AA%8C%E6%AD%A5%E9%AA%A4%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%88%86%E6%9E%90/</id>
+    <published>2026-09-22T12:06:12.000Z</published>
+    <updated>2026-09-22T12:57:21.779Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>参考文章：<br><a href="https://zhuanlan.zhihu.com/p/1984288381413393906">【知乎】PCR实验原理及实验步骤的设计分析（非常适合初学者）</a></p></blockquote><p><strong>聚合酶链式反应（Polymerase Chain Reaction, PCR）</strong> 是一种利用半保留复制的原理，以待扩增的DNA为模板，在体外由引物介导的酶促反应合成特异DNA片段的技术。</p><h1 id="普通PCR技术"><a href="#普通PCR技术" class="headerlink" title="普通PCR技术"></a>普通PCR技术</h1><p>普通PCR技术即第一代PCR技术，以双链DNA为模板、dNTPs为底物进行扩增，随后采用琼脂糖凝胶电泳对产物进行定性分析。</p><h2 id="PCR反应体系"><a href="#PCR反应体系" class="headerlink" title="PCR反应体系"></a>PCR反应体系</h2><p>PCR反应体系包括模板、引物、Taq DNA聚合酶、dNTPs和Mg²⁺等。</p><p>引物是指与待扩增DNA片段两端序列互补的短单链DNA，通常为18-24个核苷酸（18-24 nt），包括上游引物（FP）和下游引物（RP）两种，决定了扩增的DNA序列片段及长度。</p><p>Taq DNA聚合酶是从嗜热菌分离的耐热聚合酶，在95℃高温不失活；而Mg²⁺为其辅因子。PCR发明初期所使用的Klenow片段、T4 DNA聚合酶和T7 DNA聚合酶因对热的稳定性差而未得到广泛应用，直至该酶的发现才使PCR技术实现自动化并迅速发展。Taq DNA聚合酶的发现者Kary Mullis也因此获得了1993年诺贝尔奖。</p><p>dNTPs为PCR反应提供DNA合成的原料和能量。需要注意：①dNTPs浓度大于50 mmol&#x2F;L时，Taq DNA聚合酶的活性会受到抑制；②PCR反应体系中四种dNTP的浓度应保持相等，避免因某种dNTP的浓度不足而导致错误的掺入。</p><h2 id="PCR反应程序"><a href="#PCR反应程序" class="headerlink" title="PCR反应程序"></a>PCR反应程序</h2><p>PCR循环主要包括以下几大步骤。</p><h3 id="预变性"><a href="#预变性" class="headerlink" title="预变性"></a>预变性</h3><p>在循环开始前，将样本在94-98℃下处理3-5分钟，使得所有双联的DNA模板彻底、均匀地解链为单链。</p><h3 id="PCR循环"><a href="#PCR循环" class="headerlink" title="PCR循环"></a>PCR循环</h3><p>PCR循环包括变性、退火和延伸三大步骤，一般重复30-40个循环。在PCR循环中，模板DNA的拷贝数呈指数级增长，这是PCR灵敏度高的主要原因。</p><ul><li><strong>变性：</strong> 在94-95℃下处理15-30s，充分断裂碱基对中的氢键，使得双链DNA解链为两条单链模板。</li><li><strong>退火：</strong> 在Tm值±3℃处理15-30s（通常为55-65℃），使得单链DNA模板与引物结合形成引物-模板复合物。</li><li><strong>延伸：</strong> 在DNA聚合酶的最适温度下（Taq酶的最适温度为72℃）处理15-30s&#x2F;kb。在此过程中，Taq DNA聚合酶以dNTPs为原料，沿5’→3’端合成新的DNA互补链。其合成产物又将成为下一轮循环的DNA模板。</li></ul><h3 id="终延伸"><a href="#终延伸" class="headerlink" title="终延伸"></a>终延伸</h3><p>在DNA聚合酶最适温度下处理5-10min，确保所有未完成的延伸产物合成全长，避免短片段残留对分析造成影响。</p><h3 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h3><p>通常在4℃下进行保存，防止产物降解，便于电泳或保存。</p><h1 id="实时荧光定量PCR技术"><a href="#实时荧光定量PCR技术" class="headerlink" title="实时荧光定量PCR技术"></a>实时荧光定量PCR技术</h1><p><strong>实时荧光定量PCR（Real-time Quantitative PCR, qPCR）</strong> 即第二代PCR技术，是指在PCR反应体系中加入荧光报告基团，利用荧光信号的实时积累监测整个PCR过程，通过扩增曲线对起始模板量进行精确定量的技术。</p><h2 id="qPCR反应体系"><a href="#qPCR反应体系" class="headerlink" title="qPCR反应体系"></a>qPCR反应体系</h2><p>qPCR反应体系在传统PCR反应体系的基础上加入了荧光染料或荧光基团，荧光化学方法主要包括以下两大类。</p><p>其一是 <strong>SYBR Green染料法</strong> 。该染料可以嵌入双链DNA的小沟，结合后可以发出荧光信号；而游离状态的燃料则不发出荧光。其成本低廉、通用性强、灵敏度高，但其与引物二聚体和非特异扩增DNA片段结合也能产生信号，这导致其特异性不高，易产生“假阳性”结果。因此，需要结合熔解曲线验证扩增产物的特异性。</p><blockquote><p>熔解曲线：扩增长度后缓慢升温并连续采集荧光，产物应呈锐利单峰；双峰提示存在引物二聚体或非特异扩增。</p></blockquote><p>其二是 <strong>TaqMan探针法</strong> 。该探针的5’端标记荧光基团，3’端标记淬灭集基团。未结合DNA片段时，探针中的荧光基团因淬灭集团的存在而无法发出荧光；而在扩增时，探针结合至DNA模板上，在延伸阶段，Taq酶凭借其5’→3’外切酶活性水解探针，使荧光基团和淬灭基团分离而发出荧光。这种方法特异性强、灵敏度高，适合多重qPCR检测，但因探针需特别定制，成本较高；且探针水解易受酶性能和试剂的影响；淬灭难以彻底；检测结果很难判断实际的扩增特性。</p><h2 id="qPCR扩增曲线与Ct值"><a href="#qPCR扩增曲线与Ct值" class="headerlink" title="qPCR扩增曲线与Ct值"></a>qPCR扩增曲线与Ct值</h2><p>qPCR扩增曲线呈S型，可分为基线期、指数期和平台期。其中，在指数期期间，产物每经过一次循环，即以接近200%的效率增长，是最佳定量分析区间。</p><p><img src="/images/PCR/qpcr-amplification-curve.svg"></p><p><strong>阈值周期&#x2F;阈值循环（Cycle threshold, Ct）</strong> 是指扩增反应中，荧光信号首次超过设定阈值时所对应的循环数。显而易见，起始DNA模板拷贝多，荧光超过阈值的速度越快，Ct值则越小。在PCR实验体系中，模板量每相差10倍，Ct值约相差3.3个循环，这是qPCR定量的数字基础。</p><h2 id="定量方法"><a href="#定量方法" class="headerlink" title="定量方法"></a>定量方法</h2><p>qPCR的定量方法有标准曲线法和2-ΔΔCt法（Livak法）。</p><p>标准曲线法是指将已知拷贝数的标准品进行系列梯度稀释并同步扩增，以Ct值对log（拷贝数）绘制标准曲线，再将未知样本的Ct值代入求得绝对拷贝数。</p><p>2-ΔΔCt法使用如下计算步骤对拷贝数进行相对定量：ΔCt&#x3D;Ct(目的基因)-Ct(内参基因)，ΔΔCt&#x3D;ΔCt(处理组)-ΔCt(对照组)，相对表达倍数&#x3D;2-ΔΔCt。</p><p>与普通PCR技术相比，qPCR在指数期采集荧光信号，此时产物量与起始模板量保持严格的对数线性关系，克服了终点法无法定量分析的缺陷。</p><h1 id="逆转录PCR技术"><a href="#逆转录PCR技术" class="headerlink" title="逆转录PCR技术"></a>逆转录PCR技术</h1><p>在PCR和qPCR步骤的基础上，加入将mRNA或总RNA转录为cDNA的前置步骤，即为逆转录PCR（Reserve transcription-PCR, RT-PCR）和实时荧光定量逆转录PCR技术（RT-qPCR），通过该技术可对RNA进行扩增及定性（RT-PCR）或定量（RT-qPCR）分析。</p><p>需要注意的是，我们提到的RT-PCR一般指Reserve transcription-PCR即逆转录PCR，而非Real-time PCR即实时荧光定量PCR，后者一般缩写为qPCR。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;参考文章：&lt;br&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/1984288381413393906&quot;&gt;【知乎】PCR实验原理及实验步骤的设计分析（非常适合初学者）&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>文献小记：衰老相关大脑边界巨噬细胞通过迁移体介导小胶质细胞旁分泌衰老调控认知功能下降</title>
@@ -670,41 +693,6 @@
     <category term="脑出血" scheme="https://nahida23333.github.io/tags/%E8%84%91%E5%87%BA%E8%A1%80/"/>
     
     <category term="蛛网膜下腔出血" scheme="https://nahida23333.github.io/tags/%E8%9B%9B%E7%BD%91%E8%86%9C%E4%B8%8B%E8%85%94%E5%87%BA%E8%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【神经病学】头痛</title>
-    <link href="https://nahida23333.github.io/2025/11/05/%E3%80%90%E7%A5%9E%E7%BB%8F%E7%97%85%E5%AD%A6%E3%80%91%E5%A4%B4%E7%97%9B/"/>
-    <id>https://nahida23333.github.io/2025/11/05/%E3%80%90%E7%A5%9E%E7%BB%8F%E7%97%85%E5%AD%A6%E3%80%91%E5%A4%B4%E7%97%9B/</id>
-    <published>2025-11-05T15:15:38.000Z</published>
-    <updated>2026-09-19T03:56:07.791Z</updated>
-    
-    <content type="html"><![CDATA[<p>头痛是临床常见的症状，通常指局限于头颅上半部，包括眉弓、耳轮上缘和枕外隆凸连线以上部位的疼痛。</p><p>发病机制：①颅内外动脉的扩张；②颅内痛觉敏感结构组织被牵拉或移位（牵引性头痛）；③颅内外痛觉敏感组织炎症；④传导痛觉的脑神经和颈神经直接受压或炎症；⑤眼、耳、鼻、牙齿病变疼痛的扩散（牵涉性疼痛）。</p><p>分类（ICHD—3）：</p><ul><li>原发性疼痛：偏头痛、紧张性疼痛、三叉自主神经性疼痛、其他原发性疼痛。</li><li>继发性疼痛：头颈部外伤、头颅和颈部血管疾病、非血管性颅内疾病、物质或物质戒断、感染、内环境紊乱、结构病变、精神疾病。</li><li>痛性脑神经病、其他面痛与其他头痛与其他头痛。</li></ul><h1 id="偏头痛"><a href="#偏头痛" class="headerlink" title="偏头痛"></a>偏头痛</h1><p>偏头痛是常见的原发性头痛，其特征是具有反复发作性，多为单侧、中重度、搏动性疼痛，日常活动可加重，一般持续4—72小时，并伴有恶心和&#x2F;或呕吐，畏光和畏声。</p><h2 id="病因"><a href="#病因" class="headerlink" title="病因"></a>病因</h2><ol><li>遗传因素：遗传易感性</li><li>内分泌和代谢因素</li><li>饮食、药物和精神因素</li></ol><h2 id="发病机制"><a href="#发病机制" class="headerlink" title="发病机制"></a>发病机制</h2><p>先兆期：神经元及胶质细胞去极化和超极化缓慢扩散的皮质扩散性抑制（CSD）相关。<br>头痛期：三叉神经血管系统激活。</p><h2 id="临床表现"><a href="#临床表现" class="headerlink" title="临床表现"></a>临床表现</h2><h3 id="偏头痛分型"><a href="#偏头痛分型" class="headerlink" title="偏头痛分型"></a>偏头痛分型</h3><ul><li>无先兆偏头痛</li><li>有先兆偏头痛<ul><li>典型先兆偏头痛：典型先兆伴头痛，典型先兆不办头痛；</li><li>脑干先兆偏头痛；</li><li>偏瘫性偏头痛：家族性偏瘫性偏头痛，散发性偏瘫性偏头痛；</li><li>视网膜性偏头痛。</li></ul></li><li>慢性偏头痛</li><li>偏头痛并发症：偏头痛持续状态，不伴脑梗死的持续先兆，偏头痛性脑梗死，偏头痛先兆诱发的癫痫发作。</li><li>很可能的偏头痛：很可能的无先兆偏头痛，很可能的有先兆偏头痛。</li><li>可能与偏头痛相关的周期综合症<ul><li>反复胃肠功能障碍：周期性呕吐综合征，腹型偏头痛；</li><li>良性发作性眩晕；</li><li>良性发作性斜颈。</li></ul></li></ul><h3 id="偏头痛的几种主要亚型"><a href="#偏头痛的几种主要亚型" class="headerlink" title="偏头痛的几种主要亚型"></a>偏头痛的几种主要亚型</h3><h4 id="无先兆偏头痛"><a href="#无先兆偏头痛" class="headerlink" title="无先兆偏头痛"></a>无先兆偏头痛</h4><p>最常见，发作频率高。</p><ol><li>反复发作的一侧或双侧额颞部疼痛，呈搏动性，中重度疼痛；</li><li>伴随症状：恶心和&#x2F;或呕吐、畏光和畏声。</li></ol><h4 id="有先兆偏头痛"><a href="#有先兆偏头痛" class="headerlink" title="有先兆偏头痛"></a>有先兆偏头痛</h4><p>先兆：部分患者在头痛之前常出现可逆的局灶性神经系统症状。</p><p>视觉先兆（双眼闪光、暗点或水波纹、视物变形）＞感觉先兆</p><ul><li>典型先兆偏头痛：完全可逆的视觉、感觉和&#x2F;或言语症状；</li><li>脑干先兆偏头痛：构音障碍、眩晕、耳鸣、听力减退、复视、共济失调、意识障碍。</li><li>偏瘫性偏头痛：完全可逆的肢体无力，持续时间通常＜72h。</li><li>视网膜性偏头痛：反复发生的完全可逆单眼视觉障碍。</li></ul><h4 id="慢性偏头痛"><a href="#慢性偏头痛" class="headerlink" title="慢性偏头痛"></a>慢性偏头痛</h4><p>每月头痛发作超过15天，连续3个月或3个月以上，且每月至少有8天的头痛具有偏头痛特点。</p><h4 id="偏头痛并发症"><a href="#偏头痛并发症" class="headerlink" title="偏头痛并发症"></a>偏头痛并发症</h4><ol><li>偏头痛持续状态</li><li>不伴脑梗死的持续先兆</li><li>偏头痛性脑梗死</li><li>偏头痛先兆诱发的癫痫发作</li></ol><h4 id="可能与偏头痛有关的周期综合征（儿童期周期性综合征）"><a href="#可能与偏头痛有关的周期综合征（儿童期周期性综合征）" class="headerlink" title="可能与偏头痛有关的周期综合征（儿童期周期性综合征）"></a>可能与偏头痛有关的周期综合征（儿童期周期性综合征）</h4><h2 id="诊断"><a href="#诊断" class="headerlink" title="诊断"></a>诊断</h2><h3 id="无先兆偏头痛的诊断标准"><a href="#无先兆偏头痛的诊断标准" class="headerlink" title="无先兆偏头痛的诊断标准"></a>无先兆偏头痛的诊断标准</h3><ol><li>符合下述2—4特征的头痛至少发作5次；</li><li>头痛发作持续4—72小时（未经治疗或治疗效果不佳）；</li><li>至少有下列4项中的2项：①单侧；②搏动性；③中、重度头痛；④日常体力活动可加重头痛或因头痛而避免日常活动；</li><li>发作过程换个至少符合下列2项中的1项：①恶心和&#x2F;或呕吐；②畏光和畏声。</li><li>不能用ICHD—3中的其他诊断更好地解释。</li></ol><h3 id="有先兆偏头痛诊断标准"><a href="#有先兆偏头痛诊断标准" class="headerlink" title="有先兆偏头痛诊断标准"></a>有先兆偏头痛诊断标准</h3><ol><li>至少有2次发作符合下述2—3；</li><li>至少有1个可完全恢复的先兆症状：①视觉；②感觉；③言语和&#x2F;或语言；④运动；⑤脑干；⑥视网膜。</li><li>至少符合下列6项中的3项：<ul><li>①至少有一个先兆持续超过5分钟；</li><li>②2个或更多的症状连续发生；</li><li>③每个独立先兆症状持续5—60分钟；</li><li>④至少有一个先兆是单侧；</li><li>⑤至少有一个先兆是阳性；</li><li>⑥与先兆伴发或在先兆出现60分钟内出现头痛。</li></ul></li><li>不能用ICHD—3中的其他诊断更好地解释。</li></ol><h3 id="慢性偏头痛诊断标准"><a href="#慢性偏头痛诊断标准" class="headerlink" title="慢性偏头痛诊断标准"></a>慢性偏头痛诊断标准</h3><ol><li>符合2—3项的头痛每月发作至少15天，至少持续3个月。</li><li>符合无先兆偏头痛诊断2—4项标准和&#x2F;或有先兆偏头痛2—3项标准至少发生5次。</li><li>头痛符合以下任何1项，且每月发作＞8天，持续时间＞3个月：<ul><li>符合无先兆偏头痛的3—4项标准；</li><li>符合有先兆偏头痛的2—3项标准；</li><li>患者认为的偏头痛可通过服用曲普坦类或麦角胺类药物缓解。</li></ul></li><li>不能用ICHD—3中的其他诊断更好地解释。</li></ol><h2 id="鉴别诊断"><a href="#鉴别诊断" class="headerlink" title="鉴别诊断"></a>鉴别诊断</h2><ol><li>丛集性头痛</li><li>紧张性头痛</li><li>继发性疼痛：对具有以下情况的头痛应谨慎排除：<ul><li>50y后的新发疼痛；</li><li>血液高凝风险患者新发疼痛；</li><li>有肿瘤或艾滋病史者新发疼痛；</li><li>突然发生的、迅速到达高峰的剧烈头痛；</li><li>与体位改变相关的头痛；</li><li>伴有发热；</li><li>伴有视神经乳头水肿、神经系统局灶症状和体征或认知障碍；</li><li>头痛性质在短时间内发生变化。</li></ul></li></ol><h2 id="治疗"><a href="#治疗" class="headerlink" title="治疗"></a>治疗</h2><p>治疗原则：减轻或终止头痛发作，缓解伴发症状，预防头痛复发。</p><h3 id="发作期的治疗"><a href="#发作期的治疗" class="headerlink" title="发作期的治疗"></a>发作期的治疗</h3><h4 id="疗效评价标准"><a href="#疗效评价标准" class="headerlink" title="疗效评价标准"></a>疗效评价标准</h4><ol><li>2小时内无疼痛；</li><li>2小时内最困扰的伴随症状消失；</li><li>2小时后疼痛缓解；</li><li>治疗成功后的24小时内无头痛再发或镇痛药的使用。</li></ol><h4 id="药物"><a href="#药物" class="headerlink" title="药物"></a>药物</h4><ol><li>非特异性止痛药：对乙酰氨基酚和NSAIDs；</li><li>特异性药物：曲普坦类和降钙素基因相关肽（CGRP）受体拮抗剂、选择性$5-HT_{1F}$受体激动剂。</li></ol><h3 id="预防性治疗"><a href="#预防性治疗" class="headerlink" title="预防性治疗"></a>预防性治疗</h3><h4 id="适应症"><a href="#适应症" class="headerlink" title="适应症"></a>适应症</h4><ol><li>每月2次以上的偏头痛发作；</li><li>急性期治疗无效或不能耐受；</li><li>存在药物过度使用风险；</li><li>严重影响生活、工作或学习；</li><li>存在频繁、持续时间较长或令患者极度不适的先兆；</li><li>特殊类型的偏头痛；</li><li>患者的自我要求。</li></ol><h4 id="药物选择"><a href="#药物选择" class="headerlink" title="药物选择"></a>药物选择</h4><ol><li>β—肾上腺素受体拮抗剂；</li><li>抗癫痫药；</li><li>抗抑郁药；</li><li>血管紧张素Ⅱ受体拮抗剂（ARB）与血管紧张素转化酶抑制剂（ACEI）；</li><li>CGRP类药物；</li><li>钙通道阻滞剂。</li></ol><h1 id="紧张型头痛"><a href="#紧张型头痛" class="headerlink" title="紧张型头痛"></a>紧张型头痛</h1><ol><li>典型病例多在20岁左右发病，发病年龄高峰为25—30岁。</li><li>疼痛像一条带子紧束头部或呈颅周紧锢样、压迫样感，一般不伴有恶心、呕吐、畏光、畏声等症状。</li></ol><h1 id="丛集性头痛"><a href="#丛集性头痛" class="headerlink" title="丛集性头痛"></a>丛集性头痛</h1><p>是一种常见的三叉自主神经性头痛，表现为一侧眼眶周围发作性剧烈疼痛，有反复密集发作的特点，伴有同侧眼结膜充血、流泪、瞳孔缩小、眼睑下垂以及头面部出汗等自主神经症状和&#x2F;或不安、躁动感。</p><h2 id="临床表现-1"><a href="#临床表现-1" class="headerlink" title="临床表现"></a>临床表现</h2><ol><li>20—40岁，男性多见。</li><li>突然发生，无先兆症状，几乎发生于每日同一时间。</li><li>头痛每次发作几乎均为偏侧，呈尖锐、爆炸样、非搏动性剧痛。常伴有同侧颜面部自主神经功能症状。</li></ol><h2 id="治疗-1"><a href="#治疗-1" class="headerlink" title="治疗"></a>治疗</h2><h3 id="急性期治疗"><a href="#急性期治疗" class="headerlink" title="急性期治疗"></a>急性期治疗</h3><ol><li>吸氧疗法（首选）；</li><li>曲普坦类药物；</li><li>利多卡因；</li><li>生长抑素及其类似物。</li></ol><h3 id="预防性治疗-1"><a href="#预防性治疗-1" class="headerlink" title="预防性治疗"></a>预防性治疗</h3><p>维拉帕米、锂盐。</p><h3 id="过渡性治疗（短期预防性治疗或桥接治疗）"><a href="#过渡性治疗（短期预防性治疗或桥接治疗）" class="headerlink" title="过渡性治疗（短期预防性治疗或桥接治疗）"></a>过渡性治疗（短期预防性治疗或桥接治疗）</h3><h3 id="非药物治疗（神经调控治疗）"><a href="#非药物治疗（神经调控治疗）" class="headerlink" title="非药物治疗（神经调控治疗）"></a>非药物治疗（神经调控治疗）</h3>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;头痛是临床常见的症状，通常指局限于头颅上半部，包括眉弓、耳轮上缘和枕外隆凸连线以上部位的疼痛。&lt;/p&gt;
-&lt;p&gt;发病机制：①颅内外动脉的扩张；②颅内痛觉敏感结构组织被牵拉或移位（牵引性头痛）；③颅内外痛觉敏感组织炎症；④传导痛觉的脑神经和颈神经直接受压或炎症；⑤眼、耳、鼻、牙</summary>
-      
-    
-    
-    
-    <category term="神经病学" scheme="https://nahida23333.github.io/categories/%E7%A5%9E%E7%BB%8F%E7%97%85%E5%AD%A6/"/>
-    
-    
-    <category term="知识点整理" scheme="https://nahida23333.github.io/tags/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/"/>
-    
-    <category term="神经病学" scheme="https://nahida23333.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%97%85%E5%AD%A6/"/>
-    
-    <category term="头痛" scheme="https://nahida23333.github.io/tags/%E5%A4%B4%E7%97%9B/"/>
-    
-    <category term="偏头痛" scheme="https://nahida23333.github.io/tags/%E5%81%8F%E5%A4%B4%E7%97%9B/"/>
-    
-    <category term="紧张性疼痛" scheme="https://nahida23333.github.io/tags/%E7%B4%A7%E5%BC%A0%E6%80%A7%E7%96%BC%E7%97%9B/"/>
-    
-    <category term="丛集性头痛" scheme="https://nahida23333.github.io/tags/%E4%B8%9B%E9%9B%86%E6%80%A7%E5%A4%B4%E7%97%9B/"/>
     
   </entry>
   
