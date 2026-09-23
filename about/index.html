@@ -152,8 +152,10 @@ body {background: #000000 url('/img/welcome-cover.webp') center center / cover n
 #about-page .author-content-item.about-statistic {background: url(https://img.june-pj.cn/img/2024/05/640dc8c72f623.webp) no-repeat top / cover !important;}
 #about-page .author-content-item.about-statistic .card-content {backdrop-filter: none; -webkit-backdrop-filter: none;}
 #about-page .author-content-item.map.single {background: #fff url('/img/gz-map.png') no-repeat center center / cover !important;}
-#about-page .charts-card {background: #000000 !important; border: 1px solid rgba(255, 255, 255, 0.15);}
-#about-page .charts-card .author-content-item-tips {color: #ffffff !important; opacity: 1;}
+#about-page .charts-card {background: rgba(255, 255, 255, 0.6) !important; border: 1px solid rgba(0, 0, 0, 0.08); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);}
+#about-page .charts-card .author-content-item-tips {color: #363636 !important; opacity: 1;}
+#about-page .author-content-item.about-statistic .card-content,
+#about-page .author-content-item.about-statistic .card-content .author-content-item-tips {color: #ffffff;}
 #about-page .author-content-item.myInfoAndSayHello,
 #about-page .author-content-item.personalities,
 #about-page .author-content-item.selfInfo,
@@ -166,15 +168,34 @@ body {background: #000000 url('/img/welcome-cover.webp') center center / cover n
 #about-page #about-typewriter {color: #363636 !important;}
 #about-page .map .map-title,
 #about-page .map .map-title b {color: #363636;}
+/* ---- 黑暗模式适配 ---- */
+[data-theme='dark'] #about-page .author-content-item {background: rgba(18, 18, 18, 0.55) !important;}
+[data-theme='dark'] #about-page .author-content-item.map.single {background: rgba(18, 18, 18, 0.55) url('/img/gz-map.png') no-repeat center center / cover !important;}
+[data-theme='dark'] #about-page .charts-card {background: rgba(18, 18, 18, 0.85) !important; border: 1px solid rgba(255, 255, 255, 0.15);}
+[data-theme='dark'] #about-page .charts-card .author-content-item-tips {color: #ffffff !important;}
+[data-theme='dark'] #about-page .author-content-item.myInfoAndSayHello,
+[data-theme='dark'] #about-page .myInfoAndSayHello .title1,
+[data-theme='dark'] #about-page .myInfoAndSayHello .title2,
+[data-theme='dark'] #about-page .author-content-item.personalities,
+[data-theme='dark'] #about-page .author-content-item.selfInfo,
+[data-theme='dark'] #about-page .create-site-post:not(.charts-card),
+[data-theme='dark'] #about-page .create-site-post:not(.charts-card) strong,
+[data-theme='dark'] #about-page .create-site-post:not(.charts-card) .p {color: #d0d0d0;}
+[data-theme='dark'] #about-page #about-typewriter {color: #d0d0d0 !important;}
+[data-theme='dark'] #about-page .map .map-title {background: rgba(18, 18, 18, 0.6);}
+[data-theme='dark'] #about-page .map .map-title,
+[data-theme='dark'] #about-page .map .map-title b {color: #d0d0d0;}
 #about-page .author-content-item.selfInfo {flex-wrap: nowrap;}
 #about-page .author-content-item.selfInfo div {flex: 1 1 0; min-width: 0; margin: 0.5rem 1rem;}
 #about-page .author-content-item.selfInfo .selfInfo-content {font-size: clamp(16px, 1.8vw, 30px); white-space: nowrap;}
 #about-page #posts-chart, #about-page #tags-chart, #about-page #categories-chart {height: 450px !important;}</style><div class="author-box"><div class="author-img"><img class="no-lightbox" src="/img/avatar.jpg"></div><div class="image-dot"></div></div><p class="p center logo large" id="about-typewriter"></p><div class="author-content"><div class="author-content-item myInfoAndSayHello"><div class="title1">你好，很高兴认识你👋</div><div class="title2">我叫<span class="inline-word"> APlusGu</span></div><div class="title1">是一名<span class="inline-word">医学牲</span></div></div><div class="author-content-item personalities"><div class="author-content-item-tips">性格</div><span class="author-content-item-title">逻辑学家</span><div class="title2" style="color:#88619a">INTP-A</div><div class="post-tips">在<a href="https://www.16personalities.com/" target="_blank" rel="noopener nofollow">16personalities</a> 了解更多关于<a target="_blank" rel="noopener external nofollow" href="https://www.16personalities.com/ch/intp-%E4%BA%BA%E6%A0%BC">逻辑学家</a></div><div class="image"><img class="no-lightbox" src="https://www.16personality.com.cn/images/mbti/intp.png"></div></div></div><div class="author-content"><div class="about-statistic author-content-item"><div class="card-content"><div class="author-content-item-tips">数据</div><span class="author-content-item-title">访问统计</span><div id="statistic"></div><div class="post-tips">统计信息来自<a href="https://github.com/umami-software/umami" target="_blank" rel="noopener nofollow">Umami</a></div><div class="banner-button-group"><a class="banner-button" onclick="pjax.loadUrl(&quot;/archives/&quot;)" data-pjax-state=""><i class="fas fa-circle-right"></i><span class="banner-button-text">文章隧道</span></a></div></div></div><div class="author-content-item-group column mapAndInfo"><div class="author-content-item map single"><span class="map-title">我现在住在<b>广州市，越秀区</b></span></div><div class="author-content-item selfInfo single"><div><span class="selfInfo-title">生于</span><span class="selfInfo-content" id="selfInfo-content-year" style="color:#43a6c6">2005</span></div><div><span class="selfInfo-title">中山大学</span><span class="selfInfo-content" style="color:#c69043">中山医学院</span></div><div><span class="selfInfo-title">现在职业</span><span class="selfInfo-content" style="color:#b04fe6">医学牲</span></div></div></div></div><div class="author-content"><div class="create-site-post author-content-item single"><div class="author-content-item-tips">心路历程</div>你好呀，欢迎来到我的博客！目前我还是一位<strong>医学牲</strong>，本博客主要用于存储和分享我记下的笔记~<div class="p">我本人对编程技术和前端设计并不了解，博客搭建“集众家之所长”，所以我的网站看起来很像很多博客网站的缝合体。</div>也许以后可以根据我自己的需要开发？<!-- | Hi~欢迎来到我的博客。目前已成为一枚--><!--strong 社畜牛马--><!--| ，这里是我记笔记的地方，记录着编程学习时遇到的问题和一些奇奇怪怪的日常。--><!--.p 我是搞后端的，前端这些东西我就会JavaWeb里的前端三剑客，博客搭建是我一点点搬运过来的。--><!--| 致力于摆脱--><!--del CV工程师--><!--|  的称号。--></div></div><div class="author-content"><div class="create-site-post author-content-item single charts-card"><div class="author-content-item-tips">文章统计</div><div id="posts-chart" data-start="2023-02" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
   <script id="postsChart" data-pjax="">
-    var color = '#6e7f98';
-    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
-    let postsChart = echarts.init(document.getElementById('posts-chart'));
-    let postsOption = {
+    var postsChart = null;
+    function renderPostsChart() {
+      if (postsChart) postsChart.dispose();
+      var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
+      postsChart = echarts.init(document.getElementById('posts-chart'));
+    var postsOption = {
         title: {
             text: '文章发布统计',
             top: 5,
@@ -266,16 +287,21 @@ body {background: #000000 url('/img/welcome-cover.webp') center center / cover n
         ]
     };
     postsChart.setOption(postsOption);
-    window.addEventListener("resize", () => { 
+    }
+    renderPostsChart();
+    window.addEventListener("resize", () => {
         postsChart.resize();
       });
+    if (window.btf && window.btf.addGlobalFn) { btf.addGlobalFn('themeChange', function () { renderPostsChart(); }); }
     </script><div id="tags-chart" data-length="10" style="height: 300px; padding: 10px;"></div>
 
   <script id="tagsChart" data-pjax="">
-    var color = '#6e7f98';
-    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
-    let tagsChart = echarts.init(document.getElementById('tags-chart'));
-    let tagsOption = {
+    var tagsChart = null;
+    function renderTagsChart() {
+      if (tagsChart) tagsChart.dispose();
+      var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
+      tagsChart = echarts.init(document.getElementById('tags-chart'));
+    var tagsOption = {
         title: {
             text: '标签统计',
             top: 5,
@@ -381,12 +407,17 @@ body {background: #000000 url('/img/welcome-cover.webp') center center / cover n
         ]
     };
     tagsChart.setOption(tagsOption);
+    }
+    renderTagsChart();
+    if (window.btf && window.btf.addGlobalFn) { btf.addGlobalFn('themeChange', function () { renderTagsChart(); }); }
     </script><div id="categories-chart" data-parent="true" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
   <script id="categoriesChart" data-pjax="">
-    var color = '#6e7f98';
-    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
-    let categoriesChart = echarts.init(document.getElementById('categories-chart'));
-    let categoriesOption = {
+    var categoriesChart = null;
+    function renderCategoriesChart() {
+      if (categoriesChart) categoriesChart.dispose();
+      var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
+      categoriesChart = echarts.init(document.getElementById('categories-chart'));
+    var categoriesOption = {
         title: {
             text: '',
             top: 5,
@@ -406,7 +437,7 @@ body {background: #000000 url('/img/welcome-cover.webp') center center / cover n
                 type: 'pie',
                 radius: '75%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"生信分析","value":13},{"name":"音乐 - 乐器法与配器法","value":5},{"name":"音乐 - 基础乐理","value":3},{"name":"传染病学","value":1},{"name":"医学影像学","value":23},{"name":"医学心理学","value":1},{"name":"妇产学","value":4},{"name":"寄生虫学","value":1},{"name":"局部解剖学","value":2},{"name":"音乐 - 和声学","value":10},{"name":"流行病学","value":10},{"name":"生物化学与分子生物学","value":1},{"name":"生理学","value":2},{"name":"眼科学","value":13},{"name":"神经病学","value":13},{"name":"精神病学","value":1},{"name":"组织学与胚胎学","value":4},{"name":"细胞生物学","value":4},{"name":"诊断学","value":2},{"name":"肿瘤学","value":1},{"name":"预防医学","value":2},{"name":"马克思主义基本原理","value":1},{"name":"一些小论文","value":6},{"name":"生物医学技术","value":2},{"name":"口腔医学","value":1},{"name":"文献阅读","value":2},{"name":"病理生理学","value":1}],
+                data: [{"name":"生信分析","value":13},{"name":"音乐 - 乐器法与配器法","value":5},{"name":"音乐 - 基础乐理","value":3},{"name":"传染病学","value":1},{"name":"医学影像学","value":23},{"name":"医学心理学","value":1},{"name":"妇产学","value":4},{"name":"局部解剖学","value":2},{"name":"寄生虫学","value":1},{"name":"音乐 - 和声学","value":10},{"name":"流行病学","value":10},{"name":"生物化学与分子生物学","value":1},{"name":"生理学","value":2},{"name":"眼科学","value":13},{"name":"神经病学","value":13},{"name":"精神病学","value":1},{"name":"组织学与胚胎学","value":4},{"name":"细胞生物学","value":4},{"name":"肿瘤学","value":1},{"name":"诊断学","value":2},{"name":"预防医学","value":2},{"name":"马克思主义基本原理","value":1},{"name":"生物医学技术","value":2},{"name":"一些小论文","value":6},{"name":"文献阅读","value":2},{"name":"口腔医学","value":1},{"name":"病理生理学","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -418,6 +449,9 @@ body {background: #000000 url('/img/welcome-cover.webp') center center / cover n
         ]
     };
     categoriesChart.setOption(categoriesOption);
+    }
+    renderCategoriesChart();
+    if (window.btf && window.btf.addGlobalFn) { btf.addGlobalFn('themeChange', function () { renderCategoriesChart(); }); }
     </script></div></div></div><script src="/js/countup.js"></script><script>var initAboutPage = () => {
     const aboutPage = document.querySelector('#about-page');
     if (!aboutPage) return;
@@ -679,7 +713,7 @@ startInit();</script></div></main><footer id="footer"><div id="footer-wrap"><div
 })()</script></div><script type="text/javascript" src="/js/memos/waterfall.min.js"></script><script type="text/javascript" src="/js/memos/imgStatus.min.js"></script><script type="text/javascript" src="/js/memos/lately.min.js"></script><script type="text/javascript" src="/js/memos/photo.js"></script><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax="">
     function butterfly_categories_card_injector_config(){
       var parent_div_git = document.getElementById('recent-posts');
-      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 380px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 320px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp);"> <a class="categoryBar-list-link" href="categories/生信分析/">生信分析</a><span class="categoryBar-list-count">13</span><span class="categoryBar-list-descr">生信分析</span></li><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp);"> <a class="categoryBar-list-link" href="categories/音乐-乐器法与配器法/">音乐 - 乐器法与配器法</a><span class="categoryBar-list-count">5</span><span class="categoryBar-list-descr">文献阅读</span></li><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp);"> <a class="categoryBar-list-link" href="categories/音乐-基础乐理/">音乐 - 基础乐理</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">医学影像学</span></li><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover4.webp);"> <a class="categoryBar-list-link" href="categories/传染病学/">传染病学</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">音乐 - 乐器法与配器法</span></li><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover5.webp);"> <a class="categoryBar-list-link" href="categories/医学影像学/">医学影像学</a><span class="categoryBar-list-count">23</span><span class="categoryBar-list-descr">音乐 - 和声学</span></li><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp);"> <a class="categoryBar-list-link" href="categories/医学心理学/">医学心理学</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">音乐 - 基础乐理</span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/妇产学/">妇产学</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/寄生虫学/">寄生虫学</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/局部解剖学/">局部解剖学</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/音乐-和声学/">音乐 - 和声学</a><span class="categoryBar-list-count">10</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/流行病学/">流行病学</a><span class="categoryBar-list-count">10</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/生物化学与分子生物学/">生物化学与分子生物学</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/生理学/">生理学</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/眼科学/">眼科学</a><span class="categoryBar-list-count">13</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/神经病学/">神经病学</a><span class="categoryBar-list-count">13</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/精神病学/">精神病学</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/组织学与胚胎学/">组织学与胚胎学</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/细胞生物学/">细胞生物学</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/诊断学/">诊断学</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/肿瘤学/">肿瘤学</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/预防医学/">预防医学</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/马克思主义基本原理/">马克思主义基本原理</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/一些小论文/">一些小论文</a><span class="categoryBar-list-count">6</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/生物医学技术/">生物医学技术</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/口腔医学/">口腔医学</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/文献阅读/">文献阅读</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="categories/病理生理学/">病理生理学</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li></ul></div></div>';
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 380px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 320px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp);"> <a class="categoryBar-list-link" href="categories/生信分析/">生信分析</a><span class="categoryBar-list-count">13</span><span class="categoryBar-list-descr">生信分析</span></li><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp);"> <a class="categoryBar-list-link" href="categories/文献阅读/">文献阅读</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr">文献阅读</span></li><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp);"> <a class="categoryBar-list-link" href="categories/生物医学技术/">生物医学技术</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr">生物医学技术</span></li><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover4.webp);"> <a class="categoryBar-list-link" href="categories/音乐-和声学/">音乐 - 和声学</a><span class="categoryBar-list-count">10</span><span class="categoryBar-list-descr">音乐 - 和声学</span></li><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover5.webp);"> <a class="categoryBar-list-link" href="categories/音乐-乐器法与配器法/">音乐 - 乐器法与配器法</a><span class="categoryBar-list-count">5</span><span class="categoryBar-list-descr">音乐 - 乐器法与配器法</span></li><li class="categoryBar-list-item" style="background:url(https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp);"> <a class="categoryBar-list-link" href="categories/医学影像学/">医学影像学</a><span class="categoryBar-list-count">23</span><span class="categoryBar-list-descr">医学影像学</span></li></ul></div></div>';
       console.log('已挂载butterfly_categories_card')
       parent_div_git.insertAdjacentHTML("afterbegin",item_html)
       }
