@@ -141,6 +141,12 @@
 <h1 id="逆转录PCR技术"><a href="#逆转录PCR技术" class="headerlink" title="逆转录PCR技术"></a>逆转录PCR技术</h1><p>在PCR和qPCR步骤的基础上，加入将mRNA或总RNA转录为cDNA的前置步骤，即为逆转录PCR（Reserve transcription-PCR, RT-PCR）和实时荧光定量逆转录PCR技术（RT-qPCR），通过该技术可对RNA进行扩增及定性（RT-PCR）或定量（RT-qPCR）分析。</p>
 <p>需要注意的是，我们提到的RT-PCR一般指Reserve transcription-PCR即逆转录PCR，而非Real-time PCR即实时荧光定量PCR，后者一般缩写为qPCR。</p>
 ]]></content>
+      <categories>
+        <category>生物医学技术</category>
+      </categories>
+      <tags>
+        <tag>生物医学技术</tag>
+      </tags>
   </entry>
   <entry>
     <title>【乐器法与配器法】木管组</title>
@@ -17607,6 +17613,62 @@ C. 肝细胞、胃壁细胞等
       </categories>
       <tags>
         <tag>思政类</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>免疫染色技术</title>
+    <url>/2026/09/23/%E5%85%8D%E7%96%AB%E6%9F%93%E8%89%B2%E6%8A%80%E6%9C%AF/</url>
+    <content><![CDATA[<p><strong>免疫染色技术（immunostaining）</strong> 是一类基于抗原和抗体特异性结合的基本原理，检测蛋白质等目标分子的技术方法。免疫染色通常包括免疫组织化学（Immunohistochemistry, IHC）、免疫细胞化学（Immunocytochemistry, ICC）、免疫荧光（Immunofluorescence, IF）和免疫电镜（Immuno-electron microscopy, IEM），其待测样品通常保持原有形态的细胞或组织。</p>
+<p>免疫染色技术的原理如下图所示，在组织切片的原位使用酶（IHC）、荧光素（IF）或胶体金（IEM）等标记的特异性抗体与样本中的抗原特异性结合，再催化相应底物产生有色产物（或激发荧光、散射电子），从而使信号出现于样本抗原所在部位，继而可对抗原进行定位、定性和半定量的分析。对靶抗原进行定位与检测分为直接法和间接法两种。直接法的标记物直接偶联于一抗，尽管操作简便，但灵敏度差，且每一种一抗均需要单独标记，现在已较少使用。间接法使用一抗结合样本中的目标蛋白，再用被标记的二抗与一抗特异性结合。由于一个抗原可结合多个一抗，而每个一抗分子又可被多个二抗分子识别，故灵敏度高，在实际研究中更为常用。三种基本免疫染色技术的差异见下表比较。免疫细胞化学与免疫组织化学的原理与流程基本一致，区别仅在于载体——ICC常用于培养细胞及细胞涂片的处理，而IHC则用于组织切片的分析。</p>
+<p><img src="https://pic4.zhimg.com/v2-a63e36a39004ad5ea854fbfe833c693f_1440w.jpg"></p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">免疫组织化学</th>
+<th align="center">免疫荧光</th>
+<th align="center">免疫电镜</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">样品类型</td>
+<td align="center">石蜡或冰冻切片</td>
+<td align="center">冰冻切片</td>
+<td align="center">树脂包埋超薄切片</td>
+</tr>
+<tr>
+<td align="center">标记物</td>
+<td align="center">酶（如辣根过氧化物酶HRP、碱性磷酸酶AP等）</td>
+<td align="center">荧光素（如FITC、Alexa系列等）</td>
+<td align="center">胶体金颗粒</td>
+</tr>
+<tr>
+<td align="center">定位层次</td>
+<td align="center">组织、细胞水平</td>
+<td align="center">亚细胞水平（可用于共定位分析）</td>
+<td align="center">超微结构（细胞器）水平</td>
+</tr>
+<tr>
+<td align="center">保存时限</td>
+<td align="center">沉淀不溶于水醇，切片可永久保存</td>
+<td align="center">荧光易淬灭，需抗淬灭封片剂并避光保存</td>
+<td align="center">金颗粒电子密度稳定，可长期保存</td>
+</tr>
+<tr>
+<td align="center">多重染色</td>
+<td align="center">需依赖TSA等多重染色技术技术</td>
+<td align="center">容易，可2-4色同片共染</td>
+<td align="center">有限，需通过不同金颗粒粒径不同加以区分</td>
+</tr>
+</tbody></table>
+<p><strong>多重免疫组织化学（multiplex immunohistochemistry, mIHC）</strong> 是IHC技术的延伸，是一种在同一切片上同时或连续检测多个目标分子的免疫染色技术。酪胺信号放大（tyramide signal amplification, TSA）循环染色是mIHC的核心。在每一轮染色中，辣根过氧化物酶（HRP）可催化酪胺底物生成高活性中间体，后者与抗原位点附近的酪氨酸残基共价结合，使得信号共价沉积于抗原所在部位。在热洗脱时，共价结合沉积的信号不会被洗脱，而抗原-抗体复合物则会被去除，从而保证每一轮染色中的信号互不串扰。经过多轮更换不同的显色或荧光酪胺底物，即可完成多个靶分子的标记。基于该原理，mIHC得以在同一切片上检测多个目标分子，利于研究各种目标分子在细胞和组织中的空间关系。</p>
+<p><img src="https://pic2.zhimg.com/v2-1c351299e4f840eb38b62d331e27f3ed_1440w.jpg"></p>
+]]></content>
+      <categories>
+        <category>生物医学技术</category>
+      </categories>
+      <tags>
+        <tag>生物医学技术</tag>
       </tags>
   </entry>
 </search>
