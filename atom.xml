@@ -6,7 +6,7 @@
   <link href="https://nahida23333.github.io/atom.xml" rel="self"/>
   
   <link href="https://nahida23333.github.io/"/>
-  <updated>2026-09-23T12:18:37.283Z</updated>
+  <updated>2026-10-14T15:10:10.871Z</updated>
   <id>https://nahida23333.github.io/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【斯波索宾和声学】经过和弦</title>
+    <link href="https://nahida23333.github.io/2026/10/14/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E7%BB%8F%E8%BF%87%E5%92%8C%E5%BC%A6/"/>
+    <id>https://nahida23333.github.io/2026/10/14/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E7%BB%8F%E8%BF%87%E5%92%8C%E5%BC%A6/</id>
+    <published>2026-10-14T14:48:30.000Z</published>
+    <updated>2026-10-14T15:10:10.871Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="经过的四六和弦"><a href="#经过的四六和弦" class="headerlink" title="经过的四六和弦"></a>经过的四六和弦</h1><table><thead><tr><th align="center">和弦进行</th><th align="center">高声部进行</th><th align="center">低声部进行</th></tr></thead><tbody><tr><td align="center">$T-D_4^6-T_6$</td><td align="center">Ⅰ-Ⅱ-Ⅲ、Ⅲ-Ⅱ-Ⅰ、Ⅰ-Ⅶ-Ⅰ(Ⅴ)、Ⅴ-Ⅴ-Ⅴ</td><td align="center">Ⅰ-Ⅱ-Ⅲ、Ⅲ-Ⅱ-Ⅰ</td></tr><tr><td align="center">$S-T_4^6-S_6$</td><td align="center">Ⅳ-Ⅴ-Ⅵ、Ⅵ-Ⅴ-Ⅳ、Ⅳ-Ⅲ-Ⅳ、Ⅰ-Ⅰ-Ⅰ</td><td align="center">Ⅳ-Ⅴ-Ⅵ、Ⅵ-Ⅴ-Ⅳ</td></tr></tbody></table><p>四六和弦为三和弦的第二转位，其五音处于低音位置。经过的四六和弦在四六和弦的基础上还必须具备经过音的特点，即：</p><ol><li>经过的四六和弦不得强于两侧的和弦；</li><li>左右连接的是不同的和弦，且低音和左右和弦的低音都是级进关系。</li></ol><p>经过的四六和弦在和声进行中扮演“过渡”角色，可以使得声部进行进一步平稳，亦可丰富和声进行。为了使前后和弦实现最平稳的过渡， <strong>经过的四六和弦重复音必须为五音</strong> ，即低声部为五音，其余三声部各分配一个根音、三音和五音。</p><p>下图所示为经过的四六和弦的应用例子。值得一提的是，除低声部外，经过的四六和弦与前后和弦所形成的和声进行，其上方三声部可任意调换。因此，在实际应用时，若遇到高声部为Ⅰ-Ⅱ-Ⅲ、Ⅲ-Ⅱ-Ⅰ、Ⅰ-Ⅶ-Ⅰ、Ⅴ-Ⅴ-Ⅴ的进行，在配和声时可向经过的四六和弦靠拢。<br><img src="/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/%E7%BB%8F%E8%BF%87%E7%9A%84%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6-%E7%A4%BA%E4%BE%8B.png"></p><p>此外，以$T-D_4^6-T_6$和声进行为例：一般地，$T-D_4^6-T_6$和声进行中的$T_6$多重复根音，以保证和声平稳进行的需要。特殊地，出于旋律或前（后）和弦连接的考量时，$T-D_4^6-T_6$中的$T_6$和弦也可重复五音，如下图所示。<br><img src="/images/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%A3%B0/%E7%BB%8F%E8%BF%87%E7%9A%84%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6-T6%E5%8F%AF%E9%80%89%E4%BA%94%E9%9F%B3%E9%87%8D%E5%A4%8D.png"></p><blockquote><p>注意，构成音相同的和弦在不同位置发挥的功能可不尽相同。如$T_4^6$和$K_4^6$在和弦构成音上完全一致，但后者位于半终止或全终止处且后续和声进行指向$D$和弦，其功能为强属功能，具备较强的终止倾向和收束感；而前者作为经过的四六和弦，以低声部级进为特征，通常作为前后两个和弦的过渡。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;经过的四六和弦&quot;&gt;&lt;a href=&quot;#经过的四六和弦&quot; class=&quot;headerlink&quot; title=&quot;经过的四六和弦&quot;&gt;&lt;/a&gt;经过的四六和弦&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;和弦进行&lt;/th&gt;
+&lt;th</summary>
+      
+    
+    
+    
+    <category term="音乐 - 和声学" scheme="https://nahida23333.github.io/categories/%E9%9F%B3%E4%B9%90-%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    
+    <category term="音乐" scheme="https://nahida23333.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+    <category term="和声学" scheme="https://nahida23333.github.io/tags/%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    <category term="斯波索宾和声学" scheme="https://nahida23333.github.io/tags/%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
+    
+    <category term="四部和声" scheme="https://nahida23333.github.io/tags/%E5%9B%9B%E9%83%A8%E5%92%8C%E5%A3%B0/"/>
+    
+    <category term="经过的四六和弦" scheme="https://nahida23333.github.io/tags/%E7%BB%8F%E8%BF%87%E7%9A%84%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6/"/>
+    
+    <category term="经过和弦" scheme="https://nahida23333.github.io/tags/%E7%BB%8F%E8%BF%87%E5%92%8C%E5%BC%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>免疫染色技术</title>
@@ -150,44 +188,6 @@
     <category term="NF-κB信号通路" scheme="https://nahida23333.github.io/tags/NF-%CE%BAB%E4%BF%A1%E5%8F%B7%E9%80%9A%E8%B7%AF/"/>
     
     <category term="肾脏纤维化" scheme="https://nahida23333.github.io/tags/%E8%82%BE%E8%84%8F%E7%BA%A4%E7%BB%B4%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【斯波索宾和声学】经过的四六和弦</title>
-    <link href="https://nahida23333.github.io/2026/05/31/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E7%BB%8F%E8%BF%87%E7%9A%84%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6/"/>
-    <id>https://nahida23333.github.io/2026/05/31/%E3%80%90%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6%E3%80%91%E7%BB%8F%E8%BF%87%E7%9A%84%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6/</id>
-    <published>2026-05-31T14:34:42.000Z</published>
-    <updated>2026-09-19T03:56:10.271Z</updated>
-    
-    <content type="html"><![CDATA[<p>经过的四六和弦必须具有经过音的特点，即：</p><ol><li>经过的四六和弦不得强于两侧的和弦；</li><li>左右连接的是不同的和弦，且低音和左右和弦的低音都是级进关系。</li></ol><p>经过的四六和弦重复音为五音。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;经过的四六和弦必须具有经过音的特点，即：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;经过的四六和弦不得强于两侧的和弦；&lt;/li&gt;
-&lt;li&gt;左右连接的是不同的和弦，且低音和左右和弦的低音都是级进关系。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;经过的四六和弦重复音为五音。&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="音乐 - 和声学" scheme="https://nahida23333.github.io/categories/%E9%9F%B3%E4%B9%90-%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
-    
-    
-    <category term="音乐" scheme="https://nahida23333.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
-    
-    <category term="和声学" scheme="https://nahida23333.github.io/tags/%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
-    
-    <category term="斯波索宾和声学" scheme="https://nahida23333.github.io/tags/%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6/"/>
-    
-    <category term="四部和声" scheme="https://nahida23333.github.io/tags/%E5%9B%9B%E9%83%A8%E5%92%8C%E5%A3%B0/"/>
-    
-    <category term="经过的四六和弦" scheme="https://nahida23333.github.io/tags/%E7%BB%8F%E8%BF%87%E7%9A%84%E5%9B%9B%E5%85%AD%E5%92%8C%E5%BC%A6/"/>
     
   </entry>
   
