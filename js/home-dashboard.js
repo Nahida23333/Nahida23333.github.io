@@ -1,6 +1,24 @@
 (() => {
   const root = document.querySelector('.home-dashboard');
   if (!root) return;
+  const bindBusuanziCounters = () => {
+    root.querySelectorAll('[data-busuanzi-source]').forEach((target) => {
+      const source = document.getElementById(target.dataset.busuanziSource);
+      if (!source || !source.closest('#aside-content')) return;
+
+      let observer;
+      const update = () => {
+        const value = source.textContent.trim();
+        if (!/^\d[\d,]*$/.test(value)) return;
+        target.textContent = value;
+        if (observer) observer.disconnect();
+      };
+      observer = new MutationObserver(update);
+      observer.observe(source, { childList: true, characterData: true, subtree: true });
+      update();
+    });
+  };
+  bindBusuanziCounters();
 
   const searchForm = document.querySelector('#home-search-form');
   const searchInput = document.querySelector('#home-search-input');
