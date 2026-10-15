@@ -2671,6 +2671,1459 @@ figure.highlight pre .javascript .function {
   font-weight: bold;
   font-size: 1.5em;
 }
+#page-header.full_page {
+  position: relative;
+  z-index: 10;
+  height: 64px !important;
+  background: rgba(246,247,238,0.94) !important;
+  background-image: none !important;
+  background-attachment: scroll;
+  -webkit-box-shadow: 0 4px 18px rgba(56,76,57,0.09);
+  box-shadow: 0 4px 18px rgba(56,76,57,0.09);
+}
+#page-header.full_page #site-info,
+#page-header.full_page #scroll-down {
+  display: none;
+}
+#page-header.full_page #nav {
+  position: relative;
+  top: 0;
+  height: 64px;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  backdrop-filter: blur(12px);
+}
+#page-header.full_page #nav #blog-info,
+#page-header.full_page #nav .site-name,
+#page-header.full_page #nav a,
+#page-header.full_page #nav span.site-page,
+#page-header.full_page #nav #toggle-menu {
+  color: #465647;
+  text-shadow: none;
+}
+#page-header.full_page #nav a:hover,
+#page-header.full_page #nav span.site-page:hover,
+#page-header.full_page #nav #toggle-menu:hover {
+  color: #718a58;
+}
+html[data-theme='dark'] #page-header.full_page {
+  background: rgba(31,41,34,0.94) !important;
+}
+html[data-theme='dark'] #page-header.full_page #nav #blog-info,
+html[data-theme='dark'] #page-header.full_page #nav .site-name,
+html[data-theme='dark'] #page-header.full_page #nav a,
+html[data-theme='dark'] #page-header.full_page #nav span.site-page,
+html[data-theme='dark'] #page-header.full_page #nav #toggle-menu {
+  color: #e3eadc;
+}
+#content-inner.layout:has(.home-dashboard) {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+#content-inner.layout:has(.home-dashboard) > .home-dashboard {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 54px;
+  border-radius: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#content-inner.layout:has(.home-dashboard) > #aside-content {
+  display: none !important;
+}
+#body-wrap:has(.home-dashboard) {
+  --home-font-family: Georgia, 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  font-family: var(--home-font-family);
+  background: #edf1e8;
+}
+.home-dashboard {
+  --home-card: rgba(250,251,245,0.94);
+  --home-border: rgba(77,99,72,0.13);
+  --home-text: #3e4c3e;
+  --home-muted: #7a8878;
+  --home-accent: #71875a;
+  --home-accent-strong: #536c49;
+  --home-accent-soft: rgba(113,135,90,0.14);
+  --home-warm: #bd985f;
+  --home-hero-ripple: rgba(255,250,241,0.42);
+  --home-hero-ripple-shadow: rgba(255,255,255,0.16);
+  --home-hero-surface: #f4f3e8;
+  width: 100%;
+  min-height: 70vh;
+  padding-bottom: 54px;
+  color: var(--home-text);
+  background: -webkit-radial-gradient(ellipse at 8% 55%, rgba(185,199,151,0.2), transparent 36%), -webkit-linear-gradient(270deg, #f4f3e8, #e8eee6);
+  background: -moz-radial-gradient(ellipse at 8% 55%, rgba(185,199,151,0.2), transparent 36%), -moz-linear-gradient(270deg, #f4f3e8, #e8eee6);
+  background: -o-radial-gradient(ellipse at 8% 55%, rgba(185,199,151,0.2), transparent 36%), -o-linear-gradient(270deg, #f4f3e8, #e8eee6);
+  background: -ms-radial-gradient(ellipse at 8% 55%, rgba(185,199,151,0.2), transparent 36%), -ms-linear-gradient(270deg, #f4f3e8, #e8eee6);
+  background: radial-gradient(ellipse at 8% 55%, rgba(185,199,151,0.2), transparent 36%), linear-gradient(180deg, #f4f3e8, #e8eee6);
+}
+.home-hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 390px;
+  height: 43vh;
+  max-height: 590px;
+  overflow: hidden;
+  background-image: -webkit-linear-gradient(0deg, rgba(35,28,30,0.44), rgba(255,242,223,0.18)), var(--home-hero-image);
+  background-image: -moz-linear-gradient(0deg, rgba(35,28,30,0.44), rgba(255,242,223,0.18)), var(--home-hero-image);
+  background-image: -o-linear-gradient(0deg, rgba(35,28,30,0.44), rgba(255,242,223,0.18)), var(--home-hero-image);
+  background-image: -ms-linear-gradient(0deg, rgba(35,28,30,0.44), rgba(255,242,223,0.18)), var(--home-hero-image);
+  background-image: linear-gradient(90deg, rgba(35,28,30,0.44), rgba(255,242,223,0.18)), var(--home-hero-image);
+  background-position: center 44%;
+  background-size: cover;
+  isolation: isolate;
+  clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+  -webkit-animation: home-hero-edge 9s linear infinite;
+  -moz-animation: home-hero-edge 9s linear infinite;
+  -o-animation: home-hero-edge 9s linear infinite;
+  -ms-animation: home-hero-edge 9s linear infinite;
+  animation: home-hero-edge 9s linear infinite;
+}
+.home-hero:before {
+  position: absolute;
+  z-index: 0;
+  right: -16px;
+  bottom: 0;
+  left: -16px;
+  height: 86px;
+  clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  background: -webkit-linear-gradient(270deg, var(--home-hero-ripple), transparent 82%);
+  background: -moz-linear-gradient(270deg, var(--home-hero-ripple), transparent 82%);
+  background: -o-linear-gradient(270deg, var(--home-hero-ripple), transparent 82%);
+  background: -ms-linear-gradient(270deg, var(--home-hero-ripple), transparent 82%);
+  background: linear-gradient(180deg, var(--home-hero-ripple), transparent 82%);
+  filter: drop-shadow(0 -8px var(--home-hero-ripple-shadow)) drop-shadow(0 -16px var(--home-hero-ripple-shadow));
+  -webkit-animation: home-hero-ripple-band 9s linear infinite;
+  -moz-animation: home-hero-ripple-band 9s linear infinite;
+  -o-animation: home-hero-ripple-band 9s linear infinite;
+  -ms-animation: home-hero-ripple-band 9s linear infinite;
+  animation: home-hero-ripple-band 9s linear infinite;
+  content: '';
+}
+.home-hero:after {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 88px;
+  background: -webkit-linear-gradient(270deg, transparent, var(--home-hero-surface));
+  background: -moz-linear-gradient(270deg, transparent, var(--home-hero-surface));
+  background: -o-linear-gradient(270deg, transparent, var(--home-hero-surface));
+  background: -ms-linear-gradient(270deg, transparent, var(--home-hero-surface));
+  background: linear-gradient(180deg, transparent, var(--home-hero-surface));
+  content: '';
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-hero {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+    animation: none;
+  }
+  .home-hero:before {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+    animation: none;
+  }
+}
+.home-hero__content {
+  z-index: 1;
+  width: calc(100% - 40px);
+  max-width: 720px;
+  padding: 28px;
+  text-align: center;
+  color: #fffaf4;
+  text-shadow: 0 2px 18px rgba(35,26,22,0.4);
+}
+.home-hero__eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.86rem;
+  letter-spacing: 0.18em;
+}
+.home-hero__content h1 {
+  margin: 0;
+  color: #fffaf4;
+  font-family: var(--home-font-family);
+  font-size: clamp(2.5rem, 6vw, 4.4rem);
+  line-height: 1.15;
+}
+.home-hero__subtitle {
+  margin: 16px auto 0;
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  line-height: 1.8;
+}
+.home-search {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 12px;
+  width: calc(100% - 32px);
+  max-width: 480px;
+  min-height: 48px;
+  margin: -24px auto 26px;
+  padding: 0 16px;
+  border: 1px solid rgba(82,105,74,0.15);
+  border-radius: 999px;
+  background: rgba(250,251,246,0.97);
+  -webkit-box-shadow: 0 12px 28px rgba(58,78,58,0.12);
+  box-shadow: 0 12px 28px rgba(58,78,58,0.12);
+  color: #718071;
+}
+.home-search input {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 0;
+  padding: 12px 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--home-text);
+  font: inherit;
+}
+.home-search__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.home-search__submit {
+  display: grid;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 0 0 34px;
+  -ms-flex: 0 0 34px;
+  flex: 0 0 34px;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--home-accent);
+  color: #fff;
+  cursor: pointer;
+}
+.home-search__submit:hover {
+  background: var(--home-accent-strong);
+}
+.home-dashboard__grid {
+  display: grid;
+  grid-template-columns: 205px minmax(0, 1fr) 220px;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: start;
+  align-items: start;
+  gap: 22px;
+  width: calc(100% - 36px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home-dashboard__column {
+  display: grid;
+  -ms-flex-line-pack: start;
+  -webkit-align-content: start;
+  align-content: start;
+  gap: 16px;
+  min-width: 0;
+}
+.home-card {
+  padding: 20px;
+  border: 1px solid var(--home-border);
+  border-radius: 19px;
+  background: var(--home-card);
+  -webkit-box-shadow: 0 10px 26px rgba(57,78,57,0.075);
+  box-shadow: 0 10px 26px rgba(57,78,57,0.075);
+  backdrop-filter: blur(12px);
+}
+.home-profile {
+  text-align: center;
+}
+.home-profile__avatar {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 10px;
+  padding: 4px;
+  border: 2px solid var(--home-warm);
+  border-radius: 22px;
+  background: #f0f3e5;
+}
+.home-profile__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 17px;
+  object-fit: cover;
+}
+.home-profile h2 {
+  margin: 4px 0 7px;
+  color: var(--home-text);
+  font-family: var(--home-font-family);
+  font-size: 1.18rem;
+}
+.home-profile__intro {
+  margin: 0;
+  color: var(--home-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.home-quick-links {
+  display: grid;
+  gap: 5px;
+  margin-top: 12px;
+}
+.home-quick-links a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 8px;
+  border-radius: 10px;
+  color: #687767;
+  font-size: 0.82rem;
+}
+.home-quick-links a:hover {
+  background: var(--home-accent-soft);
+  color: var(--home-accent-strong);
+}
+.home-quick-links i {
+  width: 17px;
+  color: var(--home-accent);
+  text-align: center;
+}
+.home-navigation .home-quick-links {
+  margin-top: 0;
+}
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--home-border);
+}
+.home-stats__item {
+  display: grid;
+  gap: 2px;
+  color: var(--home-muted);
+  font-size: 0.72rem;
+}
+.home-stats__item strong {
+  color: var(--home-accent-strong);
+  font-size: 1rem;
+}
+.home-card__heading {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 12px;
+  color: var(--home-text);
+  font-size: 0.96rem;
+}
+.home-site-note__item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  gap: 8px;
+  margin-top: 9px;
+  color: var(--home-muted);
+  font-size: 0.75rem;
+}
+.home-clock {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 15px 10px;
+}
+.home-clock__time {
+  color: #4d6c68;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.home-clock__date {
+  color: var(--home-muted);
+  font-size: 0.76rem;
+}
+.home-section-heading {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: end;
+  align-items: end;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 0 2px 10px;
+}
+.home-section-heading h2 {
+  margin: 0;
+  color: var(--home-text);
+  font-family: var(--home-font-family);
+  font-size: 1.15rem;
+}
+.home-section-heading p {
+  margin: 4px 0 0;
+  color: var(--home-muted);
+  font-size: 0.76rem;
+}
+.home-section-heading a {
+  color: var(--home-accent-strong);
+  font-size: 0.78rem;
+}
+#recent-posts.home-feed {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.home-post-list {
+  display: grid;
+  gap: 15px;
+}
+#recent-posts.home-feed .home-post-card {
+  display: grid;
+  grid-template-areas: 'body cover';
+  grid-template-columns: minmax(0, 1fr) 112px;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -o-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  gap: 12px;
+  width: 100%;
+  min-height: 152px;
+  height: 152px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--home-border);
+  border-radius: 16px;
+  background: var(--home-card);
+  -webkit-box-shadow: 0 7px 18px rgba(57,78,57,0.065);
+  box-shadow: 0 7px 18px rgba(57,78,57,0.065);
+}
+#recent-posts.home-feed .home-post-card:hover {
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+#recent-posts.home-feed .home-post-card[hidden] {
+  display: none !important;
+}
+.home-post-card__body {
+  grid-area: body;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: stretch;
+  align-self: stretch;
+  -ms-flex-item-align: stretch;
+  min-width: 0;
+  padding: 14px 0 14px 18px;
+}
+.home-post-card__main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 0;
+}
+.home-post-card__title {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--home-text);
+  font-family: var(--home-font-family);
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.home-post-card__excerpt {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 5px;
+  color: var(--home-muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.home-post-card__excerpt p {
+  display: inline;
+  margin: 0;
+}
+.home-post-card__excerpt img,
+.home-post-card__excerpt pre,
+.home-post-card__excerpt blockquote {
+  display: none;
+}
+.home-post-card__meta {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 9px;
+  color: #7e8c7b;
+  font-size: 0.7rem;
+}
+.home-post-card__badge {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--home-accent-soft);
+  color: var(--home-accent-strong);
+}
+.home-post-card__cover {
+  grid-area: cover;
+  display: grid;
+  place-items: center;
+  min-height: 152px;
+  height: 152px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(310deg, #dfe8d4, #b8c9a7 56%, #9db9b1);
+  background: -moz-linear-gradient(310deg, #dfe8d4, #b8c9a7 56%, #9db9b1);
+  background: -o-linear-gradient(310deg, #dfe8d4, #b8c9a7 56%, #9db9b1);
+  background: -ms-linear-gradient(310deg, #dfe8d4, #b8c9a7 56%, #9db9b1);
+  background: linear-gradient(140deg, #dfe8d4, #b8c9a7 56%, #9db9b1);
+  color: #4f684c;
+}
+.home-post-card__cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 152px;
+  object-fit: cover;
+}
+.home-post-card__cover--placeholder {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 14px 8px;
+  text-align: center;
+  background: -webkit-linear-gradient(305deg, #e7ead7, #c4d1b5 58%, #a9c0b1);
+  background: -moz-linear-gradient(305deg, #e7ead7, #c4d1b5 58%, #a9c0b1);
+  background: -o-linear-gradient(305deg, #e7ead7, #c4d1b5 58%, #a9c0b1);
+  background: -ms-linear-gradient(305deg, #e7ead7, #c4d1b5 58%, #a9c0b1);
+  background: linear-gradient(145deg, #e7ead7, #c4d1b5 58%, #a9c0b1);
+}
+.home-post-card__placeholder-icon {
+  display: grid;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 0 0 38px;
+  -ms-flex: 0 0 38px;
+  flex: 0 0 38px;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(79,104,76,0.2);
+  border-radius: 14px;
+  background: rgba(250,251,245,0.52);
+  -webkit-box-shadow: 0 5px 12px rgba(58,78,58,0.12);
+  box-shadow: 0 5px 12px rgba(58,78,58,0.12);
+  font-size: 1rem;
+}
+.home-post-card__placeholder-label {
+  display: -webkit-box;
+  max-width: 100%;
+  max-height: 2.7em;
+  overflow: hidden;
+  color: #50644e;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+#recent-posts.home-feed > .recent-post-item:has(#categoryBar) {
+  display: none !important;
+}
+.home-empty {
+  padding: 28px 16px;
+  border-radius: 16px;
+  background: var(--home-card);
+  color: var(--home-muted);
+  text-align: center;
+}
+.home-empty[hidden] {
+  display: none;
+}
+.home-feed #pagination {
+  margin-top: 16px;
+}
+.home-music__cover {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 12px;
+}
+.home-music__disc {
+  display: grid;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 0 0 48px;
+  -ms-flex: 0 0 48px;
+  flex: 0 0 48px;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: -webkit-radial-gradient(circle, #e1d1a3 0 12%, #405c52 13% 19%, #315148 20% 65%, #bd985f 66% 69%, #3a5a50 70%);
+  background: -moz-radial-gradient(circle, #e1d1a3 0 12%, #405c52 13% 19%, #315148 20% 65%, #bd985f 66% 69%, #3a5a50 70%);
+  background: -o-radial-gradient(circle, #e1d1a3 0 12%, #405c52 13% 19%, #315148 20% 65%, #bd985f 66% 69%, #3a5a50 70%);
+  background: -ms-radial-gradient(circle, #e1d1a3 0 12%, #405c52 13% 19%, #315148 20% 65%, #bd985f 66% 69%, #3a5a50 70%);
+  background: radial-gradient(circle, #e1d1a3 0 12%, #405c52 13% 19%, #315148 20% 65%, #bd985f 66% 69%, #3a5a50 70%);
+  color: #fff;
+}
+.home-music__track {
+  min-width: 0;
+}
+.home-music__track strong,
+.home-music__track span {
+  display: block;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.home-music__track strong {
+  color: var(--home-text);
+  font-size: 0.94rem;
+}
+.home-music__track span {
+  margin-top: 3px;
+  color: var(--home-muted);
+  font-size: 0.74rem;
+}
+.home-music__controls {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.home-music__controls button {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(104,128,86,0.1);
+  color: #74836e;
+}
+.home-music__controls button:nth-child(2) {
+  width: 38px;
+  height: 38px;
+  background: var(--home-accent);
+  color: #fff;
+}
+.home-music__controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.64;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=64)";
+  filter: alpha(opacity=64);
+}
+.home-weather__attribution {
+  margin: 9px 0 0;
+  color: var(--home-muted);
+  font-size: 0.64rem;
+  line-height: 1.5;
+}
+.home-weather__attribution a {
+  color: var(--home-accent-strong);
+  text-decoration: underline;
+}
+.home-weather__intro {
+  margin: -4px 0 12px;
+  color: var(--home-muted);
+  font-size: 0.72rem;
+}
+.home-weather__current {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 66px;
+}
+.home-weather__icon {
+  font-size: 2.1rem;
+}
+.home-weather__temperature {
+  color: var(--home-text);
+  font-size: 2rem;
+  line-height: 1;
+}
+.home-weather__description {
+  margin-top: 5px;
+  color: var(--home-muted);
+  font-size: 0.72rem;
+}
+.home-weather__details {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 10px 0;
+  color: var(--home-muted);
+  font-size: 0.7rem;
+}
+.home-weather__details strong {
+  margin-left: 3px;
+  color: var(--home-text);
+}
+.home-weather__forecast {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  margin: 11px 0;
+}
+.home-weather__day {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 10px 3px;
+  border-radius: 10px;
+  background: rgba(113,135,90,0.1);
+  color: var(--home-muted);
+  font-size: 0.68rem;
+}
+.home-weather__day strong {
+  color: var(--home-text);
+  font-size: 0.74rem;
+}
+.home-weather__button {
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--home-accent);
+  color: #fff;
+  font: inherit;
+  font-size: 0.76rem;
+  cursor: pointer;
+}
+.home-weather__button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
+}
+.home-calendar__top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.home-calendar__top button {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #768570;
+  cursor: pointer;
+}
+.home-calendar__month {
+  color: var(--home-text);
+  font-size: 0.82rem;
+}
+.home-calendar__grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 3px;
+  text-align: center;
+}
+.home-calendar__weekday,
+.home-calendar__day,
+.home-calendar__blank {
+  display: grid;
+  place-items: center;
+  min-height: 27px;
+  color: var(--home-muted);
+  font-size: 0.68rem;
+}
+.home-calendar__day {
+  border-radius: 8px;
+}
+.home-calendar__day--today {
+  background: var(--home-accent);
+  color: #fff;
+  font-weight: 700;
+}
+html[data-theme='dark'] #body-wrap:has(.home-dashboard) {
+  background: #1c2721;
+}
+html[data-theme='dark'] .home-dashboard {
+  --home-card: rgba(41,53,44,0.94);
+  --home-border: rgba(221,233,208,0.1);
+  --home-text: #e3eadc;
+  --home-muted: #aab9a4;
+  --home-accent: #9db780;
+  --home-accent-strong: #c1d39e;
+  --home-accent-soft: rgba(157,183,128,0.16);
+  --home-warm: #d5b57b;
+  --home-hero-ripple: rgba(220,235,211,0.2);
+  --home-hero-ripple-shadow: rgba(220,235,211,0.1);
+  --home-hero-surface: #253229;
+  background: -webkit-linear-gradient(270deg, #253229, #1c2721);
+  background: -moz-linear-gradient(270deg, #253229, #1c2721);
+  background: -o-linear-gradient(270deg, #253229, #1c2721);
+  background: -ms-linear-gradient(270deg, #253229, #1c2721);
+  background: linear-gradient(180deg, #253229, #1c2721);
+}
+html[data-theme='dark'] .home-search {
+  background: rgba(39,51,43,0.97);
+  color: #c5d0bd;
+}
+html[data-theme='dark'] .home-search input {
+  color: #e3eadc;
+}
+html[data-theme='dark'] .home-post-card__cover--placeholder {
+  background: -webkit-linear-gradient(305deg, #344a3c, #49614b 58%, #35534e);
+  background: -moz-linear-gradient(305deg, #344a3c, #49614b 58%, #35534e);
+  background: -o-linear-gradient(305deg, #344a3c, #49614b 58%, #35534e);
+  background: -ms-linear-gradient(305deg, #344a3c, #49614b 58%, #35534e);
+  background: linear-gradient(145deg, #344a3c, #49614b 58%, #35534e);
+  color: #e9efe1;
+}
+html[data-theme='dark'] .home-post-card__placeholder-icon {
+  border-color: rgba(227,234,220,0.24);
+  background: rgba(30,44,36,0.42);
+}
+html[data-theme='dark'] .home-post-card__placeholder-label {
+  color: #e9efe1;
+}
+html[data-theme='dark'] .home-search-result__cover {
+  background: -webkit-linear-gradient(305deg, #344a3c, #49614b 58%, #35534e);
+  background: -moz-linear-gradient(305deg, #344a3c, #49614b 58%, #35534e);
+  background: -o-linear-gradient(305deg, #344a3c, #49614b 58%, #35534e);
+  background: -ms-linear-gradient(305deg, #344a3c, #49614b 58%, #35534e);
+  background: linear-gradient(145deg, #344a3c, #49614b 58%, #35534e);
+  color: #e9efe1;
+}
+html[data-theme='dark'] .home-search-result__cover-label {
+  color: #e9efe1;
+}
+@media screen and (max-width: 900px) {
+  .home-dashboard__grid {
+    grid-template-columns: 190px minmax(0, 1fr);
+    grid-template-areas: 'left feed' 'right right';
+  }
+  .home-dashboard__column--left {
+    grid-area: left;
+  }
+  .home-dashboard__column--feed {
+    grid-area: feed;
+  }
+  .home-dashboard__column--right {
+    grid-area: right;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 650px) {
+  #page-header.full_page {
+    height: 56px !important;
+  }
+  #page-header.full_page #nav {
+    height: 56px;
+    padding: 0 14px;
+  }
+  .home-hero {
+    min-height: 300px;
+    height: 47vh;
+    background-position: center;
+  }
+  .home-dashboard__grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'left' 'feed' 'right';
+    width: calc(100% - 24px);
+    max-width: 520px;
+    gap: 12px;
+  }
+  .home-dashboard__column--left {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .home-profile {
+    grid-column: 1/-1;
+  }
+  .home-dashboard__column--right {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  #recent-posts.home-feed .home-post-card {
+    grid-template-columns: minmax(0, 1fr) 96px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .home-dashboard__column--left {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .home-profile {
+    grid-column: auto;
+  }
+  .home-card {
+    padding: 16px;
+  }
+  #recent-posts.home-feed .home-post-card {
+    grid-template-columns: minmax(0, 1fr) 82px;
+  }
+}
+.home-search-results {
+  display: grid;
+  gap: 12px;
+  width: calc(100% - 36px);
+  max-width: 850px;
+  margin: -8px auto 26px;
+}
+.home-search-results[hidden] {
+  display: none !important;
+}
+.home-search-results__summary {
+  margin: 0 2px 2px;
+  color: var(--home-muted);
+  font-size: 0.78rem;
+}
+.home-search-results__list {
+  display: grid;
+  gap: 12px;
+}
+.home-search-results__empty {
+  padding: 22px;
+  border: 1px solid var(--home-border);
+  border-radius: 16px;
+  background: var(--home-card);
+  color: var(--home-muted);
+  text-align: center;
+}
+.home-search-result {
+  overflow: hidden;
+  border: 1px solid var(--home-border);
+  border-radius: 16px;
+  background: var(--home-card);
+  -webkit-box-shadow: 0 7px 18px rgba(57,78,57,0.065);
+  box-shadow: 0 7px 18px rgba(57,78,57,0.065);
+  -webkit-transition: -webkit-transform 0.2s ease, box-shadow 0.2s ease;
+  -moz-transition: -moz-transform 0.2s ease, box-shadow 0.2s ease;
+  -o-transition: -o-transform 0.2s ease, box-shadow 0.2s ease;
+  -ms-transition: -ms-transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.home-search-result:hover {
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+  -webkit-box-shadow: 0 12px 24px rgba(57,78,57,0.1);
+  box-shadow: 0 12px 24px rgba(57,78,57,0.1);
+}
+.home-search-result__link {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  min-height: 152px;
+  color: inherit;
+  text-decoration: none;
+}
+.home-search-result__body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 14px 18px;
+}
+.home-search-result__title {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--home-text);
+  font-family: var(--home-font-family);
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.home-search-result__excerpt {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 6px;
+  color: var(--home-muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.home-search-result__meta {
+  margin-top: 8px;
+  color: var(--home-muted);
+  font-size: 0.7rem;
+}
+.home-search-result__cover {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 8px;
+  background: -webkit-linear-gradient(305deg, #e7ead7, #c4d1b5 58%, #a9c0b1);
+  background: -moz-linear-gradient(305deg, #e7ead7, #c4d1b5 58%, #a9c0b1);
+  background: -o-linear-gradient(305deg, #e7ead7, #c4d1b5 58%, #a9c0b1);
+  background: -ms-linear-gradient(305deg, #e7ead7, #c4d1b5 58%, #a9c0b1);
+  background: linear-gradient(145deg, #e7ead7, #c4d1b5 58%, #a9c0b1);
+  color: #50644e;
+  text-align: center;
+}
+.home-search-result__icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(79,104,76,0.2);
+  border-radius: 14px;
+  background: rgba(250,251,245,0.52);
+  -webkit-box-shadow: 0 5px 12px rgba(58,78,58,0.12);
+  box-shadow: 0 5px 12px rgba(58,78,58,0.12);
+  font-size: 1rem;
+}
+.home-search-result__cover-label {
+  max-width: 100%;
+  color: #50644e;
+  font-size: 0.62rem;
+  line-height: 1.35;
+}
+.home-dashboard__grid[hidden] {
+  display: none !important;
+}
+@media screen and (max-width: 650px) {
+  .home-search-results {
+    width: calc(100% - 24px);
+  }
+  .home-search-result__link {
+    grid-template-columns: minmax(0, 1fr) 96px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .home-search-result__link {
+    grid-template-columns: minmax(0, 1fr) 82px;
+  }
+}
+@-moz-keyframes home-hero-edge {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+  }
+  25% {
+    clip-path: polygon(0 0, 100% 0, 100% 95.5%, 98.75% 95.4%, 97.5% 95.1%, 96.25% 94.63%, 95% 94.05%, 93.75% 93.4%, 92.5% 92.75%, 91.25% 92.17%, 90% 91.7%, 88.75% 91.4%, 87.5% 91.3%, 86.25% 91.4%, 85% 91.7%, 83.75% 92.17%, 82.5% 92.75%, 81.25% 93.4%, 80% 94.05%, 78.75% 94.63%, 77.5% 95.1%, 76.25% 95.4%, 75% 95.5%, 73.75% 95.4%, 72.5% 95.1%, 71.25% 94.63%, 70% 94.05%, 68.75% 93.4%, 67.5% 92.75%, 66.25% 92.17%, 65% 91.7%, 63.75% 91.4%, 62.5% 91.3%, 61.25% 91.4%, 60% 91.7%, 58.75% 92.17%, 57.5% 92.75%, 56.25% 93.4%, 55% 94.05%, 53.75% 94.63%, 52.5% 95.1%, 51.25% 95.4%, 50% 95.5%, 48.75% 95.4%, 47.5% 95.1%, 46.25% 94.63%, 45% 94.05%, 43.75% 93.4%, 42.5% 92.75%, 41.25% 92.17%, 40% 91.7%, 38.75% 91.4%, 37.5% 91.3%, 36.25% 91.4%, 35% 91.7%, 33.75% 92.17%, 32.5% 92.75%, 31.25% 93.4%, 30% 94.05%, 28.75% 94.63%, 27.5% 95.1%, 26.25% 95.4%, 25% 95.5%, 23.75% 95.4%, 22.5% 95.1%, 21.25% 94.63%, 20% 94.05%, 18.75% 93.4%, 17.5% 92.75%, 16.25% 92.17%, 15% 91.7%, 13.75% 91.4%, 12.5% 91.3%, 11.25% 91.4%, 10% 91.7%, 8.75% 92.17%, 7.5% 92.75%, 6.25% 93.4%, 5% 94.05%, 3.75% 94.63%, 2.5% 95.1%, 1.25% 95.4%, 0% 95.5%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95.5%, 98.75% 95.4%, 97.5% 95.1%, 96.25% 94.63%, 95% 94.05%, 93.75% 93.4%, 92.5% 92.75%, 91.25% 92.17%, 90% 91.7%, 88.75% 91.4%, 87.5% 91.3%, 86.25% 91.4%, 85% 91.7%, 83.75% 92.17%, 82.5% 92.75%, 81.25% 93.4%, 80% 94.05%, 78.75% 94.63%, 77.5% 95.1%, 76.25% 95.4%, 75% 95.5%, 73.75% 95.4%, 72.5% 95.1%, 71.25% 94.63%, 70% 94.05%, 68.75% 93.4%, 67.5% 92.75%, 66.25% 92.17%, 65% 91.7%, 63.75% 91.4%, 62.5% 91.3%, 61.25% 91.4%, 60% 91.7%, 58.75% 92.17%, 57.5% 92.75%, 56.25% 93.4%, 55% 94.05%, 53.75% 94.63%, 52.5% 95.1%, 51.25% 95.4%, 50% 95.5%, 48.75% 95.4%, 47.5% 95.1%, 46.25% 94.63%, 45% 94.05%, 43.75% 93.4%, 42.5% 92.75%, 41.25% 92.17%, 40% 91.7%, 38.75% 91.4%, 37.5% 91.3%, 36.25% 91.4%, 35% 91.7%, 33.75% 92.17%, 32.5% 92.75%, 31.25% 93.4%, 30% 94.05%, 28.75% 94.63%, 27.5% 95.1%, 26.25% 95.4%, 25% 95.5%, 23.75% 95.4%, 22.5% 95.1%, 21.25% 94.63%, 20% 94.05%, 18.75% 93.4%, 17.5% 92.75%, 16.25% 92.17%, 15% 91.7%, 13.75% 91.4%, 12.5% 91.3%, 11.25% 91.4%, 10% 91.7%, 8.75% 92.17%, 7.5% 92.75%, 6.25% 93.4%, 5% 94.05%, 3.75% 94.63%, 2.5% 95.1%, 1.25% 95.4%, 0% 95.5%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 94.05%, 97.5% 94.63%, 96.25% 95.1%, 95% 95.4%, 93.75% 95.5%, 92.5% 95.4%, 91.25% 95.1%, 90% 94.63%, 88.75% 94.05%, 87.5% 93.4%, 86.25% 92.75%, 85% 92.17%, 83.75% 91.7%, 82.5% 91.4%, 81.25% 91.3%, 80% 91.4%, 78.75% 91.7%, 77.5% 92.17%, 76.25% 92.75%, 75% 93.4%, 73.75% 94.05%, 72.5% 94.63%, 71.25% 95.1%, 70% 95.4%, 68.75% 95.5%, 67.5% 95.4%, 66.25% 95.1%, 65% 94.63%, 63.75% 94.05%, 62.5% 93.4%, 61.25% 92.75%, 60% 92.17%, 58.75% 91.7%, 57.5% 91.4%, 56.25% 91.3%, 55% 91.4%, 53.75% 91.7%, 52.5% 92.17%, 51.25% 92.75%, 50% 93.4%, 48.75% 94.05%, 47.5% 94.63%, 46.25% 95.1%, 45% 95.4%, 43.75% 95.5%, 42.5% 95.4%, 41.25% 95.1%, 40% 94.63%, 38.75% 94.05%, 37.5% 93.4%, 36.25% 92.75%, 35% 92.17%, 33.75% 91.7%, 32.5% 91.4%, 31.25% 91.3%, 30% 91.4%, 28.75% 91.7%, 27.5% 92.17%, 26.25% 92.75%, 25% 93.4%, 23.75% 94.05%, 22.5% 94.63%, 21.25% 95.1%, 20% 95.4%, 18.75% 95.5%, 17.5% 95.4%, 16.25% 95.1%, 15% 94.63%, 13.75% 94.05%, 12.5% 93.4%, 11.25% 92.75%, 10% 92.17%, 8.75% 91.7%, 7.5% 91.4%, 6.25% 91.3%, 5% 91.4%, 3.75% 91.7%, 2.5% 92.17%, 1.25% 92.75%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 94.05%, 97.5% 94.63%, 96.25% 95.1%, 95% 95.4%, 93.75% 95.5%, 92.5% 95.4%, 91.25% 95.1%, 90% 94.63%, 88.75% 94.05%, 87.5% 93.4%, 86.25% 92.75%, 85% 92.17%, 83.75% 91.7%, 82.5% 91.4%, 81.25% 91.3%, 80% 91.4%, 78.75% 91.7%, 77.5% 92.17%, 76.25% 92.75%, 75% 93.4%, 73.75% 94.05%, 72.5% 94.63%, 71.25% 95.1%, 70% 95.4%, 68.75% 95.5%, 67.5% 95.4%, 66.25% 95.1%, 65% 94.63%, 63.75% 94.05%, 62.5% 93.4%, 61.25% 92.75%, 60% 92.17%, 58.75% 91.7%, 57.5% 91.4%, 56.25% 91.3%, 55% 91.4%, 53.75% 91.7%, 52.5% 92.17%, 51.25% 92.75%, 50% 93.4%, 48.75% 94.05%, 47.5% 94.63%, 46.25% 95.1%, 45% 95.4%, 43.75% 95.5%, 42.5% 95.4%, 41.25% 95.1%, 40% 94.63%, 38.75% 94.05%, 37.5% 93.4%, 36.25% 92.75%, 35% 92.17%, 33.75% 91.7%, 32.5% 91.4%, 31.25% 91.3%, 30% 91.4%, 28.75% 91.7%, 27.5% 92.17%, 26.25% 92.75%, 25% 93.4%, 23.75% 94.05%, 22.5% 94.63%, 21.25% 95.1%, 20% 95.4%, 18.75% 95.5%, 17.5% 95.4%, 16.25% 95.1%, 15% 94.63%, 13.75% 94.05%, 12.5% 93.4%, 11.25% 92.75%, 10% 92.17%, 8.75% 91.7%, 7.5% 91.4%, 6.25% 91.3%, 5% 91.4%, 3.75% 91.7%, 2.5% 92.17%, 1.25% 92.75%, 0% 93.4%);
+  }
+  75% {
+    clip-path: polygon(0 0, 100% 0, 100% 91.3%, 98.75% 91.4%, 97.5% 91.7%, 96.25% 92.17%, 95% 92.75%, 93.75% 93.4%, 92.5% 94.05%, 91.25% 94.63%, 90% 95.1%, 88.75% 95.4%, 87.5% 95.5%, 86.25% 95.4%, 85% 95.1%, 83.75% 94.63%, 82.5% 94.05%, 81.25% 93.4%, 80% 92.75%, 78.75% 92.17%, 77.5% 91.7%, 76.25% 91.4%, 75% 91.3%, 73.75% 91.4%, 72.5% 91.7%, 71.25% 92.17%, 70% 92.75%, 68.75% 93.4%, 67.5% 94.05%, 66.25% 94.63%, 65% 95.1%, 63.75% 95.4%, 62.5% 95.5%, 61.25% 95.4%, 60% 95.1%, 58.75% 94.63%, 57.5% 94.05%, 56.25% 93.4%, 55% 92.75%, 53.75% 92.17%, 52.5% 91.7%, 51.25% 91.4%, 50% 91.3%, 48.75% 91.4%, 47.5% 91.7%, 46.25% 92.17%, 45% 92.75%, 43.75% 93.4%, 42.5% 94.05%, 41.25% 94.63%, 40% 95.1%, 38.75% 95.4%, 37.5% 95.5%, 36.25% 95.4%, 35% 95.1%, 33.75% 94.63%, 32.5% 94.05%, 31.25% 93.4%, 30% 92.75%, 28.75% 92.17%, 27.5% 91.7%, 26.25% 91.4%, 25% 91.3%, 23.75% 91.4%, 22.5% 91.7%, 21.25% 92.17%, 20% 92.75%, 18.75% 93.4%, 17.5% 94.05%, 16.25% 94.63%, 15% 95.1%, 13.75% 95.4%, 12.5% 95.5%, 11.25% 95.4%, 10% 95.1%, 8.75% 94.63%, 7.5% 94.05%, 6.25% 93.4%, 5% 92.75%, 3.75% 92.17%, 2.5% 91.7%, 1.25% 91.4%, 0% 91.3%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 91.3%, 98.75% 91.4%, 97.5% 91.7%, 96.25% 92.17%, 95% 92.75%, 93.75% 93.4%, 92.5% 94.05%, 91.25% 94.63%, 90% 95.1%, 88.75% 95.4%, 87.5% 95.5%, 86.25% 95.4%, 85% 95.1%, 83.75% 94.63%, 82.5% 94.05%, 81.25% 93.4%, 80% 92.75%, 78.75% 92.17%, 77.5% 91.7%, 76.25% 91.4%, 75% 91.3%, 73.75% 91.4%, 72.5% 91.7%, 71.25% 92.17%, 70% 92.75%, 68.75% 93.4%, 67.5% 94.05%, 66.25% 94.63%, 65% 95.1%, 63.75% 95.4%, 62.5% 95.5%, 61.25% 95.4%, 60% 95.1%, 58.75% 94.63%, 57.5% 94.05%, 56.25% 93.4%, 55% 92.75%, 53.75% 92.17%, 52.5% 91.7%, 51.25% 91.4%, 50% 91.3%, 48.75% 91.4%, 47.5% 91.7%, 46.25% 92.17%, 45% 92.75%, 43.75% 93.4%, 42.5% 94.05%, 41.25% 94.63%, 40% 95.1%, 38.75% 95.4%, 37.5% 95.5%, 36.25% 95.4%, 35% 95.1%, 33.75% 94.63%, 32.5% 94.05%, 31.25% 93.4%, 30% 92.75%, 28.75% 92.17%, 27.5% 91.7%, 26.25% 91.4%, 25% 91.3%, 23.75% 91.4%, 22.5% 91.7%, 21.25% 92.17%, 20% 92.75%, 18.75% 93.4%, 17.5% 94.05%, 16.25% 94.63%, 15% 95.1%, 13.75% 95.4%, 12.5% 95.5%, 11.25% 95.4%, 10% 95.1%, 8.75% 94.63%, 7.5% 94.05%, 6.25% 93.4%, 5% 92.75%, 3.75% 92.17%, 2.5% 91.7%, 1.25% 91.4%, 0% 91.3%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+  }
+}
+@-webkit-keyframes home-hero-edge {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+  }
+  25% {
+    clip-path: polygon(0 0, 100% 0, 100% 95.5%, 98.75% 95.4%, 97.5% 95.1%, 96.25% 94.63%, 95% 94.05%, 93.75% 93.4%, 92.5% 92.75%, 91.25% 92.17%, 90% 91.7%, 88.75% 91.4%, 87.5% 91.3%, 86.25% 91.4%, 85% 91.7%, 83.75% 92.17%, 82.5% 92.75%, 81.25% 93.4%, 80% 94.05%, 78.75% 94.63%, 77.5% 95.1%, 76.25% 95.4%, 75% 95.5%, 73.75% 95.4%, 72.5% 95.1%, 71.25% 94.63%, 70% 94.05%, 68.75% 93.4%, 67.5% 92.75%, 66.25% 92.17%, 65% 91.7%, 63.75% 91.4%, 62.5% 91.3%, 61.25% 91.4%, 60% 91.7%, 58.75% 92.17%, 57.5% 92.75%, 56.25% 93.4%, 55% 94.05%, 53.75% 94.63%, 52.5% 95.1%, 51.25% 95.4%, 50% 95.5%, 48.75% 95.4%, 47.5% 95.1%, 46.25% 94.63%, 45% 94.05%, 43.75% 93.4%, 42.5% 92.75%, 41.25% 92.17%, 40% 91.7%, 38.75% 91.4%, 37.5% 91.3%, 36.25% 91.4%, 35% 91.7%, 33.75% 92.17%, 32.5% 92.75%, 31.25% 93.4%, 30% 94.05%, 28.75% 94.63%, 27.5% 95.1%, 26.25% 95.4%, 25% 95.5%, 23.75% 95.4%, 22.5% 95.1%, 21.25% 94.63%, 20% 94.05%, 18.75% 93.4%, 17.5% 92.75%, 16.25% 92.17%, 15% 91.7%, 13.75% 91.4%, 12.5% 91.3%, 11.25% 91.4%, 10% 91.7%, 8.75% 92.17%, 7.5% 92.75%, 6.25% 93.4%, 5% 94.05%, 3.75% 94.63%, 2.5% 95.1%, 1.25% 95.4%, 0% 95.5%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95.5%, 98.75% 95.4%, 97.5% 95.1%, 96.25% 94.63%, 95% 94.05%, 93.75% 93.4%, 92.5% 92.75%, 91.25% 92.17%, 90% 91.7%, 88.75% 91.4%, 87.5% 91.3%, 86.25% 91.4%, 85% 91.7%, 83.75% 92.17%, 82.5% 92.75%, 81.25% 93.4%, 80% 94.05%, 78.75% 94.63%, 77.5% 95.1%, 76.25% 95.4%, 75% 95.5%, 73.75% 95.4%, 72.5% 95.1%, 71.25% 94.63%, 70% 94.05%, 68.75% 93.4%, 67.5% 92.75%, 66.25% 92.17%, 65% 91.7%, 63.75% 91.4%, 62.5% 91.3%, 61.25% 91.4%, 60% 91.7%, 58.75% 92.17%, 57.5% 92.75%, 56.25% 93.4%, 55% 94.05%, 53.75% 94.63%, 52.5% 95.1%, 51.25% 95.4%, 50% 95.5%, 48.75% 95.4%, 47.5% 95.1%, 46.25% 94.63%, 45% 94.05%, 43.75% 93.4%, 42.5% 92.75%, 41.25% 92.17%, 40% 91.7%, 38.75% 91.4%, 37.5% 91.3%, 36.25% 91.4%, 35% 91.7%, 33.75% 92.17%, 32.5% 92.75%, 31.25% 93.4%, 30% 94.05%, 28.75% 94.63%, 27.5% 95.1%, 26.25% 95.4%, 25% 95.5%, 23.75% 95.4%, 22.5% 95.1%, 21.25% 94.63%, 20% 94.05%, 18.75% 93.4%, 17.5% 92.75%, 16.25% 92.17%, 15% 91.7%, 13.75% 91.4%, 12.5% 91.3%, 11.25% 91.4%, 10% 91.7%, 8.75% 92.17%, 7.5% 92.75%, 6.25% 93.4%, 5% 94.05%, 3.75% 94.63%, 2.5% 95.1%, 1.25% 95.4%, 0% 95.5%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 94.05%, 97.5% 94.63%, 96.25% 95.1%, 95% 95.4%, 93.75% 95.5%, 92.5% 95.4%, 91.25% 95.1%, 90% 94.63%, 88.75% 94.05%, 87.5% 93.4%, 86.25% 92.75%, 85% 92.17%, 83.75% 91.7%, 82.5% 91.4%, 81.25% 91.3%, 80% 91.4%, 78.75% 91.7%, 77.5% 92.17%, 76.25% 92.75%, 75% 93.4%, 73.75% 94.05%, 72.5% 94.63%, 71.25% 95.1%, 70% 95.4%, 68.75% 95.5%, 67.5% 95.4%, 66.25% 95.1%, 65% 94.63%, 63.75% 94.05%, 62.5% 93.4%, 61.25% 92.75%, 60% 92.17%, 58.75% 91.7%, 57.5% 91.4%, 56.25% 91.3%, 55% 91.4%, 53.75% 91.7%, 52.5% 92.17%, 51.25% 92.75%, 50% 93.4%, 48.75% 94.05%, 47.5% 94.63%, 46.25% 95.1%, 45% 95.4%, 43.75% 95.5%, 42.5% 95.4%, 41.25% 95.1%, 40% 94.63%, 38.75% 94.05%, 37.5% 93.4%, 36.25% 92.75%, 35% 92.17%, 33.75% 91.7%, 32.5% 91.4%, 31.25% 91.3%, 30% 91.4%, 28.75% 91.7%, 27.5% 92.17%, 26.25% 92.75%, 25% 93.4%, 23.75% 94.05%, 22.5% 94.63%, 21.25% 95.1%, 20% 95.4%, 18.75% 95.5%, 17.5% 95.4%, 16.25% 95.1%, 15% 94.63%, 13.75% 94.05%, 12.5% 93.4%, 11.25% 92.75%, 10% 92.17%, 8.75% 91.7%, 7.5% 91.4%, 6.25% 91.3%, 5% 91.4%, 3.75% 91.7%, 2.5% 92.17%, 1.25% 92.75%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 94.05%, 97.5% 94.63%, 96.25% 95.1%, 95% 95.4%, 93.75% 95.5%, 92.5% 95.4%, 91.25% 95.1%, 90% 94.63%, 88.75% 94.05%, 87.5% 93.4%, 86.25% 92.75%, 85% 92.17%, 83.75% 91.7%, 82.5% 91.4%, 81.25% 91.3%, 80% 91.4%, 78.75% 91.7%, 77.5% 92.17%, 76.25% 92.75%, 75% 93.4%, 73.75% 94.05%, 72.5% 94.63%, 71.25% 95.1%, 70% 95.4%, 68.75% 95.5%, 67.5% 95.4%, 66.25% 95.1%, 65% 94.63%, 63.75% 94.05%, 62.5% 93.4%, 61.25% 92.75%, 60% 92.17%, 58.75% 91.7%, 57.5% 91.4%, 56.25% 91.3%, 55% 91.4%, 53.75% 91.7%, 52.5% 92.17%, 51.25% 92.75%, 50% 93.4%, 48.75% 94.05%, 47.5% 94.63%, 46.25% 95.1%, 45% 95.4%, 43.75% 95.5%, 42.5% 95.4%, 41.25% 95.1%, 40% 94.63%, 38.75% 94.05%, 37.5% 93.4%, 36.25% 92.75%, 35% 92.17%, 33.75% 91.7%, 32.5% 91.4%, 31.25% 91.3%, 30% 91.4%, 28.75% 91.7%, 27.5% 92.17%, 26.25% 92.75%, 25% 93.4%, 23.75% 94.05%, 22.5% 94.63%, 21.25% 95.1%, 20% 95.4%, 18.75% 95.5%, 17.5% 95.4%, 16.25% 95.1%, 15% 94.63%, 13.75% 94.05%, 12.5% 93.4%, 11.25% 92.75%, 10% 92.17%, 8.75% 91.7%, 7.5% 91.4%, 6.25% 91.3%, 5% 91.4%, 3.75% 91.7%, 2.5% 92.17%, 1.25% 92.75%, 0% 93.4%);
+  }
+  75% {
+    clip-path: polygon(0 0, 100% 0, 100% 91.3%, 98.75% 91.4%, 97.5% 91.7%, 96.25% 92.17%, 95% 92.75%, 93.75% 93.4%, 92.5% 94.05%, 91.25% 94.63%, 90% 95.1%, 88.75% 95.4%, 87.5% 95.5%, 86.25% 95.4%, 85% 95.1%, 83.75% 94.63%, 82.5% 94.05%, 81.25% 93.4%, 80% 92.75%, 78.75% 92.17%, 77.5% 91.7%, 76.25% 91.4%, 75% 91.3%, 73.75% 91.4%, 72.5% 91.7%, 71.25% 92.17%, 70% 92.75%, 68.75% 93.4%, 67.5% 94.05%, 66.25% 94.63%, 65% 95.1%, 63.75% 95.4%, 62.5% 95.5%, 61.25% 95.4%, 60% 95.1%, 58.75% 94.63%, 57.5% 94.05%, 56.25% 93.4%, 55% 92.75%, 53.75% 92.17%, 52.5% 91.7%, 51.25% 91.4%, 50% 91.3%, 48.75% 91.4%, 47.5% 91.7%, 46.25% 92.17%, 45% 92.75%, 43.75% 93.4%, 42.5% 94.05%, 41.25% 94.63%, 40% 95.1%, 38.75% 95.4%, 37.5% 95.5%, 36.25% 95.4%, 35% 95.1%, 33.75% 94.63%, 32.5% 94.05%, 31.25% 93.4%, 30% 92.75%, 28.75% 92.17%, 27.5% 91.7%, 26.25% 91.4%, 25% 91.3%, 23.75% 91.4%, 22.5% 91.7%, 21.25% 92.17%, 20% 92.75%, 18.75% 93.4%, 17.5% 94.05%, 16.25% 94.63%, 15% 95.1%, 13.75% 95.4%, 12.5% 95.5%, 11.25% 95.4%, 10% 95.1%, 8.75% 94.63%, 7.5% 94.05%, 6.25% 93.4%, 5% 92.75%, 3.75% 92.17%, 2.5% 91.7%, 1.25% 91.4%, 0% 91.3%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 91.3%, 98.75% 91.4%, 97.5% 91.7%, 96.25% 92.17%, 95% 92.75%, 93.75% 93.4%, 92.5% 94.05%, 91.25% 94.63%, 90% 95.1%, 88.75% 95.4%, 87.5% 95.5%, 86.25% 95.4%, 85% 95.1%, 83.75% 94.63%, 82.5% 94.05%, 81.25% 93.4%, 80% 92.75%, 78.75% 92.17%, 77.5% 91.7%, 76.25% 91.4%, 75% 91.3%, 73.75% 91.4%, 72.5% 91.7%, 71.25% 92.17%, 70% 92.75%, 68.75% 93.4%, 67.5% 94.05%, 66.25% 94.63%, 65% 95.1%, 63.75% 95.4%, 62.5% 95.5%, 61.25% 95.4%, 60% 95.1%, 58.75% 94.63%, 57.5% 94.05%, 56.25% 93.4%, 55% 92.75%, 53.75% 92.17%, 52.5% 91.7%, 51.25% 91.4%, 50% 91.3%, 48.75% 91.4%, 47.5% 91.7%, 46.25% 92.17%, 45% 92.75%, 43.75% 93.4%, 42.5% 94.05%, 41.25% 94.63%, 40% 95.1%, 38.75% 95.4%, 37.5% 95.5%, 36.25% 95.4%, 35% 95.1%, 33.75% 94.63%, 32.5% 94.05%, 31.25% 93.4%, 30% 92.75%, 28.75% 92.17%, 27.5% 91.7%, 26.25% 91.4%, 25% 91.3%, 23.75% 91.4%, 22.5% 91.7%, 21.25% 92.17%, 20% 92.75%, 18.75% 93.4%, 17.5% 94.05%, 16.25% 94.63%, 15% 95.1%, 13.75% 95.4%, 12.5% 95.5%, 11.25% 95.4%, 10% 95.1%, 8.75% 94.63%, 7.5% 94.05%, 6.25% 93.4%, 5% 92.75%, 3.75% 92.17%, 2.5% 91.7%, 1.25% 91.4%, 0% 91.3%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+  }
+}
+@-o-keyframes home-hero-edge {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+  }
+  25% {
+    clip-path: polygon(0 0, 100% 0, 100% 95.5%, 98.75% 95.4%, 97.5% 95.1%, 96.25% 94.63%, 95% 94.05%, 93.75% 93.4%, 92.5% 92.75%, 91.25% 92.17%, 90% 91.7%, 88.75% 91.4%, 87.5% 91.3%, 86.25% 91.4%, 85% 91.7%, 83.75% 92.17%, 82.5% 92.75%, 81.25% 93.4%, 80% 94.05%, 78.75% 94.63%, 77.5% 95.1%, 76.25% 95.4%, 75% 95.5%, 73.75% 95.4%, 72.5% 95.1%, 71.25% 94.63%, 70% 94.05%, 68.75% 93.4%, 67.5% 92.75%, 66.25% 92.17%, 65% 91.7%, 63.75% 91.4%, 62.5% 91.3%, 61.25% 91.4%, 60% 91.7%, 58.75% 92.17%, 57.5% 92.75%, 56.25% 93.4%, 55% 94.05%, 53.75% 94.63%, 52.5% 95.1%, 51.25% 95.4%, 50% 95.5%, 48.75% 95.4%, 47.5% 95.1%, 46.25% 94.63%, 45% 94.05%, 43.75% 93.4%, 42.5% 92.75%, 41.25% 92.17%, 40% 91.7%, 38.75% 91.4%, 37.5% 91.3%, 36.25% 91.4%, 35% 91.7%, 33.75% 92.17%, 32.5% 92.75%, 31.25% 93.4%, 30% 94.05%, 28.75% 94.63%, 27.5% 95.1%, 26.25% 95.4%, 25% 95.5%, 23.75% 95.4%, 22.5% 95.1%, 21.25% 94.63%, 20% 94.05%, 18.75% 93.4%, 17.5% 92.75%, 16.25% 92.17%, 15% 91.7%, 13.75% 91.4%, 12.5% 91.3%, 11.25% 91.4%, 10% 91.7%, 8.75% 92.17%, 7.5% 92.75%, 6.25% 93.4%, 5% 94.05%, 3.75% 94.63%, 2.5% 95.1%, 1.25% 95.4%, 0% 95.5%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95.5%, 98.75% 95.4%, 97.5% 95.1%, 96.25% 94.63%, 95% 94.05%, 93.75% 93.4%, 92.5% 92.75%, 91.25% 92.17%, 90% 91.7%, 88.75% 91.4%, 87.5% 91.3%, 86.25% 91.4%, 85% 91.7%, 83.75% 92.17%, 82.5% 92.75%, 81.25% 93.4%, 80% 94.05%, 78.75% 94.63%, 77.5% 95.1%, 76.25% 95.4%, 75% 95.5%, 73.75% 95.4%, 72.5% 95.1%, 71.25% 94.63%, 70% 94.05%, 68.75% 93.4%, 67.5% 92.75%, 66.25% 92.17%, 65% 91.7%, 63.75% 91.4%, 62.5% 91.3%, 61.25% 91.4%, 60% 91.7%, 58.75% 92.17%, 57.5% 92.75%, 56.25% 93.4%, 55% 94.05%, 53.75% 94.63%, 52.5% 95.1%, 51.25% 95.4%, 50% 95.5%, 48.75% 95.4%, 47.5% 95.1%, 46.25% 94.63%, 45% 94.05%, 43.75% 93.4%, 42.5% 92.75%, 41.25% 92.17%, 40% 91.7%, 38.75% 91.4%, 37.5% 91.3%, 36.25% 91.4%, 35% 91.7%, 33.75% 92.17%, 32.5% 92.75%, 31.25% 93.4%, 30% 94.05%, 28.75% 94.63%, 27.5% 95.1%, 26.25% 95.4%, 25% 95.5%, 23.75% 95.4%, 22.5% 95.1%, 21.25% 94.63%, 20% 94.05%, 18.75% 93.4%, 17.5% 92.75%, 16.25% 92.17%, 15% 91.7%, 13.75% 91.4%, 12.5% 91.3%, 11.25% 91.4%, 10% 91.7%, 8.75% 92.17%, 7.5% 92.75%, 6.25% 93.4%, 5% 94.05%, 3.75% 94.63%, 2.5% 95.1%, 1.25% 95.4%, 0% 95.5%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 94.05%, 97.5% 94.63%, 96.25% 95.1%, 95% 95.4%, 93.75% 95.5%, 92.5% 95.4%, 91.25% 95.1%, 90% 94.63%, 88.75% 94.05%, 87.5% 93.4%, 86.25% 92.75%, 85% 92.17%, 83.75% 91.7%, 82.5% 91.4%, 81.25% 91.3%, 80% 91.4%, 78.75% 91.7%, 77.5% 92.17%, 76.25% 92.75%, 75% 93.4%, 73.75% 94.05%, 72.5% 94.63%, 71.25% 95.1%, 70% 95.4%, 68.75% 95.5%, 67.5% 95.4%, 66.25% 95.1%, 65% 94.63%, 63.75% 94.05%, 62.5% 93.4%, 61.25% 92.75%, 60% 92.17%, 58.75% 91.7%, 57.5% 91.4%, 56.25% 91.3%, 55% 91.4%, 53.75% 91.7%, 52.5% 92.17%, 51.25% 92.75%, 50% 93.4%, 48.75% 94.05%, 47.5% 94.63%, 46.25% 95.1%, 45% 95.4%, 43.75% 95.5%, 42.5% 95.4%, 41.25% 95.1%, 40% 94.63%, 38.75% 94.05%, 37.5% 93.4%, 36.25% 92.75%, 35% 92.17%, 33.75% 91.7%, 32.5% 91.4%, 31.25% 91.3%, 30% 91.4%, 28.75% 91.7%, 27.5% 92.17%, 26.25% 92.75%, 25% 93.4%, 23.75% 94.05%, 22.5% 94.63%, 21.25% 95.1%, 20% 95.4%, 18.75% 95.5%, 17.5% 95.4%, 16.25% 95.1%, 15% 94.63%, 13.75% 94.05%, 12.5% 93.4%, 11.25% 92.75%, 10% 92.17%, 8.75% 91.7%, 7.5% 91.4%, 6.25% 91.3%, 5% 91.4%, 3.75% 91.7%, 2.5% 92.17%, 1.25% 92.75%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 94.05%, 97.5% 94.63%, 96.25% 95.1%, 95% 95.4%, 93.75% 95.5%, 92.5% 95.4%, 91.25% 95.1%, 90% 94.63%, 88.75% 94.05%, 87.5% 93.4%, 86.25% 92.75%, 85% 92.17%, 83.75% 91.7%, 82.5% 91.4%, 81.25% 91.3%, 80% 91.4%, 78.75% 91.7%, 77.5% 92.17%, 76.25% 92.75%, 75% 93.4%, 73.75% 94.05%, 72.5% 94.63%, 71.25% 95.1%, 70% 95.4%, 68.75% 95.5%, 67.5% 95.4%, 66.25% 95.1%, 65% 94.63%, 63.75% 94.05%, 62.5% 93.4%, 61.25% 92.75%, 60% 92.17%, 58.75% 91.7%, 57.5% 91.4%, 56.25% 91.3%, 55% 91.4%, 53.75% 91.7%, 52.5% 92.17%, 51.25% 92.75%, 50% 93.4%, 48.75% 94.05%, 47.5% 94.63%, 46.25% 95.1%, 45% 95.4%, 43.75% 95.5%, 42.5% 95.4%, 41.25% 95.1%, 40% 94.63%, 38.75% 94.05%, 37.5% 93.4%, 36.25% 92.75%, 35% 92.17%, 33.75% 91.7%, 32.5% 91.4%, 31.25% 91.3%, 30% 91.4%, 28.75% 91.7%, 27.5% 92.17%, 26.25% 92.75%, 25% 93.4%, 23.75% 94.05%, 22.5% 94.63%, 21.25% 95.1%, 20% 95.4%, 18.75% 95.5%, 17.5% 95.4%, 16.25% 95.1%, 15% 94.63%, 13.75% 94.05%, 12.5% 93.4%, 11.25% 92.75%, 10% 92.17%, 8.75% 91.7%, 7.5% 91.4%, 6.25% 91.3%, 5% 91.4%, 3.75% 91.7%, 2.5% 92.17%, 1.25% 92.75%, 0% 93.4%);
+  }
+  75% {
+    clip-path: polygon(0 0, 100% 0, 100% 91.3%, 98.75% 91.4%, 97.5% 91.7%, 96.25% 92.17%, 95% 92.75%, 93.75% 93.4%, 92.5% 94.05%, 91.25% 94.63%, 90% 95.1%, 88.75% 95.4%, 87.5% 95.5%, 86.25% 95.4%, 85% 95.1%, 83.75% 94.63%, 82.5% 94.05%, 81.25% 93.4%, 80% 92.75%, 78.75% 92.17%, 77.5% 91.7%, 76.25% 91.4%, 75% 91.3%, 73.75% 91.4%, 72.5% 91.7%, 71.25% 92.17%, 70% 92.75%, 68.75% 93.4%, 67.5% 94.05%, 66.25% 94.63%, 65% 95.1%, 63.75% 95.4%, 62.5% 95.5%, 61.25% 95.4%, 60% 95.1%, 58.75% 94.63%, 57.5% 94.05%, 56.25% 93.4%, 55% 92.75%, 53.75% 92.17%, 52.5% 91.7%, 51.25% 91.4%, 50% 91.3%, 48.75% 91.4%, 47.5% 91.7%, 46.25% 92.17%, 45% 92.75%, 43.75% 93.4%, 42.5% 94.05%, 41.25% 94.63%, 40% 95.1%, 38.75% 95.4%, 37.5% 95.5%, 36.25% 95.4%, 35% 95.1%, 33.75% 94.63%, 32.5% 94.05%, 31.25% 93.4%, 30% 92.75%, 28.75% 92.17%, 27.5% 91.7%, 26.25% 91.4%, 25% 91.3%, 23.75% 91.4%, 22.5% 91.7%, 21.25% 92.17%, 20% 92.75%, 18.75% 93.4%, 17.5% 94.05%, 16.25% 94.63%, 15% 95.1%, 13.75% 95.4%, 12.5% 95.5%, 11.25% 95.4%, 10% 95.1%, 8.75% 94.63%, 7.5% 94.05%, 6.25% 93.4%, 5% 92.75%, 3.75% 92.17%, 2.5% 91.7%, 1.25% 91.4%, 0% 91.3%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 91.3%, 98.75% 91.4%, 97.5% 91.7%, 96.25% 92.17%, 95% 92.75%, 93.75% 93.4%, 92.5% 94.05%, 91.25% 94.63%, 90% 95.1%, 88.75% 95.4%, 87.5% 95.5%, 86.25% 95.4%, 85% 95.1%, 83.75% 94.63%, 82.5% 94.05%, 81.25% 93.4%, 80% 92.75%, 78.75% 92.17%, 77.5% 91.7%, 76.25% 91.4%, 75% 91.3%, 73.75% 91.4%, 72.5% 91.7%, 71.25% 92.17%, 70% 92.75%, 68.75% 93.4%, 67.5% 94.05%, 66.25% 94.63%, 65% 95.1%, 63.75% 95.4%, 62.5% 95.5%, 61.25% 95.4%, 60% 95.1%, 58.75% 94.63%, 57.5% 94.05%, 56.25% 93.4%, 55% 92.75%, 53.75% 92.17%, 52.5% 91.7%, 51.25% 91.4%, 50% 91.3%, 48.75% 91.4%, 47.5% 91.7%, 46.25% 92.17%, 45% 92.75%, 43.75% 93.4%, 42.5% 94.05%, 41.25% 94.63%, 40% 95.1%, 38.75% 95.4%, 37.5% 95.5%, 36.25% 95.4%, 35% 95.1%, 33.75% 94.63%, 32.5% 94.05%, 31.25% 93.4%, 30% 92.75%, 28.75% 92.17%, 27.5% 91.7%, 26.25% 91.4%, 25% 91.3%, 23.75% 91.4%, 22.5% 91.7%, 21.25% 92.17%, 20% 92.75%, 18.75% 93.4%, 17.5% 94.05%, 16.25% 94.63%, 15% 95.1%, 13.75% 95.4%, 12.5% 95.5%, 11.25% 95.4%, 10% 95.1%, 8.75% 94.63%, 7.5% 94.05%, 6.25% 93.4%, 5% 92.75%, 3.75% 92.17%, 2.5% 91.7%, 1.25% 91.4%, 0% 91.3%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+  }
+}
+@keyframes home-hero-edge {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+  }
+  25% {
+    clip-path: polygon(0 0, 100% 0, 100% 95.5%, 98.75% 95.4%, 97.5% 95.1%, 96.25% 94.63%, 95% 94.05%, 93.75% 93.4%, 92.5% 92.75%, 91.25% 92.17%, 90% 91.7%, 88.75% 91.4%, 87.5% 91.3%, 86.25% 91.4%, 85% 91.7%, 83.75% 92.17%, 82.5% 92.75%, 81.25% 93.4%, 80% 94.05%, 78.75% 94.63%, 77.5% 95.1%, 76.25% 95.4%, 75% 95.5%, 73.75% 95.4%, 72.5% 95.1%, 71.25% 94.63%, 70% 94.05%, 68.75% 93.4%, 67.5% 92.75%, 66.25% 92.17%, 65% 91.7%, 63.75% 91.4%, 62.5% 91.3%, 61.25% 91.4%, 60% 91.7%, 58.75% 92.17%, 57.5% 92.75%, 56.25% 93.4%, 55% 94.05%, 53.75% 94.63%, 52.5% 95.1%, 51.25% 95.4%, 50% 95.5%, 48.75% 95.4%, 47.5% 95.1%, 46.25% 94.63%, 45% 94.05%, 43.75% 93.4%, 42.5% 92.75%, 41.25% 92.17%, 40% 91.7%, 38.75% 91.4%, 37.5% 91.3%, 36.25% 91.4%, 35% 91.7%, 33.75% 92.17%, 32.5% 92.75%, 31.25% 93.4%, 30% 94.05%, 28.75% 94.63%, 27.5% 95.1%, 26.25% 95.4%, 25% 95.5%, 23.75% 95.4%, 22.5% 95.1%, 21.25% 94.63%, 20% 94.05%, 18.75% 93.4%, 17.5% 92.75%, 16.25% 92.17%, 15% 91.7%, 13.75% 91.4%, 12.5% 91.3%, 11.25% 91.4%, 10% 91.7%, 8.75% 92.17%, 7.5% 92.75%, 6.25% 93.4%, 5% 94.05%, 3.75% 94.63%, 2.5% 95.1%, 1.25% 95.4%, 0% 95.5%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95.5%, 98.75% 95.4%, 97.5% 95.1%, 96.25% 94.63%, 95% 94.05%, 93.75% 93.4%, 92.5% 92.75%, 91.25% 92.17%, 90% 91.7%, 88.75% 91.4%, 87.5% 91.3%, 86.25% 91.4%, 85% 91.7%, 83.75% 92.17%, 82.5% 92.75%, 81.25% 93.4%, 80% 94.05%, 78.75% 94.63%, 77.5% 95.1%, 76.25% 95.4%, 75% 95.5%, 73.75% 95.4%, 72.5% 95.1%, 71.25% 94.63%, 70% 94.05%, 68.75% 93.4%, 67.5% 92.75%, 66.25% 92.17%, 65% 91.7%, 63.75% 91.4%, 62.5% 91.3%, 61.25% 91.4%, 60% 91.7%, 58.75% 92.17%, 57.5% 92.75%, 56.25% 93.4%, 55% 94.05%, 53.75% 94.63%, 52.5% 95.1%, 51.25% 95.4%, 50% 95.5%, 48.75% 95.4%, 47.5% 95.1%, 46.25% 94.63%, 45% 94.05%, 43.75% 93.4%, 42.5% 92.75%, 41.25% 92.17%, 40% 91.7%, 38.75% 91.4%, 37.5% 91.3%, 36.25% 91.4%, 35% 91.7%, 33.75% 92.17%, 32.5% 92.75%, 31.25% 93.4%, 30% 94.05%, 28.75% 94.63%, 27.5% 95.1%, 26.25% 95.4%, 25% 95.5%, 23.75% 95.4%, 22.5% 95.1%, 21.25% 94.63%, 20% 94.05%, 18.75% 93.4%, 17.5% 92.75%, 16.25% 92.17%, 15% 91.7%, 13.75% 91.4%, 12.5% 91.3%, 11.25% 91.4%, 10% 91.7%, 8.75% 92.17%, 7.5% 92.75%, 6.25% 93.4%, 5% 94.05%, 3.75% 94.63%, 2.5% 95.1%, 1.25% 95.4%, 0% 95.5%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 94.05%, 97.5% 94.63%, 96.25% 95.1%, 95% 95.4%, 93.75% 95.5%, 92.5% 95.4%, 91.25% 95.1%, 90% 94.63%, 88.75% 94.05%, 87.5% 93.4%, 86.25% 92.75%, 85% 92.17%, 83.75% 91.7%, 82.5% 91.4%, 81.25% 91.3%, 80% 91.4%, 78.75% 91.7%, 77.5% 92.17%, 76.25% 92.75%, 75% 93.4%, 73.75% 94.05%, 72.5% 94.63%, 71.25% 95.1%, 70% 95.4%, 68.75% 95.5%, 67.5% 95.4%, 66.25% 95.1%, 65% 94.63%, 63.75% 94.05%, 62.5% 93.4%, 61.25% 92.75%, 60% 92.17%, 58.75% 91.7%, 57.5% 91.4%, 56.25% 91.3%, 55% 91.4%, 53.75% 91.7%, 52.5% 92.17%, 51.25% 92.75%, 50% 93.4%, 48.75% 94.05%, 47.5% 94.63%, 46.25% 95.1%, 45% 95.4%, 43.75% 95.5%, 42.5% 95.4%, 41.25% 95.1%, 40% 94.63%, 38.75% 94.05%, 37.5% 93.4%, 36.25% 92.75%, 35% 92.17%, 33.75% 91.7%, 32.5% 91.4%, 31.25% 91.3%, 30% 91.4%, 28.75% 91.7%, 27.5% 92.17%, 26.25% 92.75%, 25% 93.4%, 23.75% 94.05%, 22.5% 94.63%, 21.25% 95.1%, 20% 95.4%, 18.75% 95.5%, 17.5% 95.4%, 16.25% 95.1%, 15% 94.63%, 13.75% 94.05%, 12.5% 93.4%, 11.25% 92.75%, 10% 92.17%, 8.75% 91.7%, 7.5% 91.4%, 6.25% 91.3%, 5% 91.4%, 3.75% 91.7%, 2.5% 92.17%, 1.25% 92.75%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 94.05%, 97.5% 94.63%, 96.25% 95.1%, 95% 95.4%, 93.75% 95.5%, 92.5% 95.4%, 91.25% 95.1%, 90% 94.63%, 88.75% 94.05%, 87.5% 93.4%, 86.25% 92.75%, 85% 92.17%, 83.75% 91.7%, 82.5% 91.4%, 81.25% 91.3%, 80% 91.4%, 78.75% 91.7%, 77.5% 92.17%, 76.25% 92.75%, 75% 93.4%, 73.75% 94.05%, 72.5% 94.63%, 71.25% 95.1%, 70% 95.4%, 68.75% 95.5%, 67.5% 95.4%, 66.25% 95.1%, 65% 94.63%, 63.75% 94.05%, 62.5% 93.4%, 61.25% 92.75%, 60% 92.17%, 58.75% 91.7%, 57.5% 91.4%, 56.25% 91.3%, 55% 91.4%, 53.75% 91.7%, 52.5% 92.17%, 51.25% 92.75%, 50% 93.4%, 48.75% 94.05%, 47.5% 94.63%, 46.25% 95.1%, 45% 95.4%, 43.75% 95.5%, 42.5% 95.4%, 41.25% 95.1%, 40% 94.63%, 38.75% 94.05%, 37.5% 93.4%, 36.25% 92.75%, 35% 92.17%, 33.75% 91.7%, 32.5% 91.4%, 31.25% 91.3%, 30% 91.4%, 28.75% 91.7%, 27.5% 92.17%, 26.25% 92.75%, 25% 93.4%, 23.75% 94.05%, 22.5% 94.63%, 21.25% 95.1%, 20% 95.4%, 18.75% 95.5%, 17.5% 95.4%, 16.25% 95.1%, 15% 94.63%, 13.75% 94.05%, 12.5% 93.4%, 11.25% 92.75%, 10% 92.17%, 8.75% 91.7%, 7.5% 91.4%, 6.25% 91.3%, 5% 91.4%, 3.75% 91.7%, 2.5% 92.17%, 1.25% 92.75%, 0% 93.4%);
+  }
+  75% {
+    clip-path: polygon(0 0, 100% 0, 100% 91.3%, 98.75% 91.4%, 97.5% 91.7%, 96.25% 92.17%, 95% 92.75%, 93.75% 93.4%, 92.5% 94.05%, 91.25% 94.63%, 90% 95.1%, 88.75% 95.4%, 87.5% 95.5%, 86.25% 95.4%, 85% 95.1%, 83.75% 94.63%, 82.5% 94.05%, 81.25% 93.4%, 80% 92.75%, 78.75% 92.17%, 77.5% 91.7%, 76.25% 91.4%, 75% 91.3%, 73.75% 91.4%, 72.5% 91.7%, 71.25% 92.17%, 70% 92.75%, 68.75% 93.4%, 67.5% 94.05%, 66.25% 94.63%, 65% 95.1%, 63.75% 95.4%, 62.5% 95.5%, 61.25% 95.4%, 60% 95.1%, 58.75% 94.63%, 57.5% 94.05%, 56.25% 93.4%, 55% 92.75%, 53.75% 92.17%, 52.5% 91.7%, 51.25% 91.4%, 50% 91.3%, 48.75% 91.4%, 47.5% 91.7%, 46.25% 92.17%, 45% 92.75%, 43.75% 93.4%, 42.5% 94.05%, 41.25% 94.63%, 40% 95.1%, 38.75% 95.4%, 37.5% 95.5%, 36.25% 95.4%, 35% 95.1%, 33.75% 94.63%, 32.5% 94.05%, 31.25% 93.4%, 30% 92.75%, 28.75% 92.17%, 27.5% 91.7%, 26.25% 91.4%, 25% 91.3%, 23.75% 91.4%, 22.5% 91.7%, 21.25% 92.17%, 20% 92.75%, 18.75% 93.4%, 17.5% 94.05%, 16.25% 94.63%, 15% 95.1%, 13.75% 95.4%, 12.5% 95.5%, 11.25% 95.4%, 10% 95.1%, 8.75% 94.63%, 7.5% 94.05%, 6.25% 93.4%, 5% 92.75%, 3.75% 92.17%, 2.5% 91.7%, 1.25% 91.4%, 0% 91.3%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 91.3%, 98.75% 91.4%, 97.5% 91.7%, 96.25% 92.17%, 95% 92.75%, 93.75% 93.4%, 92.5% 94.05%, 91.25% 94.63%, 90% 95.1%, 88.75% 95.4%, 87.5% 95.5%, 86.25% 95.4%, 85% 95.1%, 83.75% 94.63%, 82.5% 94.05%, 81.25% 93.4%, 80% 92.75%, 78.75% 92.17%, 77.5% 91.7%, 76.25% 91.4%, 75% 91.3%, 73.75% 91.4%, 72.5% 91.7%, 71.25% 92.17%, 70% 92.75%, 68.75% 93.4%, 67.5% 94.05%, 66.25% 94.63%, 65% 95.1%, 63.75% 95.4%, 62.5% 95.5%, 61.25% 95.4%, 60% 95.1%, 58.75% 94.63%, 57.5% 94.05%, 56.25% 93.4%, 55% 92.75%, 53.75% 92.17%, 52.5% 91.7%, 51.25% 91.4%, 50% 91.3%, 48.75% 91.4%, 47.5% 91.7%, 46.25% 92.17%, 45% 92.75%, 43.75% 93.4%, 42.5% 94.05%, 41.25% 94.63%, 40% 95.1%, 38.75% 95.4%, 37.5% 95.5%, 36.25% 95.4%, 35% 95.1%, 33.75% 94.63%, 32.5% 94.05%, 31.25% 93.4%, 30% 92.75%, 28.75% 92.17%, 27.5% 91.7%, 26.25% 91.4%, 25% 91.3%, 23.75% 91.4%, 22.5% 91.7%, 21.25% 92.17%, 20% 92.75%, 18.75% 93.4%, 17.5% 94.05%, 16.25% 94.63%, 15% 95.1%, 13.75% 95.4%, 12.5% 95.5%, 11.25% 95.4%, 10% 95.1%, 8.75% 94.63%, 7.5% 94.05%, 6.25% 93.4%, 5% 92.75%, 3.75% 92.17%, 2.5% 91.7%, 1.25% 91.4%, 0% 91.3%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.4%, 98.75% 92.75%, 97.5% 92.17%, 96.25% 91.7%, 95% 91.4%, 93.75% 91.3%, 92.5% 91.4%, 91.25% 91.7%, 90% 92.17%, 88.75% 92.75%, 87.5% 93.4%, 86.25% 94.05%, 85% 94.63%, 83.75% 95.1%, 82.5% 95.4%, 81.25% 95.5%, 80% 95.4%, 78.75% 95.1%, 77.5% 94.63%, 76.25% 94.05%, 75% 93.4%, 73.75% 92.75%, 72.5% 92.17%, 71.25% 91.7%, 70% 91.4%, 68.75% 91.3%, 67.5% 91.4%, 66.25% 91.7%, 65% 92.17%, 63.75% 92.75%, 62.5% 93.4%, 61.25% 94.05%, 60% 94.63%, 58.75% 95.1%, 57.5% 95.4%, 56.25% 95.5%, 55% 95.4%, 53.75% 95.1%, 52.5% 94.63%, 51.25% 94.05%, 50% 93.4%, 48.75% 92.75%, 47.5% 92.17%, 46.25% 91.7%, 45% 91.4%, 43.75% 91.3%, 42.5% 91.4%, 41.25% 91.7%, 40% 92.17%, 38.75% 92.75%, 37.5% 93.4%, 36.25% 94.05%, 35% 94.63%, 33.75% 95.1%, 32.5% 95.4%, 31.25% 95.5%, 30% 95.4%, 28.75% 95.1%, 27.5% 94.63%, 26.25% 94.05%, 25% 93.4%, 23.75% 92.75%, 22.5% 92.17%, 21.25% 91.7%, 20% 91.4%, 18.75% 91.3%, 17.5% 91.4%, 16.25% 91.7%, 15% 92.17%, 13.75% 92.75%, 12.5% 93.4%, 11.25% 94.05%, 10% 94.63%, 8.75% 95.1%, 7.5% 95.4%, 6.25% 95.5%, 5% 95.4%, 3.75% 95.1%, 2.5% 94.63%, 1.25% 94.05%, 0% 93.4%);
+  }
+}
+@-moz-keyframes home-hero-ripple-band {
+  0% {
+    clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+  25% {
+    clip-path: polygon(0% 61.66%, 1.25% 59.63%, 2.5% 57.25%, 3.75% 54.75%, 5% 52.37%, 6.25% 50.34%, 7.5% 48.87%, 8.75% 48.1%, 10% 48.1%, 11.25% 48.87%, 12.5% 50.34%, 13.75% 52.37%, 15% 54.75%, 16.25% 57.25%, 17.5% 59.63%, 18.75% 61.66%, 20% 63.13%, 21.25% 63.9%, 22.5% 63.9%, 23.75% 63.13%, 25% 61.66%, 26.25% 59.63%, 27.5% 57.25%, 28.75% 54.75%, 30% 52.37%, 31.25% 50.34%, 32.5% 48.87%, 33.75% 48.1%, 35% 48.1%, 36.25% 48.87%, 37.5% 50.34%, 38.75% 52.37%, 40% 54.75%, 41.25% 57.25%, 42.5% 59.63%, 43.75% 61.66%, 45% 63.13%, 46.25% 63.9%, 47.5% 63.9%, 48.75% 63.13%, 50% 61.66%, 51.25% 59.63%, 52.5% 57.25%, 53.75% 54.75%, 55% 52.37%, 56.25% 50.34%, 57.5% 48.87%, 58.75% 48.1%, 60% 48.1%, 61.25% 48.87%, 62.5% 50.34%, 63.75% 52.37%, 65% 54.75%, 66.25% 57.25%, 67.5% 59.63%, 68.75% 61.66%, 70% 63.13%, 71.25% 63.9%, 72.5% 63.9%, 73.75% 63.13%, 75% 61.66%, 76.25% 59.63%, 77.5% 57.25%, 78.75% 54.75%, 80% 52.37%, 81.25% 50.34%, 82.5% 48.87%, 83.75% 48.1%, 85% 48.1%, 86.25% 48.87%, 87.5% 50.34%, 88.75% 52.37%, 90% 54.75%, 91.25% 57.25%, 92.5% 59.63%, 93.75% 61.66%, 95% 63.13%, 96.25% 63.9%, 97.5% 63.9%, 98.75% 63.13%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 59.63%, 2.5% 57.25%, 3.75% 54.75%, 5% 52.37%, 6.25% 50.34%, 7.5% 48.87%, 8.75% 48.1%, 10% 48.1%, 11.25% 48.87%, 12.5% 50.34%, 13.75% 52.37%, 15% 54.75%, 16.25% 57.25%, 17.5% 59.63%, 18.75% 61.66%, 20% 63.13%, 21.25% 63.9%, 22.5% 63.9%, 23.75% 63.13%, 25% 61.66%, 26.25% 59.63%, 27.5% 57.25%, 28.75% 54.75%, 30% 52.37%, 31.25% 50.34%, 32.5% 48.87%, 33.75% 48.1%, 35% 48.1%, 36.25% 48.87%, 37.5% 50.34%, 38.75% 52.37%, 40% 54.75%, 41.25% 57.25%, 42.5% 59.63%, 43.75% 61.66%, 45% 63.13%, 46.25% 63.9%, 47.5% 63.9%, 48.75% 63.13%, 50% 61.66%, 51.25% 59.63%, 52.5% 57.25%, 53.75% 54.75%, 55% 52.37%, 56.25% 50.34%, 57.5% 48.87%, 58.75% 48.1%, 60% 48.1%, 61.25% 48.87%, 62.5% 50.34%, 63.75% 52.37%, 65% 54.75%, 66.25% 57.25%, 67.5% 59.63%, 68.75% 61.66%, 70% 63.13%, 71.25% 63.9%, 72.5% 63.9%, 73.75% 63.13%, 75% 61.66%, 76.25% 59.63%, 77.5% 57.25%, 78.75% 54.75%, 80% 52.37%, 81.25% 50.34%, 82.5% 48.87%, 83.75% 48.1%, 85% 48.1%, 86.25% 48.87%, 87.5% 50.34%, 88.75% 52.37%, 90% 54.75%, 91.25% 57.25%, 92.5% 59.63%, 93.75% 61.66%, 95% 63.13%, 96.25% 63.9%, 97.5% 63.9%, 98.75% 63.13%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0% 50.34%, 1.25% 48.87%, 2.5% 48.1%, 3.75% 48.1%, 5% 48.87%, 6.25% 50.34%, 7.5% 52.37%, 8.75% 54.75%, 10% 57.25%, 11.25% 59.63%, 12.5% 61.66%, 13.75% 63.13%, 15% 63.9%, 16.25% 63.9%, 17.5% 63.13%, 18.75% 61.66%, 20% 59.63%, 21.25% 57.25%, 22.5% 54.75%, 23.75% 52.37%, 25% 50.34%, 26.25% 48.87%, 27.5% 48.1%, 28.75% 48.1%, 30% 48.87%, 31.25% 50.34%, 32.5% 52.37%, 33.75% 54.75%, 35% 57.25%, 36.25% 59.63%, 37.5% 61.66%, 38.75% 63.13%, 40% 63.9%, 41.25% 63.9%, 42.5% 63.13%, 43.75% 61.66%, 45% 59.63%, 46.25% 57.25%, 47.5% 54.75%, 48.75% 52.37%, 50% 50.34%, 51.25% 48.87%, 52.5% 48.1%, 53.75% 48.1%, 55% 48.87%, 56.25% 50.34%, 57.5% 52.37%, 58.75% 54.75%, 60% 57.25%, 61.25% 59.63%, 62.5% 61.66%, 63.75% 63.13%, 65% 63.9%, 66.25% 63.9%, 67.5% 63.13%, 68.75% 61.66%, 70% 59.63%, 71.25% 57.25%, 72.5% 54.75%, 73.75% 52.37%, 75% 50.34%, 76.25% 48.87%, 77.5% 48.1%, 78.75% 48.1%, 80% 48.87%, 81.25% 50.34%, 82.5% 52.37%, 83.75% 54.75%, 85% 57.25%, 86.25% 59.63%, 87.5% 61.66%, 88.75% 63.13%, 90% 63.9%, 91.25% 63.9%, 92.5% 63.13%, 93.75% 61.66%, 95% 59.63%, 96.25% 57.25%, 97.5% 54.75%, 98.75% 52.37%, 100% 50.34%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 50.34%, 1.25% 48.87%, 2.5% 48.1%, 3.75% 48.1%, 5% 48.87%, 6.25% 50.34%, 7.5% 52.37%, 8.75% 54.75%, 10% 57.25%, 11.25% 59.63%, 12.5% 61.66%, 13.75% 63.13%, 15% 63.9%, 16.25% 63.9%, 17.5% 63.13%, 18.75% 61.66%, 20% 59.63%, 21.25% 57.25%, 22.5% 54.75%, 23.75% 52.37%, 25% 50.34%, 26.25% 48.87%, 27.5% 48.1%, 28.75% 48.1%, 30% 48.87%, 31.25% 50.34%, 32.5% 52.37%, 33.75% 54.75%, 35% 57.25%, 36.25% 59.63%, 37.5% 61.66%, 38.75% 63.13%, 40% 63.9%, 41.25% 63.9%, 42.5% 63.13%, 43.75% 61.66%, 45% 59.63%, 46.25% 57.25%, 47.5% 54.75%, 48.75% 52.37%, 50% 50.34%, 51.25% 48.87%, 52.5% 48.1%, 53.75% 48.1%, 55% 48.87%, 56.25% 50.34%, 57.5% 52.37%, 58.75% 54.75%, 60% 57.25%, 61.25% 59.63%, 62.5% 61.66%, 63.75% 63.13%, 65% 63.9%, 66.25% 63.9%, 67.5% 63.13%, 68.75% 61.66%, 70% 59.63%, 71.25% 57.25%, 72.5% 54.75%, 73.75% 52.37%, 75% 50.34%, 76.25% 48.87%, 77.5% 48.1%, 78.75% 48.1%, 80% 48.87%, 81.25% 50.34%, 82.5% 52.37%, 83.75% 54.75%, 85% 57.25%, 86.25% 59.63%, 87.5% 61.66%, 88.75% 63.13%, 90% 63.9%, 91.25% 63.9%, 92.5% 63.13%, 93.75% 61.66%, 95% 59.63%, 96.25% 57.25%, 97.5% 54.75%, 98.75% 52.37%, 100% 50.34%, 100% 100%, 0 100%);
+  }
+  75% {
+    clip-path: polygon(0% 50.34%, 1.25% 52.37%, 2.5% 54.75%, 3.75% 57.25%, 5% 59.63%, 6.25% 61.66%, 7.5% 63.13%, 8.75% 63.9%, 10% 63.9%, 11.25% 63.13%, 12.5% 61.66%, 13.75% 59.63%, 15% 57.25%, 16.25% 54.75%, 17.5% 52.37%, 18.75% 50.34%, 20% 48.87%, 21.25% 48.1%, 22.5% 48.1%, 23.75% 48.87%, 25% 50.34%, 26.25% 52.37%, 27.5% 54.75%, 28.75% 57.25%, 30% 59.63%, 31.25% 61.66%, 32.5% 63.13%, 33.75% 63.9%, 35% 63.9%, 36.25% 63.13%, 37.5% 61.66%, 38.75% 59.63%, 40% 57.25%, 41.25% 54.75%, 42.5% 52.37%, 43.75% 50.34%, 45% 48.87%, 46.25% 48.1%, 47.5% 48.1%, 48.75% 48.87%, 50% 50.34%, 51.25% 52.37%, 52.5% 54.75%, 53.75% 57.25%, 55% 59.63%, 56.25% 61.66%, 57.5% 63.13%, 58.75% 63.9%, 60% 63.9%, 61.25% 63.13%, 62.5% 61.66%, 63.75% 59.63%, 65% 57.25%, 66.25% 54.75%, 67.5% 52.37%, 68.75% 50.34%, 70% 48.87%, 71.25% 48.1%, 72.5% 48.1%, 73.75% 48.87%, 75% 50.34%, 76.25% 52.37%, 77.5% 54.75%, 78.75% 57.25%, 80% 59.63%, 81.25% 61.66%, 82.5% 63.13%, 83.75% 63.9%, 85% 63.9%, 86.25% 63.13%, 87.5% 61.66%, 88.75% 59.63%, 90% 57.25%, 91.25% 54.75%, 92.5% 52.37%, 93.75% 50.34%, 95% 48.87%, 96.25% 48.1%, 97.5% 48.1%, 98.75% 48.87%, 100% 50.34%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 50.34%, 1.25% 52.37%, 2.5% 54.75%, 3.75% 57.25%, 5% 59.63%, 6.25% 61.66%, 7.5% 63.13%, 8.75% 63.9%, 10% 63.9%, 11.25% 63.13%, 12.5% 61.66%, 13.75% 59.63%, 15% 57.25%, 16.25% 54.75%, 17.5% 52.37%, 18.75% 50.34%, 20% 48.87%, 21.25% 48.1%, 22.5% 48.1%, 23.75% 48.87%, 25% 50.34%, 26.25% 52.37%, 27.5% 54.75%, 28.75% 57.25%, 30% 59.63%, 31.25% 61.66%, 32.5% 63.13%, 33.75% 63.9%, 35% 63.9%, 36.25% 63.13%, 37.5% 61.66%, 38.75% 59.63%, 40% 57.25%, 41.25% 54.75%, 42.5% 52.37%, 43.75% 50.34%, 45% 48.87%, 46.25% 48.1%, 47.5% 48.1%, 48.75% 48.87%, 50% 50.34%, 51.25% 52.37%, 52.5% 54.75%, 53.75% 57.25%, 55% 59.63%, 56.25% 61.66%, 57.5% 63.13%, 58.75% 63.9%, 60% 63.9%, 61.25% 63.13%, 62.5% 61.66%, 63.75% 59.63%, 65% 57.25%, 66.25% 54.75%, 67.5% 52.37%, 68.75% 50.34%, 70% 48.87%, 71.25% 48.1%, 72.5% 48.1%, 73.75% 48.87%, 75% 50.34%, 76.25% 52.37%, 77.5% 54.75%, 78.75% 57.25%, 80% 59.63%, 81.25% 61.66%, 82.5% 63.13%, 83.75% 63.9%, 85% 63.9%, 86.25% 63.13%, 87.5% 61.66%, 88.75% 59.63%, 90% 57.25%, 91.25% 54.75%, 92.5% 52.37%, 93.75% 50.34%, 95% 48.87%, 96.25% 48.1%, 97.5% 48.1%, 98.75% 48.87%, 100% 50.34%, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+}
+@-webkit-keyframes home-hero-ripple-band {
+  0% {
+    clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+  25% {
+    clip-path: polygon(0% 61.66%, 1.25% 59.63%, 2.5% 57.25%, 3.75% 54.75%, 5% 52.37%, 6.25% 50.34%, 7.5% 48.87%, 8.75% 48.1%, 10% 48.1%, 11.25% 48.87%, 12.5% 50.34%, 13.75% 52.37%, 15% 54.75%, 16.25% 57.25%, 17.5% 59.63%, 18.75% 61.66%, 20% 63.13%, 21.25% 63.9%, 22.5% 63.9%, 23.75% 63.13%, 25% 61.66%, 26.25% 59.63%, 27.5% 57.25%, 28.75% 54.75%, 30% 52.37%, 31.25% 50.34%, 32.5% 48.87%, 33.75% 48.1%, 35% 48.1%, 36.25% 48.87%, 37.5% 50.34%, 38.75% 52.37%, 40% 54.75%, 41.25% 57.25%, 42.5% 59.63%, 43.75% 61.66%, 45% 63.13%, 46.25% 63.9%, 47.5% 63.9%, 48.75% 63.13%, 50% 61.66%, 51.25% 59.63%, 52.5% 57.25%, 53.75% 54.75%, 55% 52.37%, 56.25% 50.34%, 57.5% 48.87%, 58.75% 48.1%, 60% 48.1%, 61.25% 48.87%, 62.5% 50.34%, 63.75% 52.37%, 65% 54.75%, 66.25% 57.25%, 67.5% 59.63%, 68.75% 61.66%, 70% 63.13%, 71.25% 63.9%, 72.5% 63.9%, 73.75% 63.13%, 75% 61.66%, 76.25% 59.63%, 77.5% 57.25%, 78.75% 54.75%, 80% 52.37%, 81.25% 50.34%, 82.5% 48.87%, 83.75% 48.1%, 85% 48.1%, 86.25% 48.87%, 87.5% 50.34%, 88.75% 52.37%, 90% 54.75%, 91.25% 57.25%, 92.5% 59.63%, 93.75% 61.66%, 95% 63.13%, 96.25% 63.9%, 97.5% 63.9%, 98.75% 63.13%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 59.63%, 2.5% 57.25%, 3.75% 54.75%, 5% 52.37%, 6.25% 50.34%, 7.5% 48.87%, 8.75% 48.1%, 10% 48.1%, 11.25% 48.87%, 12.5% 50.34%, 13.75% 52.37%, 15% 54.75%, 16.25% 57.25%, 17.5% 59.63%, 18.75% 61.66%, 20% 63.13%, 21.25% 63.9%, 22.5% 63.9%, 23.75% 63.13%, 25% 61.66%, 26.25% 59.63%, 27.5% 57.25%, 28.75% 54.75%, 30% 52.37%, 31.25% 50.34%, 32.5% 48.87%, 33.75% 48.1%, 35% 48.1%, 36.25% 48.87%, 37.5% 50.34%, 38.75% 52.37%, 40% 54.75%, 41.25% 57.25%, 42.5% 59.63%, 43.75% 61.66%, 45% 63.13%, 46.25% 63.9%, 47.5% 63.9%, 48.75% 63.13%, 50% 61.66%, 51.25% 59.63%, 52.5% 57.25%, 53.75% 54.75%, 55% 52.37%, 56.25% 50.34%, 57.5% 48.87%, 58.75% 48.1%, 60% 48.1%, 61.25% 48.87%, 62.5% 50.34%, 63.75% 52.37%, 65% 54.75%, 66.25% 57.25%, 67.5% 59.63%, 68.75% 61.66%, 70% 63.13%, 71.25% 63.9%, 72.5% 63.9%, 73.75% 63.13%, 75% 61.66%, 76.25% 59.63%, 77.5% 57.25%, 78.75% 54.75%, 80% 52.37%, 81.25% 50.34%, 82.5% 48.87%, 83.75% 48.1%, 85% 48.1%, 86.25% 48.87%, 87.5% 50.34%, 88.75% 52.37%, 90% 54.75%, 91.25% 57.25%, 92.5% 59.63%, 93.75% 61.66%, 95% 63.13%, 96.25% 63.9%, 97.5% 63.9%, 98.75% 63.13%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0% 50.34%, 1.25% 48.87%, 2.5% 48.1%, 3.75% 48.1%, 5% 48.87%, 6.25% 50.34%, 7.5% 52.37%, 8.75% 54.75%, 10% 57.25%, 11.25% 59.63%, 12.5% 61.66%, 13.75% 63.13%, 15% 63.9%, 16.25% 63.9%, 17.5% 63.13%, 18.75% 61.66%, 20% 59.63%, 21.25% 57.25%, 22.5% 54.75%, 23.75% 52.37%, 25% 50.34%, 26.25% 48.87%, 27.5% 48.1%, 28.75% 48.1%, 30% 48.87%, 31.25% 50.34%, 32.5% 52.37%, 33.75% 54.75%, 35% 57.25%, 36.25% 59.63%, 37.5% 61.66%, 38.75% 63.13%, 40% 63.9%, 41.25% 63.9%, 42.5% 63.13%, 43.75% 61.66%, 45% 59.63%, 46.25% 57.25%, 47.5% 54.75%, 48.75% 52.37%, 50% 50.34%, 51.25% 48.87%, 52.5% 48.1%, 53.75% 48.1%, 55% 48.87%, 56.25% 50.34%, 57.5% 52.37%, 58.75% 54.75%, 60% 57.25%, 61.25% 59.63%, 62.5% 61.66%, 63.75% 63.13%, 65% 63.9%, 66.25% 63.9%, 67.5% 63.13%, 68.75% 61.66%, 70% 59.63%, 71.25% 57.25%, 72.5% 54.75%, 73.75% 52.37%, 75% 50.34%, 76.25% 48.87%, 77.5% 48.1%, 78.75% 48.1%, 80% 48.87%, 81.25% 50.34%, 82.5% 52.37%, 83.75% 54.75%, 85% 57.25%, 86.25% 59.63%, 87.5% 61.66%, 88.75% 63.13%, 90% 63.9%, 91.25% 63.9%, 92.5% 63.13%, 93.75% 61.66%, 95% 59.63%, 96.25% 57.25%, 97.5% 54.75%, 98.75% 52.37%, 100% 50.34%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 50.34%, 1.25% 48.87%, 2.5% 48.1%, 3.75% 48.1%, 5% 48.87%, 6.25% 50.34%, 7.5% 52.37%, 8.75% 54.75%, 10% 57.25%, 11.25% 59.63%, 12.5% 61.66%, 13.75% 63.13%, 15% 63.9%, 16.25% 63.9%, 17.5% 63.13%, 18.75% 61.66%, 20% 59.63%, 21.25% 57.25%, 22.5% 54.75%, 23.75% 52.37%, 25% 50.34%, 26.25% 48.87%, 27.5% 48.1%, 28.75% 48.1%, 30% 48.87%, 31.25% 50.34%, 32.5% 52.37%, 33.75% 54.75%, 35% 57.25%, 36.25% 59.63%, 37.5% 61.66%, 38.75% 63.13%, 40% 63.9%, 41.25% 63.9%, 42.5% 63.13%, 43.75% 61.66%, 45% 59.63%, 46.25% 57.25%, 47.5% 54.75%, 48.75% 52.37%, 50% 50.34%, 51.25% 48.87%, 52.5% 48.1%, 53.75% 48.1%, 55% 48.87%, 56.25% 50.34%, 57.5% 52.37%, 58.75% 54.75%, 60% 57.25%, 61.25% 59.63%, 62.5% 61.66%, 63.75% 63.13%, 65% 63.9%, 66.25% 63.9%, 67.5% 63.13%, 68.75% 61.66%, 70% 59.63%, 71.25% 57.25%, 72.5% 54.75%, 73.75% 52.37%, 75% 50.34%, 76.25% 48.87%, 77.5% 48.1%, 78.75% 48.1%, 80% 48.87%, 81.25% 50.34%, 82.5% 52.37%, 83.75% 54.75%, 85% 57.25%, 86.25% 59.63%, 87.5% 61.66%, 88.75% 63.13%, 90% 63.9%, 91.25% 63.9%, 92.5% 63.13%, 93.75% 61.66%, 95% 59.63%, 96.25% 57.25%, 97.5% 54.75%, 98.75% 52.37%, 100% 50.34%, 100% 100%, 0 100%);
+  }
+  75% {
+    clip-path: polygon(0% 50.34%, 1.25% 52.37%, 2.5% 54.75%, 3.75% 57.25%, 5% 59.63%, 6.25% 61.66%, 7.5% 63.13%, 8.75% 63.9%, 10% 63.9%, 11.25% 63.13%, 12.5% 61.66%, 13.75% 59.63%, 15% 57.25%, 16.25% 54.75%, 17.5% 52.37%, 18.75% 50.34%, 20% 48.87%, 21.25% 48.1%, 22.5% 48.1%, 23.75% 48.87%, 25% 50.34%, 26.25% 52.37%, 27.5% 54.75%, 28.75% 57.25%, 30% 59.63%, 31.25% 61.66%, 32.5% 63.13%, 33.75% 63.9%, 35% 63.9%, 36.25% 63.13%, 37.5% 61.66%, 38.75% 59.63%, 40% 57.25%, 41.25% 54.75%, 42.5% 52.37%, 43.75% 50.34%, 45% 48.87%, 46.25% 48.1%, 47.5% 48.1%, 48.75% 48.87%, 50% 50.34%, 51.25% 52.37%, 52.5% 54.75%, 53.75% 57.25%, 55% 59.63%, 56.25% 61.66%, 57.5% 63.13%, 58.75% 63.9%, 60% 63.9%, 61.25% 63.13%, 62.5% 61.66%, 63.75% 59.63%, 65% 57.25%, 66.25% 54.75%, 67.5% 52.37%, 68.75% 50.34%, 70% 48.87%, 71.25% 48.1%, 72.5% 48.1%, 73.75% 48.87%, 75% 50.34%, 76.25% 52.37%, 77.5% 54.75%, 78.75% 57.25%, 80% 59.63%, 81.25% 61.66%, 82.5% 63.13%, 83.75% 63.9%, 85% 63.9%, 86.25% 63.13%, 87.5% 61.66%, 88.75% 59.63%, 90% 57.25%, 91.25% 54.75%, 92.5% 52.37%, 93.75% 50.34%, 95% 48.87%, 96.25% 48.1%, 97.5% 48.1%, 98.75% 48.87%, 100% 50.34%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 50.34%, 1.25% 52.37%, 2.5% 54.75%, 3.75% 57.25%, 5% 59.63%, 6.25% 61.66%, 7.5% 63.13%, 8.75% 63.9%, 10% 63.9%, 11.25% 63.13%, 12.5% 61.66%, 13.75% 59.63%, 15% 57.25%, 16.25% 54.75%, 17.5% 52.37%, 18.75% 50.34%, 20% 48.87%, 21.25% 48.1%, 22.5% 48.1%, 23.75% 48.87%, 25% 50.34%, 26.25% 52.37%, 27.5% 54.75%, 28.75% 57.25%, 30% 59.63%, 31.25% 61.66%, 32.5% 63.13%, 33.75% 63.9%, 35% 63.9%, 36.25% 63.13%, 37.5% 61.66%, 38.75% 59.63%, 40% 57.25%, 41.25% 54.75%, 42.5% 52.37%, 43.75% 50.34%, 45% 48.87%, 46.25% 48.1%, 47.5% 48.1%, 48.75% 48.87%, 50% 50.34%, 51.25% 52.37%, 52.5% 54.75%, 53.75% 57.25%, 55% 59.63%, 56.25% 61.66%, 57.5% 63.13%, 58.75% 63.9%, 60% 63.9%, 61.25% 63.13%, 62.5% 61.66%, 63.75% 59.63%, 65% 57.25%, 66.25% 54.75%, 67.5% 52.37%, 68.75% 50.34%, 70% 48.87%, 71.25% 48.1%, 72.5% 48.1%, 73.75% 48.87%, 75% 50.34%, 76.25% 52.37%, 77.5% 54.75%, 78.75% 57.25%, 80% 59.63%, 81.25% 61.66%, 82.5% 63.13%, 83.75% 63.9%, 85% 63.9%, 86.25% 63.13%, 87.5% 61.66%, 88.75% 59.63%, 90% 57.25%, 91.25% 54.75%, 92.5% 52.37%, 93.75% 50.34%, 95% 48.87%, 96.25% 48.1%, 97.5% 48.1%, 98.75% 48.87%, 100% 50.34%, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+}
+@-o-keyframes home-hero-ripple-band {
+  0% {
+    clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+  25% {
+    clip-path: polygon(0% 61.66%, 1.25% 59.63%, 2.5% 57.25%, 3.75% 54.75%, 5% 52.37%, 6.25% 50.34%, 7.5% 48.87%, 8.75% 48.1%, 10% 48.1%, 11.25% 48.87%, 12.5% 50.34%, 13.75% 52.37%, 15% 54.75%, 16.25% 57.25%, 17.5% 59.63%, 18.75% 61.66%, 20% 63.13%, 21.25% 63.9%, 22.5% 63.9%, 23.75% 63.13%, 25% 61.66%, 26.25% 59.63%, 27.5% 57.25%, 28.75% 54.75%, 30% 52.37%, 31.25% 50.34%, 32.5% 48.87%, 33.75% 48.1%, 35% 48.1%, 36.25% 48.87%, 37.5% 50.34%, 38.75% 52.37%, 40% 54.75%, 41.25% 57.25%, 42.5% 59.63%, 43.75% 61.66%, 45% 63.13%, 46.25% 63.9%, 47.5% 63.9%, 48.75% 63.13%, 50% 61.66%, 51.25% 59.63%, 52.5% 57.25%, 53.75% 54.75%, 55% 52.37%, 56.25% 50.34%, 57.5% 48.87%, 58.75% 48.1%, 60% 48.1%, 61.25% 48.87%, 62.5% 50.34%, 63.75% 52.37%, 65% 54.75%, 66.25% 57.25%, 67.5% 59.63%, 68.75% 61.66%, 70% 63.13%, 71.25% 63.9%, 72.5% 63.9%, 73.75% 63.13%, 75% 61.66%, 76.25% 59.63%, 77.5% 57.25%, 78.75% 54.75%, 80% 52.37%, 81.25% 50.34%, 82.5% 48.87%, 83.75% 48.1%, 85% 48.1%, 86.25% 48.87%, 87.5% 50.34%, 88.75% 52.37%, 90% 54.75%, 91.25% 57.25%, 92.5% 59.63%, 93.75% 61.66%, 95% 63.13%, 96.25% 63.9%, 97.5% 63.9%, 98.75% 63.13%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 59.63%, 2.5% 57.25%, 3.75% 54.75%, 5% 52.37%, 6.25% 50.34%, 7.5% 48.87%, 8.75% 48.1%, 10% 48.1%, 11.25% 48.87%, 12.5% 50.34%, 13.75% 52.37%, 15% 54.75%, 16.25% 57.25%, 17.5% 59.63%, 18.75% 61.66%, 20% 63.13%, 21.25% 63.9%, 22.5% 63.9%, 23.75% 63.13%, 25% 61.66%, 26.25% 59.63%, 27.5% 57.25%, 28.75% 54.75%, 30% 52.37%, 31.25% 50.34%, 32.5% 48.87%, 33.75% 48.1%, 35% 48.1%, 36.25% 48.87%, 37.5% 50.34%, 38.75% 52.37%, 40% 54.75%, 41.25% 57.25%, 42.5% 59.63%, 43.75% 61.66%, 45% 63.13%, 46.25% 63.9%, 47.5% 63.9%, 48.75% 63.13%, 50% 61.66%, 51.25% 59.63%, 52.5% 57.25%, 53.75% 54.75%, 55% 52.37%, 56.25% 50.34%, 57.5% 48.87%, 58.75% 48.1%, 60% 48.1%, 61.25% 48.87%, 62.5% 50.34%, 63.75% 52.37%, 65% 54.75%, 66.25% 57.25%, 67.5% 59.63%, 68.75% 61.66%, 70% 63.13%, 71.25% 63.9%, 72.5% 63.9%, 73.75% 63.13%, 75% 61.66%, 76.25% 59.63%, 77.5% 57.25%, 78.75% 54.75%, 80% 52.37%, 81.25% 50.34%, 82.5% 48.87%, 83.75% 48.1%, 85% 48.1%, 86.25% 48.87%, 87.5% 50.34%, 88.75% 52.37%, 90% 54.75%, 91.25% 57.25%, 92.5% 59.63%, 93.75% 61.66%, 95% 63.13%, 96.25% 63.9%, 97.5% 63.9%, 98.75% 63.13%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0% 50.34%, 1.25% 48.87%, 2.5% 48.1%, 3.75% 48.1%, 5% 48.87%, 6.25% 50.34%, 7.5% 52.37%, 8.75% 54.75%, 10% 57.25%, 11.25% 59.63%, 12.5% 61.66%, 13.75% 63.13%, 15% 63.9%, 16.25% 63.9%, 17.5% 63.13%, 18.75% 61.66%, 20% 59.63%, 21.25% 57.25%, 22.5% 54.75%, 23.75% 52.37%, 25% 50.34%, 26.25% 48.87%, 27.5% 48.1%, 28.75% 48.1%, 30% 48.87%, 31.25% 50.34%, 32.5% 52.37%, 33.75% 54.75%, 35% 57.25%, 36.25% 59.63%, 37.5% 61.66%, 38.75% 63.13%, 40% 63.9%, 41.25% 63.9%, 42.5% 63.13%, 43.75% 61.66%, 45% 59.63%, 46.25% 57.25%, 47.5% 54.75%, 48.75% 52.37%, 50% 50.34%, 51.25% 48.87%, 52.5% 48.1%, 53.75% 48.1%, 55% 48.87%, 56.25% 50.34%, 57.5% 52.37%, 58.75% 54.75%, 60% 57.25%, 61.25% 59.63%, 62.5% 61.66%, 63.75% 63.13%, 65% 63.9%, 66.25% 63.9%, 67.5% 63.13%, 68.75% 61.66%, 70% 59.63%, 71.25% 57.25%, 72.5% 54.75%, 73.75% 52.37%, 75% 50.34%, 76.25% 48.87%, 77.5% 48.1%, 78.75% 48.1%, 80% 48.87%, 81.25% 50.34%, 82.5% 52.37%, 83.75% 54.75%, 85% 57.25%, 86.25% 59.63%, 87.5% 61.66%, 88.75% 63.13%, 90% 63.9%, 91.25% 63.9%, 92.5% 63.13%, 93.75% 61.66%, 95% 59.63%, 96.25% 57.25%, 97.5% 54.75%, 98.75% 52.37%, 100% 50.34%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 50.34%, 1.25% 48.87%, 2.5% 48.1%, 3.75% 48.1%, 5% 48.87%, 6.25% 50.34%, 7.5% 52.37%, 8.75% 54.75%, 10% 57.25%, 11.25% 59.63%, 12.5% 61.66%, 13.75% 63.13%, 15% 63.9%, 16.25% 63.9%, 17.5% 63.13%, 18.75% 61.66%, 20% 59.63%, 21.25% 57.25%, 22.5% 54.75%, 23.75% 52.37%, 25% 50.34%, 26.25% 48.87%, 27.5% 48.1%, 28.75% 48.1%, 30% 48.87%, 31.25% 50.34%, 32.5% 52.37%, 33.75% 54.75%, 35% 57.25%, 36.25% 59.63%, 37.5% 61.66%, 38.75% 63.13%, 40% 63.9%, 41.25% 63.9%, 42.5% 63.13%, 43.75% 61.66%, 45% 59.63%, 46.25% 57.25%, 47.5% 54.75%, 48.75% 52.37%, 50% 50.34%, 51.25% 48.87%, 52.5% 48.1%, 53.75% 48.1%, 55% 48.87%, 56.25% 50.34%, 57.5% 52.37%, 58.75% 54.75%, 60% 57.25%, 61.25% 59.63%, 62.5% 61.66%, 63.75% 63.13%, 65% 63.9%, 66.25% 63.9%, 67.5% 63.13%, 68.75% 61.66%, 70% 59.63%, 71.25% 57.25%, 72.5% 54.75%, 73.75% 52.37%, 75% 50.34%, 76.25% 48.87%, 77.5% 48.1%, 78.75% 48.1%, 80% 48.87%, 81.25% 50.34%, 82.5% 52.37%, 83.75% 54.75%, 85% 57.25%, 86.25% 59.63%, 87.5% 61.66%, 88.75% 63.13%, 90% 63.9%, 91.25% 63.9%, 92.5% 63.13%, 93.75% 61.66%, 95% 59.63%, 96.25% 57.25%, 97.5% 54.75%, 98.75% 52.37%, 100% 50.34%, 100% 100%, 0 100%);
+  }
+  75% {
+    clip-path: polygon(0% 50.34%, 1.25% 52.37%, 2.5% 54.75%, 3.75% 57.25%, 5% 59.63%, 6.25% 61.66%, 7.5% 63.13%, 8.75% 63.9%, 10% 63.9%, 11.25% 63.13%, 12.5% 61.66%, 13.75% 59.63%, 15% 57.25%, 16.25% 54.75%, 17.5% 52.37%, 18.75% 50.34%, 20% 48.87%, 21.25% 48.1%, 22.5% 48.1%, 23.75% 48.87%, 25% 50.34%, 26.25% 52.37%, 27.5% 54.75%, 28.75% 57.25%, 30% 59.63%, 31.25% 61.66%, 32.5% 63.13%, 33.75% 63.9%, 35% 63.9%, 36.25% 63.13%, 37.5% 61.66%, 38.75% 59.63%, 40% 57.25%, 41.25% 54.75%, 42.5% 52.37%, 43.75% 50.34%, 45% 48.87%, 46.25% 48.1%, 47.5% 48.1%, 48.75% 48.87%, 50% 50.34%, 51.25% 52.37%, 52.5% 54.75%, 53.75% 57.25%, 55% 59.63%, 56.25% 61.66%, 57.5% 63.13%, 58.75% 63.9%, 60% 63.9%, 61.25% 63.13%, 62.5% 61.66%, 63.75% 59.63%, 65% 57.25%, 66.25% 54.75%, 67.5% 52.37%, 68.75% 50.34%, 70% 48.87%, 71.25% 48.1%, 72.5% 48.1%, 73.75% 48.87%, 75% 50.34%, 76.25% 52.37%, 77.5% 54.75%, 78.75% 57.25%, 80% 59.63%, 81.25% 61.66%, 82.5% 63.13%, 83.75% 63.9%, 85% 63.9%, 86.25% 63.13%, 87.5% 61.66%, 88.75% 59.63%, 90% 57.25%, 91.25% 54.75%, 92.5% 52.37%, 93.75% 50.34%, 95% 48.87%, 96.25% 48.1%, 97.5% 48.1%, 98.75% 48.87%, 100% 50.34%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 50.34%, 1.25% 52.37%, 2.5% 54.75%, 3.75% 57.25%, 5% 59.63%, 6.25% 61.66%, 7.5% 63.13%, 8.75% 63.9%, 10% 63.9%, 11.25% 63.13%, 12.5% 61.66%, 13.75% 59.63%, 15% 57.25%, 16.25% 54.75%, 17.5% 52.37%, 18.75% 50.34%, 20% 48.87%, 21.25% 48.1%, 22.5% 48.1%, 23.75% 48.87%, 25% 50.34%, 26.25% 52.37%, 27.5% 54.75%, 28.75% 57.25%, 30% 59.63%, 31.25% 61.66%, 32.5% 63.13%, 33.75% 63.9%, 35% 63.9%, 36.25% 63.13%, 37.5% 61.66%, 38.75% 59.63%, 40% 57.25%, 41.25% 54.75%, 42.5% 52.37%, 43.75% 50.34%, 45% 48.87%, 46.25% 48.1%, 47.5% 48.1%, 48.75% 48.87%, 50% 50.34%, 51.25% 52.37%, 52.5% 54.75%, 53.75% 57.25%, 55% 59.63%, 56.25% 61.66%, 57.5% 63.13%, 58.75% 63.9%, 60% 63.9%, 61.25% 63.13%, 62.5% 61.66%, 63.75% 59.63%, 65% 57.25%, 66.25% 54.75%, 67.5% 52.37%, 68.75% 50.34%, 70% 48.87%, 71.25% 48.1%, 72.5% 48.1%, 73.75% 48.87%, 75% 50.34%, 76.25% 52.37%, 77.5% 54.75%, 78.75% 57.25%, 80% 59.63%, 81.25% 61.66%, 82.5% 63.13%, 83.75% 63.9%, 85% 63.9%, 86.25% 63.13%, 87.5% 61.66%, 88.75% 59.63%, 90% 57.25%, 91.25% 54.75%, 92.5% 52.37%, 93.75% 50.34%, 95% 48.87%, 96.25% 48.1%, 97.5% 48.1%, 98.75% 48.87%, 100% 50.34%, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+}
+@keyframes home-hero-ripple-band {
+  0% {
+    clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+  25% {
+    clip-path: polygon(0% 61.66%, 1.25% 59.63%, 2.5% 57.25%, 3.75% 54.75%, 5% 52.37%, 6.25% 50.34%, 7.5% 48.87%, 8.75% 48.1%, 10% 48.1%, 11.25% 48.87%, 12.5% 50.34%, 13.75% 52.37%, 15% 54.75%, 16.25% 57.25%, 17.5% 59.63%, 18.75% 61.66%, 20% 63.13%, 21.25% 63.9%, 22.5% 63.9%, 23.75% 63.13%, 25% 61.66%, 26.25% 59.63%, 27.5% 57.25%, 28.75% 54.75%, 30% 52.37%, 31.25% 50.34%, 32.5% 48.87%, 33.75% 48.1%, 35% 48.1%, 36.25% 48.87%, 37.5% 50.34%, 38.75% 52.37%, 40% 54.75%, 41.25% 57.25%, 42.5% 59.63%, 43.75% 61.66%, 45% 63.13%, 46.25% 63.9%, 47.5% 63.9%, 48.75% 63.13%, 50% 61.66%, 51.25% 59.63%, 52.5% 57.25%, 53.75% 54.75%, 55% 52.37%, 56.25% 50.34%, 57.5% 48.87%, 58.75% 48.1%, 60% 48.1%, 61.25% 48.87%, 62.5% 50.34%, 63.75% 52.37%, 65% 54.75%, 66.25% 57.25%, 67.5% 59.63%, 68.75% 61.66%, 70% 63.13%, 71.25% 63.9%, 72.5% 63.9%, 73.75% 63.13%, 75% 61.66%, 76.25% 59.63%, 77.5% 57.25%, 78.75% 54.75%, 80% 52.37%, 81.25% 50.34%, 82.5% 48.87%, 83.75% 48.1%, 85% 48.1%, 86.25% 48.87%, 87.5% 50.34%, 88.75% 52.37%, 90% 54.75%, 91.25% 57.25%, 92.5% 59.63%, 93.75% 61.66%, 95% 63.13%, 96.25% 63.9%, 97.5% 63.9%, 98.75% 63.13%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 59.63%, 2.5% 57.25%, 3.75% 54.75%, 5% 52.37%, 6.25% 50.34%, 7.5% 48.87%, 8.75% 48.1%, 10% 48.1%, 11.25% 48.87%, 12.5% 50.34%, 13.75% 52.37%, 15% 54.75%, 16.25% 57.25%, 17.5% 59.63%, 18.75% 61.66%, 20% 63.13%, 21.25% 63.9%, 22.5% 63.9%, 23.75% 63.13%, 25% 61.66%, 26.25% 59.63%, 27.5% 57.25%, 28.75% 54.75%, 30% 52.37%, 31.25% 50.34%, 32.5% 48.87%, 33.75% 48.1%, 35% 48.1%, 36.25% 48.87%, 37.5% 50.34%, 38.75% 52.37%, 40% 54.75%, 41.25% 57.25%, 42.5% 59.63%, 43.75% 61.66%, 45% 63.13%, 46.25% 63.9%, 47.5% 63.9%, 48.75% 63.13%, 50% 61.66%, 51.25% 59.63%, 52.5% 57.25%, 53.75% 54.75%, 55% 52.37%, 56.25% 50.34%, 57.5% 48.87%, 58.75% 48.1%, 60% 48.1%, 61.25% 48.87%, 62.5% 50.34%, 63.75% 52.37%, 65% 54.75%, 66.25% 57.25%, 67.5% 59.63%, 68.75% 61.66%, 70% 63.13%, 71.25% 63.9%, 72.5% 63.9%, 73.75% 63.13%, 75% 61.66%, 76.25% 59.63%, 77.5% 57.25%, 78.75% 54.75%, 80% 52.37%, 81.25% 50.34%, 82.5% 48.87%, 83.75% 48.1%, 85% 48.1%, 86.25% 48.87%, 87.5% 50.34%, 88.75% 52.37%, 90% 54.75%, 91.25% 57.25%, 92.5% 59.63%, 93.75% 61.66%, 95% 63.13%, 96.25% 63.9%, 97.5% 63.9%, 98.75% 63.13%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0% 50.34%, 1.25% 48.87%, 2.5% 48.1%, 3.75% 48.1%, 5% 48.87%, 6.25% 50.34%, 7.5% 52.37%, 8.75% 54.75%, 10% 57.25%, 11.25% 59.63%, 12.5% 61.66%, 13.75% 63.13%, 15% 63.9%, 16.25% 63.9%, 17.5% 63.13%, 18.75% 61.66%, 20% 59.63%, 21.25% 57.25%, 22.5% 54.75%, 23.75% 52.37%, 25% 50.34%, 26.25% 48.87%, 27.5% 48.1%, 28.75% 48.1%, 30% 48.87%, 31.25% 50.34%, 32.5% 52.37%, 33.75% 54.75%, 35% 57.25%, 36.25% 59.63%, 37.5% 61.66%, 38.75% 63.13%, 40% 63.9%, 41.25% 63.9%, 42.5% 63.13%, 43.75% 61.66%, 45% 59.63%, 46.25% 57.25%, 47.5% 54.75%, 48.75% 52.37%, 50% 50.34%, 51.25% 48.87%, 52.5% 48.1%, 53.75% 48.1%, 55% 48.87%, 56.25% 50.34%, 57.5% 52.37%, 58.75% 54.75%, 60% 57.25%, 61.25% 59.63%, 62.5% 61.66%, 63.75% 63.13%, 65% 63.9%, 66.25% 63.9%, 67.5% 63.13%, 68.75% 61.66%, 70% 59.63%, 71.25% 57.25%, 72.5% 54.75%, 73.75% 52.37%, 75% 50.34%, 76.25% 48.87%, 77.5% 48.1%, 78.75% 48.1%, 80% 48.87%, 81.25% 50.34%, 82.5% 52.37%, 83.75% 54.75%, 85% 57.25%, 86.25% 59.63%, 87.5% 61.66%, 88.75% 63.13%, 90% 63.9%, 91.25% 63.9%, 92.5% 63.13%, 93.75% 61.66%, 95% 59.63%, 96.25% 57.25%, 97.5% 54.75%, 98.75% 52.37%, 100% 50.34%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 50.34%, 1.25% 48.87%, 2.5% 48.1%, 3.75% 48.1%, 5% 48.87%, 6.25% 50.34%, 7.5% 52.37%, 8.75% 54.75%, 10% 57.25%, 11.25% 59.63%, 12.5% 61.66%, 13.75% 63.13%, 15% 63.9%, 16.25% 63.9%, 17.5% 63.13%, 18.75% 61.66%, 20% 59.63%, 21.25% 57.25%, 22.5% 54.75%, 23.75% 52.37%, 25% 50.34%, 26.25% 48.87%, 27.5% 48.1%, 28.75% 48.1%, 30% 48.87%, 31.25% 50.34%, 32.5% 52.37%, 33.75% 54.75%, 35% 57.25%, 36.25% 59.63%, 37.5% 61.66%, 38.75% 63.13%, 40% 63.9%, 41.25% 63.9%, 42.5% 63.13%, 43.75% 61.66%, 45% 59.63%, 46.25% 57.25%, 47.5% 54.75%, 48.75% 52.37%, 50% 50.34%, 51.25% 48.87%, 52.5% 48.1%, 53.75% 48.1%, 55% 48.87%, 56.25% 50.34%, 57.5% 52.37%, 58.75% 54.75%, 60% 57.25%, 61.25% 59.63%, 62.5% 61.66%, 63.75% 63.13%, 65% 63.9%, 66.25% 63.9%, 67.5% 63.13%, 68.75% 61.66%, 70% 59.63%, 71.25% 57.25%, 72.5% 54.75%, 73.75% 52.37%, 75% 50.34%, 76.25% 48.87%, 77.5% 48.1%, 78.75% 48.1%, 80% 48.87%, 81.25% 50.34%, 82.5% 52.37%, 83.75% 54.75%, 85% 57.25%, 86.25% 59.63%, 87.5% 61.66%, 88.75% 63.13%, 90% 63.9%, 91.25% 63.9%, 92.5% 63.13%, 93.75% 61.66%, 95% 59.63%, 96.25% 57.25%, 97.5% 54.75%, 98.75% 52.37%, 100% 50.34%, 100% 100%, 0 100%);
+  }
+  75% {
+    clip-path: polygon(0% 50.34%, 1.25% 52.37%, 2.5% 54.75%, 3.75% 57.25%, 5% 59.63%, 6.25% 61.66%, 7.5% 63.13%, 8.75% 63.9%, 10% 63.9%, 11.25% 63.13%, 12.5% 61.66%, 13.75% 59.63%, 15% 57.25%, 16.25% 54.75%, 17.5% 52.37%, 18.75% 50.34%, 20% 48.87%, 21.25% 48.1%, 22.5% 48.1%, 23.75% 48.87%, 25% 50.34%, 26.25% 52.37%, 27.5% 54.75%, 28.75% 57.25%, 30% 59.63%, 31.25% 61.66%, 32.5% 63.13%, 33.75% 63.9%, 35% 63.9%, 36.25% 63.13%, 37.5% 61.66%, 38.75% 59.63%, 40% 57.25%, 41.25% 54.75%, 42.5% 52.37%, 43.75% 50.34%, 45% 48.87%, 46.25% 48.1%, 47.5% 48.1%, 48.75% 48.87%, 50% 50.34%, 51.25% 52.37%, 52.5% 54.75%, 53.75% 57.25%, 55% 59.63%, 56.25% 61.66%, 57.5% 63.13%, 58.75% 63.9%, 60% 63.9%, 61.25% 63.13%, 62.5% 61.66%, 63.75% 59.63%, 65% 57.25%, 66.25% 54.75%, 67.5% 52.37%, 68.75% 50.34%, 70% 48.87%, 71.25% 48.1%, 72.5% 48.1%, 73.75% 48.87%, 75% 50.34%, 76.25% 52.37%, 77.5% 54.75%, 78.75% 57.25%, 80% 59.63%, 81.25% 61.66%, 82.5% 63.13%, 83.75% 63.9%, 85% 63.9%, 86.25% 63.13%, 87.5% 61.66%, 88.75% 59.63%, 90% 57.25%, 91.25% 54.75%, 92.5% 52.37%, 93.75% 50.34%, 95% 48.87%, 96.25% 48.1%, 97.5% 48.1%, 98.75% 48.87%, 100% 50.34%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 50.34%, 1.25% 52.37%, 2.5% 54.75%, 3.75% 57.25%, 5% 59.63%, 6.25% 61.66%, 7.5% 63.13%, 8.75% 63.9%, 10% 63.9%, 11.25% 63.13%, 12.5% 61.66%, 13.75% 59.63%, 15% 57.25%, 16.25% 54.75%, 17.5% 52.37%, 18.75% 50.34%, 20% 48.87%, 21.25% 48.1%, 22.5% 48.1%, 23.75% 48.87%, 25% 50.34%, 26.25% 52.37%, 27.5% 54.75%, 28.75% 57.25%, 30% 59.63%, 31.25% 61.66%, 32.5% 63.13%, 33.75% 63.9%, 35% 63.9%, 36.25% 63.13%, 37.5% 61.66%, 38.75% 59.63%, 40% 57.25%, 41.25% 54.75%, 42.5% 52.37%, 43.75% 50.34%, 45% 48.87%, 46.25% 48.1%, 47.5% 48.1%, 48.75% 48.87%, 50% 50.34%, 51.25% 52.37%, 52.5% 54.75%, 53.75% 57.25%, 55% 59.63%, 56.25% 61.66%, 57.5% 63.13%, 58.75% 63.9%, 60% 63.9%, 61.25% 63.13%, 62.5% 61.66%, 63.75% 59.63%, 65% 57.25%, 66.25% 54.75%, 67.5% 52.37%, 68.75% 50.34%, 70% 48.87%, 71.25% 48.1%, 72.5% 48.1%, 73.75% 48.87%, 75% 50.34%, 76.25% 52.37%, 77.5% 54.75%, 78.75% 57.25%, 80% 59.63%, 81.25% 61.66%, 82.5% 63.13%, 83.75% 63.9%, 85% 63.9%, 86.25% 63.13%, 87.5% 61.66%, 88.75% 59.63%, 90% 57.25%, 91.25% 54.75%, 92.5% 52.37%, 93.75% 50.34%, 95% 48.87%, 96.25% 48.1%, 97.5% 48.1%, 98.75% 48.87%, 100% 50.34%, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+}
 #recent-posts .recent-post-item {
   position: relative;
   overflow: hidden;
@@ -6990,4 +8443,62 @@ blockquote.pullquote.right {
   z-index: 1000;
   display: none;
   background: rgba(0,0,0,0.6);
+}
+#local-search .search-dialog .local-search-box {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+#local-search .search-dialog .local-search-box input {
+  padding: 5px 14px;
+  width: 100%;
+  outline: none;
+  border: 2px solid #49b1f5;
+  border-radius: 40px;
+  background: var(--search-bg);
+  color: var(--search-input-color);
+  -webkit-appearance: none;
+}
+#local-search .search-dialog .search-wrap {
+  display: none;
+}
+#local-search .search-dialog .local-search-hit-item {
+  margin-left: 24px;
+  padding-left: 3px;
+  line-height: 1.8;
+}
+#local-search .search-dialog .local-search-hit-item::marker {
+  color: #49b1f5;
+  font-weight: bold;
+  font-style: italic;
+}
+#local-search .search-dialog .local-search-hit-item a {
+  color: var(--search-a-color);
+}
+#local-search .search-dialog .local-search-hit-item a:hover {
+  color: #49b1f5;
+}
+#local-search .search-dialog .local-search-hit-item .search-result-title {
+  font-weight: 600;
+}
+#local-search .search-dialog .local-search-hit-item .search-result {
+  margin: 0 0 8px;
+  word-break: break-all;
+  font-size: 0.9em;
+}
+#local-search .search-dialog .search-result-list {
+  overflow-y: overlay;
+  margin: 0 -20px;
+  padding: 0 22px;
+  max-height: calc(80vh - 180px);
+}
+@media screen and (max-width: 768px) {
+  #local-search .search-dialog .search-result-list {
+    max-height: calc(var(--search-height) - 190px) !important;
+  }
+}
+.search-keyword {
+  background: transparent;
+  color: #f47466;
+  font-weight: 600;
 }
