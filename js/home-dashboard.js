@@ -19,6 +19,69 @@
     });
   };
   bindBusuanziCounters();
+  // Keep the audio element alive while only the paginated article feed is replaced.
+  const homeFeed = root.querySelector('#recent-posts');
+  let feedRequestId = 0;
+  const updateHomeFeed = async (targetUrl, options = {}) => {
+    if (!homeFeed) return;
+    const requestId = ++feedRequestId;
+    homeFeed.setAttribute('aria-busy', 'true');
+    try {
+      const response = await fetch(targetUrl.href, { credentials: 'same-origin' });
+      if (!response.ok) throw new Error('The requested article page could not be loaded.');
+      const pageText = await response.text();
+      const pageDocument = new DOMParser().parseFromString(pageText, 'text/html');
+      const incomingList = pageDocument.querySelector('#recent-posts .home-post-list');
+      const incomingPagination = pageDocument.querySelector('#recent-posts #pagination');
+      const currentList = homeFeed.querySelector('.home-post-list');
+      const currentPagination = homeFeed.querySelector('#pagination');
+      if (!incomingList || !currentList) throw new Error('The article list was not found.');
+      if (requestId !== feedRequestId) return;
+
+      currentList.replaceWith(incomingList);
+      if (incomingPagination) {
+        if (currentPagination) currentPagination.replaceWith(incomingPagination);
+        else homeFeed.appendChild(incomingPagination);
+      } else if (currentPagination) {
+        currentPagination.remove();
+      }
+
+      if (options.pushHistory) {
+        const currentState = history.state && typeof history.state === 'object' ? history.state : {};
+        history.replaceState({ ...currentState, homeDashboardPagination: true, homeDashboardScrollY: window.scrollY }, '', window.location.href);
+        const heading = root.querySelector('.home-section-heading') || homeFeed;
+        const scrollY = Math.max(0, heading.getBoundingClientRect().top + window.scrollY - 16);
+        history.pushState({ homeDashboardPagination: true, homeDashboardScrollY: scrollY }, '', targetUrl.href);
+        window.scrollTo({ top: scrollY, behavior: 'smooth' });
+      } else if (Number.isFinite(options.restoreScrollY)) {
+        window.scrollTo({ top: Math.max(0, options.restoreScrollY), behavior: 'auto' });
+      }
+
+      if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
+        window.MathJax.typesetPromise([incomingList]).catch(() => {});
+      }
+    } catch (error) {
+      if (requestId === feedRequestId) window.location.assign(targetUrl.href);
+    } finally {
+      if (requestId === feedRequestId) homeFeed.removeAttribute('aria-busy');
+    }
+  };
+
+  if (homeFeed) {
+    root.addEventListener('click', (event) => {
+      const link = event.target.closest('#recent-posts #pagination a');
+      if (!link || !root.contains(link) || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || (link.target && link.target !== '_self')) return;
+      const targetUrl = new URL(link.href, document.baseURI);
+      if (targetUrl.origin !== window.location.origin) return;
+      event.preventDefault();
+      void updateHomeFeed(targetUrl, { pushHistory: true });
+    });
+
+    window.addEventListener('popstate', (event) => {
+      if (!event.state || !event.state.homeDashboardPagination) return;
+      void updateHomeFeed(new URL(window.location.href), { restoreScrollY: event.state.homeDashboardScrollY });
+    });
+  }
 
   const searchForm = document.querySelector('#home-search-form');
   const searchInput = document.querySelector('#home-search-input');
