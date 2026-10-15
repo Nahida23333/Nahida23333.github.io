@@ -2946,7 +2946,7 @@ html[data-theme='dark'] #page-header.full_page #nav #toggle-menu {
 }
 .home-dashboard__grid {
   display: grid;
-  grid-template-columns: 205px minmax(0, 1fr) 220px;
+  grid-template-columns: 205px minmax(0, 1fr) 270px;
   -webkit-box-align: start;
   -moz-box-align: start;
   -o-box-align: start;
@@ -3553,6 +3553,69 @@ html[data-theme='dark'] #page-header.full_page #nav #toggle-menu {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=64)";
   filter: alpha(opacity=64);
 }
+.home-music__artwork {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 0 0 48px;
+  -ms-flex: 0 0 48px;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba(113,135,90,0.18);
+  border-radius: 50%;
+  object-fit: cover;
+  -webkit-box-shadow: 0 3px 12px rgba(57,78,57,0.14);
+  box-shadow: 0 3px 12px rgba(57,78,57,0.14);
+}
+.home-music--playing .home-music__artwork {
+  -webkit-animation: home-music-spin 12s linear infinite;
+  -moz-animation: home-music-spin 12s linear infinite;
+  -o-animation: home-music-spin 12s linear infinite;
+  -ms-animation: home-music-spin 12s linear infinite;
+  animation: home-music-spin 12s linear infinite;
+}
+.home-music__status {
+  color: var(--home-muted);
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+.home-music__audio {
+  display: none;
+}
+.home-music__timeline {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) 32px;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 6px;
+  margin: 2px 0 8px;
+}
+.home-music__time {
+  color: var(--home-muted);
+  font-size: 0.62rem;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  white-space: nowrap;
+}
+.home-music__progress {
+  width: 100%;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--home-accent);
+  cursor: pointer;
+}
+.home-music__message {
+  margin: 0 0 8px;
+  color: var(--home-muted);
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
 .home-weather__attribution {
   margin: 9px 0 0;
   color: var(--home-muted);
@@ -3585,12 +3648,31 @@ html[data-theme='dark'] #page-header.full_page #nav #toggle-menu {
   min-height: 66px;
 }
 .home-weather__icon {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   font-size: 2.1rem;
 }
+.home-weather__current > div {
+  min-width: 0;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
 .home-weather__temperature {
+  display: block;
   color: var(--home-text);
   font-size: 2rem;
   line-height: 1;
+  white-space: nowrap;
 }
 .home-weather__description {
   margin-top: 5px;
@@ -3780,7 +3862,7 @@ html[data-theme='dark'] .home-search-result__cover-label {
   }
   .home-dashboard__column--right {
     grid-area: right;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media screen and (max-width: 650px) {
@@ -4177,6 +4259,42 @@ html[data-theme='dark'] .home-search-result__cover-label {
   100% {
     clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
     -webkit-clip-path: polygon(0% 61.66%, 1.25% 63.13%, 2.5% 63.9%, 3.75% 63.9%, 5% 63.13%, 6.25% 61.66%, 7.5% 59.63%, 8.75% 57.25%, 10% 54.75%, 11.25% 52.37%, 12.5% 50.34%, 13.75% 48.87%, 15% 48.1%, 16.25% 48.1%, 17.5% 48.87%, 18.75% 50.34%, 20% 52.37%, 21.25% 54.75%, 22.5% 57.25%, 23.75% 59.63%, 25% 61.66%, 26.25% 63.13%, 27.5% 63.9%, 28.75% 63.9%, 30% 63.13%, 31.25% 61.66%, 32.5% 59.63%, 33.75% 57.25%, 35% 54.75%, 36.25% 52.37%, 37.5% 50.34%, 38.75% 48.87%, 40% 48.1%, 41.25% 48.1%, 42.5% 48.87%, 43.75% 50.34%, 45% 52.37%, 46.25% 54.75%, 47.5% 57.25%, 48.75% 59.63%, 50% 61.66%, 51.25% 63.13%, 52.5% 63.9%, 53.75% 63.9%, 55% 63.13%, 56.25% 61.66%, 57.5% 59.63%, 58.75% 57.25%, 60% 54.75%, 61.25% 52.37%, 62.5% 50.34%, 63.75% 48.87%, 65% 48.1%, 66.25% 48.1%, 67.5% 48.87%, 68.75% 50.34%, 70% 52.37%, 71.25% 54.75%, 72.5% 57.25%, 73.75% 59.63%, 75% 61.66%, 76.25% 63.13%, 77.5% 63.9%, 78.75% 63.9%, 80% 63.13%, 81.25% 61.66%, 82.5% 59.63%, 83.75% 57.25%, 85% 54.75%, 86.25% 52.37%, 87.5% 50.34%, 88.75% 48.87%, 90% 48.1%, 91.25% 48.1%, 92.5% 48.87%, 93.75% 50.34%, 95% 52.37%, 96.25% 54.75%, 97.5% 57.25%, 98.75% 59.63%, 100% 61.66%, 100% 100%, 0 100%);
+  }
+}
+@-moz-keyframes home-music-spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes home-music-spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes home-music-spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes home-music-spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 #recent-posts .recent-post-item {

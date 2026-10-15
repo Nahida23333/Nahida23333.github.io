@@ -194,6 +194,113 @@
   updateClock();
   window.setInterval(updateClock, 1000);
 
+  const musicCard = root.querySelector('.home-music[data-tracks]');
+  if (musicCard) {
+    let tracks = [];
+    try {
+      tracks = JSON.parse(musicCard.dataset.tracks || '[]');
+    } catch (error) {
+      tracks = [];
+    }
+    const audio = musicCard.querySelector('#home-music-audio');
+    const title = musicCard.querySelector('#home-music-title');
+    const artist = musicCard.querySelector('#home-music-artist');
+    const cover = musicCard.querySelector('#home-music-cover');
+    const status = musicCard.querySelector('#home-music-status');
+    const currentTime = musicCard.querySelector('#home-music-current-time');
+    const duration = musicCard.querySelector('#home-music-duration');
+    const progress = musicCard.querySelector('#home-music-progress');
+    const toggle = musicCard.querySelector('#home-music-toggle');
+    const previous = musicCard.querySelector('#home-music-previous');
+    const next = musicCard.querySelector('#home-music-next');
+    const message = musicCard.querySelector('#home-music-message');
+
+    if (tracks.length && audio && title && artist && cover && status && currentTime && duration && progress && toggle && previous && next) {
+      let trackIndex = 0;
+      const formatTime = (seconds) => {
+        if (!Number.isFinite(seconds) || seconds < 0) return '0:00';
+        const wholeSeconds = Math.floor(seconds);
+        return Math.floor(wholeSeconds / 60) + ':' + String(wholeSeconds % 60).padStart(2, '0');
+      };
+      const showMessage = (text) => {
+        if (!message) return;
+        message.textContent = text;
+        message.hidden = !text;
+      };
+      const syncPlaybackState = () => {
+        const playing = !audio.paused && !audio.ended;
+        const icon = toggle.querySelector('i');
+        if (icon) {
+          icon.classList.toggle('fa-play', !playing);
+          icon.classList.toggle('fa-pause', playing);
+        }
+        toggle.setAttribute('aria-label', playing ? '暂停' : '播放');
+        toggle.setAttribute('aria-pressed', String(playing));
+        musicCard.classList.toggle('home-music--playing', playing);
+      };
+      const updateTimeline = () => {
+        currentTime.textContent = formatTime(audio.currentTime);
+        if (Number.isFinite(audio.duration) && audio.duration > 0) {
+          duration.textContent = formatTime(audio.duration);
+          progress.value = String(Math.round((audio.currentTime / audio.duration) * 1000));
+        } else {
+          duration.textContent = '--:--';
+          progress.value = '0';
+        }
+      };
+      const playCurrentTrack = () => {
+        showMessage('');
+        const request = audio.play();
+        if (request && typeof request.catch === 'function') {
+          request.catch(() => showMessage('播放失败，请确认音频文件可访问且浏览器支持 FLAC。'));
+        }
+      };
+      const selectTrack = (index, resume = false) => {
+        trackIndex = (index + tracks.length) % tracks.length;
+        const track = tracks[trackIndex];
+        audio.pause();
+        audio.src = track.src;
+        audio.load();
+        title.textContent = track.title || '未知曲目';
+        artist.textContent = track.artist || '';
+        cover.src = track.cover || '';
+        cover.alt = (track.title || '音乐') + ' 封面';
+        status.textContent = (trackIndex + 1) + ' / ' + tracks.length;
+        currentTime.textContent = '0:00';
+        duration.textContent = '--:--';
+        progress.value = '0';
+        showMessage('');
+        if (resume) playCurrentTrack();
+      };
+
+      toggle.addEventListener('click', () => {
+        if (audio.paused) playCurrentTrack();
+        else audio.pause();
+      });
+      previous.addEventListener('click', () => {
+        if (audio.currentTime > 3) {
+          audio.currentTime = 0;
+          updateTimeline();
+        } else {
+          selectTrack(trackIndex - 1, !audio.paused);
+        }
+      });
+      next.addEventListener('click', () => selectTrack(trackIndex + 1, !audio.paused));
+      progress.addEventListener('input', () => {
+        if (Number.isFinite(audio.duration) && audio.duration > 0) {
+          audio.currentTime = (Number(progress.value) / 1000) * audio.duration;
+          updateTimeline();
+        }
+      });
+      audio.addEventListener('play', syncPlaybackState);
+      audio.addEventListener('pause', syncPlaybackState);
+      audio.addEventListener('timeupdate', updateTimeline);
+      audio.addEventListener('loadedmetadata', updateTimeline);
+      audio.addEventListener('ended', () => selectTrack(trackIndex + 1, true));
+      audio.addEventListener('error', () => showMessage('音频加载失败，请检查文件路径或浏览器是否支持 FLAC。'));
+      selectTrack(0);
+    }
+  }
   const calendar = document.querySelector('#home-calendar-grid');
   const monthNode = document.querySelector('#home-calendar-month');
   if (calendar && monthNode) {
