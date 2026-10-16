@@ -1,6 +1,5 @@
 (() => {
   const root = document.querySelector('.home-dashboard');
-  if (!root) return;
   const bindBusuanziCounters = () => {
     root.querySelectorAll('[data-busuanzi-source]').forEach((target) => {
       const source = document.getElementById(target.dataset.busuanziSource);
@@ -18,9 +17,9 @@
       update();
     });
   };
-  bindBusuanziCounters();
+  if (root) bindBusuanziCounters();
   // Keep the audio element alive while only the paginated article feed is replaced.
-  const homeFeed = root.querySelector('#recent-posts');
+  const homeFeed = root ? root.querySelector('#recent-posts') : null;
   let feedRequestId = 0;
   const updateHomeFeed = async (targetUrl, options = {}) => {
     if (!homeFeed) return;
@@ -76,11 +75,15 @@
       event.preventDefault();
       void updateHomeFeed(targetUrl, { pushHistory: true });
     });
+  }
 
-    window.addEventListener('popstate', (event) => {
-      if (!event.state || !event.state.homeDashboardPagination) return;
-      void updateHomeFeed(new URL(window.location.href), { restoreScrollY: event.state.homeDashboardScrollY });
-    });
+  window.__homeDashboardPopstateHandler = (event) => {
+    if (!event.state || !event.state.homeDashboardPagination || !homeFeed || !root || !root.isConnected) return;
+    void updateHomeFeed(new URL(window.location.href), { restoreScrollY: event.state.homeDashboardScrollY });
+  };
+  if (!window.__homeDashboardPopstateInstalled) {
+    window.__homeDashboardPopstateInstalled = true;
+    window.addEventListener('popstate', (event) => window.__homeDashboardPopstateHandler?.(event));
   }
 
   const searchForm = document.querySelector('#home-search-form');
@@ -254,18 +257,25 @@
       year: 'numeric', month: 'long', day: 'numeric', weekday: 'short'
     }).format(now);
   };
-  updateClock();
-  window.setInterval(updateClock, 1000);
+  if (window.__homeClockInterval) {
+    window.clearInterval(window.__homeClockInterval);
+    window.__homeClockInterval = null;
+  }
+  if (timeNode || dateNode) {
+    updateClock();
+    window.__homeClockInterval = window.setInterval(updateClock, 1000);
+  }
 
-  const musicCard = root.querySelector('.home-music[data-tracks]');
-  if (musicCard) {
+  const musicCard = document.querySelector('.home-music[data-tracks]');
+  const persistentAudio = document.querySelector('#persistent-home-music-audio');
+  if (musicCard && persistentAudio) {
     let tracks = [];
     try {
       tracks = JSON.parse(musicCard.dataset.tracks || '[]');
     } catch (error) {
       tracks = [];
     }
-    const audio = musicCard.querySelector('#home-music-audio');
+    const audio = persistentAudio;
     const title = musicCard.querySelector('#home-music-title');
     const artist = musicCard.querySelector('#home-music-artist');
     const cover = musicCard.querySelector('#home-music-cover');
@@ -278,8 +288,9 @@
     const next = musicCard.querySelector('#home-music-next');
     const message = musicCard.querySelector('#home-music-message');
 
-    if (tracks.length && audio && title && artist && cover && status && currentTime && duration && progress && toggle && previous && next) {
-      let trackIndex = 0;
+    if (tracks.length && title && artist && cover && status && currentTime && duration && progress && toggle && previous && next) {
+      let trackIndex = Number.parseInt(audio.dataset.trackIndex || '0', 10);
+      if (!Number.isInteger(trackIndex) || trackIndex < 0 || trackIndex >= tracks.length) trackIndex = 0;
       const formatTime = (seconds) => {
         if (!Number.isFinite(seconds) || seconds < 0) return '0:00';
         const wholeSeconds = Math.floor(seconds);
@@ -289,6 +300,14 @@
         if (!message) return;
         message.textContent = text;
         message.hidden = !text;
+      };
+      const renderTrack = () => {
+        const track = tracks[trackIndex];
+        title.textContent = track.title || '未知曲目';
+        artist.textContent = track.artist || '';
+        cover.src = track.cover || '';
+        cover.alt = (track.title || '音乐') + ' 封面';
+        status.textContent = (trackIndex + 1) + ' / ' + tracks.length;
       };
       const syncPlaybackState = () => {
         const playing = !audio.paused && !audio.ended;
@@ -323,12 +342,10 @@
         const track = tracks[trackIndex];
         audio.pause();
         audio.src = track.src;
+        audio.dataset.trackSource = track.src;
+        audio.dataset.trackIndex = String(trackIndex);
         audio.load();
-        title.textContent = track.title || '未知曲目';
-        artist.textContent = track.artist || '';
-        cover.src = track.cover || '';
-        cover.alt = (track.title || '音乐') + ' 封面';
-        status.textContent = (trackIndex + 1) + ' / ' + tracks.length;
+        renderTrack();
         currentTime.textContent = '0:00';
         duration.textContent = '--:--';
         progress.value = '0';
@@ -355,16 +372,28 @@
           updateTimeline();
         }
       });
-      audio.addEventListener('play', syncPlaybackState);
-      audio.addEventListener('pause', syncPlaybackState);
-      audio.addEventListener('timeupdate', updateTimeline);
-      audio.addEventListener('loadedmetadata', updateTimeline);
-      audio.addEventListener('ended', () => selectTrack(trackIndex + 1, true));
-      audio.addEventListener('error', () => showMessage('音频加载失败，请检查文件路径或浏览器是否支持 FLAC。'));
-      selectTrack(0);
+      if (audio.__homeMusicHandlers) {
+        Object.entries(audio.__homeMusicHandlers).forEach(([eventName, handler]) => audio.removeEventListener(eventName, handler));
+      }
+      audio.__homeMusicHandlers = {
+        play: syncPlaybackState,
+        pause: syncPlaybackState,
+        timeupdate: updateTimeline,
+        loadedmetadata: updateTimeline,
+        ended: () => selectTrack(trackIndex + 1, true),
+        error: () => showMessage('音频加载失败，请检查文件路径或浏览器是否支持 FLAC。')
+      };
+      Object.entries(audio.__homeMusicHandlers).forEach(([eventName, handler]) => audio.addEventListener(eventName, handler));
+
+      if (audio.dataset.trackSource === tracks[trackIndex].src) {
+        renderTrack();
+        updateTimeline();
+        syncPlaybackState();
+      } else {
+        selectTrack(trackIndex);
+      }
     }
-  }
-  const calendar = document.querySelector('#home-calendar-grid');
+  }  const calendar = document.querySelector('#home-calendar-grid');
   const monthNode = document.querySelector('#home-calendar-month');
   if (calendar && monthNode) {
     const today = new Date();
@@ -543,6 +572,7 @@
   };
 
   const requestLocation = () => {
+    window.__homeWeatherLocationRequested = true;
     cityRequestId += 1;
     if (!navigator.geolocation) {
       if (status) status.textContent = '广州市';
@@ -563,6 +593,7 @@
 
     navigator.geolocation.getCurrentPosition(
       async (position) => {
+        window.__homeWeatherCoordinates = { latitude: position.coords.latitude, longitude: position.coords.longitude };
         if (status) status.textContent = '正在查询当前位置…';
         try {
           await getWeather(position.coords.latitude, position.coords.longitude);
@@ -597,8 +628,24 @@
     );
   };
 
-  if (status) status.textContent = '广州市';
-  if (intro) intro.textContent = '默认显示广州市天气，正在请求设备定位。';
-  loadGuangzhouWeather();
-  requestLocation();
+  if (document.querySelector('.home-weather')) {
+    loadGuangzhouWeather();
+    if (window.__homeWeatherCoordinates) {
+      const coordinates = window.__homeWeatherCoordinates;
+      if (status) status.textContent = '正在查询当前位置…';
+      if (intro) intro.textContent = '正在更新设备定位天气。';
+      getWeather(coordinates.latitude, coordinates.longitude).then(() => {
+        if (status) status.textContent = '当前位置';
+        void updateCityName(coordinates.latitude, coordinates.longitude);
+        if (intro) intro.textContent = '已根据设备定位更新天气。';
+      }).catch(() => loadGuangzhouWeather());
+    } else if (!window.__homeWeatherLocationRequested) {
+      if (status) status.textContent = '广州市';
+      if (intro) intro.textContent = '默认显示广州市天气，正在请求设备定位。';
+      requestLocation();
+    } else {
+      if (status) status.textContent = '广州市';
+      if (intro) intro.textContent = '继续显示广州市天气。';
+    }
+  }
 })();

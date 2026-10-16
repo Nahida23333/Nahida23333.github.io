@@ -469,6 +469,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!($article && (isToc || isAnchor))) return
 
     let $tocLink, $cardToc, autoScrollToc, $tocPercentage, isExpand
+    let clickedTocIndex = null
 
     if (isToc) {
       const $cardTocLayout = document.getElementById('card-toc')
@@ -477,19 +478,29 @@ document.addEventListener('DOMContentLoaded', () => {
       $tocPercentage = $cardTocLayout.querySelector('.toc-percentage')
       isExpand = $cardToc.classList.contains('is-expand')
 
-      // toc元素點擊
+      // Keep the clicked entry active through smooth scrolling, even when its section is short.
       const tocItemClickFn = e => {
         const target = e.target.closest('.toc-link')
         if (!target) return
 
         e.preventDefault()
-        btf.scrollToDest(btf.getEleTop(document.getElementById(decodeURI(target.getAttribute('href')).replace('#', ''))), 300)
+        const targetId = decodeURI(target.getAttribute('href')).replace(/^#/, '')
+        const destination = document.getElementById(targetId)
+        clickedTocIndex = Array.from($articleList).findIndex(heading => heading.id === targetId)
+        if (destination) btf.scrollToDest(btf.getEleTop(destination), 300)
         if (window.innerWidth < 900) {
           $cardTocLayout.classList.remove('open')
         }
       }
 
       btf.addEventListenerPjax($cardToc, 'click', tocItemClickFn)
+      const clearClickedToc = () => { clickedTocIndex = null }
+      ;['wheel', 'touchstart', 'pointerdown'].forEach(event => {
+        btf.addEventListenerPjax(window, event, clearClickedToc, { passive: true })
+      })
+      btf.addEventListenerPjax(window, 'keydown', event => {
+        if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '].includes(event.key)) clearClickedToc()
+      })
 
       autoScrollToc = item => {
         const sidebarHeight = $cardToc.clientHeight
@@ -508,7 +519,7 @@ document.addEventListener('DOMContentLoaded', () => {
       $cardToc.style.display = 'block'
     }
 
-    // find head position & add active class
+    // Find the active heading at the fixed-header line, honoring a clicked TOC target and the article end.
     const $articleList = $article.querySelectorAll('h1,h2,h3,h4,h5,h6')
     let detectItem = ''
 
@@ -516,17 +527,28 @@ document.addEventListener('DOMContentLoaded', () => {
       if (top === 0) return false
 
       let currentId = ''
-      let currentIndex = ''
+      let currentIndex = -1
+      const activeLine = top + 70
 
       for (let i = 0; i < $articleList.length; i++) {
         const ele = $articleList[i]
-        if (top > btf.getEleTop(ele) - 80) {
-          const id = ele.id
-          currentId = id ? '#' + encodeURI(id) : ''
+        if (activeLine >= btf.getEleTop(ele)) {
           currentIndex = i
         } else {
           break
         }
+      }
+
+      if (clickedTocIndex !== null && $articleList[clickedTocIndex]) {
+        currentIndex = clickedTocIndex
+      } else if ($articleList.length) {
+        const articleBottom = btf.getEleTop($article) + $article.offsetHeight
+        if (top + window.innerHeight >= articleBottom - 24) currentIndex = $articleList.length - 1
+      }
+
+      if (currentIndex >= 0) {
+        const id = $articleList[currentIndex].id
+        currentId = id ? '#' + encodeURI(id) : ''
       }
 
       if (detectItem === currentIndex) return
